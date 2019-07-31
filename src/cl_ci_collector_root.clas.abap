@@ -6,8 +6,6 @@ CLASS cl_ci_collector_root DEFINITION PUBLIC CREATE PUBLIC.
 
 ENDCLASS.
 
-
-
 CLASS cl_ci_collector_root IMPLEMENTATION.
 
 ENDCLASS.
