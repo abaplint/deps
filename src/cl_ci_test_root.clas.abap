@@ -37,6 +37,10 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       run
         ABSTRACT.
 
+    METHODS
+      inform
+        ABSTRACT.
+
   PROTECTED SECTION.
   PRIVATE SECTION.
 
