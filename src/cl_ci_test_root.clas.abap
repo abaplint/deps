@@ -33,6 +33,10 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
         IMPORTING
           p_attributes TYPE string.
 
+    METHODS
+      run
+        ABSTRACT.
+
   PROTECTED SECTION.
   PRIVATE SECTION.
 
