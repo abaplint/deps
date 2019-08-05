@@ -32,7 +32,7 @@
       "errorNamespace": "^(Z|Y)"
     },
     "class_attribute_names": {
-      "enabled": true,
+      "enabled": false,
       "exclude": [],
       "ignoreExceptions": true,
       "statics": "^G._.*$",
@@ -182,7 +182,7 @@
       "statements": 100
     },
     "method_parameter_names": {
-      "enabled": true,
+      "enabled": false,
       "exclude": [],
       "ignoreExceptions": true,
       "importing": "^I._.*$",
@@ -207,11 +207,11 @@
       "depth": 5
     },
     "no_public_attributes": {
-      "enabled": true,
+      "enabled": false,
       "exclude": []
     },
     "object_naming": {
-      "enabled": true,
+      "enabled": false,
       "exclude": [],
       "clas": "^ZC(L|X)\\_",
       "intf": "^ZIF\\_",
