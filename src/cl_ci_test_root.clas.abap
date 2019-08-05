@@ -10,7 +10,8 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           has_documentation TYPE abap_bool,
           has_attributes    TYPE abap_bool,
           attributes_ok     TYPE abap_bool,
-          myname            TYPE string.
+          myname            TYPE string,
+          scimessages       TYPE string.
 
     METHODS
       get_message_text
