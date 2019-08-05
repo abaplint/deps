@@ -38,6 +38,14 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
         ABSTRACT.
 
     METHODS
+      get_result_node
+        ABSTRACT
+        IMPORTING
+          p_kind TYPE c
+        RETURNING
+          VALUE(p_result) TYPE REF TO cl_ci_result_root.
+
+    METHODS
       inform
         ABSTRACT.
 
