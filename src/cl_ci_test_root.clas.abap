@@ -13,6 +13,11 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           myname            TYPE string,
           scimessages       TYPE string.
 
+    CONSTANTS:
+      c_note    TYPE c LENGTH 1 VALUE '?',
+      c_warning TYPE c LENGTH 1 VALUE '?',
+      c_error   TYPE c LENGTH 1 VALUE '?'.
+
     METHODS
       get_message_text
         ABSTRACT
