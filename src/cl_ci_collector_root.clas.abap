@@ -1,6 +1,7 @@
 CLASS cl_ci_collector_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
 
   PUBLIC SECTION.
+    INTERFACES: if_ci_collector.
     DATA: myname         TYPE string,
           version        TYPE string,
           position       TYPE string,
