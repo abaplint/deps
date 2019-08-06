@@ -8,7 +8,7 @@ CLASS cx_static_check DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
         source_line TYPE string.
     METHODS get_longtext ABSTRACT
       RETURNING
-        VALUE(result) TYPE string.  
+        VALUE(result) TYPE string.
   PROTECTED SECTION.
   PRIVATE SECTION.
 
