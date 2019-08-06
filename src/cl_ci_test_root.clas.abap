@@ -10,6 +10,7 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           has_documentation TYPE abap_bool,
           has_attributes    TYPE abap_bool,
           attributes_ok     TYPE abap_bool,
+          has_display_consolidation TYPE abap_bool,
           myname            TYPE string,
           scimessages       TYPE string.
 
@@ -53,7 +54,34 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
 
     METHODS
       inform
-        ABSTRACT.
+        ABSTRACT
+        IMPORTING
+          p_sub_obj_type TYPE string
+          p_sub_obj_name TYPE string
+          p_position     TYPE string
+          p_line         TYPE string
+          p_column       TYPE string
+          p_errcnt       TYPE string
+          p_kind         TYPE string
+          p_test         TYPE string
+          p_code         TYPE string
+          p_suppress     TYPE string
+          p_param_1      TYPE string
+          p_param_2      TYPE string
+          p_param_3      TYPE string
+          p_param_4      TYPE string
+          p_inclspec     TYPE string.
+
+    METHODS
+      consolidate_for_display
+        ABSTRACT
+        IMPORTING
+          p_sort_by_user TYPE string
+          p_sort_by_package TYPE string
+          p_sort_by_object TYPE string
+        CHANGING
+          p_results TYPE string
+          p_results_hd TYPE string.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
