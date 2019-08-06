@@ -1,6 +1,7 @@
 CLASS cl_ci_result_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
 
   PUBLIC SECTION.
+    DATA: result TYPE string.
     METHODS set_info ABSTRACT
       IMPORTING p_info TYPE string
       RETURNING VALUE(p_result) TYPE string.
