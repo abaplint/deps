@@ -11,6 +11,7 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           has_attributes    TYPE abap_bool,
           attributes_ok     TYPE abap_bool,
           has_display_consolidation TYPE abap_bool,
+          program_name      TYPE string,
           myname            TYPE string,
           scimessages       TYPE string.
 
