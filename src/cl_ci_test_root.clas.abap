@@ -10,7 +10,13 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           has_documentation TYPE abap_bool,
           has_attributes    TYPE abap_bool,
           attributes_ok     TYPE abap_bool,
-          myname            TYPE string.
+          myname            TYPE string,
+          scimessages       TYPE string.
+
+    CONSTANTS:
+      c_note    TYPE c LENGTH 1 VALUE '?',
+      c_warning TYPE c LENGTH 1 VALUE '?',
+      c_error   TYPE c LENGTH 1 VALUE '?'.
 
     METHODS
       get_message_text
@@ -36,6 +42,14 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
     METHODS
       run
         ABSTRACT.
+
+    METHODS
+      get_result_node
+        ABSTRACT
+        IMPORTING
+          p_kind TYPE c
+        RETURNING
+          VALUE(p_result) TYPE REF TO cl_ci_result_root.
 
     METHODS
       inform
