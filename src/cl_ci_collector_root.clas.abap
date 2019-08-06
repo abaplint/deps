@@ -6,7 +6,9 @@ CLASS cl_ci_collector_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           position       TYPE string,
           has_attributes TYPE abap_bool,
           attributes_ok  TYPE abap_bool,
+          group          TYPE string,
           description    TYPE string.
+    CONSTANTS: c_general TYPE string VALUE '?'.
   PROTECTED SECTION.
   PRIVATE SECTION.
 
