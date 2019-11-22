@@ -18,15 +18,19 @@ ENDCLASS.
 CLASS cl_ci_collector_root IMPLEMENTATION.
 
   METHOD if_ci_collector~put_attributes.
+    RETURN.
   ENDMETHOD.
 
   METHOD if_ci_collector~get_attributes.
+    RETURN.
   ENDMETHOD.
 
   METHOD if_ci_collector~collect.
+    RETURN.
   ENDMETHOD.
 
   METHOD if_ci_collector~query_attributes.
+    RETURN.
   ENDMETHOD.
 
 ENDCLASS.

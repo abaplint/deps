@@ -4,7 +4,7 @@
     "skipGeneratedGatewayClasses": true,
     "skipGeneratedPersistentClasses": true,
     "skipGeneratedFunctionGroups": true,
-    "applyUnspecifiedRules": true
+    "applyUnspecifiedRules": false
   },
   "dependencies": [],
   "syntax": {
@@ -14,6 +14,29 @@
     "globalMacros": []
   },
   "rules": {
+    "abapdoc": false,
+    "allowed_object_types": false,
+    "ambiguous_statement": true,
+    "begin_end_names": true,
+    "chain_mainly_declarations": true,
+    "check_abstract": true,
+    "check_ddic": true,
+    "check_include": true,
+    "check_no_handler_pragma": true,
+    "check_syntax": true,
+    "check_text_elements": true,
+    "check_transformation_exists": true,
+    "form_no_dash": true,
+    "form_tables_obsolete": true,
+    "implement_methods": true,
+    "local_testclass_location": true,
+    "main_file_contents": true,
+    "newline_between_methods": true,
+    "release_idoc": true,
+    "rfc_error_handling": true,
+    "type_begin_single_include": true,
+    "type_form_parameters": true,
+    "types_naming": false,
     "7bit_ascii": {
       "enabled": true,
       "exclude": []
@@ -29,10 +52,6 @@
       "statics": true
     },
     "breakpoint": {
-      "enabled": true,
-      "exclude": []
-    },
-    "check_variables": {
       "enabled": true,
       "exclude": []
     },
@@ -141,9 +160,10 @@
       "enabled": true,
       "exclude": []
     },
-    "keywords_upper": {
+    "keyword_case": {
       "enabled": true,
       "exclude": [],
+      "style": "upper",
       "ignoreExceptions": true,
       "ignoreLowerClassImplmentationStatement": true,
       "ignoreGlobalClassDefinition": false,
@@ -184,6 +204,8 @@
     "method_length": {
       "enabled": true,
       "exclude": [],
+      "errorWhenEmpty": true,
+      "ignoreTestClasses": false,
       "statements": 100
     },
     "method_parameter_names": {
@@ -213,7 +235,8 @@
     },
     "no_public_attributes": {
       "enabled": false,
-      "exclude": []
+      "exclude": [],
+      "allowReadOnly": true
     },
     "object_naming": {
       "enabled": false,
@@ -243,7 +266,8 @@
       "multiply": true,
       "move": true,
       "divide": true,
-      "requested": true
+      "requested": true,
+      "occurs": true
     },
     "parser_error": {
       "enabled": true,
