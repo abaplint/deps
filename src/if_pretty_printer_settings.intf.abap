@@ -4,9 +4,9 @@ INTERFACE if_pretty_printer_settings PUBLIC.
     RETURNING
       VALUE(case_mode) TYPE i.
 
-  METHODS get_ident_mode
+  METHODS get_indent_mode
     RETURNING
-      VALUE(ident_mode) TYPE i.
+      VALUE(indent_mode) TYPE i.
 
   METHODS get_line_length
     RETURNING
