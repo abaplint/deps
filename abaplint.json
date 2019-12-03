@@ -14,6 +14,8 @@
     "globalMacros": []
   },
   "rules": {
+    "check_comments": true,
+    "fully_type_constants": true,
     "abapdoc": false,
     "allowed_object_types": false,
     "ambiguous_statement": true,
@@ -95,6 +97,7 @@
       "exclude": [],
       "keywords": true,
       "startParen": true,
+      "afterColon": true,
       "endParen": true
     },
     "empty_line_in_statement": {
@@ -184,7 +187,8 @@
       "enabled": true,
       "exclude": [],
       "local": "^LCL_.*$",
-      "test": "^LTCL_.*$"
+      "test": "^LTCL_.*$",
+      "exception": "^LCX_.*"
     },
     "local_variable_names": {
       "enabled": true,
