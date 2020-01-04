@@ -8,6 +8,7 @@ CLASS cl_apl_ecatt_upload DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
   PROTECTED SECTION.
     DATA: template_over_all TYPE string,
           exception_to_raise TYPE string,
+          ecatt_object TYPE string,
           tadir_preset TYPE string.
   PRIVATE SECTION.
 
