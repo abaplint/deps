@@ -2,6 +2,7 @@ CLASS cl_apl_ecatt_data_upload DEFINITION PUBLIC INHERITING FROM cl_apl_ecatt_up
 
   PUBLIC SECTION.
   PROTECTED SECTION.
+    DATA ecatt_object TYPE string.
   PRIVATE SECTION.
 
 ENDCLASS.

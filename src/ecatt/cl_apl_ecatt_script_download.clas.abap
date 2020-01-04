@@ -3,6 +3,7 @@ CLASS cl_apl_ecatt_script_download DEFINITION PUBLIC INHERITING FROM cl_apl_ecat
   PUBLIC SECTION.
   PROTECTED SECTION.
     DATA: ecatt_script TYPE string.
+    DATA: ecatt_extprog TYPE string.
   PRIVATE SECTION.
 
 ENDCLASS.
