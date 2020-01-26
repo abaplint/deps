@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>cl_ci_test_root</CLSNAME>
+    <CLSNAME>CL_CI_TEST_ROOT</CLSNAME>
     <LANGU>E</LANGU>
     <DESCRIPT>cl_ci_test_root</DESCRIPT>
     <STATE>1</STATE>

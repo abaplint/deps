@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>cl_apl_ecatt_config_download</CLSNAME>
+    <CLSNAME>CL_APL_ECATT_CONFIG_DOWNLOAD</CLSNAME>
     <LANGU>E</LANGU>
     <DESCRIPT>cl_apl_ecatt_config_download</DESCRIPT>
     <STATE>1</STATE>
