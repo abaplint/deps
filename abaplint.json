@@ -13,6 +13,9 @@
     "globalMacros": []
   },
   "rules": {
+    "forbidden_identifier": false,
+    "try_without_catch": true,
+    "unknown_types": true,
     "allowed_object_naming": true,
     "keep_single_parameter_on_one_line": true,
     "prefer_returning_to_exporting": false,
