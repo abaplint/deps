@@ -1,0 +1,7 @@
+CLASS cl_rest_resource DEFINITION PUBLIC.
+
+ENDCLASS.
+
+CLASS cl_rest_resource IMPLEMENTATION.
+
+ENDCLASS.
