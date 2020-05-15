@@ -114,7 +114,8 @@
       "ignoreLowerClassImplmentationStatement": true,
       "ignoreGlobalClassDefinition": false,
       "ignoreGlobalInterface": false,
-      "ignoreFunctionModuleName": false
+      "ignoreFunctionModuleName": false,
+      "ignoreKeywords": []
     },
     "line_length": {
       "length": 120
@@ -152,6 +153,7 @@
       "compute": true,
       "add": true,
       "subtract": true,
+      "setExtended": true,
       "multiply": true,
       "move": true,
       "divide": true,
