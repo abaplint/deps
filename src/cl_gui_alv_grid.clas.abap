@@ -1,0 +1,7 @@
+CLASS cl_gui_alv_grid DEFINITION PUBLIC.
+
+ENDCLASS.
+
+CLASS cl_gui_alv_grid IMPLEMENTATION.
+
+ENDCLASS.
