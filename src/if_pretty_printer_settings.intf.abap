@@ -14,6 +14,6 @@ INTERFACE if_pretty_printer_settings PUBLIC.
 
   METHODS get_source_type
     RETURNING
-      VALUE(source_type) TYPE trobjtype.
+      VALUE(source_type) TYPE string.
 
 ENDINTERFACE.
