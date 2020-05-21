@@ -1,4 +1,4 @@
-CLASS cx_dynamic_check DEFINITION PUBLIC.
+CLASS cx_dynamic_check DEFINITION PUBLIC INHERITING FROM cx_root.
 
 ENDCLASS.
 
