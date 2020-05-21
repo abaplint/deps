@@ -13,7 +13,7 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           has_display_consolidation TYPE abap_bool,
           program_name      TYPE string,
           myname            TYPE string,
-          scimessages       TYPE string.
+          scimessages       TYPE STANDARD TABLE OF string.
 
     CONSTANTS:
       c_note    TYPE c LENGTH 1 VALUE '?',
