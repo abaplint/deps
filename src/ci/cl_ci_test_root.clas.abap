@@ -53,6 +53,23 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
         RETURNING
           VALUE(p_result) TYPE REF TO cl_ci_result_root.
 
+    EVENTS message EXPORTING
+      VALUE(p_sub_obj_type) TYPE string
+      VALUE(p_sub_obj_name) TYPE string
+      VALUE(p_position) TYPE string
+      VALUE(p_line) TYPE string
+      VALUE(p_column) TYPE string
+      VALUE(p_errcnt) TYPE string
+      VALUE(p_kind) TYPE string
+      VALUE(p_test) TYPE string
+      VALUE(p_code) TYPE string
+      VALUE(p_suppress) TYPE string
+      VALUE(p_param_1) TYPE string
+      VALUE(p_param_2) TYPE string
+      VALUE(p_param_3) TYPE string
+      VALUE(p_param_4) TYPE string
+      VALUE(p_inclspec) TYPE string.
+
     METHODS
       inform
         ABSTRACT
