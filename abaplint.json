@@ -13,6 +13,9 @@
     "globalMacros": []
   },
   "rules": {
+    "forbidden_void_type": {
+      "check": [""]
+    },
     "forbidden_identifier": false,
     "try_without_catch": true,
     "unknown_types": true,
