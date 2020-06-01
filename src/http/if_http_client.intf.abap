@@ -1,0 +1,3 @@
+INTERFACE if_http_client PUBLIC.
+
+ENDINTERFACE.
