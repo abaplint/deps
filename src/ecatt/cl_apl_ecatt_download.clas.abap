@@ -20,7 +20,9 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           etpar_node TYPE string,
           ex_ecatt TYPE string,
           ecatt_object TYPE string,
-          load_help TYPE string.
+          load_help TYPE string,
+          ecatt_script TYPE REF TO cl_apl_ecatt_script,
+          ecatt_extprog TYPE REF TO cl_apl_ecatt_extprog.
 
     METHODS:
       set_attributes_to_template,

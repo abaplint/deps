@@ -1,0 +1,7 @@
+CLASS cl_apl_ecatt_script DEFINITION PUBLIC.
+
+ENDCLASS.
+
+CLASS cl_apl_ecatt_script IMPLEMENTATION.
+
+ENDCLASS.
