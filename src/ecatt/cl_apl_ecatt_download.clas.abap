@@ -28,6 +28,7 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       raise_download_exception,
       set_general_params_data_to_dom,
       set_deep_stru_to_dom,
+      set_variants_to_dom,
       set_deep_data_to_dom,
       set_var_mode_to_dom.
   PRIVATE SECTION.
@@ -35,6 +36,10 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
 ENDCLASS.
 
 CLASS cl_apl_ecatt_download IMPLEMENTATION.
+  METHOD set_variants_to_dom.
+    RETURN.
+  ENDMETHOD.
+
   METHOD set_attributes_to_template.
     RETURN.
   ENDMETHOD.
