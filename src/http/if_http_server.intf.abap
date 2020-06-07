@@ -1,6 +1,6 @@
 INTERFACE if_http_server PUBLIC.
 
-  DATA response TYPE string.
-  DATA request TYPE string.
+  DATA response TYPE REF TO if_http_response.
+  DATA request TYPE REF TO if_http_request.
 
 ENDINTERFACE.
