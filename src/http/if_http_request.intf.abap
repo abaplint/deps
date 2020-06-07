@@ -5,6 +5,7 @@ INTERFACE if_http_request PUBLIC.
     set_header_field,
     set_method,
     set_data,
+    set_cdata,
     set_compression.
 
 ENDINTERFACE.
