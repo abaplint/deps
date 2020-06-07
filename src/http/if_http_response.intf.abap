@@ -4,6 +4,7 @@ INTERFACE if_http_response PUBLIC.
     set_status,
     set_cdata,
     set_data,
+    get_cdata,
     set_compression,
     set_header_field,
     set_content_type,

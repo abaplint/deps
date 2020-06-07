@@ -10,9 +10,6 @@ CLASS cx_static_check DEFINITION PUBLIC INHERITING FROM cx_root CREATE PUBLIC AB
         program_name TYPE string
         include_name TYPE string
         source_line TYPE string.
-    METHODS get_longtext ABSTRACT
-      RETURNING
-        VALUE(result) TYPE string.
   PROTECTED SECTION.
   PRIVATE SECTION.
 
