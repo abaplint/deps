@@ -8,7 +8,7 @@ CLASS cl_apl_ecatt_upload DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
   PROTECTED SECTION.
     DATA: template_over_all TYPE string,
           exception_to_raise TYPE string,
-          ecatt_object TYPE string,
+          ecatt_object TYPE REF TO cl_apl_ecatt_object,
           tadir_preset TYPE string.
     METHODS:
       raise_upload_exception,

@@ -17,7 +17,7 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           ap_current_param TYPE string,
           parm TYPE string,
           root_node TYPE string,
-          etpar_node TYPE string,
+          etpar_node TYPE REF TO if_ixml_element,
           ex_ecatt TYPE string,
           ecatt_object TYPE string,
           load_help TYPE string,
