@@ -4,7 +4,9 @@ CLASS cl_apl_ecatt_object DEFINITION PUBLIC.
       show_object,
       close_object.
     CLASS-METHODS:
-      get_tadir_entry.
+      get_tadir_entry,
+      delete_object,
+      get_version_info_object.
 ENDCLASS.
 
 CLASS cl_apl_ecatt_object IMPLEMENTATION.
@@ -17,6 +19,14 @@ CLASS cl_apl_ecatt_object IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD get_tadir_entry.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_version_info_object.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD delete_object.
     RETURN.
   ENDMETHOD.
 ENDCLASS.
