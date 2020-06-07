@@ -1,10 +1,21 @@
 INTERFACE if_ixml_element PUBLIC.
   METHODS:
     append_child,
+    clone,
+    create_filter_node_type,
+    create_iterator,
+    find_from_name_ns,
+    get_attribute_node,
+    get_attribute_ns,
+    get_attribute,
+    get_children,
+    get_elements_by_tag_name_ns,
+    get_first_child,
+    get_value,
+    remove_attribute,
+    remove_node,
+    render,
     set_attribute_node_ns,
     set_attribute,
-    remove_node,
-    set_value,
-    remove_attribute,
-    render.
+    set_value.
 ENDINTERFACE.

@@ -10,7 +10,7 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           im_object_version TYPE string,
       download_data ABSTRACT.
   PROTECTED SECTION.
-    DATA: template_over_all TYPE string,
+    DATA: template_over_all TYPE REF TO if_ixml_document,
           typ TYPE string,
           wa_parm TYPE string,
           toolname TYPE string,
@@ -19,7 +19,7 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           root_node TYPE string,
           etpar_node TYPE REF TO if_ixml_element,
           ex_ecatt TYPE string,
-          ecatt_object TYPE string,
+          ecatt_object TYPE REF TO cl_apl_ecatt_object,
           load_help TYPE string,
           ecatt_script TYPE REF TO cl_apl_ecatt_script,
           ecatt_extprog TYPE REF TO cl_apl_ecatt_extprog.
