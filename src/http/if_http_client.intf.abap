@@ -6,7 +6,10 @@ INTERFACE if_http_client PUBLIC.
     send,
     authenticate,
     close,
-    get_last_error,
+    get_last_error
+      EXPORTING
+        code    TYPE i
+        message TYPE string,
     send_sap_logon_ticket,
     receive.
 ENDINTERFACE.

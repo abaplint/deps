@@ -11,6 +11,9 @@ INTERFACE if_http_response PUBLIC.
     get_header_field,
     get_content_type,
     set_content_type,
-    get_status.
+    get_status
+      EXPORTING
+        code   TYPE i
+        reason TYPE string.
 
 ENDINTERFACE.

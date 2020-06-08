@@ -1,8 +1,14 @@
 CLASS cl_apl_ecatt_extprog DEFINITION PUBLIC.
   PUBLIC SECTION.
     METHODS:
-      get_args_tmpl,
-      get_blob.
+      get_args_tmpl
+        EXPORTING
+          ex_xml_arg_tmpl TYPE string
+          ex_rc           TYPE i
+          ex_errmsg       TYPE string,
+      get_blob
+        EXPORTING
+          ex_xml_blob TYPE string.
 ENDCLASS.
 
 CLASS cl_apl_ecatt_extprog IMPLEMENTATION.

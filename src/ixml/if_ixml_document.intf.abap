@@ -5,6 +5,7 @@ INTERFACE if_ixml_document PUBLIC.
     create_element_ns,
     create_element,
     create_iterator_filtered,
+    create_filter_and,
     create_iterator,
     create_simple_element_ns,
     create_simple_element,

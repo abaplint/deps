@@ -3,13 +3,19 @@ CLASS cl_apl_ecatt_object DEFINITION PUBLIC.
     DATA:
       attrib TYPE REF TO cl_apl_ecatt_attributes.
     METHODS:
-      show_object,
       close_object.
     CLASS-METHODS:
-      get_tadir_entry,
+      get_tadir_entry
+        EXPORTING
+          ex_tadir TYPE i,
+      show_object
+        EXPORTING
+          re_object TYPE REF TO cl_apl_ecatt_object,
       delete_object,
       existence_check_object,
-      get_version_info_object.
+      get_version_info_object
+        EXPORTING
+          ex_version_info TYPE STANDARD TABLE.
 ENDCLASS.
 
 CLASS cl_apl_ecatt_object IMPLEMENTATION.
