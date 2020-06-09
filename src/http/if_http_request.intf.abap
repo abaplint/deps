@@ -24,7 +24,8 @@ INTERFACE if_http_request PUBLIC.
     get_form_field
       IMPORTING field TYPE string
       RETURNING VALUE(val) TYPE string,
-    get_data,
+    get_data
+      RETURNING VALUE(val) TYPE string,
     set_cdata
       IMPORTING data TYPE string,
     set_compression.
