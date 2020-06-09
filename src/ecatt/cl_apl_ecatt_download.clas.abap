@@ -26,12 +26,26 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
 
     METHODS:
       set_attributes_to_template,
-      get_general_params_data,
-      raise_download_exception,
+      get_general_params_data
+        IMPORTING
+          im_params TYPE any
+          im_ptyp TYPE string,
+      raise_download_exception
+        IMPORTING
+          previous TYPE REF TO cx_root
+          textid LIKE cx_root=>textid
+          free_text TYPE string
+          called_method TYPE string,
       set_general_params_data_to_dom,
-      set_deep_stru_to_dom,
-      set_variants_to_dom,
-      set_deep_data_to_dom,
+      set_deep_stru_to_dom
+        IMPORTING data TYPE any,
+      set_variants_to_dom
+        IMPORTING
+          params TYPE any,
+      set_deep_data_to_dom
+        IMPORTING
+          im_params TYPE any
+          im_pindex TYPE i,
       set_var_mode_to_dom.
   PRIVATE SECTION.
 

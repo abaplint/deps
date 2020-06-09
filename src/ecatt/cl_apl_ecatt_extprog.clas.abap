@@ -7,6 +7,8 @@ CLASS cl_apl_ecatt_extprog DEFINITION PUBLIC.
           ex_rc           TYPE i
           ex_errmsg       TYPE string,
       get_blob
+        IMPORTING
+          im_whole_data TYPE i
         EXPORTING
           ex_xml_blob TYPE string.
 ENDCLASS.

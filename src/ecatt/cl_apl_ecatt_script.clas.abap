@@ -1,6 +1,8 @@
 CLASS cl_apl_ecatt_script DEFINITION PUBLIC.
   PUBLIC SECTION.
-    METHODS: get_script_text.
+    METHODS:
+      get_script_text
+        CHANGING scripttext TYPE any.
 ENDCLASS.
 
 CLASS cl_apl_ecatt_script IMPLEMENTATION.

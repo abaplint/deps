@@ -4,7 +4,11 @@ INTERFACE if_http_client PUBLIC.
     response TYPE REF TO if_http_response.
   METHODS:
     send,
-    authenticate,
+    authenticate
+      IMPORTING
+        proxy_authentication TYPE abap_bool
+        username TYPE string
+        password TYPE string,
     close,
     get_last_error
       EXPORTING
