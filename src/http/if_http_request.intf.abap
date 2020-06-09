@@ -12,9 +12,11 @@ INTERFACE if_http_request PUBLIC.
       IMPORTING
         method TYPE string,
     set_data
-      IMPORTING data TYPE string,
+      IMPORTING data TYPE string
+      RETURNING VALUE(val) TYPE string,
     get_cdata
-      IMPORTING data TYPE string,
+      IMPORTING data TYPE string
+      RETURNING VALUE(val) TYPE string,
     get_header_field
       IMPORTING name TYPE string
       RETURNING
