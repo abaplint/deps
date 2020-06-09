@@ -6,49 +6,71 @@ INTERFACE if_ixml_document PUBLIC.
     create_attribute_ns
       IMPORTING
         name TYPE string
-        prefix TYPE string,
+        prefix TYPE string
+      RETURNING
+        VALUE(element) TYPE REF TO if_xml_element,
     create_element_ns
       IMPORTING
         name TYPE string
-        prefix TYPE string,
+        prefix TYPE string
+      RETURNING
+        VALUE(element) TYPE REF TO if_xml_element,
     create_element
       IMPORTING
-        name TYPE string,
+        name TYPE string
+      RETURNING
+        VALUE(element) TYPE REF TO if_xml_element,
     create_iterator_filtered
-      IMPORTING input TYPE any,
+      IMPORTING input TYPE any
+      RETURNING VALUE(val) TYPE any,
     create_filter_and
       IMPORTING
         filter1 TYPE any
-        filter2 TYPE any,
-    create_iterator,
+        filter2 TYPE any
+      RETURNING
+        VALUE(val) TYPE any,
+    create_iterator
+      RETURNING VALUE(val) TYPE any,
     create_filter_node_type
-      IMPORTING typ TYPE string,
+      IMPORTING typ TYPE string
+      RETURNING VALUE(val) TYPE any,
     create_simple_element_ns
       IMPORTING
         name TYPE string
-        parent TYPE string,
+        parent TYPE string
+      RETURNING VALUE(val) TYPE REF TO if_xml_element,
     create_filter_attribute
-      IMPORTING name TYPE string,
+      IMPORTING name TYPE string
+      RETURNING VALUE(val) TYPE any,
     create_simple_element
       IMPORTING
         name TYPE string
-        parent TYPE string,
+        parent TYPE string
+      RETURNING VALUE(val) TYPE REF TO if_xml_element,
     find_from_name
-      IMPORTING name TYPE string
-      RETURNING VALUE(element) TYPE REF TO if_ixml_element,
+      IMPORTING
+        name TYPE string
+      RETURNING
+        VALUE(element) TYPE REF TO if_ixml_element,
     find_from_name_ns
       IMPORTING
         depth TYPE i
-        name  TYPE string,
+        name  TYPE string
+      RETURNING
+        VALUE(element) TYPE REF TO if_ixml_element,
     find_from_path
       IMPORTING
-        path TYPE string,
+        path TYPE string
+      RETURNING
+        VALUE(val) TYPE REF TO if_ixml_element,
     get_elements_by_tag_name_ns
-      IMPORTING name TYPE string,
+      IMPORTING name TYPE string
+      RETURNING VALUE(val) TYPE any,
     get_elements_by_tag_name
       IMPORTING
         depth TYPE i
-        name TYPE string,
+        name TYPE string
+      RETURNING VALUE(val) TYPE any,
     get_root RETURNING VALUE(node) TYPE if_ixml_node,
     get_root_element RETURNING VALUE(root) TYPE REF TO if_ixml_element.
 ENDINTERFACE.

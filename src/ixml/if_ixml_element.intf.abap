@@ -2,26 +2,39 @@ INTERFACE if_ixml_element PUBLIC.
   METHODS:
     append_child
       IMPORTING
-       new_child TYPE REF TO if_ixml_element,
-    clone,
+        new_child TYPE REF TO if_ixml_element
+      RETURNING
+        VALUE(rc) TYPE i,
+    clone
+      RETURNING VALUE(val) TYPE REF TO if_ixml_node,
     create_filter_node_type
-      IMPORTING name TYPE string,
-    create_iterator,
+      IMPORTING name TYPE string
+      RETURNING VALUE(val) TYPE REF TO any,
+    create_iterator
+      RETURNING VALUE(val) TYPE any,
     find_from_name_ns
-      IMPORTING name TYPE string,
+      IMPORTING name TYPE string
+      RETURNING VALUE(val) TYPE REF TO if_ixml_element,
     get_attribute_node
-      IMPORTING name TYPE string,
+      IMPORTING name TYPE string
+      RETURNING VALUE(val) TYPE REF TO if_ixml_attribute,
     get_attribute_ns
       IMPORTING
-        name TYPE string,
+        name TYPE string
+      RETURNING VALUE(val) TYPE string,
     get_attribute
       IMPORTING
-        name TYPE string,
-    get_children,
+        name TYPE string
+      RETURNING VALUE(val) TYPE string,
+    get_children
+      RETURNING VALUE(val) TYPE any,
     get_elements_by_tag_name_ns
-      IMPORTING name TYPE string,
-    get_first_child,
-    get_value,
+      IMPORTING name TYPE string
+      RETURNING VALUE(val) TYPE any,
+    get_first_child
+      RETURNING VALUE(val) TYPE REF TO if_ixml_node,
+    get_value
+      RETURNING VALUE(val) TYPE string,
     remove_attribute
       IMPORTING name TYPE string,
     remove_node,
@@ -38,5 +51,6 @@ INTERFACE if_ixml_element PUBLIC.
         value TYPE string,
     set_value
       IMPORTING
-        value TYPE string.
+        value TYPE string
+      RETURNING VALUE(rc) TYPE i.
 ENDINTERFACE.

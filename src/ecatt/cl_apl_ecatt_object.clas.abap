@@ -31,7 +31,8 @@ CLASS cl_apl_ecatt_object DEFINITION PUBLIC.
           im_name               TYPE string
           im_version            TYPE string
           im_obj_type           TYPE string
-          im_exists_any_version TYPE abap_bool,
+          im_exists_any_version TYPE abap_bool
+        RETURNING VALUE(val) TYPE abap_bool,
       get_version_info_object
         IMPORTING
           im_name TYPE string
