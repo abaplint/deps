@@ -10,7 +10,11 @@ INTERFACE if_http_request PUBLIC.
         value TYPE string,
     set_method
       IMPORTING
-        method TYPE string,
+        meth TYPE string,
+    set_form_fields,
+    set_content_type
+      IMPORTING
+        typ TYPE string,
     set_data
       IMPORTING data TYPE string
       RETURNING VALUE(val) TYPE string,
