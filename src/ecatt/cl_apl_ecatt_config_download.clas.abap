@@ -2,7 +2,7 @@ CLASS cl_apl_ecatt_config_download DEFINITION PUBLIC INHERITING FROM cl_apl_ecat
 
   PUBLIC SECTION.
   PROTECTED SECTION.
-    DATA: ecatt_config TYPE string.
+    DATA: ecatt_config TYPE REF TO cl_apl_ecatt_test_config.
   PRIVATE SECTION.
 
 ENDCLASS.

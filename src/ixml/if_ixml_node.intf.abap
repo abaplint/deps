@@ -1,4 +1,7 @@
 INTERFACE if_ixml_node PUBLIC.
+  CONSTANTS:
+    co_node_element TYPE i VALUE 0,
+    co_node_text TYPE i VALUE 0.
   METHODS:
     append_child,
     get_attributes RETURNING VALUE(map) TYPE REF TO if_ixml_named_node_map,

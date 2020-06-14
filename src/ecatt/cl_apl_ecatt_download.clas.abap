@@ -1,6 +1,14 @@
 CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
 
   PUBLIC SECTION.
+    TYPES: BEGIN OF ty_foobar,
+        val_type TYPE string,
+        pindex TYPE i,
+      END OF ty_foobar.
+
+    DATA parm TYPE STANDARD TABLE OF ty_foobar.
+    DATA wa_parm LIKE LINE OF parm.
+
     METHODS:
       download ABSTRACT
         IMPORTING

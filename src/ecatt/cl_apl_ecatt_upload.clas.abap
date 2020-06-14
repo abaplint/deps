@@ -1,9 +1,17 @@
 CLASS cl_apl_ecatt_upload DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
 
   PUBLIC SECTION.
+    TYPES: BEGIN OF ty_object,
+        d_devclass TYPE string,
+        i_devclass TYPE string,
+        d_obj_name TYPE string,
+        d_obj_ver  TYPE string,
+        s_obj_type TYPE string,
+        filename   TYPE string,
+      END OF ty_object.
     METHODS:
       upload ABSTRACT
-        CHANGING ch_object TYPE string,
+        CHANGING ch_object TYPE ty_object,
       upload_data_from_stream ABSTRACT
         IMPORTING name TYPE string.
   PROTECTED SECTION.

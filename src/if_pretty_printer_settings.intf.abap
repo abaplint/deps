@@ -1,5 +1,10 @@
 INTERFACE if_pretty_printer_settings PUBLIC.
 
+  CONSTANTS:
+    co_case_mode_hikey TYPE string VALUE 'A',
+    co_indent TYPE string VALUE 'A',
+    co_source_type_abap TYPE string VALUE 'A'.
+
   METHODS get_case_mode
     RETURNING
       VALUE(case_mode) TYPE i.
