@@ -98,14 +98,19 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           p_sort_by_package TYPE string
           p_sort_by_object TYPE string
         CHANGING
-          p_results TYPE string
-          p_results_hd TYPE string.
+          p_results TYPE ANY TABLE
+          p_results_hd TYPE ANY TABLE.
 
   PROTECTED SECTION.
+    METHODS: add_obj_type IMPORTING objtype TYPE string.
   PRIVATE SECTION.
 
 ENDCLASS.
 
 CLASS cl_ci_test_root IMPLEMENTATION.
+
+  METHOD add_obj_type.
+    RETURN.
+  ENDMETHOD.
 
 ENDCLASS.

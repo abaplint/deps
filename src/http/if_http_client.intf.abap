@@ -6,7 +6,9 @@ INTERFACE if_http_client PUBLIC.
     request TYPE REF TO if_http_request,
     response TYPE REF TO if_http_response.
   METHODS:
-    send,
+    send
+      IMPORTING
+        timeout TYPE i OPTIONAL,
     authenticate
       IMPORTING
         proxy_authentication TYPE abap_bool
