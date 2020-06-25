@@ -8,9 +8,18 @@ CLASS cx_adt_rest DEFINITION PUBLIC INHERITING FROM cx_static_check.
         RETURNING VALUE(result) TYPE string,
       get_type.
 
+    CLASS-METHODS:
+      create_properties
+        RETURNING
+          VALUE(result) TYPE REF TO if_adt_exception_properties.
+
 ENDCLASS.
 
 CLASS cx_adt_rest IMPLEMENTATION.
+
+  METHOD create_properties.
+    RETURN.
+  ENDMETHOD.
 
   METHOD get_http_status.
     RETURN.

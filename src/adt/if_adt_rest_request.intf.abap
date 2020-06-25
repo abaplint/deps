@@ -1,0 +1,23 @@
+INTERFACE if_adt_rest_request PUBLIC.
+  METHODS:
+    get_uri_attribute
+      IMPORTING
+        name      TYPE string
+        mandatory TYPE abap_bool
+      EXPORTING
+        value     TYPE string,
+    get_uri_query_parameter
+      IMPORTING
+        name      TYPE string
+        mandatory TYPE abap_bool
+      EXPORTING
+        value     TYPE string,
+    get_body_data
+      IMPORTING
+        content_handler TYPE REF TO object
+      EXPORTING
+        data            TYPE data,
+    get_inner_rest_request
+      RETURNING
+        VALUE(result) TYPE REF TO if_rest_request.
+ENDINTERFACE.

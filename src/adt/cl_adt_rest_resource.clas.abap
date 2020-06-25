@@ -2,14 +2,21 @@ CLASS cl_adt_rest_resource DEFINITION PUBLIC.
 
   PUBLIC SECTION.
     METHODS:
-      delete,
-      get,
-      post.
-
-    DATA:
-      request TYPE string,
-      context TYPE string,
-      response TYPE string.
+      delete
+        IMPORTING
+          request  TYPE REF TO if_adt_rest_request
+          response TYPE REF TO if_adt_rest_response
+          context  TYPE REF TO if_rest_context,
+      get
+        IMPORTING
+          request  TYPE REF TO if_adt_rest_request
+          response TYPE REF TO if_adt_rest_response
+          context  TYPE REF TO if_rest_context,
+      post
+        IMPORTING
+          request  TYPE REF TO if_adt_rest_request
+          response TYPE REF TO if_adt_rest_response
+          context  TYPE REF TO if_rest_context.
 
 ENDCLASS.
 
