@@ -2,8 +2,11 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
 
   PUBLIC SECTION.
     TYPES: BEGIN OF ty_foobar,
-        val_type TYPE string,
-        pindex TYPE i,
+        val_type   TYPE string,
+        value      TYPE string,
+        pstruc_typ TYPE string,
+        xmlref_typ TYPE string,
+        pindex     TYPE i,
       END OF ty_foobar.
 
     DATA parm TYPE STANDARD TABLE OF ty_foobar.
