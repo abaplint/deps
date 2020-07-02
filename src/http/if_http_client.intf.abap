@@ -3,6 +3,7 @@ INTERFACE if_http_client PUBLIC.
     co_enabled TYPE i VALUE 1,
     co_disabled TYPE i VALUE 0.
   DATA:
+    propertytype_logon_popup TYPE i,
     request TYPE REF TO if_http_request,
     response TYPE REF TO if_http_response.
   METHODS:
