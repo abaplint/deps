@@ -4,6 +4,13 @@ INTERFACE if_http_request PUBLIC.
     co_request_method_post TYPE string VALUE 'POST'.
 
   METHODS:
+    set_version
+      IMPORTING
+        version TYPE string,
+    set_form_field
+      IMPORTING
+        name TYPE string
+        value TYPE string,
     get_method
       RETURNING
         VALUE(method) TYPE string,
