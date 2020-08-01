@@ -1,6 +1,11 @@
 INTERFACE if_http_response PUBLIC.
 
+  TYPES: ty_fields TYPE STANDARD TABLE OF string WITH DEFAULT KEY.
+
   METHODS:
+    get_header_fields
+      CHANGING
+        fields TYPE ty_fields,
     set_status
       IMPORTING
         code   TYPE i
