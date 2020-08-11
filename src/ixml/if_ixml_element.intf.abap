@@ -49,6 +49,11 @@ INTERFACE if_ixml_element PUBLIC.
         name TYPE string
         namespace TYPE string
         value TYPE string,
+    set_attribute_ns
+      IMPORTING
+        name TYPE string
+        prefix TYPE string
+        value TYPE string,
     set_value
       IMPORTING
         value TYPE string
