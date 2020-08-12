@@ -19,10 +19,15 @@ INTERFACE if_http_request PUBLIC.
       IMPORTING
         name TYPE string
         value TYPE string,
+    set_header_fields
+      IMPORTING
+        fields TYPE string,
     set_method
       IMPORTING
         meth TYPE string,
-    set_form_fields,
+    set_form_fields
+      IMPORTING
+        fields TYPE string,
     set_content_type
       IMPORTING
         typ TYPE string,
