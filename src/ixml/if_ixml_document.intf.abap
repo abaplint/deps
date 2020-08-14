@@ -30,7 +30,7 @@ INTERFACE if_ixml_document PUBLIC.
       RETURNING
         VALUE(val) TYPE any,
     create_iterator
-      RETURNING VALUE(val) TYPE any,
+      RETURNING VALUE(rval) TYPE REF TO if_ixml_node_iterator,
     create_filter_node_type
       IMPORTING typ TYPE string
       RETURNING VALUE(val) TYPE any,

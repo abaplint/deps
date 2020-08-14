@@ -9,9 +9,15 @@ INTERFACE if_adt_rest_request PUBLIC.
     get_uri_query_parameter
       IMPORTING
         name      TYPE string
+        default   TYPE string OPTIONAL
         mandatory TYPE abap_bool
       EXPORTING
         value     TYPE string,
+    get_uri_query_parameter_values
+      IMPORTING
+        name      TYPE string
+      EXPORTING
+        values    TYPE string,
     get_body_data
       IMPORTING
         content_handler TYPE REF TO object
