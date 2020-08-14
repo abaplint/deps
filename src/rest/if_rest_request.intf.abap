@@ -1,0 +1,3 @@
+INTERFACE if_rest_request PUBLIC.
+
+ENDINTERFACE.
