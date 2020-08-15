@@ -18,6 +18,10 @@ INTERFACE if_http_response PUBLIC.
     RETURNING VALUE(val) TYPE string,
     get_cdata
       RETURNING VALUE(val) TYPE string,
+    set_cookie
+      IMPORTING
+        name TYPE string
+        value TYPE string,
     set_compression,
     set_header_field
       IMPORTING
