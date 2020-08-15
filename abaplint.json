@@ -7,12 +7,19 @@
   },
   "dependencies": [],
   "syntax": {
-    "version": "v753",
+    "version": "v702",
     "errorNamespace": "",
     "globalConstants": [],
     "globalMacros": []
   },
   "rules": {
+    "begin_single_include": true,
+    "downport": false,
+    "line_break_multiple_parameters": false,
+    "names_no_dash": true,
+    "parser_missing_space": true,
+    "prefer_inline": false,
+    "reduce_string_templates": true,
     "forbidden_void_type": {
       "check": [""]
     },
@@ -42,7 +49,6 @@
     "check_syntax": true,
     "check_text_elements": true,
     "check_transformation_exists": true,
-    "form_no_dash": true,
     "form_tables_obsolete": true,
     "implement_methods": true,
     "local_testclass_location": true,
@@ -50,7 +56,6 @@
     "newline_between_methods": true,
     "release_idoc": true,
     "rfc_error_handling": true,
-    "type_begin_single_include": true,
     "type_form_parameters": true,
     "types_naming": false,
     "7bit_ascii": true,
@@ -86,6 +91,7 @@
     "empty_structure": {
       "loop": true,
       "if": true,
+      "try": true,
       "while": true,
       "case": true,
       "select": true,
@@ -115,6 +121,7 @@
       "style": "upper",
       "ignoreExceptions": true,
       "ignoreLowerClassImplmentationStatement": true,
+      "ignoreGlobalClassBoundaries": false,
       "ignoreGlobalClassDefinition": false,
       "ignoreGlobalInterface": false,
       "ignoreFunctionModuleName": false,
@@ -155,6 +162,7 @@
       "refresh": true,
       "compute": true,
       "add": true,
+      "withHeaderLine": false,
       "subtract": true,
       "setExtended": true,
       "multiply": true,
