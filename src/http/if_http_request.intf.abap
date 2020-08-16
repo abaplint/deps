@@ -37,6 +37,9 @@ INTERFACE if_http_request PUBLIC.
     get_cdata
       IMPORTING data TYPE string
       RETURNING VALUE(val) TYPE string,
+    get_header_fields
+      CHANGING
+        fields TYPE string,
     get_header_field
       IMPORTING name TYPE string
       RETURNING
