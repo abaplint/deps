@@ -1,6 +1,8 @@
 INTERFACE if_ixml_node_list PUBLIC.
 
   METHODS:
+    create_iterator
+      RETURNING VALUE(rval) TYPE REF TO if_ixml_node_iterator,
     get_item
       IMPORTING
         item TYPE if_ixml_node_list

@@ -28,6 +28,9 @@ INTERFACE if_ixml_element PUBLIC.
       RETURNING VALUE(val) TYPE string,
     get_children
       RETURNING VALUE(val) TYPE any,
+    get_elements_by_tag_name
+      IMPORTING name TYPE string
+      RETURNING VALUE(val) TYPE any,
     get_elements_by_tag_name_ns
       IMPORTING name TYPE string
       RETURNING VALUE(val) TYPE any,

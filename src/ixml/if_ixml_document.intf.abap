@@ -3,6 +3,9 @@ INTERFACE if_ixml_document PUBLIC.
     append_child
       IMPORTING
         new_child TYPE REF TO if_ixml_node,
+    get_first_child
+      RETURNING
+        VALUE(child) TYPE REF TO if_ixml_node,
     create_attribute_ns
       IMPORTING
         name TYPE string

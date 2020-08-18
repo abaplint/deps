@@ -1,5 +1,7 @@
 INTERFACE if_ixml_named_node_map PUBLIC.
   METHODS:
+    get_length
+      RETURNING VALUE(val) TYPE i,
     get_named_item_ns
       IMPORTING name TYPE string
       RETURNING VALUE(val) TYPE REF TO if_ixml_node,
