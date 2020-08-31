@@ -8,6 +8,8 @@ CLASS cl_abap_char_utilities DEFINITION PUBLIC.
       byte_order_mark_utf8   TYPE c LENGTH 1 VALUE 'A',
       minchar                TYPE c LENGTH 1 VALUE 'A',
       horizontal_tab         TYPE c LENGTH 1 VALUE 'A',
+      backspace              TYPE c LENGTH 1 VALUE 'A',
+      form_feed              TYPE c LENGTH 1 VALUE 'A',
       newline                TYPE c LENGTH 1 VALUE 'A'.
 
 ENDCLASS.
