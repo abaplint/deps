@@ -13,6 +13,13 @@
     "globalMacros": []
   },
   "rules": {
+    "check_subrc": true,
+    "cyclomatic_complexity": true,
+    "forbidden_pseudo_and_pragma": false,
+    "identical_conditions": true,
+    "line_break_style": false,
+    "unused_types": false,
+    "use_line_exists": true,
     "begin_single_include": true,
     "downport": false,
     "line_break_multiple_parameters": false,
@@ -159,6 +166,7 @@
     "no_public_attributes": false,
     "object_naming": false,
     "obsolete_statement": {
+      "fieldSymbolStructure": true,
       "refresh": true,
       "compute": true,
       "add": true,
@@ -184,6 +192,7 @@
       ]
     },
     "remove_descriptions": {
+      "ignoreWorkflow": false,
       "ignoreExceptions": false
     },
     "sequential_blank": {

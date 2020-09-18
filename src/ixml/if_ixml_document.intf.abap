@@ -53,6 +53,7 @@ INTERFACE if_ixml_document PUBLIC.
     find_from_name
       IMPORTING
         name TYPE string
+        namespace TYPE string
       RETURNING
         VALUE(element) TYPE REF TO if_ixml_element,
     find_from_name_ns

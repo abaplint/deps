@@ -7,6 +7,7 @@ INTERFACE if_ixml_node PUBLIC.
     get_attributes RETURNING VALUE(map) TYPE REF TO if_ixml_named_node_map,
     get_first_child RETURNING VALUE(node) TYPE REF TO if_ixml_node,
     get_children RETURNING VALUE(val) TYPE REF TO if_ixml_node_list,
+    query_interface IMPORTING foo TYPE string,
     get_name RETURNING VALUE(val) TYPE string,
     get_value RETURNING VALUE(val) TYPE string,
     get_type RETURNING VALUE(val) TYPE string,
