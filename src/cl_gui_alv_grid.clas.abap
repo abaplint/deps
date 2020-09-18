@@ -14,6 +14,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
     METHODS:
       register_edit_event,
       set_toolbar_interactive,
+      get_frontend_fieldcatalog,
+      get_frontend_layout,
+      get_sort_criteria,
+      get_filter_criteria,
       get_functions
         EXPORTING
           fcodes TYPE any,
@@ -84,6 +88,22 @@ CLASS cl_gui_alv_grid IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD get_functions.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_frontend_fieldcatalog.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_frontend_layout.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_sort_criteria.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_filter_criteria.
     RETURN.
   ENDMETHOD.
 

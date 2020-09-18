@@ -1,6 +1,9 @@
 INTERFACE if_ixml_element PUBLIC.
   METHODS:
-    get_attributes,
+    remove_attribute_ns
+      IMPORTING foo TYPE string,
+    get_attributes
+      RETURNING VALUE(attr) TYPE REF TO if_ixml_named_node_map,
     get_next
       RETURNING VALUE(next) TYPE REF TO if_ixml_element,
     get_name
@@ -18,7 +21,10 @@ INTERFACE if_ixml_element PUBLIC.
     create_iterator
       RETURNING VALUE(val) TYPE any,
     find_from_name_ns
-      IMPORTING name TYPE string
+      IMPORTING
+        name TYPE string
+        namespace TYPE string
+        depth TYPE i
       RETURNING VALUE(val) TYPE REF TO if_ixml_element,
     find_from_name
       IMPORTING
