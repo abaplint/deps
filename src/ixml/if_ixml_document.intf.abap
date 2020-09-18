@@ -1,6 +1,8 @@
 INTERFACE if_ixml_document PUBLIC.
   METHODS:
-    set_encoding,
+    set_encoding
+      IMPORTING
+        encoding TYPE REF TO object,
     set_standalone
       IMPORTING
         standalone TYPE abap_bool,
@@ -84,6 +86,7 @@ INTERFACE if_ixml_document PUBLIC.
       IMPORTING
         depth TYPE i
         name TYPE string
+        namespace TYPE string
       RETURNING VALUE(val) TYPE any,
     get_root RETURNING VALUE(node) TYPE if_ixml_node,
     get_root_element RETURNING VALUE(root) TYPE REF TO if_ixml_element.
