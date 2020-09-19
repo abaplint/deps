@@ -8,6 +8,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
     EVENTS user_command EXPORTING
       VALUE(e_ucomm) TYPE string.
 
+    EVENTS double_click EXPORTING
+      VALUE(e_row) TYPE i.
+
     CONSTANTS:
       mc_style_disabled TYPE i VALUE 1.
 
