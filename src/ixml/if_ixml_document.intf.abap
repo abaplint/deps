@@ -1,5 +1,14 @@
 INTERFACE if_ixml_document PUBLIC.
   METHODS:
+    set_encoding
+      IMPORTING
+        encoding TYPE REF TO object,
+    set_standalone
+      IMPORTING
+        standalone TYPE abap_bool,
+    set_namespace_prefix
+      IMPORTING
+        prefix TYPE string,
     append_child
       IMPORTING
         new_child TYPE REF TO if_ixml_node,
@@ -41,6 +50,7 @@ INTERFACE if_ixml_document PUBLIC.
       IMPORTING
         name TYPE string
         parent TYPE string
+        prefix TYPE string
       RETURNING VALUE(val) TYPE REF TO if_xml_element,
     create_filter_attribute
       IMPORTING name TYPE string
@@ -53,6 +63,7 @@ INTERFACE if_ixml_document PUBLIC.
     find_from_name
       IMPORTING
         name TYPE string
+        namespace TYPE string
       RETURNING
         VALUE(element) TYPE REF TO if_ixml_element,
     find_from_name_ns
@@ -67,12 +78,15 @@ INTERFACE if_ixml_document PUBLIC.
       RETURNING
         VALUE(val) TYPE REF TO if_ixml_element,
     get_elements_by_tag_name_ns
-      IMPORTING name TYPE string
+      IMPORTING
+        name TYPE string
+        namespace TYPE string
       RETURNING VALUE(val) TYPE any,
     get_elements_by_tag_name
       IMPORTING
         depth TYPE i
         name TYPE string
+        namespace TYPE string
       RETURNING VALUE(val) TYPE any,
     get_root RETURNING VALUE(node) TYPE if_ixml_node,
     get_root_element RETURNING VALUE(root) TYPE REF TO if_ixml_element.
