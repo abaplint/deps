@@ -46,6 +46,10 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
         ABSTRACT.
 
     METHODS
+      run_end
+        ABSTRACT.
+
+    METHODS
       get_result_node
         ABSTRACT
         IMPORTING
