@@ -11,4 +11,6 @@ INTERFACE if_t100_message.
 
   CONSTANTS: default_textid TYPE string VALUE 'default'.
 
+  INTERFACES: if_message.
+
 ENDINTERFACE.
