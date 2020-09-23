@@ -2,7 +2,7 @@ CLASS cx_root DEFINITION ABSTRACT PUBLIC.
 
   PUBLIC SECTION.
 
-    INTERFACES: if_message.
+    INTERFACES if_message.
     INTERFACES if_serializable_object.
 
     ALIASES get_longtext FOR if_message~get_longtext.
