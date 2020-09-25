@@ -8,6 +8,7 @@ INTERFACE if_ixml_node PUBLIC.
     get_first_child RETURNING VALUE(node) TYPE REF TO if_ixml_node,
     get_children RETURNING VALUE(val) TYPE REF TO if_ixml_node_list,
     query_interface IMPORTING foo TYPE string,
+    remove_node,
     get_name RETURNING VALUE(val) TYPE string,
     get_value RETURNING VALUE(val) TYPE string,
     get_type RETURNING VALUE(val) TYPE string,
