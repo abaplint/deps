@@ -13,11 +13,20 @@ CLASS cx_adt_rest DEFINITION PUBLIC INHERITING FROM cx_static_check.
     CLASS-METHODS:
       create_properties
         RETURNING
-          VALUE(result) TYPE REF TO if_adt_exception_properties.
+          VALUE(result) TYPE REF TO if_adt_exception_properties,
+      get_longtext_from_exception
+        IMPORTING
+          exception TYPE REF TO cx_root
+        RETURNING
+          VALUE(result) TYPE string.
 
 ENDCLASS.
 
 CLASS cx_adt_rest IMPLEMENTATION.
+
+  METHOD get_longtext_from_exception.
+    RETURN.
+  ENDMETHOD.
 
   METHOD create_properties.
     RETURN.
