@@ -3,6 +3,9 @@ CLASS cx_adt_rest DEFINITION PUBLIC INHERITING FROM cx_static_check.
   PUBLIC SECTION.
     INTERFACES: if_t100_message.
 
+    DATA:
+      properties TYPE REF TO if_adt_exception_properties.
+
     METHODS:
       get_http_status
         RETURNING VALUE(result) TYPE string,
