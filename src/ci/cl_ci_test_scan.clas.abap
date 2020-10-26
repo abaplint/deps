@@ -41,6 +41,7 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
             to    TYPE i,
             level TYPE i,
             from  TYPE i,
+            type  TYPE c LENGTH 1,
           END OF statement_wa.
 
     DATA: BEGIN OF token_wa,
