@@ -21,6 +21,9 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       c_exceptn_imposibl TYPE c LENGTH 1 VALUE '?'.
 
     CONSTANTS:
+      c_type_include TYPE c LENGTH 4 VALUE '????'.
+
+    CONSTANTS:
       c_note    TYPE c LENGTH 1 VALUE '?',
       c_warning TYPE c LENGTH 1 VALUE '?',
       c_error   TYPE c LENGTH 1 VALUE '?'.

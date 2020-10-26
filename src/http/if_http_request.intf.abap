@@ -5,6 +5,8 @@ INTERFACE if_http_request PUBLIC.
     co_request_method_post TYPE string VALUE 'POST'.
 
   METHODS:
+    get_content_type
+      RETURNING VALUE(type) TYPE string,
     set_version
       IMPORTING
         version TYPE string,
