@@ -2,7 +2,7 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
 
   PUBLIC SECTION.
     METHODS get_token_abs
-      IMPORTING index TYPE i
+      IMPORTING p_n TYPE i
       RETURNING VALUE(val) TYPE string.
     METHODS get_include
       IMPORTING p_level TYPE i
@@ -18,6 +18,17 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
       RETURNING VALUE(p_result) TYPE string.
     METHODS keyword
       RETURNING VALUE(p_result) TYPE string.
+
+    DATA: BEGIN OF statement_wa,
+            to    TYPE i,
+            level TYPE i,
+            from  TYPE i,
+          END OF statement_wa.
+
+    DATA: BEGIN OF token_wa,
+            type TYPE i,
+          END OF token_wa.
+
   PROTECTED SECTION.
   PRIVATE SECTION.
 
