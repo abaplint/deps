@@ -18,6 +18,24 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
       RETURNING VALUE(p_result) TYPE string.
     METHODS keyword
       RETURNING VALUE(p_result) TYPE string.
+    METHODS get_column_rel
+      IMPORTING p_n TYPE i
+      RETURNING VALUE(p_result) TYPE i.
+    METHODS get_line_column_abs
+      IMPORTING VALUE(p_n) TYPE i
+      EXPORTING
+        p_line TYPE i
+        p_column TYPE i.
+    METHODS get_line_column_rel
+      IMPORTING VALUE(p_n) TYPE i
+      EXPORTING
+        p_line TYPE i
+        p_column TYPE i.
+    METHODS get_line_rel
+      IMPORTING p_n TYPE i
+      RETURNING VALUE(p_result) TYPE i.
+
+*********
 
     DATA: BEGIN OF statement_wa,
             to    TYPE i,
@@ -27,6 +45,7 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
 
     DATA: BEGIN OF token_wa,
             type TYPE i,
+            str TYPE string,
           END OF token_wa.
 
   PROTECTED SECTION.
@@ -56,6 +75,22 @@ CLASS cl_ci_test_scan IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD get_column_abs.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_column_rel.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_line_column_abs.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_line_column_rel.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_line_rel.
     RETURN.
   ENDMETHOD.
 ENDCLASS.
