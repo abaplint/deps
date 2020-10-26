@@ -9,6 +9,12 @@ CLASS cl_ci_scan DEFINITION PUBLIC.
 
     DATA: levels TYPE STANDARD TABLE OF ty_level WITH DEFAULT KEY.
 
+    DATA: statements TYPE string.
+    DATA: structures TYPE string.
+    DATA: tokens TYPE string.
+
+    DATA subrc TYPE i.
+
 ENDCLASS.
 
 CLASS cl_ci_scan IMPLEMENTATION.

@@ -6,7 +6,7 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
       RETURNING VALUE(p_result) TYPE string.
     METHODS get_include
       IMPORTING p_level TYPE i
-      RETURNING VALUE(res) TYPE string.
+      RETURNING VALUE(p_result) TYPE string.
     METHODS get_line_abs
       IMPORTING VALUE(p_n) TYPE i
       RETURNING VALUE(p_result) TYPE i.
