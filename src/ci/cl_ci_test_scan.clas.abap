@@ -34,6 +34,7 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
     METHODS get_line_rel
       IMPORTING p_n TYPE i
       RETURNING VALUE(p_result) TYPE i.
+    METHODS get.
 
 *********
 
@@ -49,7 +50,7 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
             str TYPE string,
           END OF token_wa.
 
-    DATA ref_scan TYPE REF TO object.
+    DATA ref_scan TYPE REF TO cl_ci_scan.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
@@ -57,6 +58,11 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
 ENDCLASS.
 
 CLASS cl_ci_test_scan IMPLEMENTATION.
+
+  METHOD get.
+    RETURN.
+  ENDMETHOD.
+
   METHOD keyword.
     RETURN.
   ENDMETHOD.
