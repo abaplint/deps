@@ -1,11 +1,23 @@
 CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test_root ABSTRACT.
 
   PUBLIC SECTION.
+    METHODS get_token_abs
+      IMPORTING index TYPE i
+      RETURNING VALUE(val) TYPE string.
+    METHODS get_include
+      IMPORTING p_level TYPE i
+      RETURNING VALUE(res) TYPE string.
   PROTECTED SECTION.
   PRIVATE SECTION.
 
 ENDCLASS.
 
 CLASS cl_ci_test_scan IMPLEMENTATION.
+  METHOD get_token_abs.
+    RETURN.
+  ENDMETHOD.
 
+  METHOD get_include.
+    RETURN.
+  ENDMETHOD.
 ENDCLASS.
