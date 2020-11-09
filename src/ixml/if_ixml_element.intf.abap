@@ -19,7 +19,7 @@ INTERFACE if_ixml_element PUBLIC.
       IMPORTING name TYPE string
       RETURNING VALUE(val) TYPE REF TO any,
     create_iterator
-      RETURNING VALUE(val) TYPE any,
+      RETURNING VALUE(val) TYPE REF TO if_ixml_node_iterator,
     find_from_name_ns
       IMPORTING
         name TYPE string
