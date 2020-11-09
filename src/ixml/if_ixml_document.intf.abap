@@ -34,7 +34,7 @@ INTERFACE if_ixml_document PUBLIC.
         VALUE(element) TYPE REF TO if_xml_element,
     create_iterator_filtered
       IMPORTING input TYPE any
-      RETURNING VALUE(val) TYPE any,
+      RETURNING VALUE(val) TYPE REF TO if_ixml_node_iterator,
     create_filter_and
       IMPORTING
         filter1 TYPE any

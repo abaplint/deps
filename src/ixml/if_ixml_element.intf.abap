@@ -44,7 +44,7 @@ INTERFACE if_ixml_element PUBLIC.
         name TYPE string
       RETURNING VALUE(val) TYPE string,
     get_children
-      RETURNING VALUE(val) TYPE any,
+      RETURNING VALUE(val) TYPE REF TO if_ixml_node_list,
     get_elements_by_tag_name
       IMPORTING name TYPE string
       RETURNING VALUE(val) TYPE any,
