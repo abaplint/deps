@@ -15,6 +15,11 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_style_disabled TYPE i VALUE 1.
 
     METHODS:
+      constructor
+        IMPORTING
+          i_parent TYPE any OPTIONAL
+          i_applogparent TYPE any OPTIONAL
+          i_appl_events TYPE any OPTIONAL,
       register_edit_event,
       set_toolbar_interactive,
       get_frontend_fieldcatalog
@@ -61,6 +66,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+
+  METHOD constructor.
+    RETURN.
+  ENDMETHOD.
 
   METHOD register_edit_event.
     RETURN.
