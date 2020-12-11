@@ -13,6 +13,7 @@
     "globalMacros": []
   },
   "rules": {
+    "uncaught_exception": true,
     "call_transaction_authority_check": true,
     "function_module_recommendations": true,
     "identical_contents": true,
