@@ -13,7 +13,8 @@ CLASS cl_apl_ecatt_upload DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       upload ABSTRACT
         CHANGING ch_object TYPE ty_object,
       upload_data_from_stream ABSTRACT
-        IMPORTING name TYPE string.
+        IMPORTING name TYPE string
+        RAISING cx_static_check.
   PROTECTED SECTION.
     DATA: template_over_all TYPE REF TO if_ixml_document,
           exception_to_raise TYPE string,
@@ -24,7 +25,8 @@ CLASS cl_apl_ecatt_upload DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
         IMPORTING
           previous TYPE REF TO cx_root,
       get_variants_from_dom
-        IMPORTING params TYPE any.
+        IMPORTING
+          params TYPE any.
   PRIVATE SECTION.
 
 ENDCLASS.
