@@ -1,0 +1,7 @@
+CLASS cx_ecatt_apl DEFINITION PUBLIC INHERITING FROM cx_static_check.
+
+ENDCLASS.
+
+CLASS cx_ecatt_apl IMPLEMENTATION.
+
+ENDCLASS.
