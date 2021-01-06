@@ -42,6 +42,7 @@ INTERFACE if_ixml_element PUBLIC.
     get_attribute
       IMPORTING
         name TYPE string
+        namespace TYPE string OPTIONAL
       RETURNING VALUE(val) TYPE string,
     get_children
       RETURNING VALUE(val) TYPE REF TO if_ixml_node_list,

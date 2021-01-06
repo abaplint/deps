@@ -15,7 +15,7 @@ INTERFACE if_http_response PUBLIC.
     set_data
       IMPORTING data TYPE string,
     get_data
-    RETURNING VALUE(val) TYPE string,
+      RETURNING VALUE(val) TYPE xstring,
     get_cdata
       RETURNING VALUE(val) TYPE string,
     set_cookie
