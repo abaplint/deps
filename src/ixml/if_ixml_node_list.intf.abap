@@ -8,7 +8,7 @@ INTERFACE if_ixml_node_list PUBLIC.
       RETURNING VALUE(rval) TYPE REF TO if_ixml_node_iterator,
     get_item
       IMPORTING
-        item TYPE REF TO if_ixml_node_list
+        index TYPE REF TO i
       RETURNING
         VALUE(val) TYPE REF TO if_ixml_node,
     create_rev_iterator_filtered
