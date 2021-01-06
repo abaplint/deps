@@ -17,5 +17,7 @@ INTERFACE if_ixml_node PUBLIC.
     get_value RETURNING VALUE(val) TYPE string,
     get_type RETURNING VALUE(val) TYPE string,
     set_name IMPORTING name TYPE string,
+    remove_child IMPORTING child TYPE REF TO if_ixml_node,
+    append_child IMPORTING child TYPE REF TO if_ixml_node,
     set_value IMPORTING value TYPE string.
 ENDINTERFACE.
