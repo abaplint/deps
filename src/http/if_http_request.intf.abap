@@ -48,7 +48,7 @@ INTERFACE if_http_request PUBLIC.
         VALUE(value) TYPE string,
     get_form_field
       IMPORTING name TYPE string
-      RETURNING VALUE(val) TYPE string,
+      RETURNING VALUE(value) TYPE string,
     get_data
       RETURNING VALUE(val) TYPE string,
     set_cdata
