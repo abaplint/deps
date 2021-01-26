@@ -21,6 +21,9 @@ INTERFACE if_http_request PUBLIC.
       IMPORTING
         name TYPE string
         value TYPE string,
+    get_form_fields
+      CHANGING
+        fields TYPE string,
     set_header_fields
       IMPORTING
         fields TYPE string,
