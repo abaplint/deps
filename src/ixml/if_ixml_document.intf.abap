@@ -89,5 +89,6 @@ INTERFACE if_ixml_document PUBLIC.
         namespace TYPE string
       RETURNING VALUE(val) TYPE any,
     get_root RETURNING VALUE(node) TYPE REF TO if_ixml_node,
-    get_root_element RETURNING VALUE(root) TYPE REF TO if_ixml_element.
+    get_root_element RETURNING VALUE(root) TYPE REF TO if_ixml_element,
+    get_first_node RETURNING VALUE(node) TYPE REF TO if_ixml_node.
 ENDINTERFACE.
