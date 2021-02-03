@@ -54,6 +54,14 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         IMPORTING
           is_stable      TYPE any
           i_soft_refresh TYPE abap_bool,
+      set_ready_for_input
+        IMPORTING
+          i_ready_for_input TYPE any,
+      check_changed_data
+        EXPORTING
+          e_valid TYPE any
+        CHANGING
+          c_refresh TYPE any,
       set_table_for_first_display
         IMPORTING
           is_variant      TYPE string
@@ -124,6 +132,14 @@ CLASS cl_gui_alv_grid IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD get_filter_criteria.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_ready_for_input.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD check_changed_data.
     RETURN.
   ENDMETHOD.
 
