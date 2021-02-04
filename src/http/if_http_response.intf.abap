@@ -34,6 +34,11 @@ INTERFACE if_http_response PUBLIC.
       RETURNING VALUE(val) TYPE string,
     set_content_type
       IMPORTING type TYPE string,
+    get_multipart
+      IMPORTING index TYPE string
+      RETURNING VALUE(entity) TYPE REF TO if_http_entity,
+    num_multiparts
+      RETURNING VALUE(num) TYPE string,
     get_status
       EXPORTING
         code   TYPE i
