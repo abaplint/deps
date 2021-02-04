@@ -56,11 +56,6 @@ INTERFACE if_http_request PUBLIC.
       RETURNING VALUE(val) TYPE string,
     set_cdata
       IMPORTING data TYPE string,
-    get_multipart
-      IMPORTING index TYPE string
-      RETURNING VALUE(entity) TYPE REF TO if_http_entity,
-    num_multiparts
-      RETURNING VALUE(num) TYPE string,
     add_multipart
       IMPORTING suppress_content_length TYPE string
       RETURNING VALUE(entity) TYPE REF TO if_http_entity,
