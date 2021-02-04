@@ -15,6 +15,8 @@ INTERFACE if_http_entity PUBLIC.
     append_cdata IMPORTING data TYPE clike,
     get_form_field IMPORTING name TYPE string RETURNING VALUE(value) TYPE string,
     get_cdata RETURNING VALUE(data) TYPE string,
+    get_content_type
+      RETURNING VALUE(val) TYPE string,
     set_content_type.
 
 ENDINTERFACE.
