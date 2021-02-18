@@ -10,7 +10,6 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       END OF ty_foobar.
 
     DATA parm TYPE STANDARD TABLE OF ty_foobar.
-    DATA wa_parm LIKE LINE OF parm.
 
     METHODS:
       download ABSTRACT
