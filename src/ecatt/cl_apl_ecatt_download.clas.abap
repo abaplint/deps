@@ -24,7 +24,7 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
   PROTECTED SECTION.
     DATA: template_over_all TYPE REF TO if_ixml_document,
           typ TYPE string,
-          wa_parm TYPE string,
+          wa_parm LIKE LINE OF parm,
           toolname TYPE string,
           ap_current_param TYPE string,
           parm TYPE string,
