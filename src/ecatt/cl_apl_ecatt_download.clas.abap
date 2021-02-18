@@ -27,7 +27,6 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           wa_parm LIKE LINE OF parm,
           toolname TYPE string,
           ap_current_param TYPE string,
-          parm TYPE string,
           root_node TYPE string,
           etpar_node TYPE REF TO if_ixml_element,
           ex_ecatt TYPE string,
