@@ -19,5 +19,6 @@ INTERFACE if_ixml_node PUBLIC.
     set_name IMPORTING name TYPE string,
     remove_child IMPORTING child TYPE REF TO if_ixml_node,
     append_child IMPORTING child TYPE REF TO if_ixml_node,
-    set_value IMPORTING value TYPE string.
+    set_value IMPORTING value TYPE string,
+    get_namespace_prefix RETURNING VALUE(rv_prefix) TYPE string.
 ENDINTERFACE.

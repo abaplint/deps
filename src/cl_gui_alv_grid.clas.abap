@@ -12,7 +12,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(e_row) TYPE i.
 
     CONSTANTS:
-      mc_style_disabled TYPE i VALUE 1.
+      mc_style_disabled TYPE i VALUE 1,
+      mc_style_enabled TYPE i VALUE 2.
 
     METHODS:
       constructor
@@ -22,6 +23,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           i_appl_events TYPE any OPTIONAL,
       register_edit_event,
       set_toolbar_interactive,
+      get_selected_rows
+        EXPORTING
+          et_row_no TYPE any,
+      free,
       get_frontend_fieldcatalog
         EXPORTING
           et_fieldcatalog TYPE string,
@@ -64,12 +69,14 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           c_refresh TYPE any,
       set_table_for_first_display
         IMPORTING
-          is_variant      TYPE string
-          i_save          TYPE string
-          is_layout       TYPE string
+          is_variant           TYPE string OPTIONAL
+          i_structure_name     TYPE string OPTIONAL
+          i_save               TYPE string OPTIONAL
+          is_layout            TYPE string OPTIONAL
+          it_toolbar_excluding TYPE string OPTIONAL
         CHANGING
-          it_fieldcatalog TYPE string
-          it_outtab       TYPE string.
+          it_fieldcatalog      TYPE string
+          it_outtab            TYPE string.
 
 ENDCLASS.
 
@@ -92,6 +99,14 @@ CLASS cl_gui_alv_grid IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD get_selected_cells.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD free.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_selected_rows.
     RETURN.
   ENDMETHOD.
 
