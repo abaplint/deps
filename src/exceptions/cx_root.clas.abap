@@ -10,6 +10,7 @@ CLASS cx_root DEFINITION ABSTRACT PUBLIC.
 
     DATA textid TYPE c LENGTH 32.
     DATA previous TYPE REF TO cx_root.
+    DATA is_resumable TYPE abap_bool.
 
 ENDCLASS.
 
