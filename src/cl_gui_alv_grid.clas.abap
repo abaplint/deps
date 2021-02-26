@@ -15,6 +15,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_style_disabled TYPE i VALUE 1,
       mc_style_enabled TYPE i VALUE 2.
 
+    CLASS-METHODS offline RETURNING VALUE(off) TYPE i.
+
     METHODS:
       constructor
         IMPORTING
@@ -131,6 +133,10 @@ CLASS cl_gui_alv_grid IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD get_functions.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD offline.
     RETURN.
   ENDMETHOD.
 
