@@ -11,9 +11,20 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
     EVENTS double_click EXPORTING
       VALUE(e_row) TYPE i.
 
+    EVENTS hotspot_click EXPORTING
+      VALUE(e_row_id) TYPE i
+      VALUE(e_column_id) TYPE i
+      VALUE(es_row_no) TYPE i.
+
     CONSTANTS:
       mc_style_disabled TYPE i VALUE 1,
-      mc_style_enabled TYPE i VALUE 2.
+      mc_style_enabled TYPE i VALUE 2,
+      mc_evt_modified TYPE i VALUE 3,
+      mc_style_hotspot TYPE i VALUE 4,
+      mc_evt_enter TYPE i VALUE 5,
+      mc_style_button TYPE i VALUE 6.
+
+    CLASS-METHODS offline RETURNING VALUE(off) TYPE i.
 
     METHODS:
       constructor
@@ -25,6 +36,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       set_toolbar_interactive,
       get_selected_rows
         EXPORTING
+          et_index_rows TYPE any
           et_row_no TYPE any,
       free,
       get_frontend_fieldcatalog
@@ -131,6 +143,10 @@ CLASS cl_gui_alv_grid IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD get_functions.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD offline.
     RETURN.
   ENDMETHOD.
 
