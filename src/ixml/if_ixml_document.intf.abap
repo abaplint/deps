@@ -58,6 +58,7 @@ INTERFACE if_ixml_document PUBLIC.
     create_simple_element
       IMPORTING
         name TYPE string
+        value TYPE string OPTIONAL
         parent TYPE string
       RETURNING VALUE(val) TYPE REF TO if_ixml_element,
     find_from_name
