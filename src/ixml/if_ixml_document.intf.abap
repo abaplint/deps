@@ -51,6 +51,7 @@ INTERFACE if_ixml_document PUBLIC.
         name TYPE string
         parent TYPE string
         prefix TYPE string
+        value TYPE string OPTIONAL
       RETURNING VALUE(val) TYPE REF TO if_ixml_element,
     create_filter_attribute
       IMPORTING name TYPE string
