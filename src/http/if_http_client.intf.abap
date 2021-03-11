@@ -22,5 +22,8 @@ INTERFACE if_http_client PUBLIC.
         code    TYPE i
         message TYPE string,
     send_sap_logon_ticket,
-    receive.
+    receive,
+    create_rel_url
+      IMPORTING path TYPE string
+      RETURNING VALUE(url) TYPE string.
 ENDINTERFACE.
