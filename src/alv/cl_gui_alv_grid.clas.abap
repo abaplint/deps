@@ -24,6 +24,28 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_evt_enter TYPE i VALUE 5,
       mc_style_button TYPE i VALUE 6.
 
+    CONSTANTS:
+      mc_mb_variant      TYPE string VALUE 'a',
+      mc_fc_detail       TYPE string VALUE 'b',
+      mc_fc_check        TYPE string VALUE 'c',
+      mc_fc_refresh      TYPE string VALUE 'd',
+      mc_fc_loc_cut      TYPE string VALUE 'e',
+      mc_fc_loc_copy     TYPE string VALUE 'f',
+      mc_fc_loc_copy_row TYPE string VALUE 'g',
+      mc_mb_paste        TYPE string VALUE 'h',
+      mc_fc_loc_undo     TYPE string VALUE 'i',
+      mc_fc_sort_asc     TYPE string VALUE 'j',
+      mc_fc_sort_dsc     TYPE string VALUE 'k',
+      mc_fc_find         TYPE string VALUE 'l',
+      mc_mb_filter       TYPE string VALUE 'm',
+      mc_mb_sum          TYPE string VALUE 'n',
+      mc_mb_subtot       TYPE string VALUE 'o',
+      mc_fc_print        TYPE string VALUE 'p',
+      mc_mb_view         TYPE string VALUE 'q',
+      mc_mb_export       TYPE string VALUE 'r',
+      mc_fc_graph        TYPE string VALUE 's',
+      mc_fc_info         TYPE string VALUE 't'.
+
     CLASS-METHODS offline RETURNING VALUE(off) TYPE i.
 
     METHODS:
