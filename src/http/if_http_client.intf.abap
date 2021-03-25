@@ -17,6 +17,8 @@ INTERFACE if_http_client PUBLIC.
         username TYPE string
         password TYPE string,
     close,
+    refresh_request,
+    refresh_response,
     get_last_error
       EXPORTING
         code    TYPE i
