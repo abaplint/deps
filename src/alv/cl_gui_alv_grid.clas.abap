@@ -1,6 +1,16 @@
 CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
   PUBLIC SECTION.
+    TYPES: BEGIN OF ty_row,
+        rowtype TYPE c LENGTH 23,
+        index TYPE n LENGTH 10,
+      END OF ty_row.
+
+    TYPES: BEGIN OF ty_column,
+        fieldname TYPE c LENGTH 30,
+        hierlevel TYPE c LENGTH 3,
+      END OF ty_column.
+
     EVENTS toolbar EXPORTING
       VALUE(e_object) TYPE string
       VALUE(e_interactive) TYPE string.
@@ -9,8 +19,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(e_ucomm) TYPE string.
 
     EVENTS double_click EXPORTING
-      VALUE(e_row) TYPE i
-      VALUE(e_column) TYPE i.
+      VALUE(e_row) TYPE ty_row
+      VALUE(e_column) TYPE ty_column.
 
     EVENTS hotspot_click EXPORTING
       VALUE(e_row_id) TYPE i
