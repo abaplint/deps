@@ -9,7 +9,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(e_ucomm) TYPE string.
 
     EVENTS double_click EXPORTING
-      VALUE(e_row) TYPE i.
+      VALUE(e_row) TYPE i
+      VALUE(e_column) TYPE i.
 
     EVENTS hotspot_click EXPORTING
       VALUE(e_row_id) TYPE i
