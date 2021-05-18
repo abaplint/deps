@@ -1,4 +1,4 @@
-INTERFACE if_t100_message.
+INTERFACE if_t100_message PUBLIC.
 
   DATA: BEGIN OF t100key,
           msgid TYPE string,

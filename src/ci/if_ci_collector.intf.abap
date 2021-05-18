@@ -1,4 +1,4 @@
-INTERFACE if_ci_collector.
+INTERFACE if_ci_collector PUBLIC.
 
   METHODS:
     put_attributes
