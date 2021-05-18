@@ -1,4 +1,4 @@
-INTERFACE if_message.
+INTERFACE if_message PUBLIC.
 
   METHODS get_text RETURNING VALUE(result) TYPE string.
 

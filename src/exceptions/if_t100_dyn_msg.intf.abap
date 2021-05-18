@@ -1,4 +1,4 @@
-INTERFACE if_t100_dyn_msg.
+INTERFACE if_t100_dyn_msg PUBLIC.
 
   DATA msgv1 TYPE string.
   DATA msgv2 TYPE string.
