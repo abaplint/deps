@@ -23,8 +23,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(e_column) TYPE ty_column.
 
     EVENTS hotspot_click EXPORTING
-      VALUE(e_row_id) TYPE i
-      VALUE(e_column_id) TYPE i
+      VALUE(e_row_id) TYPE ty_row
+      VALUE(e_column_id) TYPE ty_column
       VALUE(es_row_no) TYPE i.
 
     CONSTANTS:
@@ -114,6 +114,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           c_refresh TYPE any,
       set_table_for_first_display
         IMPORTING
+          i_buffer_active      TYPE abap_bool OPTIONAL
           is_variant           TYPE string OPTIONAL
           i_structure_name     TYPE string OPTIONAL
           i_save               TYPE string OPTIONAL
