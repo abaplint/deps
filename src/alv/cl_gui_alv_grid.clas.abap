@@ -27,6 +27,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(e_column_id) TYPE ty_column
       VALUE(es_row_no) TYPE i.
 
+    EVENTS data_changed EXPORTING
+      VALUE(er_data_changed) TYPE REF TO cl_alv_changed_data_protocol.
+
     CONSTANTS:
       mc_style_disabled TYPE i VALUE 1,
       mc_style_enabled TYPE i VALUE 2,
