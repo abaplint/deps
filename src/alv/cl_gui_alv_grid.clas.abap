@@ -55,7 +55,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_mb_view         TYPE string VALUE 'q',
       mc_mb_export       TYPE string VALUE 'r',
       mc_fc_graph        TYPE string VALUE 's',
-      mc_fc_info         TYPE string VALUE 't'.
+      mc_fc_info         TYPE string VALUE 't',
+      mc_fc_loc_append_row TYPE string VALUE 'v',
+      mc_fc_loc_insert_row TYPE string VALUE 'w',
+      mc_fc_loc_delete_row TYPE string VALUE 'x'.
 
     CLASS-METHODS offline RETURNING VALUE(off) TYPE i.
 
