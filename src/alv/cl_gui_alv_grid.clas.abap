@@ -12,7 +12,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       END OF ty_column.
 
     EVENTS toolbar EXPORTING
-      VALUE(e_object) TYPE string
+      VALUE(e_object) TYPE REF TO cl_alv_event_toolbar_set
       VALUE(e_interactive) TYPE string.
 
     EVENTS user_command EXPORTING
