@@ -28,7 +28,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(es_row_no) TYPE i.
 
     EVENTS data_changed EXPORTING
-      VALUE(er_data_changed) TYPE REF TO cl_alv_changed_data_protocol.
+      VALUE(er_data_changed) TYPE REF TO cl_alv_changed_data_protocol
+      VALUE(e_ucomm) TYPE string.
 
     CONSTANTS:
       mc_style_disabled TYPE i VALUE 1,
@@ -59,6 +60,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_mb_export       TYPE string VALUE 'r',
       mc_fc_graph        TYPE string VALUE 's',
       mc_fc_info         TYPE string VALUE 't',
+      mc_fc_sum          TYPE string VALUE '1',
+      mc_fc_loc_paste TYPE string VALUE '1',
+      mc_fc_loc_paste_new_row TYPE string VALUE '1',
       mc_fc_loc_append_row TYPE string VALUE 'v',
       mc_fc_loc_insert_row TYPE string VALUE 'w',
       mc_fc_loc_delete_row TYPE string VALUE 'x'.
@@ -73,6 +77,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           i_appl_events TYPE any OPTIONAL,
       register_edit_event,
       set_toolbar_interactive,
+      is_alive RETURNING VALUE(state) TYPE i,
       get_selected_rows
         EXPORTING
           et_index_rows TYPE any
@@ -135,6 +140,10 @@ ENDCLASS.
 CLASS cl_gui_alv_grid IMPLEMENTATION.
 
   METHOD constructor.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD is_alive.
     RETURN.
   ENDMETHOD.
 
