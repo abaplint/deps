@@ -123,6 +123,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           e_valid TYPE any
         CHANGING
           c_refresh TYPE any,
+      register_delayed_event,
       set_table_for_first_display
         IMPORTING
           i_buffer_active      TYPE abap_bool OPTIONAL
@@ -140,6 +141,10 @@ ENDCLASS.
 CLASS cl_gui_alv_grid IMPLEMENTATION.
 
   METHOD constructor.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD register_delayed_event.
     RETURN.
   ENDMETHOD.
 
