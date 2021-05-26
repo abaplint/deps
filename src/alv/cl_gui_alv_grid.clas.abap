@@ -11,6 +11,11 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         hierlevel TYPE c LENGTH 3,
       END OF ty_column.
 
+    TYPES: BEGIN OF ty_row_no,
+        row_id     TYPE i,
+        sub_row_id TYPE i,
+      END OF ty_row_no.
+
     EVENTS toolbar EXPORTING
       VALUE(e_object) TYPE REF TO cl_alv_event_toolbar_set
       VALUE(e_interactive) TYPE string.
@@ -20,12 +25,13 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
     EVENTS double_click EXPORTING
       VALUE(e_row) TYPE ty_row
+      VALUE(es_row_no) TYPE ty_row_no
       VALUE(e_column) TYPE ty_column.
 
     EVENTS hotspot_click EXPORTING
       VALUE(e_row_id) TYPE ty_row
       VALUE(e_column_id) TYPE ty_column
-      VALUE(es_row_no) TYPE i.
+      VALUE(es_row_no) TYPE ty_row_no.
 
     EVENTS data_changed EXPORTING
       VALUE(er_data_changed) TYPE REF TO cl_alv_changed_data_protocol
