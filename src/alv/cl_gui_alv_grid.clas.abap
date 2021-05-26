@@ -135,6 +135,12 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         CHANGING
           c_refresh TYPE any,
       register_delayed_event,
+      get_current_cell
+        EXPORTING
+          e_row TYPE i
+          e_col TYPE i
+          es_row_no TYPE ty_row_no
+          e_value TYPE any,
       set_table_for_first_display
         IMPORTING
           i_buffer_active      TYPE abap_bool OPTIONAL
@@ -153,6 +159,10 @@ ENDCLASS.
 CLASS cl_gui_alv_grid IMPLEMENTATION.
 
   METHOD constructor.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_current_cell.
     RETURN.
   ENDMETHOD.
 
