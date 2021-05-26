@@ -41,6 +41,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(e_dyndoc_id) TYPE REF TO cl_dd_document
       VALUE(table_index) TYPE i.
 
+    EVENTS context_menu_request EXPORTING
+      VALUE(e_object) TYPE REF TO cl_menu.
+
     CONSTANTS:
       mc_style_disabled TYPE i VALUE 1,
       mc_style_enabled TYPE i VALUE 2,
