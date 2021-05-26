@@ -83,6 +83,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_fc_view_crystal TYPE string VALUE '1',
       mc_fc_loc_paste TYPE string VALUE '1',
       mc_fc_loc_move_row TYPE string VALUE '1',
+      mc_fc_col_invisible TYPE string VALUE '1',
+      mc_fc_delete_filter TYPE string VALUE '1',
       mc_fc_loc_paste_new_row TYPE string VALUE '1',
       mc_fc_loc_append_row TYPE string VALUE 'v',
       mc_fc_loc_insert_row TYPE string VALUE 'w',
