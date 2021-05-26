@@ -11,6 +11,11 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         hierlevel TYPE c LENGTH 3,
       END OF ty_column.
 
+    TYPES: BEGIN OF ty_row_no,
+        row_id     TYPE i,
+        sub_row_id TYPE i,
+      END OF ty_row_no.
+
     EVENTS toolbar EXPORTING
       VALUE(e_object) TYPE REF TO cl_alv_event_toolbar_set
       VALUE(e_interactive) TYPE string.
@@ -20,16 +25,21 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
     EVENTS double_click EXPORTING
       VALUE(e_row) TYPE ty_row
+      VALUE(es_row_no) TYPE ty_row_no
       VALUE(e_column) TYPE ty_column.
 
     EVENTS hotspot_click EXPORTING
       VALUE(e_row_id) TYPE ty_row
       VALUE(e_column_id) TYPE ty_column
-      VALUE(es_row_no) TYPE i.
+      VALUE(es_row_no) TYPE ty_row_no.
 
     EVENTS data_changed EXPORTING
       VALUE(er_data_changed) TYPE REF TO cl_alv_changed_data_protocol
       VALUE(e_ucomm) TYPE string.
+
+    EVENTS top_of_page EXPORTING
+      VALUE(e_dyndoc_id) TYPE REF TO cl_dd_document
+      VALUE(table_index) TYPE i.
 
     CONSTANTS:
       mc_style_disabled TYPE i VALUE 1,
@@ -61,7 +71,15 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_fc_graph        TYPE string VALUE 's',
       mc_fc_info         TYPE string VALUE 't',
       mc_fc_sum          TYPE string VALUE '1',
+      mc_fc_help TYPE string VALUE '1',
+      mc_fc_col_optimize TYPE string VALUE '1',
+      mc_fc_view_excel TYPE string VALUE '1',
+      mc_fc_view_grid TYPE string VALUE '1',
+      mc_fc_unfix_columns TYPE string VALUE '1',
+      mc_fc_views TYPE string VALUE '1',
+      mc_fc_view_crystal TYPE string VALUE '1',
       mc_fc_loc_paste TYPE string VALUE '1',
+      mc_fc_loc_move_row TYPE string VALUE '1',
       mc_fc_loc_paste_new_row TYPE string VALUE '1',
       mc_fc_loc_append_row TYPE string VALUE 'v',
       mc_fc_loc_insert_row TYPE string VALUE 'w',
@@ -124,6 +142,12 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         CHANGING
           c_refresh TYPE any,
       register_delayed_event,
+      get_current_cell
+        EXPORTING
+          e_row TYPE i
+          e_col TYPE i
+          es_row_no TYPE ty_row_no
+          e_value TYPE any,
       set_table_for_first_display
         IMPORTING
           i_buffer_active      TYPE abap_bool OPTIONAL
@@ -134,6 +158,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           it_toolbar_excluding TYPE string OPTIONAL
         CHANGING
           it_fieldcatalog      TYPE string
+          it_sort              TYPE string
           it_outtab            TYPE string.
 
 ENDCLASS.
@@ -141,6 +166,10 @@ ENDCLASS.
 CLASS cl_gui_alv_grid IMPLEMENTATION.
 
   METHOD constructor.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_current_cell.
     RETURN.
   ENDMETHOD.
 

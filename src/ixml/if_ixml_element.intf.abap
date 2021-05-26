@@ -65,6 +65,9 @@ INTERFACE if_ixml_element PUBLIC.
     set_attribute_node_ns
       IMPORTING
         attr TYPE any,
+    set_attribute_node
+      IMPORTING
+        attr TYPE any,
     set_attribute
       IMPORTING
         name TYPE string
