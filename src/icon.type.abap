@@ -2,7 +2,7 @@ TYPE-POOL icon.
 
 TYPES:
   "output len 2
-  icon_l2 TYPE c LENGTH 4, 
+  icon_l2 TYPE c LENGTH 4,
   "output len 4
   icon_l4 TYPE c LENGTH 4. 
 
