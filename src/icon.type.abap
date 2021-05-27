@@ -258,4 +258,4 @@ CONSTANTS icon_ws_whse_stock TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_xls TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_xml_doc TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_xxl TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_yellow_light TYPE c LENGTH 4 VALUE ''. 
+CONSTANTS icon_yellow_light TYPE c LENGTH 4 VALUE ''.
