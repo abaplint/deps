@@ -1,8 +1,10 @@
 TYPE-POOL icon.
 
 TYPES:
-  icon_l2 TYPE c LENGTH 4, "output len 2
-  icon_l4 TYPE c LENGTH 4. "output len 4
+  "output len 2
+  icon_l2 TYPE c LENGTH 4, 
+  "output len 4
+  icon_l4 TYPE c LENGTH 4. 
 
 CONSTANTS:
   icon_dummy                     TYPE icon_l2 VALUE '@00@',
