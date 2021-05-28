@@ -17,6 +17,8 @@ INTERFACE if_http_entity PUBLIC.
     get_cdata RETURNING VALUE(data) TYPE string,
     get_content_type
       RETURNING VALUE(val) TYPE string,
-    set_content_type.
+    set_content_type,
+    get_header_fields CHANGING fields TYPE any,
+    get_cookies CHANGING cookies TYPE any.
 
 ENDINTERFACE.
