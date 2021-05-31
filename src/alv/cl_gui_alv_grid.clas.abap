@@ -100,6 +100,18 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_fc_loc_paste_new_row TYPE string VALUE '1',
       mc_fc_loc_append_row TYPE string VALUE 'v',
       mc_fc_loc_insert_row TYPE string VALUE 'w',
+      mc_fc_minimum TYPE string VALUE '1',
+      mc_fc_filter TYPE string VALUE '1',
+      mc_fc_fix_columns TYPE string VALUE '1',
+      mc_fc_select_all TYPE string VALUE '1',
+      mc_fc_separator TYPE string VALUE '1',
+      mc_fc_to_office TYPE string VALUE '1',
+      mc_fc_url_copy_to_clipboard TYPE string VALUE '1',
+      mc_fc_html TYPE string VALUE '1',
+      mc_fc_load_variant TYPE string VALUE '1',
+      mc_fc_print_back TYPE string VALUE '1',
+      mc_fc_reprep TYPE string VALUE '1',
+      mc_fc_save_variant TYPE string VALUE '1',
       mc_fc_loc_delete_row TYPE string VALUE 'x'.
 
     CLASS-METHODS offline RETURNING VALUE(off) TYPE i.
