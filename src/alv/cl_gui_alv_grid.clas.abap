@@ -143,6 +143,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       set_frontend_layout
         IMPORTING
           layout TYPE any,
+      set_selected_rows
+        IMPORTING
+          it_row_no TYPE any,
       refresh_table_display
         IMPORTING
           is_stable      TYPE any
@@ -264,6 +267,10 @@ CLASS cl_gui_alv_grid IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD set_ready_for_input.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_selected_rows.
     RETURN.
   ENDMETHOD.
 
