@@ -112,6 +112,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           i_appl_events TYPE any OPTIONAL,
       register_edit_event,
       set_toolbar_interactive,
+      is_ready_for_input RETURNING VALUE(state) TYPE i,
       is_alive RETURNING VALUE(state) TYPE i,
       get_selected_rows
         EXPORTING
@@ -285,6 +286,10 @@ CLASS cl_gui_alv_grid IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD check_changed_data.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD is_ready_for_input.
     RETURN.
   ENDMETHOD.
 
