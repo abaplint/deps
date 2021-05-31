@@ -20,6 +20,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(e_object) TYPE REF TO cl_alv_event_toolbar_set
       VALUE(e_interactive) TYPE string.
 
+    EVENTS onf4 EXPORTING
+      VALUE(es_row_no) TYPE ty_row_no.
+
     EVENTS user_command EXPORTING
       VALUE(e_ucomm) TYPE string.
 
