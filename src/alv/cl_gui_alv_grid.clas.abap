@@ -159,6 +159,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         CHANGING
           c_refresh TYPE any,
       register_delayed_event,
+      register_f4_for_fields
+        IMPORTING
+          data TYPE any,
       get_current_cell
         EXPORTING
           e_row TYPE i
@@ -199,6 +202,10 @@ CLASS cl_gui_alv_grid IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD register_edit_event.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD register_f4_for_fields.
     RETURN.
   ENDMETHOD.
 
