@@ -59,6 +59,9 @@ INTERFACE if_ixml_element PUBLIC.
     remove_attribute
       IMPORTING name TYPE string,
     remove_node,
+    remove_child
+      IMPORTING
+        old_child TYPE REF TO if_ixml_element,
     render
       IMPORTING
         ostream TYPE any,
