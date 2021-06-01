@@ -98,7 +98,7 @@ INTERFACE if_ixml_document PUBLIC.
       RETURNING
         VALUE(attr) TYPE REF TO if_ixml_attribute,
     get_root RETURNING VALUE(node) TYPE REF TO if_ixml_node,
-    create_text IMPORTING text TYPE clike,
+    create_text IMPORTING text TYPE clike RETURNING VALUE(text) TYPE REF TO any,
     get_root_element RETURNING VALUE(root) TYPE REF TO if_ixml_element,
     get_first_node RETURNING VALUE(node) TYPE REF TO if_ixml_node.
 ENDINTERFACE.
