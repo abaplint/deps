@@ -20,6 +20,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(e_object) TYPE REF TO cl_alv_event_toolbar_set
       VALUE(e_interactive) TYPE string.
 
+    EVENTS onf4 EXPORTING
+      VALUE(es_row_no) TYPE ty_row_no.
+
     EVENTS user_command EXPORTING
       VALUE(e_ucomm) TYPE string.
 
@@ -97,6 +100,18 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_fc_loc_paste_new_row TYPE string VALUE '1',
       mc_fc_loc_append_row TYPE string VALUE 'v',
       mc_fc_loc_insert_row TYPE string VALUE 'w',
+      mc_fc_minimum TYPE string VALUE '1',
+      mc_fc_filter TYPE string VALUE '1',
+      mc_fc_fix_columns TYPE string VALUE '1',
+      mc_fc_select_all TYPE string VALUE '1',
+      mc_fc_separator TYPE string VALUE '1',
+      mc_fc_to_office TYPE string VALUE '1',
+      mc_fc_url_copy_to_clipboard TYPE string VALUE '1',
+      mc_fc_html TYPE string VALUE '1',
+      mc_fc_load_variant TYPE string VALUE '1',
+      mc_fc_print_back TYPE string VALUE '1',
+      mc_fc_reprep TYPE string VALUE '1',
+      mc_fc_save_variant TYPE string VALUE '1',
       mc_fc_loc_delete_row TYPE string VALUE 'x'.
 
     CLASS-METHODS offline RETURNING VALUE(off) TYPE i.
@@ -109,6 +124,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           i_appl_events TYPE any OPTIONAL,
       register_edit_event,
       set_toolbar_interactive,
+      is_ready_for_input RETURNING VALUE(state) TYPE i,
       is_alive RETURNING VALUE(state) TYPE i,
       get_selected_rows
         EXPORTING
@@ -143,6 +159,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       set_frontend_layout
         IMPORTING
           layout TYPE any,
+      set_selected_rows
+        IMPORTING
+          it_row_no TYPE any,
       refresh_table_display
         IMPORTING
           is_stable      TYPE any
@@ -156,6 +175,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         CHANGING
           c_refresh TYPE any,
       register_delayed_event,
+      register_f4_for_fields
+        IMPORTING
+          data TYPE any,
       get_current_cell
         EXPORTING
           e_row TYPE i
@@ -174,6 +196,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           it_fieldcatalog      TYPE string
           it_sort              TYPE string
           it_outtab            TYPE string.
+
+  PROTECTED SECTION.
+    DATA mt_outtab TYPE REF TO data.
 
 ENDCLASS.
 
@@ -196,6 +221,10 @@ CLASS cl_gui_alv_grid IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD register_edit_event.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD register_f4_for_fields.
     RETURN.
   ENDMETHOD.
 
@@ -267,7 +296,15 @@ CLASS cl_gui_alv_grid IMPLEMENTATION.
     RETURN.
   ENDMETHOD.
 
+  METHOD set_selected_rows.
+    RETURN.
+  ENDMETHOD.
+
   METHOD check_changed_data.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD is_ready_for_input.
     RETURN.
   ENDMETHOD.
 

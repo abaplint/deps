@@ -18,6 +18,7 @@ CONSTANTS icon_biw_scheduler TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_biw_virtual_info_provider TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_bmp TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_bom_item TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_booking_stop TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_breakpoint TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_businav_datamodel TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_businav_entity TYPE c LENGTH 4 VALUE ''.
@@ -67,11 +68,14 @@ CONSTANTS icon_display_text TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_display_tree TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_doc TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_document TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_dot TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_dropdownlist TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_dummy TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_edit_file TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_eml TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_employee TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_enter_more TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_envelope_closed TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_equal TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_equal_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_equal_red TYPE c LENGTH 4 VALUE ''.
@@ -86,6 +90,7 @@ CONSTANTS icon_folder TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_foreign_key TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_generate TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_gif TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_graphics TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_greater TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_greater_equal_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_greater_equal_red TYPE c LENGTH 4 VALUE ''.
@@ -124,6 +129,7 @@ CONSTANTS icon_less_equal_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_less_equal_red TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_less_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_less_red TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_linked_document TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_list TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_location TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_locked TYPE c LENGTH 4 VALUE ''.
@@ -178,6 +184,7 @@ CONSTANTS icon_protocol TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ps_network_activity TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_public_files TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_query TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_radiobutton TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ranking TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_red_light TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_reference_list TYPE c LENGTH 4 VALUE ''.
@@ -201,6 +208,7 @@ CONSTANTS icon_short_message TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_simulate TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_space TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_stack TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_status_alert TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_critical TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_ok TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_reverse TYPE c LENGTH 4 VALUE ''.
@@ -221,6 +229,7 @@ CONSTANTS icon_table_settings TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_test TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_text_act TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_text_ina TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_tif TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_time TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_tools TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_transfer TYPE c LENGTH 4 VALUE ''.
@@ -236,12 +245,14 @@ CONSTANTS icon_view_table TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_view_thumbnails TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_viewer_optical_archive TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_vsd TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_warning TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_application TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_component TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_context TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_controller TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_custom_controller TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_image TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_wd_radio_button_empty TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_toolbar TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_toolbar_caption TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_tree_node TYPE c LENGTH 4 VALUE ''.
