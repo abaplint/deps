@@ -13,7 +13,7 @@ CLASS cx_root DEFINITION ABSTRACT PUBLIC.
     DATA is_resumable TYPE abap_bool.
 
     METHODS get_source_position
-      IMPORTING
+      EXPORTING
         program_name TYPE sy-repid
         include_name TYPE sy-repid
         source_line TYPE i.
