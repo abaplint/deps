@@ -197,6 +197,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           it_sort              TYPE string
           it_outtab            TYPE string.
 
+  PROTECTED SECTION.
+    DATA mt_outtab TYPE REF TO data.
+
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
