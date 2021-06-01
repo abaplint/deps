@@ -1,0 +1,1 @@
+* TYPE pools are automatically resolved in 702+ so this include is empty
