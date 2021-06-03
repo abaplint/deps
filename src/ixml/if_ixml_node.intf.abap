@@ -1,6 +1,8 @@
 INTERFACE if_ixml_node PUBLIC.
   CONSTANTS:
     co_node_element TYPE i VALUE 0,
+    co_node_document TYPE i VALUE 0,
+    co_node_cdata_section TYPE i VALUE 0,
     co_node_text TYPE i VALUE 0.
   METHODS:
     append_child
