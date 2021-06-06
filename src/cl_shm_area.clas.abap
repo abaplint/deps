@@ -8,6 +8,7 @@ CLASS cl_shm_area DEFINITION PUBLIC.
     CONSTANTS attach_mode_wait TYPE c LENGTH 1 VALUE 'E'.
     CONSTANTS attach_mode_wait_2nd_try TYPE c LENGTH 1 VALUE 'F'.
     CONSTANTS affect_local_server TYPE c LENGTH 1 VALUE 'G'.
+    CONSTANTS invocation_mode_explicit TYPE c LENGTH 1 VALUE 'G'.
 
 ENDCLASS.
 
