@@ -1,5 +1,8 @@
 INTERFACE if_http_entity PUBLIC.
 
+  CONSTANTS co_request_method_get TYPE string VALUE 'GET'.
+  CONSTANTS co_request_method_post TYPE string VALUE 'POST'.
+
   METHODS:
     set_cdata IMPORTING data TYPE string,
     set_data IMPORTING data TYPE xstring,
