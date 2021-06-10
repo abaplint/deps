@@ -1,9 +1,9 @@
 {
   "global": {
     "files": "/src/**/*.*",
-    "skipGeneratedGatewayClasses": true,
-    "skipGeneratedPersistentClasses": true,
-    "skipGeneratedFunctionGroups": true
+    "skipGeneratedGatewayClasses": false,
+    "skipGeneratedPersistentClasses": false,
+    "skipGeneratedFunctionGroups": false
   },
   "dependencies": [],
   "syntax": {
