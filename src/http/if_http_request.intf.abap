@@ -60,6 +60,8 @@ INTERFACE if_http_request PUBLIC.
     add_multipart
       IMPORTING suppress_content_length TYPE string
       RETURNING VALUE(entity) TYPE REF TO if_http_entity,
-    set_compression.
-
+    set_compression,
+    get_form_data
+      IMPORTING !name TYPE string
+      CHANGING !data TYPE data.
 ENDINTERFACE.
