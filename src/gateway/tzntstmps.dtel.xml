@@ -1,0 +1,1080 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>TZNTSTMPS</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>TZNTSTMPS</DOMNAME>
+    <HEADLEN>25</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>UTC Time Stamp in Short Form (YYYYMMDDhhmmss)</DDTEXT>
+    <REPTEXT>Short Form of Time Stamp</REPTEXT>
+    <SCRTEXT_S>Time Stamp</SCRTEXT_S>
+    <SCRTEXT_M>Time Stamp</SCRTEXT_M>
+    <SCRTEXT_L>Short Time Stamp</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <DEFFDNAME>TIMESTAMP_UTC</DEFFDNAME>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>2</LANGU>
+    <LANGU>3</LANGU>
+    <LANGU>4</LANGU>
+    <LANGU>5</LANGU>
+    <LANGU>6</LANGU>
+    <LANGU>8</LANGU>
+    <LANGU>9</LANGU>
+    <LANGU>A</LANGU>
+    <LANGU>B</LANGU>
+    <LANGU>C</LANGU>
+    <LANGU>D</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>G</LANGU>
+    <LANGU>H</LANGU>
+    <LANGU>I</LANGU>
+    <LANGU>J</LANGU>
+    <LANGU>K</LANGU>
+    <LANGU>L</LANGU>
+    <LANGU>M</LANGU>
+    <LANGU>N</LANGU>
+    <LANGU>O</LANGU>
+    <LANGU>P</LANGU>
+    <LANGU>Q</LANGU>
+    <LANGU>R</LANGU>
+    <LANGU>S</LANGU>
+    <LANGU>T</LANGU>
+    <LANGU>U</LANGU>
+    <LANGU>V</LANGU>
+    <LANGU>W</LANGU>
+    <LANGU>X</LANGU>
+    <LANGU>Y</LANGU>
+    <LANGU>c</LANGU>
+    <LANGU>d</LANGU>
+    <LANGU>묩</LANGU>
+    <LANGU>뱋</LANGU>
+    <LANGU>쁩</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>简短格式的 UTC 时戳 (YYYYMMDDhhmmss)</DDTEXT>
+     <REPTEXT>时戳的简短格式</REPTEXT>
+     <SCRTEXT_S>时戳</SCRTEXT_S>
+     <SCRTEXT_M>时戳</SCRTEXT_M>
+     <SCRTEXT_L>简短时戳</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>2</DDLANGUAGE>
+     <DDTEXT>การบันทึกเวลา UTC ในรูปแบบย่อ (YYYYMMDDhhmmss)</DDTEXT>
+     <REPTEXT>การบันทึกเวลาแบบสั้น</REPTEXT>
+     <SCRTEXT_S>บันทึกเวลา</SCRTEXT_S>
+     <SCRTEXT_M>บันทึกเวลา</SCRTEXT_M>
+     <SCRTEXT_L>การบันทึกเวลาแบบสั้น</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DDTEXT>UTC 타임스탬프(짧은 형식: YYYYMMDDhhmmss)</DDTEXT>
+     <REPTEXT>시간 표시 간단한 서식</REPTEXT>
+     <SCRTEXT_S>타임스탬프</SCRTEXT_S>
+     <SCRTEXT_M>타임스탬프</SCRTEXT_M>
+     <SCRTEXT_L>간단한 시간 표시</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>4</DDLANGUAGE>
+     <DDTEXT>Marcă de timp UTC în formă scurtă (AAAALLZZhhmmss)</DDTEXT>
+     <REPTEXT>Formă scurtă marcă timp</REPTEXT>
+     <SCRTEXT_S>Marcă timp</SCRTEXT_S>
+     <SCRTEXT_M>Marcă timp</SCRTEXT_M>
+     <SCRTEXT_L>FrmăScrtMarcăTmp</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>5</DDLANGUAGE>
+     <DDTEXT>UTC časovna oznaka v kratki obliki (LLLLMMDDhhmmss)</DDTEXT>
+     <REPTEXT>Kratka oblika čas. oznake</REPTEXT>
+     <SCRTEXT_S>Časov.ozn.</SCRTEXT_S>
+     <SCRTEXT_M>Časovna oznaka</SCRTEXT_M>
+     <SCRTEXT_L>Kr.oblika časov.ozn.</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>6</DDLANGUAGE>
+     <DDTEXT>UTC vremenski biljeg u kratkom obliku (GGGGMMDDhhmmss)</DDTEXT>
+     <REPTEXT>Kratki oblik vrem.bilj.</REPTEXT>
+     <SCRTEXT_S>Vrm biljeg</SCRTEXT_S>
+     <SCRTEXT_M>VremenskiBiljeg</SCRTEXT_M>
+     <SCRTEXT_L>Kratki vremen.biljeg</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>8</DDLANGUAGE>
+     <DDTEXT>Мітка часу UTC у короткій формі (РРРРММДДггххсс)</DDTEXT>
+     <REPTEXT>Коротка форма мітки часу</REPTEXT>
+     <SCRTEXT_S>Мітка часу</SCRTEXT_S>
+     <SCRTEXT_M>Мітка часу</SCRTEXT_M>
+     <SCRTEXT_L>Коротка фор.міт.час.</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>9</DDLANGUAGE>
+     <DDTEXT>UTC-ajatempli lühivorming (AAAAKKPPhhmmss)</DDTEXT>
+     <REPTEXT>Ajatempli lühivorming</REPTEXT>
+     <SCRTEXT_S>Ajatempel</SCRTEXT_S>
+     <SCRTEXT_M>Ajatempel</SCRTEXT_M>
+     <SCRTEXT_L>Ajatempli lühivorm.</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>A</DDLANGUAGE>
+     <DDTEXT>طابع وقت توقيت جرينتش بتنسيق مختصر (YYYYMMDDhhmmss)</DDTEXT>
+     <REPTEXT>نموذج قصير للطابع الزمني</REPTEXT>
+     <SCRTEXT_S>طابع الوقت</SCRTEXT_S>
+     <SCRTEXT_M>طابع الوقت</SCRTEXT_M>
+     <SCRTEXT_L>طابع وقت قصير</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>B</DDLANGUAGE>
+     <DDTEXT>החתמת שעות עבודה UTC בטופס קצר - YYYYMMDDhhmmss</DDTEXT>
+     <REPTEXT>תב.קצרה עבור החת.שע.עבודה</REPTEXT>
+     <SCRTEXT_S>חותמת זמן</SCRTEXT_S>
+     <SCRTEXT_M>חותמת זמן</SCRTEXT_M>
+     <SCRTEXT_L>תב.קצרה להח.שע.עבודה</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>C</DDLANGUAGE>
+     <DDTEXT>Časový záznam UTC v krátkém tvaru (RRRRMMDDhhmmss)</DDTEXT>
+     <REPTEXT>Krátký tvar čas.záznamu</REPTEXT>
+     <SCRTEXT_S>Čas.záznam</SCRTEXT_S>
+     <SCRTEXT_M>Časový záznam</SCRTEXT_M>
+     <SCRTEXT_L>Kr.tvar čas.záznamu</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>UTC-Zeitstempel in Kurzform (JJJJMMTThhmmss)</DDTEXT>
+     <REPTEXT>Kurzform des Zeitstempels</REPTEXT>
+     <SCRTEXT_S>Zeitstemp.</SCRTEXT_S>
+     <SCRTEXT_M>Zeitstempel</SCRTEXT_M>
+     <SCRTEXT_L>Kurzform Zeitstempel</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Horodatage UTC en abrégé (AAAAMMJJhhmmss)</DDTEXT>
+     <REPTEXT>Format court horodatage</REPTEXT>
+     <SCRTEXT_S>Horodatage</SCRTEXT_S>
+     <SCRTEXT_M>Horodatage</SCRTEXT_M>
+     <SCRTEXT_L>Format court horod.</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>G</DDLANGUAGE>
+     <DDTEXT>Χρονική Ενδειξη UTC σε Σύντομη Μορφή (ΕΕΕΕΜΜΗΗωωλλδδ)</DDTEXT>
+     <REPTEXT>Σύντ.μορφή χρον.ένδειξης</REPTEXT>
+     <SCRTEXT_S>Χρον.Ενδ.</SCRTEXT_S>
+     <SCRTEXT_M>Χρονική Ενδειξη</SCRTEXT_M>
+     <SCRTEXT_L>Σύντομη Χρον.Ενδειξη</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>H</DDLANGUAGE>
+     <DDTEXT>UTC-időbélyeg rövid formában (ÉÉÉÉHHNNóóppss)</DDTEXT>
+     <REPTEXT>Időbélyeg rövid formában</REPTEXT>
+     <SCRTEXT_S>Időbélyeg</SCRTEXT_S>
+     <SCRTEXT_M>Időbélyeg</SCRTEXT_M>
+     <SCRTEXT_L>Időb. rövid formában</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>I</DDLANGUAGE>
+     <DDTEXT>Timestamp UTC in forma breve (AAAAMMGGhhmmss)</DDTEXT>
+     <REPTEXT>Forma breve timestamp</REPTEXT>
+     <SCRTEXT_S>Timestamp</SCRTEXT_S>
+     <SCRTEXT_M>Timestamp</SCRTEXT_M>
+     <SCRTEXT_L>Forma br. timestamp</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>J</DDLANGUAGE>
+     <DDTEXT>略式の UTC タイムスタンプ (YYYYMMDDhhmmss)</DDTEXT>
+     <REPTEXT>タイムスタンプ短形式</REPTEXT>
+     <SCRTEXT_S>Time Stamp</SCRTEXT_S>
+     <SCRTEXT_M>タイムスタンプ</SCRTEXT_M>
+     <SCRTEXT_L>タイムスタンプ短形式</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DDTEXT>UTC-tidsstempel i kort form (ÅÅÅÅMMTThhmmss)</DDTEXT>
+     <REPTEXT>Kort form af tidsstempel</REPTEXT>
+     <SCRTEXT_S>TidStempel</SCRTEXT_S>
+     <SCRTEXT_M>Tidsstempel</SCRTEXT_M>
+     <SCRTEXT_L>Kortform tidsstempel</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>L</DDLANGUAGE>
+     <DDTEXT>Znacznik czasu UTC w formie skróconej (RRRRMMDDggmmss)</DDTEXT>
+     <REPTEXT>Skróc. forma znacz. czasu</REPTEXT>
+     <SCRTEXT_S>Zn. czasu</SCRTEXT_S>
+     <SCRTEXT_M>Zn. czasu</SCRTEXT_M>
+     <SCRTEXT_L>Skróc. forma ZnCzasu</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DDTEXT>簡易表單的 UTC 時間印記 (YYYYMMDDhhmmss)</DDTEXT>
+     <REPTEXT>時間印記的簡易表單</REPTEXT>
+     <SCRTEXT_S>時間印記</SCRTEXT_S>
+     <SCRTEXT_M>時間印記</SCRTEXT_M>
+     <SCRTEXT_L>簡易時間印記</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>N</DDLANGUAGE>
+     <DDTEXT>UTC-timestamp, korte vorm (JJJJMMDDuummss)</DDTEXT>
+     <REPTEXT>Korte vorm van timestamp</REPTEXT>
+     <SCRTEXT_S>Timestamp</SCRTEXT_S>
+     <SCRTEXT_M>Timestamp</SCRTEXT_M>
+     <SCRTEXT_L>Korte vorm timestamp</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>O</DDLANGUAGE>
+     <DDTEXT>UTC-tidsstempel i kortform (ÅÅÅÅMMDDttmmss)</DDTEXT>
+     <REPTEXT>Tidsstempel - kort form</REPTEXT>
+     <SCRTEXT_S>Tidsstemp.</SCRTEXT_S>
+     <SCRTEXT_M>Tidsstempel</SCRTEXT_M>
+     <SCRTEXT_L>Tidsst. - kort form</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>P</DDLANGUAGE>
+     <DDTEXT>Registro da hora UTC em forma breve (AAAAMMDDhhmmss)</DDTEXT>
+     <REPTEXT>Abreviatura registr.hora</REPTEXT>
+     <SCRTEXT_S>Reg.hora</SCRTEXT_S>
+     <SCRTEXT_M>Registro hora</SCRTEXT_M>
+     <SCRTEXT_L>Abrev.registro hora</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>Q</DDLANGUAGE>
+     <DDTEXT>Vyznačenie času UTC v krátkej forme (RRRRMMTThhmmss)</DDTEXT>
+     <REPTEXT>Krátka forma vyznač.času</REPTEXT>
+     <SCRTEXT_S>Vyzn.času</SCRTEXT_S>
+     <SCRTEXT_M>Vyznačenie času</SCRTEXT_M>
+     <SCRTEXT_L>Krát.forma vyzn.času</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>Метка времени UTC в краткой форме (ГГГГММДДччммсс)</DDTEXT>
+     <REPTEXT>КраткФорма метки времени</REPTEXT>
+     <SCRTEXT_S>Метка вр.</SCRTEXT_S>
+     <SCRTEXT_M>Метка времени</SCRTEXT_M>
+     <SCRTEXT_L>Кр. форма метки вр.</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Cronomarcador UTC en forma breve (AAAAMMDDhhmmss)</DDTEXT>
+     <REPTEXT>Forma breve cronomarcador</REPTEXT>
+     <SCRTEXT_S>Cronomarc.</SCRTEXT_S>
+     <SCRTEXT_M>Cronomarcador</SCRTEXT_M>
+     <SCRTEXT_L>Fo.breve cronomarc.</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>T</DDLANGUAGE>
+     <DDTEXT>Kısa şekliyle UTC zaman damgası (YYYYAAGGssddsa)</DDTEXT>
+     <REPTEXT>Kısa şekliyle zm.damgası</REPTEXT>
+     <SCRTEXT_S>Zm.damgası</SCRTEXT_S>
+     <SCRTEXT_M>Zaman damgası</SCRTEXT_M>
+     <SCRTEXT_L>Kısa şkl.zm.damgası</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>U</DDLANGUAGE>
+     <DDTEXT>UTC-aikaleima lyhyessä muodossa (VVVVKKPPhhmmss)</DDTEXT>
+     <REPTEXT>Aikaleiman lyhyt muoto</REPTEXT>
+     <SCRTEXT_S>Aikaleima</SCRTEXT_S>
+     <SCRTEXT_M>Aikaleima</SCRTEXT_M>
+     <SCRTEXT_L>Aikaleiman l. muoto</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>V</DDLANGUAGE>
+     <DDTEXT>UTC-tidsstämpel, kort form (ÅÅÅÅMMDDhhmmss)</DDTEXT>
+     <REPTEXT>Tidsstämpel, kort form</REPTEXT>
+     <SCRTEXT_S>Tidsstämp.</SCRTEXT_S>
+     <SCRTEXT_M>Tidsstämpel</SCRTEXT_M>
+     <SCRTEXT_L>Tidsstämp. kort form</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>W</DDLANGUAGE>
+     <DDTEXT>Отбелязване UTC време в кратка форма (ГГГГММДДччммсс)</DDTEXT>
+     <REPTEXT>Кратка форма врем.отметка</REPTEXT>
+     <SCRTEXT_S>Врем. отм.</SCRTEXT_S>
+     <SCRTEXT_M>Времева отметка</SCRTEXT_M>
+     <SCRTEXT_L>КрФорма врем.отметка</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>X</DDLANGUAGE>
+     <DDTEXT>UTC laiko žyma trumpąja forma (MMMMmmddhhmmss)</DDTEXT>
+     <REPTEXT>Trumpa laiko žymos forma</REPTEXT>
+     <SCRTEXT_S>Laiko žyma</SCRTEXT_S>
+     <SCRTEXT_M>Laiko žyma</SCRTEXT_M>
+     <SCRTEXT_L>Trumpoji laiko žyma</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>Y</DDLANGUAGE>
+     <DDTEXT>UTC laika spiedola saīsinātā forma (GGGGMMDDssmmss)</DDTEXT>
+     <REPTEXT>Laika spied. saīsin.forma</REPTEXT>
+     <SCRTEXT_S>Laikspied.</SCRTEXT_S>
+     <SCRTEXT_M>Laikspiedols</SCRTEXT_M>
+     <SCRTEXT_L>Īss laika spiedols</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>c</DDLANGUAGE>
+     <DDTEXT>Cronomarcador UTC en forma breu (AAAAMMDDhhmmss)</DDTEXT>
+     <REPTEXT>Forma breu cronomarcador</REPTEXT>
+     <SCRTEXT_S>Cronomarc.</SCRTEXT_S>
+     <SCRTEXT_M>Marca horària</SCRTEXT_M>
+     <SCRTEXT_L>FormaBreuCronomarc.</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>d</DDLANGUAGE>
+     <DDTEXT>UTC vremenska oznaka u kratkom obliku (GGGGMMDDssmmss)</DDTEXT>
+     <REPTEXT>Kratki oblik vrem.oznake</REPTEXT>
+     <SCRTEXT_S>VremOznaka</SCRTEXT_S>
+     <SCRTEXT_M>Vremen.oznaka</SCRTEXT_M>
+     <SCRTEXT_L>Kratki oblik vr.ozn.</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>묩</DDLANGUAGE>
+     <DDTEXT>UTCशॉर्ट फॉर्म में समय स्टाम्प (YYYYMMDDhhmmss)</DDTEXT>
+     <REPTEXT>समय स्टैम्प का लघु फ़ॉर्म</REPTEXT>
+     <SCRTEXT_S>समय स्टै.</SCRTEXT_S>
+     <SCRTEXT_M>समय स्टैम्प</SCRTEXT_M>
+     <SCRTEXT_L>लघु समय स्टैम्प</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>뱋</DDLANGUAGE>
+     <DDTEXT>Қысқа пішіндегі UTC уақыт белгісі (ЖЖЖЖААККссммсс)</DDTEXT>
+     <REPTEXT>Уақыт белг. қысқа пішіні</REPTEXT>
+     <SCRTEXT_S>Уақ.белг.</SCRTEXT_S>
+     <SCRTEXT_M>Уақыт белгісі</SCRTEXT_M>
+     <SCRTEXT_L>Уақыт блг.қсқ.піш.</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>쁩</DDLANGUAGE>
+     <DDTEXT>Định dạng thời gian UTC dạng ngắn (YYYYMMDDhhmmss)</DDTEXT>
+     <REPTEXT>Dạng ngắn dấu th.gian</REPTEXT>
+     <SCRTEXT_S>Dạng n.t</SCRTEXT_S>
+     <SCRTEXT_M>Dạng n.tháng</SCRTEXT_M>
+     <SCRTEXT_L>Dạng th.gian ngắn</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>TZNTSTMPS</OBJECT>
+      <LANGU>1</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0009</VERSION>
+      <TXTLINES>00010</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>TZNTSTMPS</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>1</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00009</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>UTC 时戳是相对于 &lt;DS:TX.SZTZ_UTC&gt;UTC&lt;/&gt;（世界协调时间）的日期和时间。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>IF &amp;[SWITCH]S4H_DOCU_CLOUD&amp; = &apos;X&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ELSE.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>为了使 UTC 时戳中的本地时间标准化，从而可以进行比较，必须通过指定</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:DE.TZNZONE&gt;时区&lt;/&gt;来进行转换。为此，您可以使用 ABAP 语句</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE> &lt;DS:ABAP.CONVERT_TIME-STAMP&gt;convert&lt;/&gt;。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>如果可以从定制或主数据中找到转换的时区，则仍然建议您冗余存储该时区。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>UTC 时戳的内部结构在逻辑上分为打包数字格式 &lt;(&gt;&lt;&lt;)&gt;YYYYMMDDhhmmss&gt; 的日期</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>和时间部分。还提供&lt;DS:DE.TZNTSTMPL&gt;高分辨率 UTC 时戳&lt;/&gt;（10^-7 秒）。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ENDIF.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>TZNTSTMPS</OBJECT>
+      <LANGU>C</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0007</VERSION>
+      <TXTLINES>00013</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>TZNTSTMPS</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>C</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00007</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Vyznačení času UTC zobrazuje datum a čas relativně k</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:TX.SZTZ_UTC&gt;UTC&lt;/&gt;  (Universal Coordinated Time).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Pro normalizaci lokálních časů na vyznačení času UTC pro zajištění</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>porovnatelnosti je nutno je konvertovat pomocí zadání</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:DE.TZNZONE&gt;časové zóny&lt;/&gt;. K tomu je k dispozici příkaz ABAP</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:ABAP.CONVERT_TIME-STAMP&gt;convert&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>I když je možno časovou zónu potřebnou pro tento přepočet zjistit z</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>customizingu nebo kmenových dat,  doporučuje se uložit časovou zónu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>redundantně spolu s časem.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Interní struktura vyznačení času UTC s vysokým rozlišením je logicky</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>členěna do datové a časové části v pakovaném číselném tvaru</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;RRRRMMDDhhmmss&gt;. Navíc je k dispozici také &lt;DS:DE.TZNTSTMPL&gt;vyznačení</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>času UTC s vysokým rozlišením&lt;/&gt; (10^-7 sekund).</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>TZNTSTMPS</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0009</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00017</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>TZNTSTMPS</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00009</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der UTC-Zeitstempel stellt Datum und Uhrzeit bezogen auf</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:TX.SZTZ_UTC&gt;UTC&lt;/&gt;  (Universal Time Coordinated) dar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>IF &amp;[SWITCH]S4H_DOCU_CLOUD&amp; = &apos;X&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ELSE.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Um lokale Zeiten in einen UTC-Zeitstempel zu normalisieren und somit</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>vergleichbar zu machen, müssen diese unter Angabe ihrer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:DE.TZNZONE&gt;Zeitzone&lt;/&gt; konvertiert werden. Hierzu steht der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ABAP-Befehl &lt;DS:ABAP.CONVERT_TIME-STAMP&gt;convert&lt;/&gt; zur Verfügung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Auch wenn sich die dieser Umrechnung zugrundeliegende Zeitzone aus</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Customizing oder Stammdaten wieder ermitteln läßt, wird empfohlen die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zeitzone redundant mit abzuspeichern.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die interne Struktur des UTC-Zeitstempels ist logisch untergliedert in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>einen Datums- und Uhrzeitteil im gepackten Ziffernformat &lt;(&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;&lt;)&gt;JJJJMMTThhmmss&gt;. Es steht darüber hinaus auch ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:DE.TZNTSTMPL&gt;hochauflösender UTC-Zeitstempel&lt;/&gt; (10^-7 Sekunden) zur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verfügung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ENDIF.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>TZNTSTMPS</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0009</VERSION>
+      <TXTLINES>00016</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>TZNTSTMPS</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00009</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The UTC time stamp is the date and time relative to &lt;DS:TX.SZTZ_UTC&gt;UTC</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt; (Universal Coordinated Time).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>IF &amp;[SWITCH]S4H_DOCU_CLOUD&amp; = &apos;X&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ELSE.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>To normalize local time in a UTC time stamp and therefore make it</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>possible to compare it, it must converted by specifying a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:DE.TZNZONE&gt;time zone&lt;/&gt;. To do this, you use the ABAP statement</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:ABAP.CONVERT_TIME-STAMP&gt;convert&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In cases where the time zone for the conversion can be found from</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>customizing or master data, you are still advised to store the time zone</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>redundantly.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The internal structure of the UTC time stamp is logically subdivided</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>into a date and a time section in packed numeric format &lt;(&gt;&lt;&lt;)&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>YYYYMMDDhhmmss&gt;. A &lt;DS:DE.TZNTSTMPL&gt;high-resolution UTC time stamp&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(10^-7 seconds) is also available.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ENDIF.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>TZNTSTMPS</OBJECT>
+      <LANGU>F</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0009</VERSION>
+      <TXTLINES>00016</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>TZNTSTMPS</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>F</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00009</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>L&apos;horodatage indique la date et l&apos;heure au format &lt;DS:TX.SZTZ_UTC&gt;UTC&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE> (Universal Coordinated Time).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>IF &amp;[SWITCH]S4H_DOCU_CLOUD&amp; = &apos;X&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ELSE.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Pour convertir des dates/heures locales en horodatage UTC et les rendre</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ainsi comparables, il faut tenir compte de leur &lt;DS:DE.TZNZONE&gt;fuseau</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>horaire&lt;/&gt;. Pour ce faire, utilisez l&apos;instruction ABAP</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:ABAP.CONVERT_TIME-STAMP&gt;convert&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Même si le fuseau horaire nécessaire à la conversion peut être déterminé</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>grâce au Customizing ou aux données de base, SAP recommande de le</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sauvegarder séparément.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>La structure interne de l&apos;horodatage UTC est logiquement divisée en une</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>partie date et une partie heure dans un format numérique comprimé &lt;(&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;&lt;)&gt;JJJJMMAAhhmmss&gt;. En outre, vous disposez d&apos;un &lt;DS:DE.TZNTSTMPL&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>horodatage UTC à haute résolution&lt;/&gt; (10^-7 secondes).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ENDIF.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>TZNTSTMPS</OBJECT>
+      <LANGU>I</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0009</VERSION>
+      <TXTLINES>00016</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>TZNTSTMPS</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>I</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00009</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Il timestamp UTC rappresenta la data e l&apos;ora in rapporto all&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;DS:TX.SZTZ_UTC&gt;UTC&lt;/&gt; (Universal Time Coordinated).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>IF &amp;[SWITCH]S4H_DOCU_CLOUD&amp; = &apos;X&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ELSE.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Per normalizzare le ore locali in un timestamp UTC e renderle quindi</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>confrontabili, è necessario convertirle con l&apos;indicazione del proprio</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:DE.TZNZONE&gt;fuso orario&lt;/&gt;. A questo scopo è disponibile il comando</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ABAP &lt;DS:ABAP.CONVERT_TIME-STAMP&gt;convert&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Anche se dal customizing o dai dati anagrafici è possibile determinare</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>nuovamente il fuso orario alla base di questa conversione, è</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>consigliabile salvarlo sebbene risulti ridondante.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>La struttura interna del timestamp UTC è logicamente suddivisa in una</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>parte dedicata alla data e una dedicata all&apos;ora in formato numerico</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>impaccato &lt;(&gt;&lt;&lt;)&gt;AAAAMMGGhhmmss&gt;. È inoltre disponibile un</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:DE.TZNTSTMPL&gt;timestamp UTC ad alta risoluzione&lt;/&gt; (10^-7 secondi).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ENDIF.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>TZNTSTMPS</OBJECT>
+      <LANGU>J</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0009</VERSION>
+      <TXTLINES>00013</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>TZNTSTMPS</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>J</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00009</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>UTC タイムスタンプは、&lt;DS:TX.SZTZ_UTC&gt;UTC&lt;/&gt; (協定世界時) に関連する日付</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>および時刻です。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>IF &amp;[SWITCH]S4H_DOCU_CLOUD&amp; = &apos;X&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ELSE.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>UTC タイムスタンプで現地時刻を正規化し比較できるようにするには、</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:DE.TZNZONE&gt;タイムゾーン&lt;/&gt;を指定して変換する必要があります。これを行</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>うには、ABAP 命令 &lt;DS:ABAP.CONVERT_TIME-STAMP&gt;CONVERT&lt;/&gt; を使用します。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>変換するタイムゾーンをカスタマイジングデータまたはマスタデータから検索で</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>きる場合は、それらを重複して保存することをお奨めします。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>UTC タイムスタンプの内部構造は、パック数値形式 &lt;(&gt;&lt;&lt;)&gt;YYYYMMDDhhmmss&gt; の</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>日付および時刻セクションに論理的に分割されます。&lt;DS:DE.TZNTSTMPL&gt;高精度</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE> UTC タイムスタンプ&lt;/&gt; (10^-7 秒) も使用できます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ENDIF.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>TZNTSTMPS</OBJECT>
+      <LANGU>P</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0009</VERSION>
+      <TXTLINES>00017</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>TZNTSTMPS</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>P</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00009</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O registro da hora UTC representa a data e hora relativas ao</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:TX.SZTZ_UTC&gt;UTC&lt;/&gt; (Universal Time Coordinated).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>IF &amp;[SWITCH]S4H_DOCU_CLOUD&amp; = &apos;X&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ELSE.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Para normalizar as horas locais em um registro da hora UTC e torná-las</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>comparáveis, as mesmas devem ser convertidas mediante a indicação do seu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE> &lt;DS:DE.TZNZONE&gt;Fuso horário&lt;/&gt;. Para isso, está disponível a instrução</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ABAP &lt;DS:ABAP.CONVERT_TIME-STAMP&gt;convert&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mesmo que o fuso horário no qual essa conversão se baseia possa ser</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>determinado novamente a partir do customizing ou dos dados mestre, se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>recomenda que o fuso horário seja gravado de forma redundante.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>A estrutura interna do registro da hora UTC está subdividida logicamente</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>em uma parte de data e de hora em formato de números compactado &lt;(&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;&lt;)&gt;AAAAMMDDhhmmss&gt;. Além disso, também está disponível um</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:DE.TZNTSTMPL&gt;Registro da hora UTC de alta resolução&lt;/&gt; (10^-7</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>segundos).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ENDIF.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>TZNTSTMPS</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0009</VERSION>
+      <TXTLINES>00016</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>TZNTSTMPS</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00009</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>El cronomarcador UTC muestra la fecha y la hora en relación al</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:TX.SZTZ_UTC&gt;UTC&lt;/&gt; (Universal Time Coordinated).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>IF &amp;[SWITCH]S4H_DOCU_CLOUD&amp; = &apos;X&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ELSE.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Para normalizar la hora local en un cronomarcador UTC y así hacerla</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>comparable, debe convertirla indicando su &lt;DS:DE.TZNZONE&gt;huso horario&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>. Dispone para ello del comando ABAP &lt;DS:ABAP.CONVERT_TIME-STAMP&gt;convert</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Incluso si el huso horario en el que se basa esta conversión se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>determina de nuevo a partir del Customizing o de los datos maestros, se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>recomienda almacenar el huso horario de forma redundante.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>La estructura interna del cronomarcador UTC está dividida lógicamente en</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>fecha y hora en formato numérico empaquetado &lt;(&gt;&lt;&lt;)&gt;AAAAMMDDhhmmss&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Además hay disponible un &lt;DS:DE.TZNTSTMPL&gt;Cronomarcador UTC de alta</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>resolución&lt;/&gt; (10^-7 segundos).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>ENDIF.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
