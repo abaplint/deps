@@ -1,4 +1,5 @@
-CLASS /iwbep/cl_mgw_push_abs_model DEFINITION PUBLIC CREATE PUBLIC.
+CLASS /iwbep/cl_mgw_push_abs_model DEFINITION PUBLIC CREATE PUBLIC
+  INHERITING FROM /iwbep/cl_mgw_abs_model.
 
   PUBLIC SECTION.
   PROTECTED SECTION.
