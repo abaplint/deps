@@ -46,7 +46,7 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           previous TYPE REF TO cx_root
           textid LIKE cx_root=>textid
           free_text TYPE string OPTIONAL
-          called_method TYPE string,
+          called_method TYPE string OPTIONAL,
       set_general_params_data_to_dom,
       set_deep_stru_to_dom
         IMPORTING data TYPE any,
