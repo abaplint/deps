@@ -112,7 +112,7 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           p_inclspec     TYPE string
           p_detail       TYPE xstring
           p_checksum_1   TYPE i
-          p_comments     TYPE string.
+          p_comments     TYPE string OPTIONAL.
 * todo, some of the above is from version something?
 
     METHODS
