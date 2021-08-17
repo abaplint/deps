@@ -10,7 +10,7 @@ INTERFACE if_adt_rest_request PUBLIC.
       IMPORTING
         name      TYPE string
         default   TYPE string OPTIONAL
-        mandatory TYPE abap_bool
+        mandatory TYPE abap_bool OPTIONAL
       EXPORTING
         value     TYPE string,
     get_uri_query_parameter_values
