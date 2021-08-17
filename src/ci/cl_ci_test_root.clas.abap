@@ -95,23 +95,23 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       inform
         ABSTRACT
         IMPORTING
-          p_sub_obj_type TYPE string
-          p_sub_obj_name TYPE string
-          p_position     TYPE string
-          p_line         TYPE string
-          p_column       TYPE string
-          p_errcnt       TYPE string
-          p_kind         TYPE string
           p_test         TYPE string
           p_code         TYPE string
-          p_suppress     TYPE string
-          p_param_1      TYPE string
-          p_param_2      TYPE string
-          p_param_3      TYPE string
-          p_param_4      TYPE string
-          p_inclspec     TYPE string
-          p_detail       TYPE xstring
-          p_checksum_1   TYPE i
+          p_sub_obj_type TYPE string OPTIONAL
+          p_sub_obj_name TYPE string OPTIONAL
+          p_position     TYPE string OPTIONAL
+          p_line         TYPE string OPTIONAL
+          p_column       TYPE string OPTIONAL
+          p_errcnt       TYPE string OPTIONAL
+          p_kind         TYPE string OPTIONAL
+          p_suppress     TYPE string OPTIONAL
+          p_param_1      TYPE string OPTIONAL
+          p_param_2      TYPE string OPTIONAL
+          p_param_3      TYPE string OPTIONAL
+          p_param_4      TYPE string OPTIONAL
+          p_inclspec     TYPE string OPTIONAL
+          p_detail       TYPE xstring OPTIONAL
+          p_checksum_1   TYPE i OPTIONAL
           p_comments     TYPE string OPTIONAL.
 * todo, some of the above is from version something?
 
