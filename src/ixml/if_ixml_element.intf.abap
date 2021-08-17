@@ -79,7 +79,7 @@ INTERFACE if_ixml_element PUBLIC.
     set_attribute
       IMPORTING
         name TYPE string
-        namespace TYPE string
+        namespace TYPE string OPTIONAL
         value TYPE string,
     set_attribute_ns
       IMPORTING
