@@ -41,7 +41,6 @@ INTERFACE if_http_request PUBLIC.
       IMPORTING data TYPE string
       RETURNING VALUE(val) TYPE string,
     get_cdata
-      IMPORTING data TYPE string
       RETURNING VALUE(val) TYPE string,
     get_header_fields
       CHANGING
