@@ -65,12 +65,12 @@ INTERFACE if_ixml_document PUBLIC.
     find_from_name
       IMPORTING
         name TYPE string
-        namespace TYPE string
+        namespace TYPE string OPTIONAL
       RETURNING
         VALUE(element) TYPE REF TO if_ixml_element,
     find_from_name_ns
       IMPORTING
-        depth TYPE i
+        depth TYPE i OPTIONAL
         name  TYPE string
       RETURNING
         VALUE(element) TYPE REF TO if_ixml_element,
