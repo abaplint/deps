@@ -178,8 +178,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           it_row_no TYPE any,
       refresh_table_display
         IMPORTING
-          is_stable      TYPE any
-          i_soft_refresh TYPE abap_bool,
+          is_stable      TYPE any OPTIONAL
+          i_soft_refresh TYPE abap_bool OPTIONAL,
       set_ready_for_input
         IMPORTING
           i_ready_for_input TYPE any,
@@ -207,9 +207,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           is_layout            TYPE string OPTIONAL
           it_toolbar_excluding TYPE string OPTIONAL
         CHANGING
-          it_fieldcatalog      TYPE string
-          it_sort              TYPE string
-          it_outtab            TYPE string.
+          it_fieldcatalog      TYPE string OPTIONAL
+          it_sort              TYPE string OPTIONAL
+          it_outtab            TYPE string OPTIONAL.
 
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
