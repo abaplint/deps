@@ -40,7 +40,7 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       get_general_params_data
         IMPORTING
           im_params TYPE any
-          im_ptyp TYPE string,
+          im_ptyp TYPE string OPTIONAL,
       raise_download_exception
         IMPORTING
           previous TYPE REF TO cx_root
@@ -56,7 +56,7 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       set_deep_data_to_dom
         IMPORTING
           im_params TYPE any
-          im_pindex TYPE i,
+          im_pindex TYPE i OPTIONAL,
       set_var_mode_to_dom.
   PRIVATE SECTION.
 
