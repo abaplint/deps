@@ -7,9 +7,6 @@ INTERFACE if_ixml_node PUBLIC.
   METHODS:
     append_child
       IMPORTING
-        child TYPE REF TO if_ixml_node,
-    append_child
-      IMPORTING
         new_child TYPE REF TO if_ixml_element,
     get_attributes
       RETURNING
