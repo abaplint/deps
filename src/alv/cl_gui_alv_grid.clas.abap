@@ -187,7 +187,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         EXPORTING
           e_valid TYPE any
         CHANGING
-          c_refresh TYPE any,
+          c_refresh TYPE any OPTIONAL,
       register_delayed_event,
       register_f4_for_fields
         IMPORTING
