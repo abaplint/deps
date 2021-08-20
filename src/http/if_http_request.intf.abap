@@ -57,7 +57,7 @@ INTERFACE if_http_request PUBLIC.
     set_cdata
       IMPORTING data TYPE string,
     add_multipart
-      IMPORTING suppress_content_length TYPE string
+      IMPORTING suppress_content_length TYPE string OPTIONAL
       RETURNING VALUE(entity) TYPE REF TO if_http_entity,
     set_compression,
     get_form_data
