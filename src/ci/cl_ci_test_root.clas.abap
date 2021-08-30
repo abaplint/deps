@@ -29,6 +29,7 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
     CONSTANTS:
       c_pc_exceptn_posibl TYPE c LENGTH 1 VALUE '?',
       c_pc_exceptn_exists TYPE c LENGTH 1 VALUE '?',
+      c_exceptn_by_table_entry TYPE c LENGTH 1 VALUE '?',
       c_exceptn_imposibl TYPE c LENGTH 1 VALUE '?'.
 
     CONSTANTS:
