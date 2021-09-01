@@ -141,7 +141,7 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           p_sort_by_package TYPE string
           p_sort_by_object TYPE string
         CHANGING
-          p_results TYPE ANY TABLE
+          p_results TYPE ty_results_tt
           p_results_hd TYPE ANY TABLE.
 
   PROTECTED SECTION.
