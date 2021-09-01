@@ -125,6 +125,14 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           p_comments     TYPE string OPTIONAL.
 * todo, some of the above is from version something?
 
+    TYPES: BEGIN OF ty_results,
+             test     TYPE string,
+             sobjtype TYPE string,
+             code     TYPE string,
+           END OF ty_results.
+
+    TYPES ty_results_tt TYPE STANDARD TABLE OF ty_results WITH DEFAULT KEY.
+
     METHODS
       consolidate_for_display
         ABSTRACT
