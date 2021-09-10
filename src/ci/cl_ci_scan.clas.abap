@@ -63,7 +63,7 @@ ENDCLASS.
 CLASS cl_ci_scan IMPLEMENTATION.
 
   METHOD determine_aunit_lines.
-
-    ENDMETHOD.
+    RETURN.
+  ENDMETHOD.
 
 ENDCLASS.
