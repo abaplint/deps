@@ -56,6 +56,8 @@ CLASS cl_ci_scan DEFINITION PUBLIC.
 
     DATA subrc TYPE i.
 
+    METHODS determine_aunit_lines.
+
 ENDCLASS.
 
 CLASS cl_ci_scan IMPLEMENTATION.
