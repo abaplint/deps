@@ -44,7 +44,7 @@ CLASS cl_ci_scan DEFINITION PUBLIC.
              len3 TYPE i,
              type TYPE c LENGTH 1,
            END OF ty_token.
-    TYPES ty_level_tab TYPE STANDARD TABLE OF ty_level WITH DEFAULT KEY. 
+    TYPES ty_level_tab TYPE STANDARD TABLE OF ty_level WITH DEFAULT KEY.
     TYPES ty_structure_tab TYPE STANDARD TABLE OF ty_structure WITH DEFAULT KEY. 
     TYPES ty_statement_tab TYPE STANDARD TABLE OF ty_statement WITH DEFAULT KEY. 
     TYPES ty_token_tab TYPE STANDARD TABLE OF ty_token WITH DEFAULT KEY.  
