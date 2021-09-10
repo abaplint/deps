@@ -47,7 +47,7 @@ CLASS cl_ci_scan DEFINITION PUBLIC.
     TYPES ty_level_tab TYPE STANDARD TABLE OF ty_level WITH DEFAULT KEY.
     TYPES ty_structure_tab TYPE STANDARD TABLE OF ty_structure WITH DEFAULT KEY.
     TYPES ty_statement_tab TYPE STANDARD TABLE OF ty_statement WITH DEFAULT KEY.
-    TYPES ty_token_tab TYPE STANDARD TABLE OF ty_token WITH DEFAULT KEY.  
+    TYPES ty_token_tab TYPE STANDARD TABLE OF ty_token WITH DEFAULT KEY.
 
     DATA levels TYPE ty_level_tab.
     DATA structures TYPE ty_structure_tab.
