@@ -33,7 +33,6 @@ CLASS cl_ci_scan DEFINITION PUBLIC.
              terminator TYPE c LENGTH 1,
              enhmt TYPE i,
            END OF ty_statement.
-           
     TYPES: BEGIN OF ty_token,
              str TYPE string,
              row TYPE i,
