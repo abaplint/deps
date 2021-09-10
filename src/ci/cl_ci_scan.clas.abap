@@ -6,7 +6,6 @@ CLASS cl_ci_scan DEFINITION PUBLIC.
              name TYPE string,
              level TYPE i,
            END OF ty_level.
-           
     TYPES: BEGIN OF ty_structure,
              type TYPE c LENGTH 1,
              stmnt_type TYPE c LENGTH 1,
