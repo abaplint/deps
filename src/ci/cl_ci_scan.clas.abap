@@ -17,7 +17,6 @@ CLASS cl_ci_scan DEFINITION PUBLIC.
              struc_to TYPE i,
              back TYPE i,
            END OF ty_structure.
-
     TYPES: BEGIN OF ty_statement,
              level TYPE i,
              struc TYPE i,
@@ -44,7 +43,7 @@ CLASS cl_ci_scan DEFINITION PUBLIC.
              len3 TYPE i,
              type TYPE c LENGTH 1,
            END OF ty_token.
-    TYPES: BEING OF ty_aunit,
+    TYPES: BEGIN OF ty_aunit,
              incl_name TYPE string,
              range_tab TYPE RANGE OF i,
            END OF ty_aunit.
