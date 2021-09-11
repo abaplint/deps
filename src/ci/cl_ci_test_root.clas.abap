@@ -24,7 +24,8 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           has_display_consolidation TYPE abap_bool,
           program_name      TYPE string,
           myname            TYPE string,
-          scimessages       TYPE STANDARD TABLE OF ty_message WITH DEFAULT KEY.
+          scimessages       TYPE STANDARD TABLE OF ty_message WITH DEFAULT KEY,
+          no_aunit          TYPE string.
 
     CONSTANTS:
       c_pc_exceptn_posibl TYPE c LENGTH 1 VALUE '?',
