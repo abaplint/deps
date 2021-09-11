@@ -60,8 +60,14 @@ CLASS cl_ci_scan DEFINITION PUBLIC.
     DATA aunit_tab TYPE ty_aunit_tab.
     DATA subrc TYPE i.
 
+    METHODS determine_aunit_lines.
+
 ENDCLASS.
 
 CLASS cl_ci_scan IMPLEMENTATION.
+
+  METHOD determine_aunit_lines.
+    RETURN.
+  ENDMETHOD.
 
 ENDCLASS.
