@@ -5,7 +5,9 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
       IMPORTING p_n TYPE i
       RETURNING VALUE(p_result) TYPE string.
     METHODS get_include
-      IMPORTING p_level TYPE i
+      IMPORTING
+        p_ref_scan TYPE REF TO cl_ci_scan OPTIONAL
+        p_level    TYPE i OPTIONAL
       RETURNING VALUE(p_result) TYPE string.
     METHODS get_line_abs
       IMPORTING VALUE(p_n) TYPE i
