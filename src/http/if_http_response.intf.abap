@@ -1,4 +1,5 @@
 INTERFACE if_http_response PUBLIC.
+  INTERFACES if_http_entity.
 
   TYPES: ty_fields TYPE STANDARD TABLE OF string WITH DEFAULT KEY.
 
