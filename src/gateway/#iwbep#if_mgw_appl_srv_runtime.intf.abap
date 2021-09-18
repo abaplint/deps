@@ -1,5 +1,8 @@
 INTERFACE /iwbep/if_mgw_appl_srv_runtime PUBLIC.
 
+  TYPES ty_s_mgw_response_entity_cntxt TYPE string.
+  TYPES ty_s_mgw_response_context TYPE string.
+
   METHODS get_stream
     IMPORTING
       iv_entity_name          TYPE string
