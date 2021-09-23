@@ -9,6 +9,7 @@ CONSTANTS icon_adopt TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_alert TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_annotation TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_any_document TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_attachment TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_availability_display TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_background_job TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_binary_document TYPE c LENGTH 4 VALUE ''.
@@ -103,6 +104,7 @@ CONSTANTS icon_hint TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_htm TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_htt TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_icon_list TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_import TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_import_all_requests TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_import_transport_request TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_include_objects TYPE c LENGTH 4 VALUE ''.
