@@ -10,6 +10,10 @@ ENDCLASS.
 
 CLASS /iwbep/cl_mgw_push_abs_data IMPLEMENTATION.
 
+  METHOD /iwbep/if_mgw_appl_srv_runtime~create_deep_entity.
+    RETURN.
+  ENDMETHOD.
+
   METHOD /iwbep/if_mgw_appl_srv_runtime~get_stream.
     RETURN.
   ENDMETHOD.
