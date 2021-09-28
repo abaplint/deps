@@ -272,3 +272,6 @@ CONSTANTS icon_xls TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_xml_doc TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_xxl TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_yellow_light TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_bw_dtp_active TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_abap_local TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_oo_constant TYPE c LENGTH 4 VALUE ''.
