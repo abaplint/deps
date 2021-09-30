@@ -1,6 +1,6 @@
 INTERFACE if_ci_atc_check_meta_data PUBLIC.
   METHODS get_checked_object_types
-    RETURNING VALUE(types) TYPE string_table.
+    RETURNING VALUE(types) TYPE string.
   METHODS get_description
     RETURNING VALUE(description) TYPE string.
   METHODS get_finding_code_infos

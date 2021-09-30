@@ -7,7 +7,7 @@ INTERFACE if_ci_atc_check PUBLIC.
   METHODS run
     IMPORTING
       object        TYPE any
-      data_provider TYPE REF TO cl_foobar
+      data_provider TYPE REF TO any
     RETURNING
       VALUE(findings) TYPE any.
   METHODS set_assistant_factory.
