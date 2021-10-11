@@ -54,6 +54,18 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
 
     DATA ref_scan TYPE REF TO cl_ci_scan.
 
+    DATA: BEGIN OF structure_wa,
+            type       TYPE c LENGTH 1,
+            stmnt_type TYPE c LENGTH 1,
+            key_start  TYPE c LENGTH 1,
+            key_end    TYPE c LENGTH 1,
+            stmnt_from TYPE i,
+            stmnt_to   TYPE i,
+            struc_from TYPE i,
+            struc_to   TYPE i,
+            back       TYPE i,
+          END OF structure_wa. 
+
   PROTECTED SECTION.
   PRIVATE SECTION.
 
