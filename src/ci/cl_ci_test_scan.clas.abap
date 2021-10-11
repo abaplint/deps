@@ -64,7 +64,7 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
             struc_from TYPE i,
             struc_to   TYPE i,
             back       TYPE i,
-          END OF structure_wa. 
+          END OF structure_wa.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
