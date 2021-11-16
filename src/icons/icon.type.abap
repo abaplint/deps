@@ -49,6 +49,7 @@ CONSTANTS icon_composite_activitygroup TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_configuration TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_connect TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_content_object TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_context_class TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_context_menu TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_controlling_area TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_convert TYPE c LENGTH 4 VALUE ''.
