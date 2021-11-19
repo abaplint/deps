@@ -147,10 +147,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       free,
       get_frontend_fieldcatalog
         EXPORTING
-          et_fieldcatalog TYPE string,
+          et_fieldcatalog TYPE lvc_t_fcat,
       get_frontend_layout
         EXPORTING
-          es_layout TYPE string,
+          es_layout TYPE lvc_s_layo,
       get_sort_criteria
         EXPORTING
           et_sort TYPE string,
