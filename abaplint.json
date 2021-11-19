@@ -8,7 +8,7 @@
   "dependencies": [],
   "syntax": {
     "version": "v702",
-    "errorNamespace": "",
+    "errorNamespace": "ASDF",
     "globalConstants": [],
     "globalMacros": []
   },
@@ -53,9 +53,7 @@
     "parser_missing_space": true,
     "prefer_inline": false,
     "reduce_string_templates": true,
-    "forbidden_void_type": {
-      "check": [""]
-    },
+    "forbidden_void_type": false,
     "forbidden_identifier": false,
     "try_without_catch": true,
     "unknown_types": true,
