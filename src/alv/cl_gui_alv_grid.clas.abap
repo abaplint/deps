@@ -173,6 +173,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       set_frontend_layout
         IMPORTING
           layout TYPE any,
+      set_frontend_fieldcatalog
+        IMPORTING
+          catalog TYPE any,
       set_selected_rows
         IMPORTING
           it_row_no TYPE any,
@@ -223,6 +226,10 @@ CLASS cl_gui_alv_grid IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD get_current_cell.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_frontend_fieldcatalog.
     RETURN.
   ENDMETHOD.
 
