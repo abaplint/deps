@@ -229,6 +229,10 @@ CLASS cl_gui_alv_grid IMPLEMENTATION.
     RETURN.
   ENDMETHOD.
 
+  METHOD set_frontend_fieldcatalog.
+    RETURN.
+  ENDMETHOD.
+
   METHOD register_delayed_event.
     RETURN.
   ENDMETHOD.
