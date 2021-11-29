@@ -5,6 +5,7 @@ CLASS /iwbep/cl_mgw_push_abs_data DEFINITION PUBLIC ABSTRACT CREATE PUBLIC.
     INTERFACES /iwbep/if_mgw_conv_srv_runtime.
     INTERFACES /iwbep/if_mgw_appl_srv_runtime.
   PROTECTED SECTION.
+    DATA mo_context TYPE REF TO /iwbep/if_mgw_context.
   PRIVATE SECTION.
 
 ENDCLASS.
