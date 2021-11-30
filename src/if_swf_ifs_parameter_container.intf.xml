@@ -5,7 +5,7 @@
    <VSEOINTERF>
     <CLSNAME>IF_SWF_IFS_PARAMETER_CONTAINER</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Container for Transfer of Parameters</DESCRIPT>
+    <DESCRIPT>Parameter container</DESCRIPT>
     <EXPOSURE>2</EXPOSURE>
     <STATE>1</STATE>
     <UNICODE>X</UNICODE>
