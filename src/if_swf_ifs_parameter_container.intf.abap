@@ -1,6 +1,4 @@
-*"* components of interface IF_SWF_IFS_PARAMETER_CONTAINER
 INTERFACE if_swf_ifs_parameter_container PUBLIC.
-
 
   METHODS get IMPORTING VALUE(name) TYPE swfdname
               EXPORTING value TYPE any
