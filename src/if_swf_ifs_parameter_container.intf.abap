@@ -3,7 +3,8 @@ INTERFACE if_swf_ifs_parameter_container PUBLIC.
 
 
   METHODS get IMPORTING VALUE(name) TYPE swfdname
-              EXPORTING value TYPE any unit TYPE any
+              EXPORTING value TYPE any
+                        unit TYPE any
                         returncode TYPE sysubrc
               RAISING cx_swf_cnt_container.
 
