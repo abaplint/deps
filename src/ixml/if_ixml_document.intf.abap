@@ -1,4 +1,6 @@
 INTERFACE if_ixml_document PUBLIC.
+  INTERFACES if_ixml_node.
+
   METHODS:
     set_encoding
       IMPORTING
@@ -18,13 +20,13 @@ INTERFACE if_ixml_document PUBLIC.
     create_attribute_ns
       IMPORTING
         name TYPE string
-        prefix TYPE string
+        prefix TYPE string OPTIONAL
       RETURNING
         VALUE(element) TYPE REF TO if_ixml_element,
     create_element_ns
       IMPORTING
         name TYPE string
-        prefix TYPE string
+        prefix TYPE string OPTIONAL
       RETURNING
         VALUE(element) TYPE REF TO if_ixml_element,
     create_element
@@ -65,12 +67,12 @@ INTERFACE if_ixml_document PUBLIC.
     find_from_name
       IMPORTING
         name TYPE string
-        namespace TYPE string
+        namespace TYPE string OPTIONAL
       RETURNING
         VALUE(element) TYPE REF TO if_ixml_element,
     find_from_name_ns
       IMPORTING
-        depth TYPE i
+        depth TYPE i OPTIONAL
         name  TYPE string
       RETURNING
         VALUE(element) TYPE REF TO if_ixml_element,
@@ -82,11 +84,11 @@ INTERFACE if_ixml_document PUBLIC.
     get_elements_by_tag_name_ns
       IMPORTING
         name TYPE string
-        namespace TYPE string
+        namespace TYPE string OPTIONAL
       RETURNING VALUE(val) TYPE any,
     get_elements_by_tag_name
       IMPORTING
-        depth TYPE i
+        depth TYPE i OPTIONAL
         name TYPE string
         namespace TYPE string OPTIONAL
       RETURNING VALUE(val) TYPE any,

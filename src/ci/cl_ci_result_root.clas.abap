@@ -8,6 +8,8 @@ CLASS cl_ci_result_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
             param2 TYPE string,
           END OF result.
 
+    DATA pseudo_remote_enabled TYPE abap_bool.
+
     METHODS set_info ABSTRACT
       IMPORTING p_info TYPE string
       RETURNING VALUE(p_result) TYPE string.

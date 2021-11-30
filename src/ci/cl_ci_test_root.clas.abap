@@ -3,6 +3,15 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
   PUBLIC SECTION.
     INTERFACES if_ci_test.
 
+    TYPES: BEGIN OF ty_message,
+             test TYPE string,
+             code TYPE string,
+             kind TYPE string,
+             text TYPE string,
+             pcom TYPE string,
+             pcom_alt TYPE string,
+          END OF ty_message.
+
     DATA: category          TYPE string,
           description       TYPE string,
           object_type       TYPE string,
@@ -15,11 +24,13 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           has_display_consolidation TYPE abap_bool,
           program_name      TYPE string,
           myname            TYPE string,
-          scimessages       TYPE STANDARD TABLE OF string.
+          scimessages       TYPE STANDARD TABLE OF ty_message WITH DEFAULT KEY,
+          no_aunit          TYPE string.
 
     CONSTANTS:
       c_pc_exceptn_posibl TYPE c LENGTH 1 VALUE '?',
       c_pc_exceptn_exists TYPE c LENGTH 1 VALUE '?',
+      c_exceptn_by_table_entry TYPE c LENGTH 1 VALUE '?',
       c_exceptn_imposibl TYPE c LENGTH 1 VALUE '?'.
 
     CONSTANTS:
@@ -115,6 +126,14 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           p_comments     TYPE string OPTIONAL.
 * todo, some of the above is from version something?
 
+    TYPES: BEGIN OF ty_results,
+             test     TYPE string,
+             sobjtype TYPE string,
+             code     TYPE string,
+           END OF ty_results.
+
+    TYPES ty_results_tt TYPE STANDARD TABLE OF ty_results WITH DEFAULT KEY.
+
     METHODS
       consolidate_for_display
         ABSTRACT
@@ -123,7 +142,7 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           p_sort_by_package TYPE string
           p_sort_by_object TYPE string
         CHANGING
-          p_results TYPE ANY TABLE
+          p_results TYPE ty_results_tt
           p_results_hd TYPE ANY TABLE.
 
   PROTECTED SECTION.

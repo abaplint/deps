@@ -8,11 +8,12 @@
   "dependencies": [],
   "syntax": {
     "version": "v702",
-    "errorNamespace": "",
+    "errorNamespace": "ASDF",
     "globalConstants": [],
     "globalMacros": []
   },
   "rules": {
+    "many_parentheses": true,
     "modify_only_own_db_tables": true,
     "no_yoda_conditions": true,
     "prefer_raise_exception_new": false,
@@ -28,7 +29,6 @@
     "function_module_recommendations": true,
     "identical_contents": true,
     "intf_referencing_clas": false,
-    "many_parenthesis": true,
     "method_implemented_twice": true,
     "method_overwrites_builtin": false,
     "omit_parameter_name": true,
@@ -53,9 +53,7 @@
     "parser_missing_space": true,
     "prefer_inline": false,
     "reduce_string_templates": true,
-    "forbidden_void_type": {
-      "check": [""]
-    },
+    "forbidden_void_type": false,
     "forbidden_identifier": false,
     "try_without_catch": true,
     "unknown_types": true,
@@ -136,6 +134,7 @@
     "identical_form_names": true,
     "if_in_if": true,
     "in_statement_indentation": {
+      "blockStatements": 0,
       "ignoreExceptions": true
     },
     "indentation": {
@@ -143,6 +142,7 @@
       "alignTryCatch": false,
       "globalClassSkipFirst": false,
       "ignoreGlobalClassDefinition": false,
+      "selectionScreenBlockIndentation": false,
       "ignoreGlobalInterface": false
     },
     "inline_data_old_versions": true,
@@ -176,6 +176,7 @@
     "message_exists": true,
     "method_length": {
       "errorWhenEmpty": true,
+      "checkForms": true,
       "ignoreTestClasses": false,
       "statements": 100
     },
@@ -192,6 +193,8 @@
       "refresh": true,
       "compute": true,
       "exitFromSQL": true,
+      "sortByFS": true,
+      "callTransformation": true,
       "freeMemory": true,
       "selectWithoutInto": true,
       "add": true,

@@ -1,4 +1,6 @@
 INTERFACE if_http_request PUBLIC.
+  INTERFACES if_http_entity.
+
   CONSTANTS:
     co_protocol_version_1_1 TYPE string VALUE 'VER11',
     co_protocol_version_1_0 TYPE string VALUE 'VER10',
@@ -57,7 +59,7 @@ INTERFACE if_http_request PUBLIC.
     set_cdata
       IMPORTING data TYPE string,
     add_multipart
-      IMPORTING suppress_content_length TYPE string
+      IMPORTING suppress_content_length TYPE string OPTIONAL
       RETURNING VALUE(entity) TYPE REF TO if_http_entity,
     set_compression,
     get_form_data

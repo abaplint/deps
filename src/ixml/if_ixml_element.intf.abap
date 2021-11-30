@@ -25,13 +25,13 @@ INTERFACE if_ixml_element PUBLIC.
     find_from_name_ns
       IMPORTING
         name TYPE string
-        namespace TYPE string
-        depth TYPE i
+        namespace TYPE string OPTIONAL
+        depth TYPE i OPTIONAL
       RETURNING VALUE(val) TYPE REF TO if_ixml_element,
     find_from_name
       IMPORTING
         name TYPE string
-        namespace TYPE string
+        namespace TYPE string OPTIONAL
         depth TYPE i OPTIONAL
       RETURNING VALUE(val) TYPE REF TO if_ixml_element,
     get_attribute_node
@@ -84,7 +84,7 @@ INTERFACE if_ixml_element PUBLIC.
     set_attribute_ns
       IMPORTING
         name TYPE string
-        prefix TYPE string
+        prefix TYPE string OPTIONAL
         value TYPE string,
     set_value
       IMPORTING

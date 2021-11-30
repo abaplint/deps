@@ -147,10 +147,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       free,
       get_frontend_fieldcatalog
         EXPORTING
-          et_fieldcatalog TYPE string,
+          et_fieldcatalog TYPE lvc_t_fcat,
       get_frontend_layout
         EXPORTING
-          es_layout TYPE string,
+          es_layout TYPE lvc_s_layo,
       get_sort_criteria
         EXPORTING
           et_sort TYPE string,
@@ -173,13 +173,16 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       set_frontend_layout
         IMPORTING
           layout TYPE any,
+      set_frontend_fieldcatalog
+        IMPORTING
+          catalog TYPE any,
       set_selected_rows
         IMPORTING
           it_row_no TYPE any,
       refresh_table_display
         IMPORTING
-          is_stable      TYPE any
-          i_soft_refresh TYPE abap_bool,
+          is_stable      TYPE any OPTIONAL
+          i_soft_refresh TYPE abap_bool OPTIONAL,
       set_ready_for_input
         IMPORTING
           i_ready_for_input TYPE any,
@@ -187,7 +190,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         EXPORTING
           e_valid TYPE any
         CHANGING
-          c_refresh TYPE any,
+          c_refresh TYPE any OPTIONAL,
       register_delayed_event,
       register_f4_for_fields
         IMPORTING
@@ -207,9 +210,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           is_layout            TYPE string OPTIONAL
           it_toolbar_excluding TYPE string OPTIONAL
         CHANGING
-          it_fieldcatalog      TYPE string
-          it_sort              TYPE string
-          it_outtab            TYPE string.
+          it_fieldcatalog      TYPE string OPTIONAL
+          it_sort              TYPE string OPTIONAL
+          it_outtab            TYPE string OPTIONAL.
 
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
@@ -223,6 +226,10 @@ CLASS cl_gui_alv_grid IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD get_current_cell.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_frontend_fieldcatalog.
     RETURN.
   ENDMETHOD.
 

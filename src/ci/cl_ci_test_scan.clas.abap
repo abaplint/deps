@@ -5,7 +5,9 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
       IMPORTING p_n TYPE i
       RETURNING VALUE(p_result) TYPE string.
     METHODS get_include
-      IMPORTING p_level TYPE i
+      IMPORTING
+        p_ref_scan TYPE REF TO cl_ci_scan OPTIONAL
+        p_level    TYPE i OPTIONAL
       RETURNING VALUE(p_result) TYPE string.
     METHODS get_line_abs
       IMPORTING VALUE(p_n) TYPE i
@@ -51,6 +53,18 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
           END OF token_wa.
 
     DATA ref_scan TYPE REF TO cl_ci_scan.
+
+    DATA: BEGIN OF structure_wa,
+            type       TYPE c LENGTH 1,
+            stmnt_type TYPE c LENGTH 1,
+            key_start  TYPE c LENGTH 1,
+            key_end    TYPE c LENGTH 1,
+            stmnt_from TYPE i,
+            stmnt_to   TYPE i,
+            struc_from TYPE i,
+            struc_to   TYPE i,
+            back       TYPE i,
+          END OF structure_wa.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
