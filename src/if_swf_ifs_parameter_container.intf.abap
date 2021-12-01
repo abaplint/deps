@@ -1,5 +1,11 @@
 INTERFACE if_swf_ifs_parameter_container PUBLIC.
 
+  METHODS clear IMPORTING VALUE(name)           TYPE swfdname
+                          restore_default_value TYPE abap_bool DEFAULT space
+                          initialize_if_null    TYPE abap_bool DEFAULT space
+                EXPORTING returncode            TYPE sysubrc
+                RAISING   cx_swf_cnt_container.
+
   METHODS get IMPORTING VALUE(name) TYPE swfdname
               EXPORTING value TYPE any
                         unit TYPE any
