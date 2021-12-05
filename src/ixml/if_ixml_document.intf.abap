@@ -102,5 +102,11 @@ INTERFACE if_ixml_document PUBLIC.
     get_root RETURNING VALUE(node) TYPE REF TO if_ixml_node,
     create_text IMPORTING text TYPE clike RETURNING VALUE(text) TYPE REF TO object,
     get_root_element RETURNING VALUE(root) TYPE REF TO if_ixml_element,
-    get_first_node RETURNING VALUE(node) TYPE REF TO if_ixml_node.
+    get_first_node RETURNING VALUE(node) TYPE REF TO if_ixml_node,
+    create_filter_name_ns
+      IMPORTING
+        name TYPE string
+        namespace TYPE string OPTIONAL
+      RETURNING
+        VALUE(filter) TYPE REF TO if_ixml_node_filter.
 ENDINTERFACE.
