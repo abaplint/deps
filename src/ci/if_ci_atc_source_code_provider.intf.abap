@@ -252,7 +252,7 @@ INTERFACE if_ci_atc_source_code_provider
     RETURNING VALUE(location) TYPE if_ci_atc_check=>ty_location.
 
   METHODS get_statement_checksum
-    IMPORTING statement type ty_statement
-    RETURNING VALUE(checksum) type if_ci_atc_check=>ty_checksum.
+    IMPORTING statement TYPE ty_statement
+    RETURNING VALUE(checksum) TYPE if_ci_atc_check=>ty_checksum.
 
 ENDINTERFACE.

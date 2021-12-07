@@ -25,7 +25,7 @@ CLASS cl_ci_atc_assistant_factory IMPLEMENTATION.
   METHOD create_finding_details.
     RETURN.
   ENDMETHOD.
-  
+
   METHOD create_call_stack.
     RETURN.
   ENDMETHOD.

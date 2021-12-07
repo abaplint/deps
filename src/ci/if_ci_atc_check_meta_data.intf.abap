@@ -51,5 +51,5 @@ INTERFACE if_ci_atc_check_meta_data PUBLIC.
   METHODS uses_checksums
     RETURNING VALUE(uses_checksums) TYPE abap_bool.
   METHODS is_remote_enabled
-    returning value(is_remote_enabled) type abap_bool.
+    RETURNING VALUE(is_remote_enabled) type abap_bool.
 ENDINTERFACE.
