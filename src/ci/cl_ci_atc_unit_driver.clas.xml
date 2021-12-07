@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_CI_ATC_UNIT_DRIVER</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Test driver for unit tests of ATC checks</DESCRIPT>
+    <CATEGORY>05</CATEGORY>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>DFF</KEY>
+     <ENTRY>Message code &amp;1, object &amp;2, line &amp;3 column &amp;4</ENTRY>
+     <LENGTH>90</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>FNF</KEY>
+     <ENTRY>Expected finding not found: &amp;1</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>NQF</KEY>
+     <ENTRY>No quickfixes found for finding: &amp;1</ENTRY>
+     <LENGTH>70</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>QFE</KEY>
+     <ENTRY>Quick fix error: &amp;1 Erroneous line: &amp;2</ENTRY>
+     <LENGTH>76</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>UEF</KEY>
+     <ENTRY>Unexpected finding: &amp;1</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>
