@@ -11,8 +11,8 @@ CLASS cl_ci_atc_finding_details DEFINITION
     METHODS attach_quickfixes
       IMPORTING fixes TYPE REF TO cl_ci_atc_quickfixes
       RETURNING VALUE(self) TYPE REF TO cl_ci_atc_finding_details.
-PROTECTED SECTION.
-PRIVATE SECTION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 

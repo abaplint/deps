@@ -27,12 +27,15 @@ ENDCLASS.
 
 CLASS cl_ci_atc_data_provider IMPLEMENTATION.
 
+  METHOD main_program_from_comp_unit.
+  ENDMETHOD.
+
   METHOD get_code_provider.
     RETURN.
-  ENDMETHOD.  
+  ENDMETHOD.
 
   METHOD get_checked_destination.
     RETURN.
-  ENDMETHOD.  
+  ENDMETHOD.
 
 ENDCLASS.

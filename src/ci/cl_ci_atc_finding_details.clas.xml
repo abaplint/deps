@@ -11,20 +11,6 @@
     <FIXPT>X</FIXPT>
     <UNICODE>X</UNICODE>
    </VSEOCLASS>
-   <DESCRIPTIONS>
-    <SEOCOMPOTX>
-     <CLSNAME>CL_CI_ATC_FINDING_DETAILS</CLSNAME>
-     <CMPNAME>ATTACH_QUICKFIXES</CMPNAME>
-     <LANGU>E</LANGU>
-     <DESCRIPT>Attaches a set of quick fixes to this set of details</DESCRIPT>
-    </SEOCOMPOTX>
-    <SEOCOMPOTX>
-     <CLSNAME>CL_CI_ATC_FINDING_DETAILS</CLSNAME>
-     <CMPNAME>ATTACH_STACK</CMPNAME>
-     <LANGU>E</LANGU>
-     <DESCRIPT>Attaches a stack to this set of details</DESCRIPT>
-    </SEOCOMPOTX>
-   </DESCRIPTIONS>
   </asx:values>
  </asx:abap>
 </abapGit>
