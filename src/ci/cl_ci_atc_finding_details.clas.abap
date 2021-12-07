@@ -1,8 +1,7 @@
 CLASS cl_ci_atc_finding_details DEFINITION
   PUBLIC
   FINAL
-  CREATE PRIVATE
-  GLOBAL FRIENDS.
+  CREATE PRIVATE.
 
 PUBLIC SECTION.
   METHODS attach_stack
