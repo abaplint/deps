@@ -1,5 +1,4 @@
-INTERFACE if_ci_atc_check_meta_data
-  PUBLIC.
+INTERFACE if_ci_atc_check_meta_data PUBLIC.
 TYPES:
   BEGIN OF ENUM ty_attribute_kind STRUCTURE attribute_kinds,
     boolean,
