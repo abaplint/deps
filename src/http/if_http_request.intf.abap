@@ -43,7 +43,7 @@ INTERFACE if_http_request PUBLIC.
       IMPORTING data TYPE string
       RETURNING VALUE(val) TYPE string,
     get_cdata
-      RETURNING VALUE(val) TYPE string,
+      RETURNING VALUE(data) TYPE string,
     get_header_fields
       CHANGING
         fields TYPE string,
