@@ -27,6 +27,7 @@ INTERFACE if_ixml_element PUBLIC.
         name TYPE string
         namespace TYPE string OPTIONAL
         depth TYPE i OPTIONAL
+        uri TYPE string OPTIONAL
       RETURNING VALUE(val) TYPE REF TO if_ixml_element,
     find_from_name
       IMPORTING
@@ -40,6 +41,7 @@ INTERFACE if_ixml_element PUBLIC.
     get_attribute_ns
       IMPORTING
         name TYPE string
+        uri TYPE string OPTIONAL
       RETURNING VALUE(val) TYPE string,
     get_attribute
       IMPORTING
@@ -55,7 +57,9 @@ INTERFACE if_ixml_element PUBLIC.
       RETURNING
         VALUE(val) TYPE any,
     get_elements_by_tag_name_ns
-      IMPORTING name TYPE string
+      IMPORTING
+        name TYPE string
+        uri TYPE string OPTIONAL
       RETURNING VALUE(val) TYPE any,
     get_first_child
       RETURNING VALUE(val) TYPE REF TO if_ixml_node,
