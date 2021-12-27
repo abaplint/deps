@@ -74,6 +74,7 @@ INTERFACE if_ixml_document PUBLIC.
       IMPORTING
         depth TYPE i OPTIONAL
         name  TYPE string
+        uri TYPE string OPTIONAL
       RETURNING
         VALUE(element) TYPE REF TO if_ixml_element,
     find_from_path
@@ -91,6 +92,7 @@ INTERFACE if_ixml_document PUBLIC.
         depth TYPE i OPTIONAL
         name TYPE string
         namespace TYPE string OPTIONAL
+        uri TYPE string OPTIONAL
       RETURNING VALUE(val) TYPE any,
     create_namespace_decl
       IMPORTING
