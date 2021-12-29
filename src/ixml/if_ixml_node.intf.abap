@@ -26,6 +26,9 @@ INTERFACE if_ixml_node PUBLIC.
     get_namespace_prefix
       RETURNING
         VALUE(rv_prefix) TYPE string,
+    get_namespace_uri
+      RETURNING
+        VALUE(rval) TYPE string,
     get_next
       RETURNING
         VALUE(next) TYPE REF TO if_ixml_node,
