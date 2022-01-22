@@ -38,6 +38,11 @@ INTERFACE if_ixml_element PUBLIC.
     get_attribute_node
       IMPORTING name TYPE string
       RETURNING VALUE(val) TYPE REF TO if_ixml_attribute,
+    get_attribute_node_ns
+      IMPORTING
+        name TYPE string
+        uri TYPE string OPTIONAL
+      RETURNING VALUE(val) TYPE REF TO if_ixml_attribute,
     get_attribute_ns
       IMPORTING
         name TYPE string
