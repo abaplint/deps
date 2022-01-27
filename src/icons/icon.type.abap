@@ -272,7 +272,7 @@ CONSTANTS icon_wd_custom_controller TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_image TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_navigation_link TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_radio_button_empty TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_wd_table TYPE C LENGTH 4 VALUE ''.
+CONSTANTS icon_wd_table TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_toolbar TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_toolbar_caption TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_tree_node TYPE c LENGTH 4 VALUE ''.
