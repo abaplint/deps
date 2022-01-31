@@ -15,6 +15,8 @@ INTERFACE if_http_response PUBLIC.
       IMPORTING data TYPE string,
     set_data
       IMPORTING data TYPE string,
+    redirect
+      IMPORTING url TYPE string,
     get_data
       RETURNING VALUE(val) TYPE xstring,
     get_cdata
@@ -22,7 +24,11 @@ INTERFACE if_http_response PUBLIC.
     set_cookie
       IMPORTING
         name TYPE string
-        value TYPE string,
+        value TYPE string
+        path TYPE string OPTIONAL
+        domain TYPE string OPTIONAL
+        expires TYPE string OPTIONAL
+        secure TYPE i OPTIONAL,
     set_compression,
     set_header_field
       IMPORTING

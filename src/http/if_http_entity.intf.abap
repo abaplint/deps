@@ -13,6 +13,9 @@ INTERFACE if_http_entity PUBLIC.
       IMPORTING
         name  TYPE string
         value TYPE string,
+    get_form_fields
+      CHANGING
+        fields TYPE string,
     set_compression,
     add_multipart,
     append_cdata IMPORTING data TYPE clike,
