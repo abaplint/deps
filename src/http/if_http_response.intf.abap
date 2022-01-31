@@ -15,6 +15,8 @@ INTERFACE if_http_response PUBLIC.
       IMPORTING data TYPE string,
     set_data
       IMPORTING data TYPE string,
+    redirect
+      IMPORTING url TYPE string,
     get_data
       RETURNING VALUE(val) TYPE xstring,
     get_cdata
