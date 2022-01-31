@@ -56,6 +56,8 @@ INTERFACE if_http_request PUBLIC.
       RETURNING VALUE(value) TYPE string,
     get_data
       RETURNING VALUE(val) TYPE string,
+    num_multiparts
+      RETURNING VALUE(val) TYPE i,
     set_cdata
       IMPORTING data TYPE string,
     add_multipart
