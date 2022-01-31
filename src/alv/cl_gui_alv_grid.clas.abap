@@ -40,6 +40,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(er_data_changed) TYPE REF TO cl_alv_changed_data_protocol
       VALUE(e_ucomm) TYPE string.
 
+    EVENTS data_changed_finished EXPORTING
+      VALUE(e_modified) TYPE char01 OPTIONAL
+      VALUE(et_good_cells) TYPE lvc_t_modi OPTIONAL.
+
     EVENTS top_of_page EXPORTING
       VALUE(e_dyndoc_id) TYPE REF TO cl_dd_document
       VALUE(table_index) TYPE i.
@@ -50,6 +54,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
     EVENTS menu_button EXPORTING
       VALUE(e_object) TYPE REF TO cl_ctmenu OPTIONAL
       VALUE(e_ucomm) TYPE sy-ucomm OPTIONAL.
+
+    EVENTS button_click EXPORTING
+      VALUE(es_col_id) TYPE lvc_s_col OPTIONAL
+      VALUE(es_row_no) TYPE lvc_s_roid OPTIONAL.
 
     CONSTANTS:
       mc_style_disabled TYPE i VALUE 1,
