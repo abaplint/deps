@@ -69,6 +69,17 @@ INTERFACE if_http_request PUBLIC.
         auth_type TYPE i OPTIONAL
         VALUE(username) TYPE string
         VALUE(password) TYPE string,
+    get_multipart
+      IMPORTING
+        index TYPE i
+      RETURNING
+        VALUE(entity) TYPE REF TO if_http_entity,
+    get_form_fields_cs
+      IMPORTING
+        formfield_encoding TYPE i OPTIONAL
+        search_option TYPE i OPTIONAL
+      CHANGING
+        fields TYPE any,
     get_cookie_field
       IMPORTING
         cookie_name TYPE string

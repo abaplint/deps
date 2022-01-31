@@ -24,6 +24,9 @@ INTERFACE if_http_entity PUBLIC.
     get_content_type
       RETURNING VALUE(val) TYPE string,
     set_content_type,
+    get_data
+      RETURNING
+        VALUE(data) TYPE xstring,
     get_header_fields CHANGING fields TYPE any,
     get_cookies CHANGING cookies TYPE any.
 
