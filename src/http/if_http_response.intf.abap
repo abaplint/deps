@@ -16,7 +16,10 @@ INTERFACE if_http_response PUBLIC.
     set_data
       IMPORTING data TYPE string,
     redirect
-      IMPORTING url TYPE string,
+      IMPORTING
+        url TYPE string
+        permanently TYPE i OPTIONAL
+        protocol_dependent TYPE i OPTIONAL,
     get_data
       RETURNING VALUE(val) TYPE xstring,
     get_cdata
@@ -48,6 +51,14 @@ INTERFACE if_http_response PUBLIC.
       RETURNING VALUE(entity) TYPE REF TO if_http_entity,
     num_multiparts
       RETURNING VALUE(num) TYPE string,
+    delete_header_field
+      IMPORTING
+        name TYPE string,
+    delete_cookie_at_client
+      IMPORTING
+        name TYPE string
+        path TYPE string OPTIONAL
+        domain TYPE string OPTIONAL,
     get_status
       EXPORTING
         code   TYPE i
