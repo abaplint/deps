@@ -62,6 +62,16 @@ INTERFACE if_http_request PUBLIC.
       IMPORTING suppress_content_length TYPE string OPTIONAL
       RETURNING VALUE(entity) TYPE REF TO if_http_entity,
     set_compression,
+    set_authorization
+      IMPORTING
+        auth_type TYPE i OPTIONAL
+        VALUE(username) TYPE string
+        VALUE(password) TYPE string,
+    get_cookie_field
+      IMPORTING
+        cookie_name TYPE string
+        field_name TYPE string
+      RETURNING VALUE(val) TYPE string,
     get_form_data
       IMPORTING !name TYPE string
       CHANGING !data TYPE data.

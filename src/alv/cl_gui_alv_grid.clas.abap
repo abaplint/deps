@@ -47,6 +47,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
     EVENTS context_menu_request EXPORTING
       VALUE(e_object) TYPE REF TO cl_menu.
 
+    EVENTS menu_button EXPORTING
+      VALUE(e_object) TYPE REF TO cl_ctmenu OPTIONAL
+      VALUE(e_ucomm) TYPE sy-ucomm OPTIONAL.
+
     CONSTANTS:
       mc_style_disabled TYPE i VALUE 1,
       mc_style_enabled TYPE i VALUE 2,

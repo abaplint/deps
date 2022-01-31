@@ -22,7 +22,11 @@ INTERFACE if_http_response PUBLIC.
     set_cookie
       IMPORTING
         name TYPE string
-        value TYPE string,
+        value TYPE string
+        path TYPE string OPTIONAL
+        domain TYPE string OPTIONAL
+        expires TYPE string OPTIONAL
+        secure TYPE i OPTIONAL,
     set_compression,
     set_header_field
       IMPORTING
