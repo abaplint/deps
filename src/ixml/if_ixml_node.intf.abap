@@ -52,8 +52,8 @@ INTERFACE if_ixml_node PUBLIC.
     remove_node,
     replace_child
       IMPORTING
-        new_child TYPE string
-        old_child TYPE string,
+        new_child TYPE REF TO if_ixml_node
+        old_child TYPE REF TO if_ixml_node,
     set_name
       IMPORTING
         name TYPE string,
