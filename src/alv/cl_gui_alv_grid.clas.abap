@@ -222,9 +222,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           is_layout            TYPE string OPTIONAL
           it_toolbar_excluding TYPE string OPTIONAL
         CHANGING
-          it_fieldcatalog      TYPE string OPTIONAL
-          it_sort              TYPE string OPTIONAL
-          it_outtab            TYPE string OPTIONAL.
+          it_fieldcatalog      TYPE ANY TABLE OPTIONAL
+          it_sort              TYPE ANY TABLE OPTIONAL
+          it_outtab            TYPE ANY TABLE OPTIONAL.
 
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
