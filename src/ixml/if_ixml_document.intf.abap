@@ -62,7 +62,7 @@ INTERFACE if_ixml_document PUBLIC.
       IMPORTING
         name TYPE string
         value TYPE string OPTIONAL
-        parent TYPE string
+        parent TYPE REF TO if_ixml_node
       RETURNING VALUE(val) TYPE REF TO if_ixml_element,
     find_from_name
       IMPORTING
