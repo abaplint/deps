@@ -17,7 +17,7 @@ CLASS cl_apl_ecatt_upload DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
         RAISING cx_ecatt_apl.
   PROTECTED SECTION.
     DATA: template_over_all TYPE REF TO if_ixml_document,
-          exception_to_raise TYPE string,
+          exception_to_raise TYPE REF TO cx_root,
           ecatt_object TYPE REF TO cl_apl_ecatt_object,
           tadir_preset TYPE string.
     METHODS:
