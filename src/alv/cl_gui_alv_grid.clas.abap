@@ -59,6 +59,12 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(es_col_id) TYPE lvc_s_col OPTIONAL
       VALUE(es_row_no) TYPE lvc_s_roid OPTIONAL.
 
+    EVENTS after_user_command
+      EXPORTING
+        VALUE(e_ucomm) TYPE sy-ucomm OPTIONAL
+        VALUE(e_saved) TYPE char01 OPTIONAL
+        VALUE(e_not_processed) TYPE char01 OPTIONAL.
+
     CONSTANTS:
       mc_style_disabled TYPE i VALUE 1,
       mc_style_enabled TYPE i VALUE 2,
