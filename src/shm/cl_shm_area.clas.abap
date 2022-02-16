@@ -33,9 +33,14 @@ CLASS cl_shm_area DEFINITION ABSTRACT PUBLIC.
         cx_shm_event_execution_failed
         cx_shm_completion_error.
 
+    METHODS is_valid
+      RETURNING
+        VALUE(valid) TYPE abap_bool.
+
   PROTECTED SECTION.
     DATA inst_trace_service TYPE REF TO if_shm_trace.
     DATA inst_trace_active  TYPE abap_bool VALUE abap_false.
+    DATA _lock TYPE %_c_pointer.
 
     METHODS _attach_read71
       IMPORTING
@@ -44,6 +49,30 @@ CLASS cl_shm_area DEFINITION ABSTRACT PUBLIC.
         life_context TYPE shm_life_context
       EXPORTING
         root TYPE REF TO object.
+
+    METHODS _attach_write70
+      IMPORTING
+        area_name TYPE shm_area_name
+        mode TYPE shm_attach_mode
+      EXPORTING
+        root TYPE REF TO object
+      CHANGING
+        wait_time TYPE i OPTIONAL.
+
+    CLASS-METHODS _free_area71
+      IMPORTING
+        area_name TYPE shm_area_name
+        client TYPE shm_client
+        client_supplied TYPE abap_bool DEFAULT abap_false
+        transactional TYPE abap_bool DEFAULT abap_false
+        client_dependent TYPE abap_bool DEFAULT abap_false
+        terminate_changer TYPE abap_bool
+        affect_server TYPE shm_affect_server
+        life_context TYPE shm_life_context DEFAULT life_context_appserver
+      RETURNING
+        VALUE(rc) TYPE shm_rc
+      RAISING
+        cx_shm_parameter_error.
 
     CLASS-METHODS _detach_area71
       IMPORTING
@@ -64,9 +93,105 @@ CLASS cl_shm_area DEFINITION ABSTRACT PUBLIC.
       CHANGING
         wait_time TYPE i OPTIONAL.
 
+    CLASS-METHODS _free_instance71
+      IMPORTING
+        area_name TYPE shm_area_name
+        inst_name TYPE shm_inst_name
+        client TYPE shm_client
+        client_supplied TYPE abap_bool DEFAULT abap_false
+        transactional TYPE abap_bool DEFAULT abap_false
+        client_dependent TYPE abap_bool DEFAULT abap_false
+        terminate_changer TYPE abap_bool
+        affect_server TYPE shm_affect_server
+        life_context TYPE shm_life_context DEFAULT life_context_appserver
+      RETURNING
+        VALUE(rc) TYPE shm_rc
+      RAISING
+        cx_shm_parameter_error.
+
+    CLASS-METHODS _get_instance_infos71
+      IMPORTING
+        area_name TYPE shm_area_name
+        client TYPE shm_client
+        client_supplied TYPE abap_bool DEFAULT abap_false
+        client_dependent TYPE abap_bool DEFAULT abap_false
+        life_context TYPE shm_life_context
+      RETURNING
+        VALUE(infos) TYPE shm_inst_infos.
+
+    CLASS-METHODS _invalidate_area71
+      IMPORTING
+        area_name TYPE shm_area_name
+        client TYPE shm_client
+        client_supplied TYPE abap_bool DEFAULT abap_false
+        transactional TYPE abap_bool DEFAULT abap_false
+        client_dependent TYPE abap_bool DEFAULT abap_false
+        terminate_changer TYPE abap_bool
+        affect_server TYPE shm_affect_server
+        life_context TYPE shm_life_context DEFAULT life_context_appserver
+      RETURNING
+        VALUE(rc) TYPE shm_rc
+      RAISING
+        cx_shm_parameter_error.
+
+    CLASS-METHODS _invalidate_instance71
+      IMPORTING
+        area_name TYPE shm_area_name
+        inst_name TYPE shm_inst_name
+        client TYPE shm_client
+        client_supplied TYPE abap_bool DEFAULT abap_false
+        transactional TYPE abap_bool DEFAULT abap_false
+        client_dependent TYPE abap_bool DEFAULT abap_false
+        terminate_changer TYPE abap_bool
+        affect_server TYPE shm_affect_server
+        life_context TYPE shm_life_context DEFAULT life_context_appserver
+      RETURNING
+        VALUE(rc) TYPE shm_rc
+      RAISING
+        cx_shm_parameter_error.
+
+    METHODS _set_root
+      IMPORTING
+        root TYPE REF TO object
+      RAISING
+        cx_shm_wrong_handle
+        cx_shm_initial_reference.
+
 ENDCLASS.
 
 CLASS cl_shm_area IMPLEMENTATION.
+
+  METHOD _set_root.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD _invalidate_instance71.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD _invalidate_area71.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD is_valid.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD _get_instance_infos71.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD _free_instance71.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD _attach_write70.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD _free_area71.
+    RETURN.
+  ENDMETHOD.
 
   METHOD _detach_area71.
     RETURN.
