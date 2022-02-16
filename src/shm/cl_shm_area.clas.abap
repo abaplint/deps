@@ -33,9 +33,52 @@ CLASS cl_shm_area DEFINITION ABSTRACT PUBLIC.
         cx_shm_event_execution_failed
         cx_shm_completion_error.
 
+  PROTECTED SECTION.
+    DATA inst_trace_service TYPE REF TO if_shm_trace.
+    DATA inst_trace_active  TYPE abap_bool VALUE abap_false.
+
+    METHODS _attach_read71
+      IMPORTING
+        sneak_mode TYPE abap_bool DEFAULT abap_false
+        area_name TYPE shm_area_name
+        life_context TYPE shm_life_context
+      EXPORTING
+        root TYPE REF TO object.
+
+    CLASS-METHODS _detach_area71
+      IMPORTING
+        area_name TYPE shm_area_name
+        client TYPE shm_client
+        client_supplied TYPE abap_bool
+        client_dependent TYPE abap_bool DEFAULT abap_false
+        life_context TYPE shm_life_context
+      RETURNING
+        VALUE(rc) TYPE shm_rc.
+
+    METHODS _attach_update70
+      IMPORTING
+        area_name TYPE shm_area_name
+        mode TYPE shm_attach_mode
+      EXPORTING
+        root TYPE REF TO object
+      CHANGING
+        wait_time TYPE i OPTIONAL.
+
 ENDCLASS.
 
 CLASS cl_shm_area IMPLEMENTATION.
+
+  METHOD _detach_area71.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD _attach_update70.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD _attach_read71.
+    RETURN.
+  ENDMETHOD.
 
   METHOD detach_commit.
     RETURN.
