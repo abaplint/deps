@@ -7,7 +7,7 @@ INTERFACE if_ixml_node PUBLIC.
   METHODS:
     append_child
       IMPORTING
-        new_child TYPE REF TO if_ixml_element,
+        new_child TYPE REF TO if_ixml_node,
     get_attributes
       RETURNING
         VALUE(map) TYPE REF TO if_ixml_named_node_map,
