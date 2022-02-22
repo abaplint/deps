@@ -219,6 +219,22 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           e_col TYPE i
           es_row_no TYPE ty_row_no
           e_value TYPE any,
+      get_filtered_entries
+        EXPORTING
+          et_filtered_entries TYPE lvc_t_fidx,
+      get_subtotals
+        EXPORTING
+          ep_collect00 TYPE REF TO data
+          ep_collect01 TYPE REF TO data
+          ep_collect02 TYPE REF TO data
+          ep_collect03 TYPE REF TO data
+          ep_collect04 TYPE REF TO data
+          ep_collect05 TYPE REF TO data
+          ep_collect06 TYPE REF TO data
+          ep_collect07 TYPE REF TO data
+          ep_collect08 TYPE REF TO data
+          ep_collect09 TYPE REF TO data
+          et_grouplevels TYPE lvc_t_grpl,
       set_table_for_first_display
         IMPORTING
           i_buffer_active      TYPE abap_bool OPTIONAL
@@ -272,6 +288,14 @@ CLASS cl_gui_alv_grid IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD set_table_for_first_display.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_filtered_entries.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_subtotals.
     RETURN.
   ENDMETHOD.
 
