@@ -8,5 +8,6 @@ INTERFACE if_rest_entity PUBLIC.
     IMPORTING
       iv_name TYPE string
       iv_value TYPE string.
+  METHODS get_binary_data RETURNING VALUE(data) TYPE xstring.
 
 ENDINTERFACE.
