@@ -9,7 +9,7 @@ INTERFACE bi_event_handler_static PUBLIC.
     IMPORTING
       sender          TYPE ty_sender
       event           TYPE string
-      event_container TYPE string
+      event_container TYPE REF TO if_swf_ifs_parameter_container
       rectype         TYPE string
       handler         TYPE string
     RETURNING
