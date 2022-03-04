@@ -44,6 +44,7 @@ INTERFACE if_ixml_document PUBLIC.
       RETURNING
         VALUE(val) TYPE any,
     create_iterator
+      IMPORTING depth type i default 0
       RETURNING VALUE(rval) TYPE REF TO if_ixml_node_iterator,
     create_filter_node_type
       IMPORTING typ TYPE string
