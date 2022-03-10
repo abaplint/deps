@@ -13,6 +13,7 @@ CONSTANTS icon_any_document TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_attachment TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_availability_display TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_background_job TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_ben_current_benefits TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_binary_document TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_biw_info_cube TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_biw_report TYPE c LENGTH 4 VALUE ''.
@@ -46,6 +47,7 @@ CONSTANTS icon_collapse_all TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_color TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_column_left TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_column_right TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_compare TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_complete TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_composite_activitygroup TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_configuration TYPE c LENGTH 4 VALUE ''.
@@ -64,6 +66,8 @@ CONSTANTS icon_date TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_debugger_step_into TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_delete TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_delete_row TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_delete_template TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_delivery_inbound TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_deselect_all TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_detail TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_display TYPE c LENGTH 4 VALUE ''.
@@ -105,6 +109,7 @@ CONSTANTS icon_green_light TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_header TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_hierarchy_act TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_hint TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_host TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_htm TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_htt TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_icon_list TYPE c LENGTH 4 VALUE ''.
@@ -112,6 +117,7 @@ CONSTANTS icon_import TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_import_all_requests TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_import_transport_request TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_include_objects TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_incoming_object TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_incoming_task TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_incomplete TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_information TYPE c LENGTH 4 VALUE ''.
@@ -136,9 +142,8 @@ CONSTANTS icon_less_equal_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_less_equal_red TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_less_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_less_red TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_linked_document TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_link TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_reclassification TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_linked_document TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_list TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_location TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_locked TYPE c LENGTH 4 VALUE ''.
@@ -174,6 +179,7 @@ CONSTANTS icon_oo_object TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_open_folder TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_order TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_other_object TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_outgoing_object TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_overview TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_package_application TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_package_dynamic TYPE c LENGTH 4 VALUE ''.
@@ -189,15 +195,21 @@ CONSTANTS icon_pdf TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_pdir_back TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_phio_class TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_physical_sample TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_plant TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_pm_insert TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_pm_press TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ppt TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_print TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_profit_center TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_project TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_protocol TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ps_network_activity TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_public_files TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_query TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_question TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_radiobutton TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ranking TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_reclassification TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_red_light TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_reference_list TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_refresh TYPE c LENGTH 4 VALUE ''.
@@ -226,10 +238,12 @@ CONSTANTS icon_status_critical TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_ok TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_reverse TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_stock TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_store_location TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_stores TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_structure TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_submit TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_summarize TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_sym_log_server TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_back TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_copy TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_cut TYPE c LENGTH 4 VALUE ''.
@@ -243,12 +257,14 @@ CONSTANTS icon_system_save TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_start_recording TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_undo TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_table_settings TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_terminated_org_unit TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_test TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_text_act TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_text_ina TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_tif TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_time TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_tools TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_total_left TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_transfer TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_transport TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_tree TYPE c LENGTH 4 VALUE ''.
@@ -265,6 +281,7 @@ CONSTANTS icon_virtual_loio_class TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_virtual_phio_class TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_virtual_relation_class TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_vsd TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_warehouse TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_warning TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_application TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_component TYPE c LENGTH 4 VALUE ''.
