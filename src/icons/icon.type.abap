@@ -5,6 +5,7 @@ CONSTANTS icon_abap_local TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_abc TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_active_inactive TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_activity_group TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_address TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_administrative_data TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_adopt TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_alert TYPE c LENGTH 4 VALUE ''.
@@ -249,6 +250,7 @@ CONSTANTS icon_system_copy TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_cut TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_extended_help TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_help TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_system_local_paste TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_paste TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_play TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_print TYPE c LENGTH 4 VALUE ''.
