@@ -13,7 +13,9 @@ INTERFACE if_ixml_document PUBLIC.
         prefix TYPE string,
     append_child
       IMPORTING
-        new_child TYPE REF TO if_ixml_node,
+        new_child TYPE REF TO if_ixml_node
+      RETURNING
+        VALUE(rval) TYPE i,
     get_first_child
       RETURNING
         VALUE(child) TYPE REF TO if_ixml_node,
