@@ -1,6 +1,6 @@
 INTERFACE if_t100_dyn_msg PUBLIC.
 
-  interfaces IF_MESSAGE .
+  INTERFACES if_message .
   interfaces IF_T100_MESSAGE .
   
   DATA msgv1 TYPE string.
