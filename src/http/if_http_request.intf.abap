@@ -7,6 +7,9 @@ INTERFACE if_http_request PUBLIC.
     co_request_method_get TYPE string VALUE 'GET',
     co_request_method_post TYPE string VALUE 'POST'.
 
+  ALIASES to_xstring
+    for IF_HTTP_ENTITY~TO_XSTRING.
+    
   METHODS:
     get_content_type
       RETURNING VALUE(type) TYPE string,
