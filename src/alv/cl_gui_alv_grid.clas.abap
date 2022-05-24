@@ -196,7 +196,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           catalog TYPE any,
       set_selected_rows
         IMPORTING
-          it_row_no TYPE any,
+         value(IT_INDEX_ROWS) type LVC_T_ROW optional
+         value(IT_ROW_NO) type LVC_T_ROID optional
+         value(IS_KEEP_OTHER_SELECTIONS) type CHAR01 optional,
       refresh_table_display
         IMPORTING
           is_stable      TYPE any OPTIONAL
