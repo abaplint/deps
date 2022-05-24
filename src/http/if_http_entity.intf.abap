@@ -23,6 +23,10 @@ INTERFACE if_http_entity PUBLIC.
     get_cdata RETURNING VALUE(data) TYPE string,
     get_content_type
       RETURNING VALUE(val) TYPE string,
+    get_serialized_message_length
+      EXPORTING
+        VALUE(body_length) type I
+        VALUE(header_length) type I,
     set_content_type,
     get_data
       RETURNING
