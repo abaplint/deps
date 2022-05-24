@@ -49,8 +49,6 @@ INTERFACE if_http_response PUBLIC.
       RETURNING VALUE(val) TYPE string,
     get_content_type
       RETURNING VALUE(val) TYPE string,
-    set_content_type
-      IMPORTING type TYPE string,
     get_raw_message
       RETURNING VALUE(val) TYPE xstring,
     get_multipart
