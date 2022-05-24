@@ -27,7 +27,9 @@ INTERFACE if_http_entity PUBLIC.
       EXPORTING
         VALUE(body_length) type I
         VALUE(header_length) type I,
-    set_content_type,
+    set_content_type
+      IMPORTING
+        content_type type string,
     get_data
       RETURNING
         VALUE(data) TYPE xstring,
