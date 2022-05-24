@@ -11,6 +11,8 @@ INTERFACE if_http_request PUBLIC.
     for IF_HTTP_ENTITY~GET_SERIALIZED_MESSAGE_LENGTH.
   ALIASES to_xstring
     for IF_HTTP_ENTITY~TO_XSTRING.
+  ALIASES set_content_type
+    for IF_HTTP_ENTITY~SET_CONTENT_TYPE.
     
   METHODS:
     get_content_type
@@ -41,9 +43,6 @@ INTERFACE if_http_request PUBLIC.
     set_form_fields
       IMPORTING
         fields TYPE string,
-    set_content_type
-      IMPORTING
-        typ TYPE string,
     set_data
       IMPORTING data TYPE string
       RETURNING VALUE(val) TYPE string,
