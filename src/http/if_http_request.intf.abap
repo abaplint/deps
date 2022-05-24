@@ -6,7 +6,9 @@ INTERFACE if_http_request PUBLIC.
     co_protocol_version_1_0 TYPE string VALUE 'VER10',
     co_request_method_get TYPE string VALUE 'GET',
     co_request_method_post TYPE string VALUE 'POST'.
-
+    
+  ALIASES get_serialized_message_length
+    for IF_HTTP_ENTITY~GET_SERIALIZED_MESSAGE_LENGTH.
   ALIASES to_xstring
     for IF_HTTP_ENTITY~TO_XSTRING.
     
