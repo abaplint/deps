@@ -26,7 +26,7 @@ INTERFACE if_http_entity PUBLIC.
     get_serialized_message_length
       EXPORTING
         VALUE(body_length) TYPE i
-        VALUE(header_length) type i,
+        VALUE(header_length) TYPE i,
     set_content_type
       IMPORTING
         content_type TYPE string,
@@ -36,7 +36,7 @@ INTERFACE if_http_entity PUBLIC.
     get_header_fields CHANGING fields TYPE any,
     to_xstring
       RETURNING
-        VALUE(data) type xstring,
+        VALUE(data) TYPE xstring,
     get_cookies CHANGING cookies TYPE any.
 
 ENDINTERFACE.
