@@ -16,7 +16,7 @@ INTERFACE if_http_client PUBLIC.
         name TYPE string
         value TYPE string
       CHANGING
-        url type string,
+        url TYPE string,
     authenticate
       IMPORTING
         proxy_authentication TYPE abap_bool OPTIONAL
