@@ -14,7 +14,7 @@ INTERFACE if_http_client PUBLIC.
     append_field_url
       IMPORTING
         name TYPE string
-        value type string
+        value TYPE string
       CHANGING
         url type string,
     authenticate
