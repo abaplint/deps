@@ -110,7 +110,7 @@ CONSTANTS icon_green_light TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_header TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_hierarchy_act TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_hint TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_history type c LENGTH 4 VALUE ''.
+CONSTANTS icon_history TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_host TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_htm TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_htt TYPE c LENGTH 4 VALUE ''.
