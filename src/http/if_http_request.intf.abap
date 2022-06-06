@@ -8,11 +8,11 @@ INTERFACE if_http_request PUBLIC.
     co_request_method_post TYPE string VALUE 'POST'.
 
   ALIASES get_serialized_message_length
-    FOR IF_HTTP_ENTITY~GET_SERIALIZED_MESSAGE_LENGTH.
+    FOR if_http_entity~get_serialized_message_length.
   ALIASES to_xstring
-    FOR IF_HTTP_ENTITY~TO_XSTRING.
+    FOR if_http_entity~to_xstring.
   ALIASES set_content_type
-    FOR IF_HTTP_ENTITY~SET_CONTENT_TYPE.
+    FOR if_http_entity~set_content_type.
 
   METHODS:
     get_content_type
