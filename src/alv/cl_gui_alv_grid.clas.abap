@@ -181,7 +181,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       hide_functions
         IMPORTING
           functions TYPE any,
-      set_focus,
+      set_focus
+        IMPORTING
+          control TYPE REF TO cl_gui_control,
       set_drop_down_table
         IMPORTING
           it_drop_down_alias TYPE any,
@@ -190,15 +192,18 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           et_cell TYPE any,
       set_frontend_layout
         IMPORTING
-          layout TYPE any,
+          is_layout TYPE any,
       set_frontend_fieldcatalog
         IMPORTING
           catalog TYPE any,
+      set_gridtitle
+          IMPORTING
+            VALUE(i_gridtitle) TYPE any,
       set_selected_rows
         IMPORTING
-         value(IT_INDEX_ROWS) type LVC_T_ROW optional
-         value(IT_ROW_NO) type LVC_T_ROID optional
-         value(IS_KEEP_OTHER_SELECTIONS) type CHAR01 optional,
+          it_index_rows TYPE any OPTIONAL
+          it_row_no     TYPE any OPTIONAL
+          is_keep_other_selections TYPE any OPTIONAL,
       refresh_table_display
         IMPORTING
           is_stable      TYPE any OPTIONAL
@@ -258,6 +263,10 @@ ENDCLASS.
 CLASS cl_gui_alv_grid IMPLEMENTATION.
 
   METHOD constructor.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_gridtitle.
     RETURN.
   ENDMETHOD.
 
