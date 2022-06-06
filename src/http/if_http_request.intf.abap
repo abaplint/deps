@@ -6,14 +6,14 @@ INTERFACE if_http_request PUBLIC.
     co_protocol_version_1_0 TYPE string VALUE 'VER10',
     co_request_method_get TYPE string VALUE 'GET',
     co_request_method_post TYPE string VALUE 'POST'.
-    
+
   ALIASES get_serialized_message_length
-    for IF_HTTP_ENTITY~GET_SERIALIZED_MESSAGE_LENGTH.
+    FOR IF_HTTP_ENTITY~GET_SERIALIZED_MESSAGE_LENGTH.
   ALIASES to_xstring
-    for IF_HTTP_ENTITY~TO_XSTRING.
+    FOR IF_HTTP_ENTITY~TO_XSTRING.
   ALIASES set_content_type
-    for IF_HTTP_ENTITY~SET_CONTENT_TYPE.
-    
+    FOR IF_HTTP_ENTITY~SET_CONTENT_TYPE.
+
   METHODS:
     get_content_type
       RETURNING VALUE(type) TYPE string,
