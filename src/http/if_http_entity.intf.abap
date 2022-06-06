@@ -29,7 +29,7 @@ INTERFACE if_http_entity PUBLIC.
         VALUE(header_length) type I,
     set_content_type
       IMPORTING
-        content_type type string,
+        content_type TYPE string,
     get_data
       RETURNING
         VALUE(data) TYPE xstring,
