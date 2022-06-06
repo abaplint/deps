@@ -210,7 +210,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           i_soft_refresh TYPE abap_bool OPTIONAL,
       set_ready_for_input
         IMPORTING
-          i_ready_for_input TYPE any,
+          i_ready_for_input TYPE any OPTIONAL,
       check_changed_data
         EXPORTING
           e_valid TYPE any
@@ -244,6 +244,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           et_grouplevels TYPE lvc_t_grpl,
       set_table_for_first_display
         IMPORTING
+          i_bypassing_buffer   TYPE abap_bool OPTIONAL
           i_buffer_active      TYPE abap_bool OPTIONAL
           is_variant           TYPE string OPTIONAL
           i_structure_name     TYPE string OPTIONAL
