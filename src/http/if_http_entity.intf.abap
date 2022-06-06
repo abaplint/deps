@@ -36,7 +36,7 @@ INTERFACE if_http_entity PUBLIC.
     get_header_fields CHANGING fields TYPE any,
     to_xstring
       RETURNING
-        VALUE(DATA) type xstring, 
+        VALUE(data) type xstring,
     get_cookies CHANGING cookies TYPE any.
 
 ENDINTERFACE.
