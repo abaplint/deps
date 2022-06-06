@@ -25,8 +25,8 @@ INTERFACE if_http_entity PUBLIC.
       RETURNING VALUE(val) TYPE string,
     get_serialized_message_length
       EXPORTING
-        VALUE(body_length) TYPE I
-        VALUE(header_length) type I,
+        VALUE(body_length) TYPE i
+        VALUE(header_length) type i,
     set_content_type
       IMPORTING
         content_type TYPE string,
