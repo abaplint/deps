@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: abaplint
-      uses: abaplint/actions-abaplint@master
+      uses: abaplint/actions-abaplint@main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
