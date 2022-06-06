@@ -13,7 +13,7 @@ INTERFACE if_http_client PUBLIC.
         timeout TYPE i OPTIONAL,
     append_field_url
       IMPORTING
-        name type string
+        name TYPE string
         value type string
       CHANGING
         url type string,
