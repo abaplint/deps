@@ -3,6 +3,13 @@ INTERFACE if_http_response PUBLIC.
 
   TYPES: ty_fields TYPE STANDARD TABLE OF string WITH DEFAULT KEY.
 
+  ALIASES get_serialized_message_length
+    FOR if_http_entity~get_serialized_message_length.
+  ALIASES to_xstring
+    FOR if_http_entity~to_xstring.
+  ALIASES set_content_type
+    FOR if_http_entity~set_content_type.
+
   METHODS:
     get_header_fields
       CHANGING
@@ -42,8 +49,6 @@ INTERFACE if_http_response PUBLIC.
       RETURNING VALUE(val) TYPE string,
     get_content_type
       RETURNING VALUE(val) TYPE string,
-    set_content_type
-      IMPORTING type TYPE string,
     get_raw_message
       RETURNING VALUE(val) TYPE xstring,
     get_multipart

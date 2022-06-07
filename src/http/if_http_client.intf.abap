@@ -11,6 +11,12 @@ INTERFACE if_http_client PUBLIC.
     send
       IMPORTING
         timeout TYPE i OPTIONAL,
+    append_field_url
+      IMPORTING
+        name TYPE string
+        value TYPE string
+      CHANGING
+        url TYPE string,
     authenticate
       IMPORTING
         proxy_authentication TYPE abap_bool OPTIONAL

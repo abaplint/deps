@@ -7,6 +7,13 @@ INTERFACE if_http_request PUBLIC.
     co_request_method_get TYPE string VALUE 'GET',
     co_request_method_post TYPE string VALUE 'POST'.
 
+  ALIASES get_serialized_message_length
+    FOR if_http_entity~get_serialized_message_length.
+  ALIASES to_xstring
+    FOR if_http_entity~to_xstring.
+  ALIASES set_content_type
+    FOR if_http_entity~set_content_type.
+
   METHODS:
     get_content_type
       RETURNING VALUE(type) TYPE string,
@@ -36,9 +43,6 @@ INTERFACE if_http_request PUBLIC.
     set_form_fields
       IMPORTING
         fields TYPE string,
-    set_content_type
-      IMPORTING
-        typ TYPE string,
     set_data
       IMPORTING data TYPE string
       RETURNING VALUE(val) TYPE string,

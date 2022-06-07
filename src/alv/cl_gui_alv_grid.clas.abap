@@ -202,7 +202,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       set_selected_rows
         IMPORTING
           it_index_rows TYPE any OPTIONAL
-          it_row_no     TYPE any OPTIONAL,
+          it_row_no     TYPE any OPTIONAL
+          is_keep_other_selections TYPE any OPTIONAL,
       refresh_table_display
         IMPORTING
           is_stable      TYPE any OPTIONAL

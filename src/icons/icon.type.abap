@@ -110,6 +110,7 @@ CONSTANTS icon_green_light TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_header TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_hierarchy_act TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_hint TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_history TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_host TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_htm TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_htt TYPE c LENGTH 4 VALUE ''.
@@ -178,6 +179,7 @@ CONSTANTS icon_oo_constant TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_oo_interface TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_oo_object TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_open_folder TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_operation TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_order TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_other_object TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_outgoing_object TYPE c LENGTH 4 VALUE ''.
