@@ -10,35 +10,6 @@
     <APPL>S</APPL>
     <RLOAD>D</RLOAD>
    </PROGDIR>
-   <TPOOL>
-    <item>
-     <ID>R</ID>
-     <ENTRY>Include with Constants</ENTRY>
-     <LENGTH>22</LENGTH>
-    </item>
-   </TPOOL>
-   <I18N_TPOOL>
-    <item>
-     <LANGUAGE>D</LANGUAGE>
-     <TEXTPOOL>
-      <item>
-       <ID>R</ID>
-       <ENTRY>Include mit Konstanten</ENTRY>
-       <LENGTH>22</LENGTH>
-      </item>
-     </TEXTPOOL>
-    </item>
-    <item>
-     <LANGUAGE>S</LANGUAGE>
-     <TEXTPOOL>
-      <item>
-       <ID>R</ID>
-       <ENTRY>Include con constantes</ENTRY>
-       <LENGTH>22</LENGTH>
-      </item>
-     </TEXTPOOL>
-    </item>
-   </I18N_TPOOL>
   </asx:values>
  </asx:abap>
 </abapGit>
