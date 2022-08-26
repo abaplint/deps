@@ -3,9 +3,13 @@ INTERFACE if_http_entity PUBLIC.
   CONSTANTS co_request_method_get TYPE string VALUE 'GET'.
   CONSTANTS co_request_method_post TYPE string VALUE 'POST'.
 
-  METHODS:
-    set_cdata IMPORTING data TYPE string,
-    set_data IMPORTING data TYPE xstring,
+  METHODS set_cdata
+    IMPORTING
+      data   TYPE string
+      offset TYPE i DEFAULT 0
+      length TYPE i DEFAULT -1.
+
+  METHODS: set_data IMPORTING data TYPE xstring,
     get_header_field
       IMPORTING name TYPE string
       RETURNING VALUE(value) TYPE string,
