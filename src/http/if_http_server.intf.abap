@@ -78,4 +78,87 @@ INTERFACE if_http_server PUBLIC.
       escaped TYPE string
     RETURNING
       VALUE(unescaped) TYPE string.
+
+  CLASS-METHODS escape_url
+    IMPORTING
+      unescaped TYPE string
+    RETURNING
+      VALUE(escaped) TYPE string.
+
+  CLASS-METHODS get_extension_info
+    IMPORTING
+      extension_class TYPE string OPTIONAL
+    EXPORTING
+      urls TYPE tihttpurls2.
+
+  CLASS-METHODS get_extension_url
+    IMPORTING
+      extension_class TYPE string
+    EXPORTING
+      urls TYPE tihttpurls.
+
+  METHODS get_last_error
+    RETURNING
+      VALUE(rc) TYPE i.
+
+  CLASS-METHODS get_location
+    IMPORTING
+      protocol TYPE csequence OPTIONAL
+      application TYPE csequence OPTIONAL
+      for_domain TYPE csequence OPTIONAL
+      server TYPE REF TO if_http_server OPTIONAL
+      use_ticket_protocol TYPE abap_bool DEFAULT abap_true
+    EXPORTING
+      host TYPE string
+      port TYPE string
+      out_protocol TYPE string
+      vh_switch TYPE abap_bool
+    RETURNING
+      VALUE(url_part) TYPE string.
+
+  CLASS-METHODS get_location_exception
+    IMPORTING
+      protocol            TYPE csequence OPTIONAL
+      application         TYPE csequence OPTIONAL
+      for_domain          TYPE csequence OPTIONAL
+      server              TYPE REF TO if_http_server OPTIONAL
+      use_ticket_protocol TYPE abap_bool DEFAULT abap_true
+    EXPORTING
+      host                      TYPE string
+      port                      TYPE string
+      out_protocol              TYPE string
+      vh_switch                 TYPE abap_bool
+    RETURNING
+      VALUE(url_part)            TYPE string.
+
+  METHODS get_xsrf_token
+    EXPORTING
+      token TYPE string
+    EXCEPTIONS
+      internal_error
+      called_by_public_service.
+
+  METHODS send_page.
+
+  METHODS set_compression
+    IMPORTING
+      options TYPE i OPTIONAL
+    EXCEPTIONS
+      compression_not_possible.
+
+  METHODS set_page
+    IMPORTING
+      response_page_type           TYPE icf_page_type OPTIONAL
+      response_option              TYPE icf_page_option OPTIONAL
+      response_option_page         TYPE icf_response_page OPTIONAL
+      response_option_redirect_url TYPE icf_redirect_url OPTIONAL
+    EXCEPTIONS
+      invalid_parameter
+      document_not_found.
+
+  METHODS set_session_stateful_via_url
+    IMPORTING
+      stateful    TYPE i DEFAULT co_enabled
+    CHANGING
+      rewrite_url TYPE string DEFAULT ''.
 ENDINTERFACE.

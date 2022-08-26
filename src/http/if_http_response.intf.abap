@@ -75,4 +75,25 @@ INTERFACE if_http_response PUBLIC.
         code   TYPE i
         reason TYPE string.
 
+  METHODS copy
+    RETURNING
+      VALUE(response) TYPE REF TO if_http_response.
+
+  METHODS server_cache_expire_default
+    IMPORTING
+      etag              TYPE char32 OPTIONAL
+      browser_dependent TYPE boolean DEFAULT ' '
+      no_ufo_cache      TYPE boolean DEFAULT ' '.
+
+  METHODS server_cache_expire_rel
+    IMPORTING
+      expires_rel       TYPE i
+      etag              TYPE char32 OPTIONAL
+      browser_dependent TYPE boolean DEFAULT ' '
+      no_ufo_cache      TYPE boolean DEFAULT ' '.
+
+  METHODS server_cache_browser_dependent
+    IMPORTING
+      dependent TYPE boolean DEFAULT 'X'.
+
 ENDINTERFACE.
