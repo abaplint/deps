@@ -167,4 +167,17 @@ INTERFACE if_http_entity PUBLIC.
   METHODS suppress_content_type
     IMPORTING
       suppress TYPE abap_bool DEFAULT abap_true.
+
+  METHODS delete_cookie
+    IMPORTING
+      name TYPE string
+      path TYPE string DEFAULT ``.
+
+  METHODS delete_header_field
+    IMPORTING
+      name TYPE string.
+
+  METHODS delete_header_field_secure
+    IMPORTING
+      name TYPE string.
 ENDINTERFACE.
