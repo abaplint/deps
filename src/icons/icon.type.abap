@@ -19,6 +19,7 @@ CONSTANTS icon_binary_document TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_biw_info_cube TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_biw_report TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_biw_scheduler TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_biw_source_sys_r3 TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_biw_virtual_info_provider TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_bmp TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_bom_item TYPE c LENGTH 4 VALUE ''.
@@ -82,6 +83,7 @@ CONSTANTS icon_dot TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_dropdownlist TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_dummy TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_edit_file TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_element TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_eml TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_employee TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_enter_more TYPE c LENGTH 4 VALUE ''.
@@ -190,6 +192,7 @@ CONSTANTS icon_package_standard TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_page_left TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_page_right TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_parameter TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_parameter_result TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_pattern_exclude_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_pattern_exclude_red TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_pattern_include_green TYPE c LENGTH 4 VALUE ''.
@@ -301,6 +304,7 @@ CONSTANTS icon_wd_toolbar_caption TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_tree_node TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_view TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wf_reserve_workitem TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_wf_workitem_completed TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wizard TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_workflow TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_workflow_activity TYPE c LENGTH 4 VALUE ''.
