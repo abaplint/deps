@@ -213,7 +213,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           control TYPE REF TO cl_gui_control,
       set_drop_down_table
         IMPORTING
-          it_drop_down_alias TYPE any,
+          it_drop_down       TYPE any OPTIONAL
+          it_drop_down_alias TYPE any OPTIONAL,
       get_selected_cells
         EXPORTING
           et_cell TYPE any,
@@ -247,12 +248,6 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       register_f4_for_fields
         IMPORTING
           data TYPE any,
-      get_current_cell
-        EXPORTING
-          e_row TYPE i
-          e_col TYPE i
-          es_row_no TYPE ty_row_no
-          e_value TYPE any,
       get_filtered_entries
         EXPORTING
           et_filtered_entries TYPE lvc_t_fidx,
@@ -278,10 +273,26 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           i_save               TYPE string OPTIONAL
           is_layout            TYPE string OPTIONAL
           it_toolbar_excluding TYPE string OPTIONAL
+          it_hyperlink         TYPE any OPTIONAL
         CHANGING
           it_fieldcatalog      TYPE ANY TABLE OPTIONAL
           it_sort              TYPE ANY TABLE OPTIONAL
           it_outtab            TYPE ANY TABLE OPTIONAL.
+
+    METHODS get_current_cell
+      EXPORTING
+        e_row     TYPE i
+        e_value   TYPE c
+        e_col     TYPE i
+        es_row_id TYPE lvc_s_row
+        es_col_id TYPE lvc_s_col
+        es_row_no TYPE lvc_s_roid.
+
+    METHODS set_current_cell_via_id
+      IMPORTING
+        is_row_id    TYPE lvc_s_row OPTIONAL
+        is_column_id TYPE lvc_s_col OPTIONAL
+        is_row_no    TYPE lvc_s_roid OPTIONAL.
 
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
@@ -291,6 +302,10 @@ ENDCLASS.
 CLASS cl_gui_alv_grid IMPLEMENTATION.
 
   METHOD constructor.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_current_cell_via_id.
     RETURN.
   ENDMETHOD.
 
