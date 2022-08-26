@@ -171,6 +171,20 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_fc_print_back TYPE string VALUE '1',
       mc_fc_reprep TYPE string VALUE '1',
       mc_fc_save_variant TYPE string VALUE '1',
+      mc_fc_back_classic TYPE string VALUE '1',
+      mc_fc_call_chain TYPE string VALUE '1',
+      mc_fc_call_crbatch TYPE string VALUE '1',
+      mc_fc_call_lineitems TYPE string VALUE '1',
+      mc_fc_call_master_data TYPE string VALUE '1',
+      mc_fc_call_more TYPE string VALUE '1',
+      mc_fc_call_xint TYPE string VALUE '1',
+      mc_fc_call_xxl TYPE string VALUE '1',
+      mc_fc_count TYPE string VALUE '1',
+      mc_fc_current_variant TYPE string VALUE '1',
+      mc_fc_data_save TYPE string VALUE '1',
+      mc_fc_expcrdesig TYPE string VALUE '1',
+      mc_fc_expmdb TYPE string VALUE '1',
+      mc_fc_f4 TYPE string VALUE '1',
       mc_fc_loc_delete_row TYPE string VALUE 'x'.
 
     CLASS-METHODS offline RETURNING VALUE(off) TYPE i.
