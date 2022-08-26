@@ -10,6 +10,12 @@ INTERFACE if_http_response PUBLIC.
   ALIASES set_content_type
     FOR if_http_entity~set_content_type.
 
+  METHODS append_cdata
+    IMPORTING
+      data   TYPE string
+      offset TYPE i DEFAULT 0
+      length TYPE i DEFAULT -1.
+
   METHODS:
     get_header_fields
       CHANGING
