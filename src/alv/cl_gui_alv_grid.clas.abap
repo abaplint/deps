@@ -288,6 +288,12 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         es_col_id TYPE lvc_s_col
         es_row_no TYPE lvc_s_roid.
 
+    METHODS set_current_cell_via_id
+      IMPORTING
+        is_row_id    TYPE lvc_s_row OPTIONAL
+        is_column_id TYPE lvc_s_col OPTIONAL
+        is_row_no    TYPE lvc_s_roid OPTIONAL.
+
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
 
@@ -296,6 +302,10 @@ ENDCLASS.
 CLASS cl_gui_alv_grid IMPLEMENTATION.
 
   METHOD constructor.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_current_cell_via_id.
     RETURN.
   ENDMETHOD.
 
