@@ -202,7 +202,7 @@
       "statements": 100
     },
     "method_parameter_names": false,
-    "mix_returning": true,
+    "mix_returning": false,
     "msag_consistency": true,
     "nesting": {
       "depth": 5
@@ -213,6 +213,7 @@
       "fieldSymbolStructure": true,
       "refresh": true,
       "compute": true,
+      "clientSpecified": true,
       "exitFromSQL": true,
       "regex": true,
       "occurences": true,
