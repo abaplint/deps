@@ -94,11 +94,11 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
     CONSTANTS:
       mc_style_disabled TYPE i VALUE 1,
-      mc_style_enabled TYPE i VALUE 2,
-      mc_evt_modified TYPE i VALUE 3,
-      mc_style_hotspot TYPE i VALUE 4,
-      mc_evt_enter TYPE i VALUE 5,
-      mc_style_button TYPE i VALUE 6.
+      mc_style_enabled  TYPE i VALUE 2,
+      mc_evt_modified   TYPE i VALUE 3,
+      mc_style_hotspot  TYPE i VALUE 4,
+      mc_evt_enter      TYPE i VALUE 5,
+      mc_style_button   TYPE i VALUE 6.
 
     CONSTANTS:
       mc_mb_variant      TYPE string VALUE 'a',
@@ -181,7 +181,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           i_parent TYPE any OPTIONAL
           i_applogparent TYPE any OPTIONAL
           i_appl_events TYPE any OPTIONAL,
-      register_edit_event,
+      register_edit_event
+        IMPORTING i_event_id TYPE i,
       set_toolbar_interactive,
       is_ready_for_input RETURNING VALUE(state) TYPE i,
       is_alive RETURNING VALUE(state) TYPE i,
