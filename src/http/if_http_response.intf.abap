@@ -96,4 +96,12 @@ INTERFACE if_http_response PUBLIC.
     IMPORTING
       dependent TYPE boolean DEFAULT 'X'.
 
+  METHODS server_cache_expire_abs
+    IMPORTING
+      expires_abs_date  TYPE d OPTIONAL
+      expires_abs_time  TYPE t OPTIONAL
+      etag              TYPE char32 OPTIONAL
+      browser_dependent TYPE boolean DEFAULT ' '
+      no_ufo_cache      TYPE boolean DEFAULT ' '.
+
 ENDINTERFACE.
