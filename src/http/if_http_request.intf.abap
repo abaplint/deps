@@ -71,8 +71,8 @@ INTERFACE if_http_request PUBLIC.
     set_authorization
       IMPORTING
         auth_type TYPE i OPTIONAL
-        VALUE(username) TYPE string
-        VALUE(password) TYPE string,
+        username TYPE string
+        password TYPE string,
     get_multipart
       IMPORTING
         index TYPE i
