@@ -1,23 +1,23 @@
 INTERFACE if_http_response PUBLIC.
   INTERFACES if_http_entity.
 
-  ALIASES get_serialized_message_length FOR if_http_entity~get_serialized_message_length.
-  ALIASES to_xstring FOR if_http_entity~to_xstring.
-  ALIASES set_content_type FOR if_http_entity~set_content_type.
   ALIASES append_cdata FOR if_http_entity~append_cdata.
-  ALIASES get_header_fields FOR if_http_entity~get_header_fields.
-  ALIASES set_cdata FOR if_http_entity~set_cdata.
-  ALIASES set_data FOR if_http_entity~set_data.
-  ALIASES get_data FOR if_http_entity~get_data.
-  ALIASES get_cdata FOR if_http_entity~get_cdata.
-  ALIASES set_cookie FOR if_http_entity~set_cookie.
-  ALIASES set_compression FOR if_http_entity~set_compression.
-  ALIASES set_header_field FOR if_http_entity~set_header_field.
-  ALIASES get_header_field FOR if_http_entity~get_header_field.
-  ALIASES get_content_type FOR if_http_entity~get_content_type.
-  ALIASES get_multipart FOR if_http_entity~get_multipart.
-  ALIASES num_multiparts FOR if_http_entity~num_multiparts.
   ALIASES delete_header_field FOR if_http_entity~delete_header_field.
+  ALIASES get_cdata FOR if_http_entity~get_cdata.
+  ALIASES get_content_type FOR if_http_entity~get_content_type.
+  ALIASES get_data FOR if_http_entity~get_data.
+  ALIASES get_header_field FOR if_http_entity~get_header_field.
+  ALIASES get_header_fields FOR if_http_entity~get_header_fields.
+  ALIASES get_multipart FOR if_http_entity~get_multipart.
+  ALIASES get_serialized_message_length FOR if_http_entity~get_serialized_message_length.
+  ALIASES num_multiparts FOR if_http_entity~num_multiparts.
+  ALIASES set_cdata FOR if_http_entity~set_cdata.
+  ALIASES set_compression FOR if_http_entity~set_compression.
+  ALIASES set_content_type FOR if_http_entity~set_content_type.
+  ALIASES set_cookie FOR if_http_entity~set_cookie.
+  ALIASES set_data FOR if_http_entity~set_data.
+  ALIASES set_header_field FOR if_http_entity~set_header_field.
+  ALIASES to_xstring FOR if_http_entity~to_xstring.
 
   METHODS:
     set_status
