@@ -22,7 +22,9 @@ INTERFACE if_http_entity PUBLIC.
       CHANGING
         fields TYPE string,
     set_compression,
-    add_multipart,
+    add_multipart
+      IMPORTING suppress_content_length TYPE string OPTIONAL
+      RETURNING VALUE(entity) TYPE REF TO if_http_entity,
     append_cdata IMPORTING data TYPE clike,
     get_form_field IMPORTING name TYPE string RETURNING VALUE(value) TYPE string,
     get_cdata RETURNING VALUE(data) TYPE string,
@@ -158,7 +160,7 @@ INTERFACE if_http_entity PUBLIC.
 
   METHODS set_form_fields
     IMPORTING
-      fields TYPE tihttpnvp
+      fields     TYPE tihttpnvp
       multivalue TYPE int4 DEFAULT 0.
 
   METHODS set_header_fields

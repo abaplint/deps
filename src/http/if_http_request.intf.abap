@@ -7,11 +7,28 @@ INTERFACE if_http_request PUBLIC.
     co_request_method_get TYPE string VALUE 'GET',
     co_request_method_post TYPE string VALUE 'POST'.
 
-  ALIASES get_serialized_message_length FOR if_http_entity~get_serialized_message_length.
-  ALIASES to_xstring FOR if_http_entity~to_xstring.
-  ALIASES set_content_type FOR if_http_entity~set_content_type.
+  ALIASES add_multipart FOR if_http_entity~add_multipart.
+  ALIASES get_cdata FOR if_http_entity~get_cdata.
   ALIASES get_content_type FOR if_http_entity~get_content_type.
+  ALIASES get_cookie_field FOR if_http_entity~get_cookie_field.
+  ALIASES get_data FOR if_http_entity~get_data.
+  ALIASES get_form_field FOR if_http_entity~get_form_field.
+  ALIASES get_form_fields FOR if_http_entity~get_form_fields.
+  ALIASES get_form_fields_cs FOR if_http_entity~get_form_fields_cs.
+  ALIASES get_header_field FOR if_http_entity~get_header_field.
+  ALIASES get_header_fields FOR if_http_entity~get_header_fields.
+  ALIASES get_multipart FOR if_http_entity~get_multipart.
+  ALIASES get_serialized_message_length FOR if_http_entity~get_serialized_message_length.
+  ALIASES num_multiparts FOR if_http_entity~num_multiparts.
+  ALIASES set_cdata FOR if_http_entity~set_cdata.
+  ALIASES set_compression FOR if_http_entity~set_compression.
+  ALIASES set_content_type FOR if_http_entity~set_content_type.
+  ALIASES set_data FOR if_http_entity~set_data.
   ALIASES set_form_field FOR if_http_entity~set_form_field.
+  ALIASES set_form_fields FOR if_http_entity~set_form_fields.
+  ALIASES set_header_field FOR if_http_entity~set_header_field.
+  ALIASES set_header_fields FOR if_http_entity~set_header_fields.
+  ALIASES to_xstring FOR if_http_entity~to_xstring.
 
   METHODS:
     set_version
@@ -20,69 +37,14 @@ INTERFACE if_http_request PUBLIC.
     get_method
       RETURNING
         VALUE(method) TYPE string,
-    set_header_field
-      IMPORTING
-        name TYPE string
-        value TYPE string,
-    get_form_fields
-      CHANGING
-        fields TYPE string,
-    set_header_fields
-      IMPORTING
-        fields TYPE string,
     set_method
       IMPORTING
         meth TYPE string,
-    set_form_fields
-      IMPORTING
-        fields TYPE string,
-    set_data
-      IMPORTING data TYPE string
-      RETURNING VALUE(val) TYPE string,
-    get_cdata
-      RETURNING VALUE(data) TYPE string,
-    get_header_fields
-      CHANGING
-        fields TYPE string,
-    get_header_field
-      IMPORTING name TYPE string
-      RETURNING
-        VALUE(value) TYPE string,
-    get_form_field
-      IMPORTING name TYPE string
-      RETURNING VALUE(value) TYPE string,
-    get_data
-      RETURNING VALUE(val) TYPE string,
-    num_multiparts
-      RETURNING VALUE(val) TYPE i,
-    set_cdata
-      IMPORTING data TYPE string,
-    add_multipart
-      IMPORTING suppress_content_length TYPE string OPTIONAL
-      RETURNING VALUE(entity) TYPE REF TO if_http_entity,
-    set_compression,
     set_authorization
       IMPORTING
         auth_type TYPE i OPTIONAL
         username TYPE string
         password TYPE string,
-    get_multipart
-      IMPORTING
-        index TYPE i
-      RETURNING
-        VALUE(entity) TYPE REF TO if_http_entity,
-    get_form_fields_cs
-      IMPORTING
-        formfield_encoding TYPE i OPTIONAL
-        search_option TYPE i OPTIONAL
-      CHANGING
-        fields TYPE any,
-    get_cookie_field
-      IMPORTING
-        cookie_name TYPE string
-        field_name TYPE string
-      RETURNING
-        VALUE(val) TYPE string,
     get_form_data
       IMPORTING
         name TYPE string
