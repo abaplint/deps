@@ -9,7 +9,8 @@ INTERFACE if_http_entity PUBLIC.
       offset TYPE i DEFAULT 0
       length TYPE i DEFAULT -1.
 
-  METHODS: set_data IMPORTING data TYPE xstring,
+  METHODS:
+    set_data IMPORTING data TYPE xstring,
     get_header_field
       IMPORTING name TYPE string
       RETURNING VALUE(value) TYPE string,
@@ -26,7 +27,7 @@ INTERFACE if_http_entity PUBLIC.
     get_form_field IMPORTING name TYPE string RETURNING VALUE(value) TYPE string,
     get_cdata RETURNING VALUE(data) TYPE string,
     get_content_type
-      RETURNING VALUE(val) TYPE string,
+      RETURNING VALUE(content_type) TYPE string,
     get_serialized_message_length
       EXPORTING
         VALUE(body_length) TYPE i
