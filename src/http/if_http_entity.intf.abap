@@ -24,8 +24,15 @@ INTERFACE if_http_entity PUBLIC.
     set_compression,
     add_multipart
       IMPORTING suppress_content_length TYPE string OPTIONAL
-      RETURNING VALUE(entity) TYPE REF TO if_http_entity,
-    append_cdata IMPORTING data TYPE clike,
+      RETURNING VALUE(entity) TYPE REF TO if_http_entity.
+
+  METHODS append_cdata
+      IMPORTING
+        data   TYPE string
+        offset TYPE i DEFAULT 0
+        length TYPE i DEFAULT -1.
+
+  METHODS:
     get_form_field IMPORTING name TYPE string RETURNING VALUE(value) TYPE string,
     get_cdata RETURNING VALUE(data) TYPE string,
     get_content_type

@@ -1,70 +1,36 @@
 INTERFACE if_http_response PUBLIC.
   INTERFACES if_http_entity.
 
-  TYPES: ty_fields TYPE STANDARD TABLE OF string WITH DEFAULT KEY.
-
-  ALIASES get_serialized_message_length
-    FOR if_http_entity~get_serialized_message_length.
-  ALIASES to_xstring
-    FOR if_http_entity~to_xstring.
-  ALIASES set_content_type
-    FOR if_http_entity~set_content_type.
-
-  METHODS append_cdata
-    IMPORTING
-      data   TYPE string
-      offset TYPE i DEFAULT 0
-      length TYPE i DEFAULT -1.
+  ALIASES get_serialized_message_length FOR if_http_entity~get_serialized_message_length.
+  ALIASES to_xstring FOR if_http_entity~to_xstring.
+  ALIASES set_content_type FOR if_http_entity~set_content_type.
+  ALIASES append_cdata FOR if_http_entity~append_cdata.
+  ALIASES get_header_fields FOR if_http_entity~get_header_fields.
+  ALIASES set_cdata FOR if_http_entity~set_cdata.
+  ALIASES set_data FOR if_http_entity~set_data.
+  ALIASES get_data FOR if_http_entity~get_data.
+  ALIASES get_cdata FOR if_http_entity~get_cdata.
+  ALIASES set_cookie FOR if_http_entity~set_cookie.
+  ALIASES set_compression FOR if_http_entity~set_compression.
+  ALIASES set_header_field FOR if_http_entity~set_header_field.
+  ALIASES get_header_field FOR if_http_entity~get_header_field.
+  ALIASES get_content_type FOR if_http_entity~get_content_type.
+  ALIASES get_multipart FOR if_http_entity~get_multipart.
+  ALIASES num_multiparts FOR if_http_entity~num_multiparts.
+  ALIASES delete_header_field FOR if_http_entity~delete_header_field.
 
   METHODS:
-    get_header_fields
-      CHANGING
-        fields TYPE ty_fields,
     set_status
       IMPORTING
         code   TYPE i
         reason TYPE string,
-    set_cdata
-      IMPORTING data TYPE string,
-    set_data
-      IMPORTING data TYPE string,
     redirect
       IMPORTING
         url TYPE string
         permanently TYPE i OPTIONAL
         protocol_dependent TYPE i OPTIONAL,
-    get_data
-      RETURNING VALUE(val) TYPE xstring,
-    get_cdata
-      RETURNING VALUE(val) TYPE string,
-    set_cookie
-      IMPORTING
-        name TYPE string
-        value TYPE string
-        path TYPE string OPTIONAL
-        domain TYPE string OPTIONAL
-        expires TYPE string OPTIONAL
-        secure TYPE i OPTIONAL,
-    set_compression,
-    set_header_field
-      IMPORTING
-        name TYPE string
-        value TYPE string,
-    get_header_field
-      IMPORTING name TYPE string
-      RETURNING VALUE(val) TYPE string,
-    get_content_type
-      RETURNING VALUE(val) TYPE string,
     get_raw_message
       RETURNING VALUE(val) TYPE xstring,
-    get_multipart
-      IMPORTING index TYPE string
-      RETURNING VALUE(entity) TYPE REF TO if_http_entity,
-    num_multiparts
-      RETURNING VALUE(num) TYPE string,
-    delete_header_field
-      IMPORTING
-        name TYPE string,
     delete_cookie_at_client
       IMPORTING
         name TYPE string
