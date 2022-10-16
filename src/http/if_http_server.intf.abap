@@ -45,7 +45,12 @@ INTERFACE if_http_server PUBLIC.
   METHODS logoff
     IMPORTING
       redirect_url TYPE string OPTIONAL.
-  METHODS set_session_stateful.
+
+  METHODS set_session_stateful
+    IMPORTING
+      stateful TYPE i DEFAULT co_enabled
+      path     TYPE string OPTIONAL.
+
   METHODS enable_foreign_session_access
     IMPORTING
       url_path              TYPE string
