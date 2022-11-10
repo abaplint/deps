@@ -5,14 +5,14 @@
     "skipGeneratedPersistentClasses": false,
     "skipGeneratedFunctionGroups": false
   },
-  "dependencies": [],
   "syntax": {
     "version": "v702",
-    "errorNamespace": "ASDF",
-    "globalConstants": [],
-    "globalMacros": []
+    "errorNamespace": "ASDF"
   },
   "rules": {
+    "cds_comment_style": true,
+    "change_if_to_case": true,
+    "no_aliases": false,
     "many_parentheses": true,
     "align_parameters": false,
     "cds_legacy_view": true,
@@ -212,6 +212,8 @@
     "obsolete_statement": {
       "fieldSymbolStructure": true,
       "refresh": true,
+      "formDefinition": true,
+      "formImplementation": true,
       "compute": true,
       "clientSpecified": true,
       "exitFromSQL": true,
@@ -238,17 +240,7 @@
       "occurs": true
     },
     "parser_error": true,
-    "preferred_compare_operator": {
-      "badOperators": [
-        "EQ",
-        "><",
-        "NE",
-        "GE",
-        "GT",
-        "LT",
-        "LE"
-      ]
-    },
+    "preferred_compare_operator": true,
     "remove_descriptions": {
       "ignoreWorkflow": false,
       "ignoreExceptions": false
