@@ -154,6 +154,7 @@ CONSTANTS icon_locked TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_loio_class TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_master_data_act TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_mc_contentindicator TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_message TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_message_critical TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_message_critical_small TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_message_error TYPE c LENGTH 4 VALUE ''.
