@@ -41,6 +41,16 @@ CLASS cl_xml_document DEFINITION PUBLIC.
         parent    TYPE REF TO if_ixml_node OPTIONAL
       RETURNING
         VALUE(new_node) TYPE REF TO if_ixml_node.
+    METHODS set_encoding
+      IMPORTING
+        charset TYPE string.
+    METHODS render_2_xstring
+      IMPORTING
+        pretty_print TYPE abap_bool DEFAULT abap_true
+      EXPORTING
+        retcode TYPE sysubrc
+        stream  TYPE xstring
+        size    TYPE sytabix.
 
     DATA m_document TYPE REF TO if_ixml_document.
     CONSTANTS c_ok TYPE sysubrc VALUE 0.
@@ -49,6 +59,14 @@ ENDCLASS.
 
 CLASS cl_xml_document IMPLEMENTATION.
   METHOD parse_string.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD render_2_xstring.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_encoding.
     RETURN.
   ENDMETHOD.
 
