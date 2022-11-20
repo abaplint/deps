@@ -24,6 +24,23 @@ CLASS cl_xml_document DEFINITION PUBLIC.
       EXPORTING
         dataobject TYPE any
         retcode    TYPE sysubrc.
+    METHODS set_data
+      IMPORTING
+        name        TYPE string DEFAULT 'DATA'
+        alias       TYPE string OPTIONAL
+        dataobject  TYPE any
+        parent_node TYPE REF TO if_ixml_node OPTIONAL
+        control     TYPE dcxmlsercl OPTIONAL
+      RETURNING
+        VALUE(retcode) TYPE sysubrc.
+    METHODS create_simple_element
+      IMPORTING
+        name      TYPE string
+        namespace TYPE string OPTIONAL
+        value     TYPE string OPTIONAL
+        parent    TYPE REF TO if_ixml_node OPTIONAL
+      RETURNING
+        VALUE(new_node) TYPE REF TO if_ixml_node.
 
     DATA m_document TYPE REF TO if_ixml_document.
     CONSTANTS c_ok TYPE sysubrc VALUE 0.
@@ -32,6 +49,14 @@ ENDCLASS.
 
 CLASS cl_xml_document IMPLEMENTATION.
   METHOD parse_string.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD create_simple_element.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_data.
     RETURN.
   ENDMETHOD.
 
