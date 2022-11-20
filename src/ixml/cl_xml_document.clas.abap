@@ -27,6 +27,7 @@ CLASS cl_xml_document DEFINITION PUBLIC.
 
     DATA m_document TYPE REF TO if_ixml_document.
     CONSTANTS c_ok TYPE sysubrc VALUE 0.
+    CONSTANTS c_bor_classtype TYPE c LENGTH 2 VALUE 'BO'.
 ENDCLASS.
 
 CLASS cl_xml_document IMPLEMENTATION.
