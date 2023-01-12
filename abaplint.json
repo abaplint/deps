@@ -124,7 +124,7 @@
     "constructor_visibility_public": true,
     "contains_tab": true,
     "definitions_top": true,
-    "description_empty": true,
+    "description_empty": false,
     "double_space": {
       "keywords": true,
       "startParen": true,
