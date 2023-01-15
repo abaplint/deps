@@ -199,12 +199,15 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         IMPORTING i_event_id TYPE i,
       set_toolbar_interactive,
       is_ready_for_input RETURNING VALUE(state) TYPE i,
-      is_alive RETURNING VALUE(state) TYPE i,
-      get_selected_rows
-        EXPORTING
-          et_index_rows TYPE any
-          et_row_no TYPE any,
-      free,
+      is_alive RETURNING VALUE(state) TYPE i.
+
+    TYPES ty_row_no_tt TYPE STANDARD TABLE OF ty_row_no WITH DEFAULT KEY.
+    METHODS get_selected_rows
+      EXPORTING
+        et_index_rows TYPE any
+        et_row_no     TYPE ty_row_no_tt.
+
+    METHODS: free,
       get_frontend_fieldcatalog
         EXPORTING
           et_fieldcatalog TYPE lvc_t_fcat,
