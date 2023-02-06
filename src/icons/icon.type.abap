@@ -9,6 +9,7 @@ CONSTANTS icon_address TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_administrative_data TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_adopt TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_alert TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_total_right TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_annotation TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_any_document TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_attachment TYPE c LENGTH 4 VALUE ''.
