@@ -24,7 +24,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(e_interactive) TYPE string.
 
     EVENTS onf4 EXPORTING
-      VALUE(es_row_no) TYPE ty_row_no.
+      VALUE(es_row_no) TYPE ty_row_no
+      VALUE(e_fieldname) TYPE char30
+      VALUE(er_event_data) TYPE REF TO cl_alv_event_data.
 
     EVENTS user_command EXPORTING
       VALUE(e_ucomm) TYPE string.
