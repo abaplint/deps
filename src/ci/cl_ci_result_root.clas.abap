@@ -11,16 +11,16 @@ CLASS cl_ci_result_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
     DATA pseudo_remote_enabled TYPE abap_bool.
 
     METHODS set_info ABSTRACT
-      IMPORTING p_info TYPE string
-      RETURNING VALUE(p_result) TYPE string.
+      IMPORTING
+        p_info TYPE string
+      RETURNING
+        VALUE(p_result) TYPE string.
 
   PROTECTED SECTION.
 
     METHODS get_text
       RETURNING
-        VALUE(p_result) TYPE any.
-
-  PRIVATE SECTION.
+        VALUE(p_result) TYPE string.
 
 ENDCLASS.
 
