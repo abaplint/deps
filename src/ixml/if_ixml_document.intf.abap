@@ -37,36 +37,48 @@ INTERFACE if_ixml_document PUBLIC.
       RETURNING
         VALUE(element) TYPE REF TO if_ixml_element,
     create_iterator_filtered
-      IMPORTING input TYPE any
-      RETURNING VALUE(val) TYPE REF TO if_ixml_node_iterator,
+      IMPORTING
+        input TYPE any
+      RETURNING
+        VALUE(val) TYPE REF TO if_ixml_node_iterator.
+
+  METHODS:
     create_filter_and
       IMPORTING
         filter1 TYPE any
         filter2 TYPE any
       RETURNING
-        VALUE(val) TYPE any,
+        VALUE(val) TYPE REF TO if_ixml_node_filter,
     create_iterator
-      IMPORTING depth TYPE i DEFAULT 0
-      RETURNING VALUE(rval) TYPE REF TO if_ixml_node_iterator,
+      IMPORTING
+        depth TYPE i DEFAULT 0
+      RETURNING
+        VALUE(rval) TYPE REF TO if_ixml_node_iterator,
     create_filter_node_type
-      IMPORTING typ TYPE string
-      RETURNING VALUE(val) TYPE any,
+      IMPORTING
+        typ TYPE string
+      RETURNING
+        VALUE(val) TYPE REF TO if_ixml_node_filter,
     create_simple_element_ns
       IMPORTING
         name TYPE string
         parent TYPE REF TO if_ixml_node
         prefix TYPE string OPTIONAL
         value TYPE string OPTIONAL
-      RETURNING VALUE(val) TYPE REF TO if_ixml_element,
+      RETURNING
+        VALUE(val) TYPE REF TO if_ixml_element,
     create_filter_attribute
-      IMPORTING name TYPE string
-      RETURNING VALUE(val) TYPE any,
-    create_simple_element
       IMPORTING
         name TYPE string
-        value TYPE string OPTIONAL
+      RETURNING
+        VALUE(val) TYPE REF TO if_ixml_node_filter,
+    create_simple_element
+      IMPORTING
+        name   TYPE string
+        value  TYPE string OPTIONAL
         parent TYPE REF TO if_ixml_node
-      RETURNING VALUE(val) TYPE REF TO if_ixml_element,
+      RETURNING
+        VALUE(val) TYPE REF TO if_ixml_element,
     find_from_name
       IMPORTING
         name TYPE string
@@ -90,14 +102,16 @@ INTERFACE if_ixml_document PUBLIC.
         name TYPE string
         namespace TYPE string OPTIONAL
         uri TYPE string OPTIONAL
-      RETURNING VALUE(val) TYPE any,
+      RETURNING
+        VALUE(val) TYPE REF TO if_ixml_node_collection,
     get_elements_by_tag_name
       IMPORTING
         depth TYPE i OPTIONAL
         name TYPE string
         namespace TYPE string OPTIONAL
         uri TYPE string OPTIONAL
-      RETURNING VALUE(val) TYPE any,
+      RETURNING
+        VALUE(val) TYPE REF TO if_ixml_node_collection,
     create_namespace_decl
       IMPORTING
         name TYPE string
