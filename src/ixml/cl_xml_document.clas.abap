@@ -77,7 +77,6 @@ CLASS cl_xml_document IMPLEMENTATION.
   METHOD render_2_string.
     RETURN.
   ENDMETHOD.
-  
   METHOD parse_string.
     RETURN.
   ENDMETHOD.
