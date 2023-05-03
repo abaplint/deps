@@ -1,5 +1,12 @@
 CLASS cl_xml_document DEFINITION PUBLIC.
   PUBLIC SECTION.
+    METHODS render_2_string
+      IMPORTING
+        pretty_print TYPE xflag DEFAULT 'X'
+      EXPORTING
+        VALUE(retcode) TYPE sysubrc
+        stream TYPE string
+        size TYPE sytabix.
     METHODS create_with_data
       IMPORTING
         name TYPE string DEFAULT 'DATA'
@@ -64,7 +71,11 @@ CLASS cl_xml_document DEFINITION PUBLIC.
 ENDCLASS.
 
 CLASS cl_xml_document IMPLEMENTATION.
-  METHODS create_with_data.
+  METHOD create_with_data.
+    RETURN.
+  ENDMETHOD.
+  
+  METHOD render_2_string.
     RETURN.
   ENDMETHOD.
   
