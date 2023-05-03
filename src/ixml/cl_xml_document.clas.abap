@@ -74,9 +74,11 @@ CLASS cl_xml_document IMPLEMENTATION.
   METHOD create_with_data.
     RETURN.
   ENDMETHOD.
+
   METHOD render_2_string.
     RETURN.
   ENDMETHOD.
+
   METHOD parse_string.
     RETURN.
   ENDMETHOD.
