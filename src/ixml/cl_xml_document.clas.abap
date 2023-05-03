@@ -1,5 +1,18 @@
 CLASS cl_xml_document DEFINITION PUBLIC.
   PUBLIC SECTION.
+    METHODS render_2_string
+      IMPORTING
+        pretty_print TYPE xflag DEFAULT 'X'
+      EXPORTING
+        VALUE(retcode) TYPE sysubrc
+        stream TYPE string
+        size TYPE sytabix.
+    METHODS create_with_data
+      IMPORTING
+        name TYPE string DEFAULT 'DATA'
+        dataobject TYPE any
+      RETURNING
+      VALUE(retcode) TYPE sysubrc.
     METHODS parse_string IMPORTING stream TYPE string.
     METHODS parse_xstring IMPORTING
       stream TYPE xstring RETURNING VALUE(subrc) TYPE i.
@@ -58,6 +71,14 @@ CLASS cl_xml_document DEFINITION PUBLIC.
 ENDCLASS.
 
 CLASS cl_xml_document IMPLEMENTATION.
+  METHOD create_with_data.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD render_2_string.
+    RETURN.
+  ENDMETHOD.
+
   METHOD parse_string.
     RETURN.
   ENDMETHOD.
