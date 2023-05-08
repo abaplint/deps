@@ -1,15 +1,13 @@
-CLASS cl_salv_controller_model DEFINITION
-  public
-  inheriting from CL_SALV_CONTROLLER
-  abstract
-  create public .
+CLASS cl_salv_controller_model DEFINITION PUBLIC
+  INHERITING FROM cl_salv_controller.
 
   PUBLIC SECTION.
-    interfaces IF_SALV_CONTROLLER_MODEL .
-    aliases R_ADAPTER
-      for IF_SALV_CONTROLLER_MODEL~R_ADAPTER .
+    INTERFACES if_salv_controller_model.
+
+    ALIASES r_adapter
+      FOR if_salv_controller_model~r_adapter.
+
 ENDCLASS.
 
 CLASS cl_salv_controller_model IMPLEMENTATION.
-
 ENDCLASS.
