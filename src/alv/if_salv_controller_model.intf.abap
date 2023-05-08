@@ -1,6 +1,6 @@
-interface IF_SALV_CONTROLLER_MODEL
-  public .
+INTERFACE if_salv_controller_model PUBLIC.
 
-  data R_ADAPTER type ref to CL_SALV_ADAPTER .
+  DATA:
+    r_adapter TYPE REF TO cl_salv_adapter.
 
-endinterface.
+ENDINTERFACE.
