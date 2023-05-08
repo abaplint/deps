@@ -1,5 +1,4 @@
-CLASS cl_salv_controller_model DEFINITION PUBLIC
-  INHERITING FROM cl_salv_controller.
+CLASS cl_salv_controller_model DEFINITION PUBLIC.
 
   PUBLIC SECTION.
     INTERFACES if_salv_controller_model.
