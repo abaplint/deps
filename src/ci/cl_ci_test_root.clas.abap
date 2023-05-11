@@ -114,7 +114,7 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           p_line         TYPE string OPTIONAL
           p_column       TYPE string OPTIONAL
           p_errcnt       TYPE string OPTIONAL
-          p_kind         TYPE string OPTIONAL
+          p_kind         TYPE clike OPTIONAL
           p_suppress     TYPE string OPTIONAL
           p_param_1      TYPE string OPTIONAL
           p_param_2      TYPE string OPTIONAL
