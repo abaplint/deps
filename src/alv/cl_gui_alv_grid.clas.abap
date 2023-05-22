@@ -290,7 +290,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           i_buffer_active      TYPE abap_bool OPTIONAL
           is_variant           TYPE string OPTIONAL
           i_structure_name     TYPE string OPTIONAL
-          i_save               TYPE string OPTIONAL
+          i_save               TYPE char01 OPTIONAL
           is_layout            TYPE string OPTIONAL
           it_toolbar_excluding TYPE string OPTIONAL
           it_hyperlink         TYPE any OPTIONAL
