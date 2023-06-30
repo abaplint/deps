@@ -30,6 +30,7 @@ INTERFACE if_http_request PUBLIC.
   ALIASES set_header_fields FOR if_http_entity~set_header_fields.
   ALIASES to_xstring FOR if_http_entity~to_xstring.
   ALIASES get_cookies FOR if_http_entity~get_cookies.
+  ALIASES get_last_error FOR if_http_entity~get_last_error.
 
   METHODS:
     set_version
