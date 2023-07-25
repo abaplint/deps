@@ -100,4 +100,10 @@ INTERFACE if_ixml_element PUBLIC.
       IMPORTING
         value TYPE string
       RETURNING VALUE(rc) TYPE i.
+
+  METHODS set_namespace_prefix
+    IMPORTING
+      prefix TYPE string
+    RETURNING
+      VALUE(rval) TYPE i.
 ENDINTERFACE.
