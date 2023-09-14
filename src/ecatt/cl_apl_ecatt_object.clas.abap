@@ -39,6 +39,11 @@ CLASS cl_apl_ecatt_object DEFINITION PUBLIC.
           im_obj_type TYPE string
         EXPORTING
           ex_version_info TYPE STANDARD TABLE.
+
+    EVENTS ev_object_saved
+      EXPORTING
+        VALUE(ex_ecatt_object) TYPE REF TO cl_apl_ecatt_object OPTIONAL
+        VALUE(ex_new_object)   TYPE abap_bool DEFAULT space.
 ENDCLASS.
 
 CLASS cl_apl_ecatt_object IMPLEMENTATION.
