@@ -1,7 +1,10 @@
 CLASS cl_apl_ecatt_object DEFINITION PUBLIC.
   PUBLIC SECTION.
-    DATA:
-      attrib TYPE REF TO cl_apl_ecatt_attributes.
+    DATA attrib         TYPE REF TO cl_apl_ecatt_attributes.
+    DATA object_name    TYPE etobj_name READ-ONLY.
+    DATA object_version TYPE etobj_ver READ-ONLY.
+    DATA object_type    TYPE etobj_type READ-ONLY.
+
     METHODS:
       close_object
         IMPORTING
