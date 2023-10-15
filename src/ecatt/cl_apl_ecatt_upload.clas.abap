@@ -23,7 +23,8 @@ CLASS cl_apl_ecatt_upload DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
     METHODS:
       raise_upload_exception
         IMPORTING
-          previous TYPE REF TO cx_root,
+          previous TYPE REF TO cx_root
+          called_method TYPE string OPTIONAL,
       get_variants_from_dom
         IMPORTING
           params TYPE any.
