@@ -8,7 +8,8 @@ CLASS cl_apl_ecatt_object DEFINITION PUBLIC.
     METHODS:
       close_object
         IMPORTING
-          im_suppress_events TYPE abap_bool.
+          im_suppress_events TYPE abap_bool OPTIONAL
+          im_object_usage TYPE REF TO object OPTIONAL.
     CLASS-METHODS:
       get_tadir_entry
         IMPORTING
