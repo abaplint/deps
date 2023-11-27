@@ -102,6 +102,7 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       VALUE(p_param_2) TYPE string
       VALUE(p_param_3) TYPE string
       VALUE(p_param_4) TYPE string
+      VALUE(p_checksum_1) TYPE i OPTIONAL
       VALUE(p_inclspec) TYPE string.
 
     METHODS
