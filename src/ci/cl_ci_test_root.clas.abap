@@ -42,6 +42,8 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       c_warning TYPE c LENGTH 1 VALUE '?',
       c_error   TYPE c LENGTH 1 VALUE '?'.
 
+    CONSTANTS c_false TYPE c LENGTH 1 VALUE ' '.
+
     DATA name TYPE string.
 
     METHODS

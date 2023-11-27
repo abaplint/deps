@@ -1,0 +1,7 @@
+CLASS cl_ci_test_include DEFINITION INHERITING FROM cl_ci_test_program PUBLIC.
+  PUBLIC SECTION.
+ENDCLASS.
+
+CLASS cl_ci_test_include IMPLEMENTATION.
+
+ENDCLASS.
