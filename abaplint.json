@@ -15,6 +15,8 @@
     "no_aliases": false,
     "many_parentheses": true,
     "align_parameters": false,
+    "dynpro_checks": true,
+    "prefer_pragmas": true,
     "cds_legacy_view": true,
     "cds_parser_error": true,
     "classic_exceptions_overlap": true,
