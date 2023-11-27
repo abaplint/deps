@@ -102,6 +102,8 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       VALUE(p_param_2) TYPE string
       VALUE(p_param_3) TYPE string
       VALUE(p_param_4) TYPE string
+      VALUE(p_detail) TYPE xstring OPTIONAL
+      VALUE(p_checksum_1) TYPE i OPTIONAL
       VALUE(p_inclspec) TYPE string.
 
     METHODS
@@ -110,7 +112,7 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
         IMPORTING
           p_test         TYPE string
           p_code         TYPE string
-          p_sub_obj_type TYPE string OPTIONAL
+          p_sub_obj_type TYPE clike OPTIONAL
           p_sub_obj_name TYPE string OPTIONAL
           p_position     TYPE string OPTIONAL
           p_line         TYPE string OPTIONAL
@@ -136,6 +138,8 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
 
     TYPES ty_results_tt TYPE STANDARD TABLE OF ty_results WITH DEFAULT KEY.
 
+    METHODS clear.
+
     METHODS
       consolidate_for_display
         ABSTRACT
@@ -156,6 +160,10 @@ ENDCLASS.
 CLASS cl_ci_test_root IMPLEMENTATION.
 
   METHOD add_obj_type.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD clear.
     RETURN.
   ENDMETHOD.
 
