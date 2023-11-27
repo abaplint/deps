@@ -136,6 +136,8 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
 
     TYPES ty_results_tt TYPE STANDARD TABLE OF ty_results WITH DEFAULT KEY.
 
+    METHODS clear.
+
     METHODS
       consolidate_for_display
         ABSTRACT
@@ -156,6 +158,10 @@ ENDCLASS.
 CLASS cl_ci_test_root IMPLEMENTATION.
 
   METHOD add_obj_type.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD clear.
     RETURN.
   ENDMETHOD.
 
