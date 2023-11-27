@@ -27,6 +27,8 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           scimessages       TYPE STANDARD TABLE OF ty_message WITH DEFAULT KEY,
           no_aunit          TYPE string.
 
+    DATA typelist TYPE scit_objt READ-ONLY.
+
     CONSTANTS:
       c_pc_exceptn_posibl TYPE c LENGTH 1 VALUE '?',
       c_pc_exceptn_exists TYPE c LENGTH 1 VALUE '?',
