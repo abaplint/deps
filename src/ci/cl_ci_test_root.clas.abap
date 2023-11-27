@@ -91,7 +91,7 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       VALUE(p_sub_obj_type) TYPE string
       VALUE(p_sub_obj_name) TYPE string
       VALUE(p_position) TYPE string
-      VALUE(p_line) TYPE string
+      VALUE(p_line) TYPE i
       VALUE(p_column) TYPE string
       VALUE(p_errcnt) TYPE string
       VALUE(p_kind) TYPE string
