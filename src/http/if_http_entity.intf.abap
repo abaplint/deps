@@ -10,7 +10,11 @@ INTERFACE if_http_entity PUBLIC.
       length TYPE i DEFAULT -1.
 
   METHODS:
-    set_data IMPORTING data TYPE xstring,
+    set_data
+      IMPORTING
+        data   TYPE xstring
+        offset TYPE i OPTIONAL
+        length TYPE i OPTIONAL,
     get_header_field
       IMPORTING name TYPE string
       RETURNING VALUE(value) TYPE string,
