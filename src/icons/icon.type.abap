@@ -8,11 +8,11 @@ CONSTANTS icon_activity_group TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_address TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_administrative_data TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_adopt TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_client_breakpoint TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_alert TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_total_right TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_annotation TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_any_document TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_arrow_left TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_arrow_right TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_attachment TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_availability_display TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_background_job TYPE c LENGTH 4 VALUE ''.
@@ -45,6 +45,7 @@ CONSTANTS icon_change_text TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_check TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_checked TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_class_connection_space TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_client_breakpoint TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_closed_folder TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_collapse TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_collapse_all TYPE c LENGTH 4 VALUE ''.
@@ -228,6 +229,7 @@ CONSTANTS icon_relation_class TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_relationship TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_release TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_replace TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_resubmission TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_role TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_rtf TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_sap TYPE c LENGTH 4 VALUE ''.
@@ -275,6 +277,7 @@ CONSTANTS icon_tif TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_time TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_tools TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_total_left TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_total_right TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_transfer TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_transport TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_tree TYPE c LENGTH 4 VALUE ''.
