@@ -5,11 +5,11 @@ INTERFACE if_http_server PUBLIC.
 
   CONSTANTS co_disabled TYPE i VALUE 0.
   CONSTANTS co_enabled TYPE i VALUE 1.
+  CONSTANTS authmethod_service TYPE i VALUE 4.
 
   CLASS-DATA session_id TYPE string READ-ONLY.
   CLASS-DATA authentication_method TYPE i READ-ONLY.
-  CONSTANTS authmethod_service TYPE i VALUE 4.
-
+  CLASS-DATA authenticated TYPE i READ-ONLY.
 
   CLASS-METHODS append_field_url
     IMPORTING
