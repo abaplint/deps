@@ -64,6 +64,8 @@ CONSTANTS icon_controlling_area TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_convert TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_copy_object TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_create TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_create_note TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_customer TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_customer_warehouse TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_database_table TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_database_table_ina TYPE c LENGTH 4 VALUE ''.
@@ -244,6 +246,7 @@ CONSTANTS icon_short_message TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_simulate TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_space TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_stack TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_status TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_alert TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_critical TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_ok TYPE c LENGTH 4 VALUE ''.
@@ -272,6 +275,7 @@ CONSTANTS icon_table_settings TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_terminated_org_unit TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_test TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_text_act TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_text_field TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_text_ina TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_tif TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_time TYPE c LENGTH 4 VALUE ''.
