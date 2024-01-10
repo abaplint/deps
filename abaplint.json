@@ -11,6 +11,8 @@
   },
   "rules": {
     "cds_comment_style": true,
+    "no_prefixes": false,
+    "reduce_procedural_code": false,
     "change_if_to_case": true,
     "no_aliases": false,
     "many_parentheses": true,
