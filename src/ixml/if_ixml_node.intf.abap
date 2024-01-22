@@ -59,5 +59,7 @@ INTERFACE if_ixml_node PUBLIC.
         name TYPE string,
     set_value
       IMPORTING
-        value TYPE string.
+        value TYPE string
+      RETURNING
+        VALUE(rval) TYPE i.
 ENDINTERFACE.

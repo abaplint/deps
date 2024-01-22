@@ -90,7 +90,9 @@ INTERFACE if_ixml_element PUBLIC.
       IMPORTING
         name TYPE string
         namespace TYPE string OPTIONAL
-        value TYPE string,
+        value TYPE string
+      RETURNING
+        VALUE(rval) TYPE i,
     set_attribute_ns
       IMPORTING
         name TYPE string
@@ -99,7 +101,8 @@ INTERFACE if_ixml_element PUBLIC.
     set_value
       IMPORTING
         value TYPE string
-      RETURNING VALUE(rc) TYPE i.
+      RETURNING
+        VALUE(rc) TYPE i.
 
   METHODS set_namespace_prefix
     IMPORTING
