@@ -97,6 +97,7 @@ INTERFACE if_ixml_element PUBLIC.
       IMPORTING
         name TYPE string
         prefix TYPE string OPTIONAL
+        uri TYPE string OPTIONAL
         value TYPE string,
     set_value
       IMPORTING
