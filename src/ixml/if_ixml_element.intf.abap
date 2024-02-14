@@ -3,7 +3,7 @@ INTERFACE if_ixml_element PUBLIC.
 
   METHODS:
     remove_attribute_ns
-      IMPORTING foo TYPE string,
+      IMPORTING name TYPE string,
     get_attributes
       RETURNING VALUE(attr) TYPE REF TO if_ixml_named_node_map,
     get_next
@@ -97,6 +97,7 @@ INTERFACE if_ixml_element PUBLIC.
       IMPORTING
         name TYPE string
         prefix TYPE string OPTIONAL
+        uri TYPE string OPTIONAL
         value TYPE string,
     set_value
       IMPORTING

@@ -2,6 +2,9 @@ INTERFACE if_ixml_document PUBLIC.
   INTERFACES if_ixml_node.
 
   METHODS:
+    set_declaration
+      IMPORTING
+        declaration TYPE abap_bool,
     set_encoding
       IMPORTING
         encoding TYPE REF TO object,
