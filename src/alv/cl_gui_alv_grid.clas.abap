@@ -100,7 +100,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_evt_modified   TYPE i VALUE 3,
       mc_style_hotspot  TYPE i VALUE 4,
       mc_evt_enter      TYPE i VALUE 5,
-      mc_style_button   TYPE i VALUE 6.
+      mc_style_button   TYPE i VALUE 6,
+      mc_style_f4       TYPE i VALUE 7.
 
     CONSTANTS:
       mc_mb_variant      TYPE string VALUE 'a',
