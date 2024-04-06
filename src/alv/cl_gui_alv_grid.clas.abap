@@ -24,9 +24,12 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(e_interactive) TYPE string.
 
     EVENTS onf4 EXPORTING
-      VALUE(es_row_no) TYPE ty_row_no
-      VALUE(e_fieldname) TYPE char30
-      VALUE(er_event_data) TYPE REF TO cl_alv_event_data.
+      VALUE(e_fieldvalue) TYPE lvc_value OPTIONAL
+      VALUE(e_fieldname) TYPE lvc_fname OPTIONAL
+      VALUE(es_row_no) TYPE lvc_s_roid OPTIONAL
+      VALUE(er_event_data) TYPE REF TO cl_alv_event_data OPTIONAL
+      VALUE(et_bad_cells) TYPE lvc_t_modi OPTIONAL
+      VALUE(e_display) TYPE char01 OPTIONAL.
 
     EVENTS user_command EXPORTING
       VALUE(e_ucomm) TYPE string.
@@ -268,7 +271,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       register_delayed_event,
       register_f4_for_fields
         IMPORTING
-          data TYPE any,
+          it_f4 TYPE any,
       get_filtered_entries
         EXPORTING
           et_filtered_entries TYPE lvc_t_fidx,
