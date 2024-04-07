@@ -36,7 +36,7 @@ INTERFACE if_http_request PUBLIC.
   METHODS:
     set_version
       IMPORTING
-        version TYPE string,
+        version TYPE i DEFAULT 1000,
     get_method
       RETURNING
         VALUE(method) TYPE string,
