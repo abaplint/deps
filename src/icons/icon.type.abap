@@ -1,5 +1,10 @@
 TYPE-POOL icon.
 
+CONSTANTS icon_previous_object TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_status_booked TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_status_open TYPE c LENGTH 4 VALUE ''.
+
+
 CONSTANTS icon_abap TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_abap_local TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_abc TYPE c LENGTH 4 VALUE ''.
