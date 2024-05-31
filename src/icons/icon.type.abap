@@ -1,10 +1,5 @@
 TYPE-POOL icon.
 
-CONSTANTS icon_previous_object TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_status_booked TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_status_open TYPE c LENGTH 4 VALUE ''.
-
-
 CONSTANTS icon_abap TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_abap_local TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_abc TYPE c LENGTH 4 VALUE ''.
@@ -137,6 +132,7 @@ CONSTANTS icon_failure TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_fast_entry TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_favorites TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_fax TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_field_with_text TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_filter TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_flight TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_folder TYPE c LENGTH 4 VALUE ''.
@@ -275,6 +271,7 @@ CONSTANTS icon_positive TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ppe_vnode TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ppt TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_presence TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_previous_object TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_previous_value TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_print TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_profit_center TYPE c LENGTH 4 VALUE ''.
@@ -319,8 +316,10 @@ CONSTANTS icon_space TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_stack TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_alert TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_status_booked TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_critical TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_ok TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_status_open TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_overview TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_reverse TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_stock TYPE c LENGTH 4 VALUE ''.
