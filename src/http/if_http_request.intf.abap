@@ -42,7 +42,7 @@ INTERFACE if_http_request PUBLIC.
         VALUE(method) TYPE string,
     set_method
       IMPORTING
-        meth TYPE string,
+        method TYPE string,
     set_authorization
       IMPORTING
         auth_type TYPE i OPTIONAL
