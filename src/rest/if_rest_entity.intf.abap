@@ -9,6 +9,7 @@ INTERFACE if_rest_entity PUBLIC.
       iv_name TYPE string
       iv_value TYPE string.
   METHODS get_binary_data RETURNING VALUE(data) TYPE xstring.
+  METHODS get_header_fields RETURNING VALUE(data) TYPE voided.
   METHODS set_binary_data IMPORTING iv_data TYPE xstring.
 
 ENDINTERFACE.
