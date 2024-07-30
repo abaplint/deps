@@ -2,6 +2,35 @@ INTERFACE if_web_http_request PUBLIC.
   METHODS:
     get_header_field,
     get_method RETURNING VALUE(method) TYPE string,
-    get_text RETURNING VALUE(text) TYPE string,
+    get_text   RETURNING VALUE(text) TYPE string,
     get_form_field.
+
+  METHODS set_binary
+    IMPORTING
+      i_data   TYPE xstring
+      i_offset TYPE i DEFAULT 0
+      i_length TYPE i DEFAULT -1
+    RETURNING
+      VALUE(r_value) TYPE REF TO if_web_http_request
+    RAISING
+      cx_web_message_error.
+
+  METHODS set_uri_path
+    IMPORTING
+      i_uri_path     TYPE string
+      multivalue     TYPE i DEFAULT 0
+    RETURNING
+      VALUE(r_value) TYPE REF TO if_web_http_request
+    RAISING
+      cx_web_message_error.
+
+  METHODS set_text
+    IMPORTING
+      i_text   TYPE string
+      i_offset TYPE i DEFAULT 0
+      i_length TYPE i DEFAULT -1
+    RETURNING
+      VALUE(r_value) TYPE REF TO if_web_http_request
+    RAISING
+      cx_web_message_error.
 ENDINTERFACE.
