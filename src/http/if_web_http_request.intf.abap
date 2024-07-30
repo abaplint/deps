@@ -1,5 +1,7 @@
 INTERFACE if_web_http_request PUBLIC.
   METHODS get_header_field
+    IMPORTING
+      i_name TYPE string
     RETURNING
       VALUE(r_value) TYPE string
     RAISING
@@ -15,6 +17,12 @@ INTERFACE if_web_http_request PUBLIC.
       i_length TYPE i DEFAULT -1
     RETURNING
       VALUE(r_value) TYPE REF TO if_web_http_request
+    RAISING
+      cx_web_message_error.
+
+  METHODS get_header_fields
+    RETURNING
+      VALUE(r_value) TYPE name_value_pairs
     RAISING
       cx_web_message_error.
 
