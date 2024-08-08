@@ -1,0 +1,3 @@
+INTERFACE if_os_clone PUBLIC.
+
+ENDINTERFACE.

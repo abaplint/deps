@@ -198,9 +198,15 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
     METHODS:
       constructor
         IMPORTING
-          i_parent TYPE any OPTIONAL
+          i_parent       TYPE any OPTIONAL
           i_applogparent TYPE any OPTIONAL
-          i_appl_events TYPE any OPTIONAL,
+          i_shellstyle TYPE any OPTIONAL
+          i_lifetime TYPE any OPTIONAL
+          i_parentdbg TYPE any OPTIONAL
+          i_graphicsparent TYPE any OPTIONAL
+          i_name TYPE any OPTIONAL
+          i_fcat_complete TYPE any OPTIONAL
+          i_appl_events  TYPE any OPTIONAL,
       register_edit_event
         IMPORTING i_event_id TYPE i,
       set_toolbar_interactive,
