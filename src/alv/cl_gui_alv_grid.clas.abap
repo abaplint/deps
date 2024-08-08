@@ -308,6 +308,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         CHANGING
           it_fieldcatalog      TYPE ANY TABLE OPTIONAL
           it_sort              TYPE ANY TABLE OPTIONAL
+          it_filter            TYPE ANY TABLE OPTIONAL
           it_outtab            TYPE ANY TABLE OPTIONAL.
 
     METHODS get_current_cell
@@ -325,12 +326,17 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         is_column_id TYPE lvc_s_col OPTIONAL
         is_row_no    TYPE lvc_s_roid OPTIONAL.
 
+    METHODS set_visible IMPORTING visible TYPE abap_bool OPTIONAL.
+
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
 
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+  METHOD set_visible.
+    RETURN.
+  ENDMETHOD.
 
   METHOD constructor.
     RETURN.
