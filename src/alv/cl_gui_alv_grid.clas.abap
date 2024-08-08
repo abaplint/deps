@@ -247,7 +247,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           is_layout TYPE any,
       set_frontend_fieldcatalog
         IMPORTING
-          catalog TYPE any,
+          it_fieldcatalog TYPE any,
       set_gridtitle
           IMPORTING
             VALUE(i_gridtitle) TYPE any,
