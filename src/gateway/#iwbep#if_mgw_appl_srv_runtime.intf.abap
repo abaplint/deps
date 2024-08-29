@@ -46,7 +46,7 @@ INTERFACE /iwbep/if_mgw_appl_srv_runtime PUBLIC.
       !it_filter_select_options TYPE string OPTIONAL
       !it_order                 TYPE string OPTIONAL
       !is_paging                TYPE string OPTIONAL
-      !it_navigation_path       TYPE stringOPTIONAL
+      !it_navigation_path       TYPE stringoptional
       !it_key_tab               TYPE string OPTIONAL
       !iv_filter_string         TYPE string OPTIONAL
       !iv_search_string         TYPE string OPTIONAL

@@ -1,6 +1,6 @@
 INTERFACE /iwbep/if_mgw_req_filter PUBLIC.
 
-   TYPES:
+  TYPES:
         BEGIN OF ty_s_cod_select_option,
           sign   TYPE ddsign,
           option TYPE ddoption,
@@ -8,15 +8,15 @@ INTERFACE /iwbep/if_mgw_req_filter PUBLIC.
           high   TYPE string,
         END OF ty_s_cod_select_option.
 
-      TYPES:
+  TYPES:
         BEGIN OF ty_s_mgw_select_option,
           property       TYPE string,
-          select_options TYPE STANDARD TABLE OF ty_s_cod_select_option WITH EMPTY KEY,
+          select_options TYPE STANDARD TABLE OF ty_s_cod_select_option WITH DEFAULT KEY,
         END OF ty_s_mgw_select_option.
 
-      TYPES ty_t_mgw_select_option TYPE STANDARD TABLE OF ty_s_mgw_select_option WITH EMPTY KEY.
+  TYPES ty_t_mgw_select_option TYPE STANDARD TABLE OF ty_s_mgw_select_option WITH DEFAULT KEY.
 
-      METHODS get_filter_select_options
+  METHODS get_filter_select_options
         RETURNING
           VALUE(rt_filter_select_options) TYPE ty_t_mgw_select_option.
 
