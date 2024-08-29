@@ -4,6 +4,10 @@ CLASS /iwbep/cl_mgw_push_abs_data DEFINITION PUBLIC ABSTRACT CREATE PUBLIC.
     INTERFACES /iwbep/if_mgw_core_srv_runtime.
     INTERFACES /iwbep/if_mgw_conv_srv_runtime.
     INTERFACES /iwbep/if_mgw_appl_srv_runtime.
+
+    ALIASES COPY_DATA_TO_REF
+      FOR /IWBEP/IF_MGW_CONV_SRV_RUNTIME~COPY_DATA_TO_REF.
+
   PROTECTED SECTION.
     DATA mo_context TYPE REF TO /iwbep/if_mgw_context.
     METHODS check_subscription_authority
@@ -17,6 +21,10 @@ CLASS /iwbep/cl_mgw_push_abs_data DEFINITION PUBLIC ABSTRACT CREATE PUBLIC.
 ENDCLASS.
 
 CLASS /iwbep/cl_mgw_push_abs_data IMPLEMENTATION.
+
+  METHOD COPY_DATA_TO_REF.
+    RETURN.
+  ENDMETHOD.
 
   METHOD check_subscription_authority.
     RETURN.
