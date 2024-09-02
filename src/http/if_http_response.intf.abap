@@ -5,6 +5,7 @@ INTERFACE if_http_response PUBLIC.
   ALIASES delete_header_field FOR if_http_entity~delete_header_field.
   ALIASES get_cdata FOR if_http_entity~get_cdata.
   ALIASES get_content_type FOR if_http_entity~get_content_type.
+  ALIASES get_cookies FOR if_http_entity~get_cookies.
   ALIASES get_data FOR if_http_entity~get_data.
   ALIASES get_header_field FOR if_http_entity~get_header_field.
   ALIASES get_header_fields FOR if_http_entity~get_header_fields.
