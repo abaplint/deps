@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOINTERF>
-    <CLSNAME>if_amc_message_context</CLSNAME>
+    <CLSNAME>IF_AMC_MESSAGE_CONTEXT</CLSNAME>
     <LANGU>E</LANGU>
     <DESCRIPT>if_amc_message_context</DESCRIPT>
     <EXPOSURE>2</EXPOSURE>
