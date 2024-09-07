@@ -1,4 +1,4 @@
-class CL_APC_WSP_EXT_STATELESS_BASE definition
+class cl_apc_wsp_ext_stateless_base definition
   public
   create public.
 
@@ -11,7 +11,7 @@ class CL_APC_WSP_EXT_STATELESS_BASE definition
 
 ENDCLASS.
 
-CLASS CL_APC_WSP_EXT_STATELESS_BASE IMPLEMENTATION.
+CLASS cl_apc_wsp_ext_stateless_base IMPLEMENTATION.
 
     METHOD ON_ERROR.
       RETURN.
