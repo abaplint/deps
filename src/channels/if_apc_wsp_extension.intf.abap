@@ -8,13 +8,13 @@ INTERFACE if_apc_wsp_extension
       !e_connect_mode TYPE i.
   METHODS on_start
     IMPORTING
-      !i_context TYPE REF TO if_apc_wsp_server_context
-      !i_message_manager TYPE REF TO if_apc_wsp_message_manager.
+      !i_context TYPE REF TO if_apc_wsp_server_context_base
+      !i_message_manager TYPE string.
   METHODS on_message
     IMPORTING
-      !i_message TYPE REF TO if_apc_wsp_message
-      !i_message_manager TYPE REF TO if_apc_wsp_message_manager
-      !i_context TYPE REF TO if_apc_wsp_server_context.
+      !i_message TYPE string
+      !i_message_manager TYPE string
+      !i_context TYPE string.
   METHODS on_close
     IMPORTING
       !i_reason TYPE string
