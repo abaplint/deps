@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>CL_APC_WSP_EXT_STATELESS_BASE</CLSNAME>
+    <CLSNAME>CL_AMC_CHANNEL_MANAGER</CLSNAME>
     <LANGU>E</LANGU>
     <DESCRIPT>Description</DESCRIPT>
     <STATE>1</STATE>

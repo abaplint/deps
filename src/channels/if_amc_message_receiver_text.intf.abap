@@ -1,11 +1,11 @@
-interface IF_AMC_MESSAGE_RECEIVER_TEXT
-  public .
+INTERFACE if_amc_message_receiver_text
+  PUBLIC.
 
-  interfaces IF_AMC_MESSAGE_RECEIVER .
+  INTERFACES if_amc_message_receiver.
 
-  methods RECEIVE
-    importing
-      !I_MESSAGE type STRING
-      !I_CONTEXT type ref to IF_AMC_MESSAGE_CONTEXT .
+  METHODS receive
+    IMPORTING
+      !i_message TYPE string
+      !i_context TYPE REF TO if_amc_message_context.
 
-endinterface.
+ENDINTERFACE.

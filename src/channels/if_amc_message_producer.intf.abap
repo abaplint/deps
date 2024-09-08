@@ -1,4 +1,4 @@
-interface IF_AMC_MESSAGE_PRODUCER
-  public .
+INTERFACE if_amc_message_producer
+  PUBLIC.
 
-endinterface.
+ENDINTERFACE.

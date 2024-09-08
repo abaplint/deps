@@ -1,17 +1,17 @@
-interface IF_AMC_MESSAGE_CONSUMER
-  public .
+INTERFACE if_amc_message_consumer
+  PUBLIC.
 
 
-  methods START_MESSAGE_DELIVERY
-    importing
-      !I_RECEIVER type ref to IF_AMC_MESSAGE_RECEIVER
-    raising
-      CX_AMC_ERROR .
+  METHODS start_message_delivery
+    IMPORTING
+      !i_receiver TYPE REF TO if_amc_message_receiver
+    RAISING
+      cx_amc_error.
 
-  methods STOP_MESSAGE_DELIVERY
-    importing
-      !I_RECEIVER type ref to IF_AMC_MESSAGE_RECEIVER
-    raising
-      CX_AMC_ERROR .
-      
-endinterface.
+  METHODS stop_message_delivery
+    IMPORTING
+      !i_receiver TYPE REF TO if_amc_message_receiver
+    RAISING
+      cx_amc_error.
+
+ENDINTERFACE.

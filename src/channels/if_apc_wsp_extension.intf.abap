@@ -1,29 +1,29 @@
-interface IF_APC_WSP_EXTENSION
-  public .
-  
-  methods ON_ACCEPT
-    importing
-      !I_CONTEXT_BASE type ref to IF_APC_WSP_SERVER_CONTEXT_BASE
-    exporting
-      !E_CONNECT_MODE type I .
-  methods ON_START
-    importing
-      !I_CONTEXT type ref to IF_APC_WSP_SERVER_CONTEXT
-      !I_MESSAGE_MANAGER type ref to IF_APC_WSP_MESSAGE_MANAGER .
-  methods ON_MESSAGE
-    importing
-      !I_MESSAGE type ref to IF_APC_WSP_MESSAGE
-      !I_MESSAGE_MANAGER type ref to IF_APC_WSP_MESSAGE_MANAGER
-      !I_CONTEXT type ref to IF_APC_WSP_SERVER_CONTEXT .
-  methods ON_CLOSE
-    importing
-      !I_REASON type STRING
-      !I_CODE type I
-      !I_CONTEXT_BASE type ref to IF_APC_WSP_SERVER_CONTEXT_BASE .
-  methods ON_ERROR
-    importing
-      !I_REASON type STRING
-      !I_CODE type I
-      !I_CONTEXT_BASE type ref to IF_APC_WSP_SERVER_CONTEXT_BASE .
-      
-endinterface.
+INTERFACE if_apc_wsp_extension
+  PUBLIC.
+
+  METHODS on_accept
+    IMPORTING
+      !i_context_base TYPE REF TO if_apc_wsp_server_context_base
+    EXPORTING
+      !e_connect_mode TYPE i.
+  METHODS on_start
+    IMPORTING
+      !i_context TYPE REF TO if_apc_wsp_server_context
+      !i_message_manager TYPE REF TO if_apc_wsp_message_manager.
+  METHODS on_message
+    IMPORTING
+      !i_message TYPE REF TO if_apc_wsp_message
+      !i_message_manager TYPE REF TO if_apc_wsp_message_manager
+      !i_context TYPE REF TO if_apc_wsp_server_context.
+  METHODS on_close
+    IMPORTING
+      !i_reason TYPE string
+      !i_code TYPE i
+      !i_context_base TYPE REF TO if_apc_wsp_server_context_base.
+  METHODS on_error
+    IMPORTING
+      !i_reason TYPE string
+      !i_code TYPE i
+      !i_context_base TYPE REF TO if_apc_wsp_server_context_base.
+
+ENDINTERFACE.

@@ -1,35 +1,36 @@
-class cl_apc_wsp_ext_stateless_base definition
-  public
-  create public.
+CLASS cl_apc_wsp_ext_stateless_base DEFINITION
+  PUBLIC
+  CREATE PUBLIC.
 
-    public section.
+  PUBLIC SECTION.
 
-    interfaces IF_APC_WSP_EXTENSION.
+    INTERFACES if_apc_wsp_extension.
 
-    PROTECTED SECTION.
-    PRIVATE SECTION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 
 ENDCLASS.
 
 CLASS cl_apc_wsp_ext_stateless_base IMPLEMENTATION.
 
-    METHOD ON_ERROR.
-      RETURN.
-    ENDMETHOD.
+  METHOD if_apc_wsp_extension~on_error.
+    RETURN.
+  ENDMETHOD.
 
-    METHOD ON_CLOSE.
-        RETURN.
-      ENDMETHOD.
+  METHOD if_apc_wsp_extension~on_close.
+    RETURN.
+  ENDMETHOD.
 
-      METHOD ON_MESSAGE.
-        RETURN.
-      ENDMETHOD.
+  METHOD if_apc_wsp_extension~on_message.
+    RETURN.
+  ENDMETHOD.
 
-      METHOD ON_START.
-        RETURN.
-      ENDMETHOD.
+  METHOD if_apc_wsp_extension~on_start.
+    RETURN.
+  ENDMETHOD.
 
-      METHOD ON_ACCEPT.
-        RETURN.
-      ENDMETHOD.
-endclass.
+  METHOD if_apc_wsp_extension~on_accept.
+    RETURN.
+  ENDMETHOD.
+
+ENDCLASS.
