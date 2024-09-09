@@ -9,7 +9,7 @@ INTERFACE if_http_request PUBLIC.
 
   ALIASES add_multipart FOR if_http_entity~add_multipart.
   ALIASES delete_cookie FOR if_http_entity~delete_cookie.
-  ALIASES delete_cookie_secure for if_http_entity~delete_cookie_secure.
+  ALIASES delete_cookie_secure FOR if_http_entity~delete_cookie_secure.
   ALIASES get_cdata FOR if_http_entity~get_cdata.
   ALIASES get_content_type FOR if_http_entity~get_content_type.
   ALIASES get_cookie_field FOR if_http_entity~get_cookie_field.
