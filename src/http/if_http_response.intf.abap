@@ -3,7 +3,7 @@ INTERFACE if_http_response PUBLIC.
 
   ALIASES append_cdata FOR if_http_entity~append_cdata.
   ALIASES delete_cookie FOR if_http_entity~delete_cookie.
-  ALIASES delete_cookie_secure for if_http_entity~delete_cookie_secure.
+  ALIASES delete_cookie_secure FOR if_http_entity~delete_cookie_secure.
   ALIASES delete_header_field FOR if_http_entity~delete_header_field.
   ALIASES get_cdata FOR if_http_entity~get_cdata.
   ALIASES get_content_type FOR if_http_entity~get_content_type.
