@@ -2,6 +2,9 @@ INTERFACE if_http_client PUBLIC.
   CONSTANTS:
     co_enabled TYPE i VALUE 1,
     co_disabled TYPE i VALUE 0.
+
+  CONSTANTS co_timeout_default TYPE i VALUE 60.
+
   DATA:
     propertytype_logon_popup TYPE i,
     propertytype_accept_cookie TYPE i,
