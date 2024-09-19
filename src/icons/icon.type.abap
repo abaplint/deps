@@ -193,6 +193,7 @@ CONSTANTS icon_less_equal_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_less_equal_red TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_less_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_less_red TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_light_out TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_link TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_linked_document TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_list TYPE c LENGTH 4 VALUE ''.
