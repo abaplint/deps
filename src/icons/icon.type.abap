@@ -134,6 +134,7 @@ CONSTANTS icon_favorites TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_fax TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_field_with_text TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_filter TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_first_page TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_flight TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_folder TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_foreign_key TYPE c LENGTH 4 VALUE ''.
@@ -183,6 +184,7 @@ CONSTANTS icon_interval_include_red TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_io_attribute TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_job_detail TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_jpg TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_last_page TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_layout_control TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_led_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_led_inactive TYPE c LENGTH 4 VALUE ''.
@@ -225,11 +227,13 @@ CONSTANTS icon_negative TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_net_graphic TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_next_node TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_next_object TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_next_page TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_next_value TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_no_status TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_not_equal TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_not_equal_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_not_equal_red TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_object_folder TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_object_list TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_office_document TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_okay TYPE c LENGTH 4 VALUE ''.
@@ -273,6 +277,7 @@ CONSTANTS icon_ppe_vnode TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ppt TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_presence TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_previous_object TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_previous_page TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_previous_value TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_print TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_profit_center TYPE c LENGTH 4 VALUE ''.
