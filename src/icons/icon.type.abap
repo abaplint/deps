@@ -182,6 +182,7 @@ CONSTANTS icon_interval_exclude_red TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_interval_include_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_interval_include_red TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_io_attribute TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_its TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_job_detail TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_jpg TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_last_page TYPE c LENGTH 4 VALUE ''.
@@ -433,4 +434,3 @@ CONSTANTS icon_xlv TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_xml_doc TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_xxl TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_yellow_light TYPE c LENGTH 4 VALUE ''.
-CONSTANTS iocn_its TYPE c LENGTH 4 VALUE ''.
