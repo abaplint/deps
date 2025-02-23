@@ -1,6 +1,6 @@
 INTERFACE if_oo_adt_intrnl_classrun PUBLIC.
   METHODS write
-    IMPORTING 
+    IMPORTING
       data TYPE any
       name TYPE string OPTIONAL.
   METHODS write_text
