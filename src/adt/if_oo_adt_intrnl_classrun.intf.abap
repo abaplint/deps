@@ -2,7 +2,7 @@ INTERFACE if_oo_adt_intrnl_classrun PUBLIC.
   METHODS write 
     IMPORTING 
       data TYPE any
-      name TYPE string optional.
+      name TYPE string OPTIONAL.
   METHODS write_text
     IMPORTING
       text          TYPE clike
