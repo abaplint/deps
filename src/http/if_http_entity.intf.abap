@@ -2,7 +2,7 @@ INTERFACE if_http_entity PUBLIC.
 
   CONSTANTS co_request_method_get TYPE string VALUE 'GET'.
   CONSTANTS co_request_method_post TYPE string VALUE 'POST'.
-  CONSTANTS co_protocol_version_1_0 TYPE I VALUE 1000.
+  CONSTANTS co_protocol_version_1_0 TYPE i VALUE 1000.
   CONSTANTS co_protocol_version_1_1 TYPE I VALUE 1001.
 
   METHODS set_cdata
