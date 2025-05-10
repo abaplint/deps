@@ -8,6 +8,8 @@ INTERFACE if_http_request PUBLIC.
     co_request_method_post TYPE string VALUE 'POST'.
 
   ALIASES add_multipart FOR if_http_entity~add_multipart.
+  ALIASES delete_cookie FOR if_http_entity~delete_cookie.
+  ALIASES delete_cookie_secure FOR if_http_entity~delete_cookie_secure.
   ALIASES get_cdata FOR if_http_entity~get_cdata.
   ALIASES get_content_type FOR if_http_entity~get_content_type.
   ALIASES get_cookie_field FOR if_http_entity~get_cookie_field.
@@ -42,7 +44,7 @@ INTERFACE if_http_request PUBLIC.
         VALUE(method) TYPE string,
     set_method
       IMPORTING
-        meth TYPE string,
+        method TYPE string,
     set_authorization
       IMPORTING
         auth_type TYPE i OPTIONAL

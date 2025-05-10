@@ -2,9 +2,12 @@ INTERFACE if_http_response PUBLIC.
   INTERFACES if_http_entity.
 
   ALIASES append_cdata FOR if_http_entity~append_cdata.
+  ALIASES delete_cookie FOR if_http_entity~delete_cookie.
+  ALIASES delete_cookie_secure FOR if_http_entity~delete_cookie_secure.
   ALIASES delete_header_field FOR if_http_entity~delete_header_field.
   ALIASES get_cdata FOR if_http_entity~get_cdata.
   ALIASES get_content_type FOR if_http_entity~get_content_type.
+  ALIASES get_cookies FOR if_http_entity~get_cookies.
   ALIASES get_data FOR if_http_entity~get_data.
   ALIASES get_header_field FOR if_http_entity~get_header_field.
   ALIASES get_header_fields FOR if_http_entity~get_header_fields.
@@ -18,6 +21,7 @@ INTERFACE if_http_response PUBLIC.
   ALIASES set_data FOR if_http_entity~set_data.
   ALIASES set_header_field FOR if_http_entity~set_header_field.
   ALIASES to_xstring FOR if_http_entity~to_xstring.
+  ALIASES get_last_error FOR if_http_entity~get_last_error.
 
   METHODS:
     set_status

@@ -1,10 +1,5 @@
 TYPE-POOL icon.
 
-CONSTANTS icon_previous_object TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_status_booked TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_status_open TYPE c LENGTH 4 VALUE ''.
-
-
 CONSTANTS icon_abap TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_abap_local TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_abc TYPE c LENGTH 4 VALUE ''.
@@ -137,7 +132,9 @@ CONSTANTS icon_failure TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_fast_entry TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_favorites TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_fax TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_field_with_text TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_filter TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_first_page TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_flight TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_folder TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_foreign_key TYPE c LENGTH 4 VALUE ''.
@@ -185,8 +182,10 @@ CONSTANTS icon_interval_exclude_red TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_interval_include_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_interval_include_red TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_io_attribute TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_its TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_job_detail TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_jpg TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_last_page TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_layout_control TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_led_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_led_inactive TYPE c LENGTH 4 VALUE ''.
@@ -197,6 +196,7 @@ CONSTANTS icon_less_equal_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_less_equal_red TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_less_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_less_red TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_light_out TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_link TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_linked_document TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_list TYPE c LENGTH 4 VALUE ''.
@@ -228,11 +228,13 @@ CONSTANTS icon_negative TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_net_graphic TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_next_node TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_next_object TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_next_page TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_next_value TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_no_status TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_not_equal TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_not_equal_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_not_equal_red TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_object_folder TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_object_list TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_office_document TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_okay TYPE c LENGTH 4 VALUE ''.
@@ -275,6 +277,8 @@ CONSTANTS icon_positive TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ppe_vnode TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ppt TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_presence TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_previous_object TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_previous_page TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_previous_value TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_print TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_profit_center TYPE c LENGTH 4 VALUE ''.
@@ -319,8 +323,10 @@ CONSTANTS icon_space TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_stack TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_alert TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_status_booked TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_critical TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_ok TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_status_open TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_overview TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_reverse TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_stock TYPE c LENGTH 4 VALUE ''.
@@ -428,4 +434,3 @@ CONSTANTS icon_xlv TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_xml_doc TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_xxl TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_yellow_light TYPE c LENGTH 4 VALUE ''.
-CONSTANTS iocn_its TYPE c LENGTH 4 VALUE ''.
