@@ -8,6 +8,8 @@ CLASS cl_ci_category_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           position          TYPE string,
           myname            TYPE string.
 
+    ALIASES has_documentation FOR if_ci_test~has_documentation.
+
   PROTECTED SECTION.
   PRIVATE SECTION.
 
