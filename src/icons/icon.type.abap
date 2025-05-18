@@ -84,6 +84,8 @@ CONSTANTS icon_create_text TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_customer TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_customer_warehouse TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_dangerous_goods TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_data_area_collapse TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_data_area_expand TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_database_table TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_database_table_ina TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_date TYPE c LENGTH 4 VALUE ''.
@@ -128,6 +130,7 @@ CONSTANTS icon_expand TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_expand_all TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_export TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_extended_search TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_extra TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_failure TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_fast_entry TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_favorites TYPE c LENGTH 4 VALUE ''.
@@ -273,6 +276,7 @@ CONSTANTS icon_plant TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_pm_insert TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_pm_order TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_pm_press TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_position TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_positive TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ppe_vnode TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ppt TYPE c LENGTH 4 VALUE ''.
@@ -316,6 +320,7 @@ CONSTANTS icon_selection TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_set_state TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_settings TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_short_message TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_show_external_jobs TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_simulate TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_sort_down TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_sort_up TYPE c LENGTH 4 VALUE ''.
@@ -323,6 +328,7 @@ CONSTANTS icon_space TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_stack TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_alert TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_status_best TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_booked TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_critical TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_ok TYPE c LENGTH 4 VALUE ''.
@@ -380,6 +386,9 @@ CONSTANTS icon_trend_rising TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_trend_unchanged TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_trend_up TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_unlocked TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_unspecified_one TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_unspecified_three TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_unspecified_two TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_url TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_usergroup TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_value_help TYPE c LENGTH 4 VALUE ''.
@@ -424,6 +433,7 @@ CONSTANTS icon_workflow TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_workflow_activity TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_workflow_fork TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_workflow_process TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_working_plan TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_workplace TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wri TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_write_file TYPE c LENGTH 4 VALUE ''.
