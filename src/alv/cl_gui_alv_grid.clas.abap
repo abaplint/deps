@@ -334,12 +334,20 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
     METHODS set_visible IMPORTING visible TYPE abap_bool OPTIONAL.
 
+    METHODS set_filter_criteria
+      IMPORTING
+        it_filter TYPE any.
+
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
 
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+  METHOD set_filter_criteria.
+    RETURN.
+  ENDMETHOD.
+
   METHOD set_function_code.
     RETURN.
   ENDMETHOD.
