@@ -55,11 +55,13 @@ CONSTANTS icon_bw_dtp_active TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_bw_exception_monitor TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_bw_gis TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_bw_time_sap TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_calculation TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_cancel TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_change TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_change_number TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_change_text TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_check TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_checkbox TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_checked TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_class_connection_space TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_client_breakpoint TYPE c LENGTH 4 VALUE ''.
@@ -95,6 +97,7 @@ CONSTANTS icon_data_area_expand TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_database_table TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_database_table_ina TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_date TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_deactivate TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_debugger_continue TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_debugger_step_into TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_debugger_step_out TYPE c LENGTH 4 VALUE ''.
@@ -153,6 +156,7 @@ CONSTANTS icon_foreign_key TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_foreign_trace TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_generate TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_gif TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_gis_pan TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_gis_pie TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_gis_promote TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_graduate TYPE c LENGTH 4 VALUE ''.
@@ -189,8 +193,10 @@ CONSTANTS icon_information TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_initial TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_insert_row TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_inspection_characteristic TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_inspection_lot TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_install_package TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_intensify_critical TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_intensify_undo TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_interface TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_intermediate_sum TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_interval_exclude_green TYPE c LENGTH 4 VALUE ''.
@@ -220,6 +226,8 @@ CONSTANTS icon_location TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_locked TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_loio_class TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_lwp TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_mail TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_mass_change TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_mass_change_done TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_master_data_act TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_mc_contentindicator TYPE c LENGTH 4 VALUE ''.
@@ -277,6 +285,7 @@ CONSTANTS icon_page_left TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_page_right TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_parameter TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_parameter_result TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_partner TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_pattern_exclude_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_pattern_exclude_red TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_pattern_include_green TYPE c LENGTH 4 VALUE ''.
@@ -384,6 +393,7 @@ CONSTANTS icon_system_mark TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_okay TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_paste TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_play TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_system_possible_entries TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_print TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_redo TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_system_save TYPE c LENGTH 4 VALUE ''.
@@ -445,6 +455,7 @@ CONSTANTS icon_wd_component TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_context TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_controller TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_custom_controller TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_wd_iframe TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_image TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_input_field TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_navigation_link TYPE c LENGTH 4 VALUE ''.
@@ -458,7 +469,9 @@ CONSTANTS icon_wd_tree_node TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_view TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_view_area TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wd_view_container TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_wf_link TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wf_reserve_workitem TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_wf_unlink TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wf_workitem_completed TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wf_workitem_ol TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wizard TYPE c LENGTH 4 VALUE ''.
