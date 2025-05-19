@@ -304,7 +304,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           i_structure_name     TYPE string OPTIONAL
           i_save               TYPE char01 OPTIONAL
           is_layout            TYPE any OPTIONAL
-          it_toolbar_excluding TYPE string OPTIONAL
+          it_toolbar_excluding TYPE any OPTIONAL
           it_hyperlink         TYPE any OPTIONAL
           i_default            TYPE abap_bool DEFAULT abap_true
         CHANGING
