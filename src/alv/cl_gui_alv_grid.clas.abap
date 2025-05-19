@@ -338,12 +338,20 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       IMPORTING
         it_filter TYPE any.
 
+    METHODS set_registered_events
+      IMPORTING
+        events TYPE any.
+
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
 
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+  METHOD set_registered_events.
+    RETURN.
+  ENDMETHOD.
+
   METHOD set_filter_criteria.
     RETURN.
   ENDMETHOD.
