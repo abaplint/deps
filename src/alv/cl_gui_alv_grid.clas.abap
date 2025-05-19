@@ -221,6 +221,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         et_index_rows TYPE any
         et_row_no     TYPE ty_row_no_tt.
 
+    METHODS set_function_code
+      CHANGING
+        c_ucomm TYPE sy-ucomm.
+
     METHODS: free,
       get_frontend_fieldcatalog
         EXPORTING
@@ -336,6 +340,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+  METHOD set_function_code.
+    RETURN.
+  ENDMETHOD.
+
   METHOD set_visible.
     RETURN.
   ENDMETHOD.
