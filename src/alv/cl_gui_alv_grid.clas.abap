@@ -104,7 +104,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_style_hotspot  TYPE i VALUE 4,
       mc_evt_enter      TYPE i VALUE 5,
       mc_style_button   TYPE i VALUE 6,
-      mc_style_f4       TYPE i VALUE 7.
+      mc_style_f4       TYPE i VALUE 7,
+      mc_style4_link_no TYPE i VALUE 8.
 
     CONSTANTS:
       mc_mb_variant      TYPE string VALUE 'a',
@@ -191,6 +192,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_fc_expcrdesig TYPE string VALUE '1',
       mc_fc_expmdb TYPE string VALUE '1',
       mc_fc_f4 TYPE string VALUE '1',
+      mc_fc_variant_admin TYPE string VALUE '1',
       mc_fc_loc_delete_row TYPE string VALUE 'x'.
 
     CLASS-METHODS offline RETURNING VALUE(off) TYPE i.
@@ -220,6 +222,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       EXPORTING
         et_index_rows TYPE any
         et_row_no     TYPE ty_row_no_tt.
+
+    METHODS set_function_code
+      CHANGING
+        c_ucomm TYPE sy-ucomm.
 
     METHODS: free,
       get_frontend_fieldcatalog
@@ -330,12 +336,32 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
     METHODS set_visible IMPORTING visible TYPE abap_bool OPTIONAL.
 
+    METHODS set_filter_criteria
+      IMPORTING
+        it_filter TYPE any.
+
+    METHODS set_registered_events
+      IMPORTING
+        events TYPE any.
+
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
 
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+  METHOD set_registered_events.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_filter_criteria.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_function_code.
+    RETURN.
+  ENDMETHOD.
+
   METHOD set_visible.
     RETURN.
   ENDMETHOD.
