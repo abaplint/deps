@@ -344,12 +344,51 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       IMPORTING
         events TYPE any.
 
+    METHODS set_selected_cells IMPORTING it_cells TYPE any.
+    METHODS select_text_in_curr_cell.
+    METHODS set_sort_criteria IMPORTING it_sort TYPE any.
+    METHODS raise_event IMPORTING i_ucomm TYPE any.
+
+    METHODS list_processing_events
+      IMPORTING
+        i_dyndoc_id  TYPE any
+        i_event_name TYPE any.
+
+    METHODS set_scroll_info_via_id
+      IMPORTING
+        is_col_info TYPE any
+        is_row_no   TYPE any.
+
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
 
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+  METHOD set_scroll_info_via_id.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD list_processing_events.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD raise_event.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_sort_criteria.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD select_text_in_curr_cell.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_selected_cells.
+    RETURN.
+  ENDMETHOD.
+
   METHOD set_registered_events.
     RETURN.
   ENDMETHOD.
