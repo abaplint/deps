@@ -132,4 +132,6 @@ INTERFACE if_ixml_document PUBLIC.
         namespace TYPE string OPTIONAL
       RETURNING
         VALUE(filter) TYPE REF TO if_ixml_node_filter.
+
+  METHODS create_filter_name IMPORTING foo TYPE any.
 ENDINTERFACE.

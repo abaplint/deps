@@ -110,4 +110,6 @@ INTERFACE if_ixml_element PUBLIC.
       prefix TYPE string
     RETURNING
       VALUE(rval) TYPE i.
+
+  METHODS create_iterator_filtered IMPORTING foo TYPE any.
 ENDINTERFACE.
