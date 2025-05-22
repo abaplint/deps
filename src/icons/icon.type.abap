@@ -42,6 +42,7 @@ CONSTANTS icon_bom_sub_item TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_booking_ok TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_booking_stop TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_breakpoint TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_breakpoint_disable TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_businav_datamodel TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_businav_entity TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_businav_objects TYPE c LENGTH 4 VALUE ''.
@@ -204,6 +205,7 @@ CONSTANTS icon_initial TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_insert_row TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_inspection_characteristic TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_inspection_lot TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_inspection_method TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_install_package TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_intensify TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_intensify_critical TYPE c LENGTH 4 VALUE ''.
@@ -261,6 +263,7 @@ CONSTANTS icon_modification_overview TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_modification_reset TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_modified_object TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_modify TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_money TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_move TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_msg TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_negative TYPE c LENGTH 4 VALUE ''.
@@ -370,6 +373,7 @@ CONSTANTS icon_sap TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_save_as_template TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_scrap TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_search TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_search_next TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_select_all TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_select_block TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_select_detail TYPE c LENGTH 4 VALUE ''.
@@ -388,7 +392,9 @@ CONSTANTS icon_skip TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_sort_down TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_sort_up TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_space TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_spool_request TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_stack TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_statistics TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_alert TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_status_best TYPE c LENGTH 4 VALUE ''.
