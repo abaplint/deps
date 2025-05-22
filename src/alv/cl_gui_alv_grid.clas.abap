@@ -32,7 +32,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(e_display) TYPE char01 OPTIONAL.
 
     EVENTS user_command EXPORTING
-      VALUE(e_ucomm) TYPE string.
+      VALUE(e_ucomm) TYPE sy-ucomm.
 
     EVENTS double_click EXPORTING
       VALUE(e_row) TYPE ty_row
