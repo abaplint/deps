@@ -3,6 +3,9 @@ CLASS cl_dd_document DEFINITION
   INHERITING FROM cl_dd_area
   CREATE PUBLIC.
   PUBLIC SECTION.
+    DATA area_count TYPE i READ-ONLY .
+    DATA html_control TYPE REF TO cl_gui_html_viewer .
+    DATA custom_container TYPE REF TO cl_gui_custom_container .
 
     METHODS vertical_split
       IMPORTING
