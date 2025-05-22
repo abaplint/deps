@@ -67,6 +67,11 @@ CLASS cl_dd_document DEFINITION
       !no_margins TYPE sdydo_flag OPTIONAL.
 
   PROTECTED SECTION.
+    CONSTANTS document_id TYPE sdydo_element_name VALUE 'A1'.
+    DATA table_of_areas TYPE sdydo_object_table.
+    DATA no_of_frames TYPE i.
+    DATA merged TYPE sdydo_flag.
+    DATA document_style TYPE sdydo_attribute.
     METHODS merge_area
       CHANGING
         area TYPE REF TO cl_dd_area.

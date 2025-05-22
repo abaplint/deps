@@ -197,9 +197,125 @@ CLASS cl_dd_area DEFINITION PUBLIC.
     DATA html_str TYPE string.
     DATA line TYPE string.
     DATA no_of_switches TYPE i.
+    
+    METHODS convert_attribute
+      IMPORTING
+      !sap_attribute TYPE sdydo_attribute
+      EXPORTING
+      !html_attribute TYPE sdydo_html_line
+      !change_foreground_col TYPE c.
+    METHODS get_image_relpath
+      IMPORTING
+      !image_id TYPE sbdst_object_key
+      !is_icon TYPE sdydo_flag
+      EXPORTING
+      !image_path TYPE sdydo_url
+      !image_name TYPE sdydo_url.
+    METHODS handle_hotkey
+      IMPORTING
+      !hotkey TYPE sdydo_c1
+      EXPORTING
+      !hotkey_str TYPE string
+      !hotkey_tooltip TYPE string.
+    METHODS handle_styles
+      IMPORTING
+      !sap_style TYPE sdydo_attribute OPTIONAL
+      !sap_color TYPE sdydo_attribute OPTIONAL
+      !sap_fontsize TYPE sdydo_attribute OPTIONAL
+      !sap_fontstyle TYPE sdydo_attribute OPTIONAL
+      !sap_emphasis TYPE sdydo_attribute OPTIONAL
+      !style_class TYPE sdydo_attribute OPTIONAL
+      EXPORTING
+      !style_buff TYPE string.
+    METHODS handle_tabindex
+      IMPORTING
+      !tabindex TYPE i
+      EXPORTING
+      !tabindex_str TYPE string.
+    METHODS handle_tooltip
+      IMPORTING
+      !element_name TYPE string OPTIONAL
+      !info_text TYPE string OPTIONAL
+      !hotkey_tooltip TYPE string OPTIONAL
+      !element_label TYPE string OPTIONAL
+      EXPORTING
+      !tooltip_str TYPE string.
+    METHODS html_insert_element
+      IMPORTING
+      !element_name TYPE sdydo_element_name.
+    METHODS insert_special_char
+      CHANGING
+      !text TYPE string OPTIONAL
+      !position TYPE i OPTIONAL
+      !textstr TYPE string OPTIONAL.
+    CLASS-METHODS prepare_col_property
+      IMPORTING
+      !color TYPE i OPTIONAL
+      EXPORTING
+      !col_property TYPE sdydo_attribute.
+    METHODS set_cursor
+      IMPORTING
+      !position TYPE i.
+    METHODS set_id
+      IMPORTING
+      !new_id TYPE sdydo_element_name.
+    METHODS wrap_id
+      IMPORTING
+      !id TYPE sdydo_element_name
+      !is_endtag TYPE sdydo_flag OPTIONAL
+      EXPORTING
+      !wrapped_id TYPE sdydo_wrapped_element_name.
 ENDCLASS.
 
 CLASS cl_dd_area IMPLEMENTATION.
+  METHOD convert_attribute.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_image_relpath.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD handle_hotkey.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD handle_styles.
+    RETURN.
+  ENDMETHOD.
+  
+  METHOD handle_tabindex.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD handle_tooltip.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD html_insert_element.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD insert_special_char.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD prepare_col_property.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_cursor.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_id.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD wrap_id.
+    RETURN.
+  ENDMETHOD.
+
   METHOD add_area_switch.
     RETURN.
   ENDMETHOD.
@@ -227,7 +343,7 @@ CLASS cl_dd_area IMPLEMENTATION.
   METHOD add_picture.
     RETURN.
   ENDMETHOD.
-  
+
   METHOD add_static_html.
     RETURN.
   ENDMETHOD.
