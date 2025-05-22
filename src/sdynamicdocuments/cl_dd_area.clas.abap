@@ -197,7 +197,6 @@ CLASS cl_dd_area DEFINITION PUBLIC.
     DATA html_str TYPE string.
     DATA line TYPE string.
     DATA no_of_switches TYPE i.
-    
     METHODS convert_attribute
       IMPORTING
       !sap_attribute TYPE sdydo_attribute
