@@ -282,7 +282,7 @@ CLASS cl_dd_area IMPLEMENTATION.
   METHOD handle_styles.
     RETURN.
   ENDMETHOD.
-  
+
   METHOD handle_tabindex.
     RETURN.
   ENDMETHOD.
