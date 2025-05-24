@@ -68,4 +68,8 @@ INTERFACE if_ixml_node PUBLIC.
         value TYPE string
       RETURNING
         VALUE(rval) TYPE i.
+
+  METHODS num_children
+    RETURNING
+      VALUE(rval) TYPE i.
 ENDINTERFACE.
