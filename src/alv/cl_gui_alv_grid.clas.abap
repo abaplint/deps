@@ -378,12 +378,30 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       IMPORTING
         border TYPE i.
 
+    METHODS get_selected_columns
+      EXPORTING
+        et_index_columns TYPE lvc_t_col.
+
+    METHODS get_scroll_info_via_id
+      EXPORTING
+        es_row_no TYPE lvc_s_roid
+        es_row_info TYPE lvc_s_row
+        es_col_info TYPE lvc_s_col.
+
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
 
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+  METHOD get_scroll_info_via_id.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_selected_columns.
+    RETURN.
+  ENDMETHOD.
+
   METHOD set_3d_border.
     RETURN.
   ENDMETHOD.
