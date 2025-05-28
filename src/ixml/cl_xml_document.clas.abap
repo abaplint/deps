@@ -12,8 +12,14 @@ CLASS cl_xml_document DEFINITION PUBLIC.
         name TYPE string DEFAULT 'DATA'
         dataobject TYPE any
       RETURNING
-      VALUE(retcode) TYPE sysubrc.
-    METHODS parse_string IMPORTING stream TYPE string.
+        VALUE(retcode) TYPE sysubrc.
+
+    METHODS parse_string
+      IMPORTING
+        stream TYPE string
+      RETURNING
+        VALUE(retcode) TYPE i.
+
     METHODS parse_xstring IMPORTING
       stream TYPE xstring RETURNING VALUE(subrc) TYPE i.
     METHODS get_first_node RETURNING VALUE(node) TYPE REF TO if_ixml_node.
