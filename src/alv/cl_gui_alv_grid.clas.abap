@@ -367,8 +367,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
     METHODS set_scroll_info_via_id
       IMPORTING
+        is_row_info TYPE any OPTIONAL
         is_col_info TYPE any
-        is_row_no   TYPE any.
+        is_row_no   TYPE any OPTIONAL.
 
     METHODS set_selected_columns
       IMPORTING
