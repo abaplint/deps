@@ -369,12 +369,21 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         it_col_table TYPE any
         is_keep_other_selections TYPE any OPTIONAL.
 
+    METHODS get_variant
+      EXPORTING
+        es_variant TYPE disvariant
+        e_save     TYPE char1.
+
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
 
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+  METHOD get_variant.
+    RETURN.
+  ENDMETHOD.
+
   METHOD set_selected_columns.
     RETURN.
   ENDMETHOD.
