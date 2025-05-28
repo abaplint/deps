@@ -359,7 +359,13 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
     METHODS set_selected_cells IMPORTING it_cells TYPE any.
     METHODS select_text_in_curr_cell.
     METHODS set_sort_criteria IMPORTING it_sort TYPE any.
-    METHODS raise_event IMPORTING i_ucomm TYPE any.
+
+    METHODS raise_event
+      IMPORTING
+      i_ucomm         TYPE sy-ucomm OPTIONAL
+      i_user_command  TYPE any OPTIONAL
+      i_not_processed TYPE any OPTIONAL
+      PREFERRED PARAMETER i_ucomm.
 
     METHODS list_processing_events
       IMPORTING
