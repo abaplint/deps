@@ -111,5 +111,9 @@ INTERFACE if_ixml_element PUBLIC.
     RETURNING
       VALUE(rval) TYPE i.
 
-  METHODS create_iterator_filtered IMPORTING foo TYPE any.
+  METHODS create_iterator_filtered
+    IMPORTING
+      filter TYPE any
+    RETURNING
+      VALUE(rval) TYPE REF TO if_ixml_node_iterator.
 ENDINTERFACE.
