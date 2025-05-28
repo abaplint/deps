@@ -287,7 +287,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           e_valid TYPE any
         CHANGING
           c_refresh TYPE any OPTIONAL,
-      register_delayed_event,
+      register_delayed_event
+        IMPORTING
+          i_event_id TYPE any,
       register_f4_for_fields
         IMPORTING
           it_f4 TYPE any,
@@ -318,6 +320,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           it_toolbar_excluding TYPE any OPTIONAL
           it_hyperlink         TYPE any OPTIONAL
           i_default            TYPE abap_bool DEFAULT abap_true
+          is_print TYPE any OPTIONAL
+          it_special_groups TYPE any OPTIONAL
+          it_except_qinfo TYPE any OPTIONAL
+          i_consistency_check TYPE any OPTIONAL
         CHANGING
           it_fieldcatalog      TYPE ANY TABLE OPTIONAL
           it_sort              TYPE ANY TABLE OPTIONAL
@@ -361,8 +367,33 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
     METHODS set_scroll_info_via_id
       IMPORTING
+        is_row_info TYPE any OPTIONAL
         is_col_info TYPE any
-        is_row_no   TYPE any.
+        is_row_no   TYPE any OPTIONAL.
+
+    METHODS set_selected_columns
+      IMPORTING
+        it_col_table TYPE any
+        is_keep_other_selections TYPE any OPTIONAL.
+
+    METHODS get_variant
+      EXPORTING
+        es_variant TYPE disvariant
+        e_save     TYPE char1.
+
+    METHODS set_3d_border
+      IMPORTING
+        border TYPE i.
+
+    METHODS get_selected_columns
+      EXPORTING
+        et_index_columns TYPE lvc_t_col.
+
+    METHODS get_scroll_info_via_id
+      EXPORTING
+        es_row_no TYPE lvc_s_roid
+        es_row_info TYPE lvc_s_row
+        es_col_info TYPE lvc_s_col.
 
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
@@ -370,6 +401,26 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+  METHOD get_scroll_info_via_id.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_selected_columns.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_3d_border.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD get_variant.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_selected_columns.
+    RETURN.
+  ENDMETHOD.
+
   METHOD set_scroll_info_via_id.
     RETURN.
   ENDMETHOD.
