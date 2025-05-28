@@ -536,3 +536,11 @@ CONSTANTS icon_xlv TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_xml_doc TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_xxl TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_yellow_light TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_include_in_selection TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_val_quantity_structure TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_connection_object TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_availability_check TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_toggle_display TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_patient_smartcard TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_businav_process TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_new_task TYPE c LENGTH 4 VALUE ''.

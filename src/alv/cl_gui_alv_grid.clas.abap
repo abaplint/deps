@@ -287,7 +287,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           e_valid TYPE any
         CHANGING
           c_refresh TYPE any OPTIONAL,
-      register_delayed_event,
+      register_delayed_event
+        IMPORTING
+          i_event_id TYPE any,
       register_f4_for_fields
         IMPORTING
           it_f4 TYPE any,
@@ -318,6 +320,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           it_toolbar_excluding TYPE any OPTIONAL
           it_hyperlink         TYPE any OPTIONAL
           i_default            TYPE abap_bool DEFAULT abap_true
+          is_print TYPE any OPTIONAL
+          it_special_groups TYPE any OPTIONAL
+          i_consistency_check TYPE any OPTIONAL
         CHANGING
           it_fieldcatalog      TYPE ANY TABLE OPTIONAL
           it_sort              TYPE ANY TABLE OPTIONAL
