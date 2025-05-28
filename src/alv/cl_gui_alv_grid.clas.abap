@@ -322,6 +322,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           i_default            TYPE abap_bool DEFAULT abap_true
           is_print TYPE any OPTIONAL
           it_special_groups TYPE any OPTIONAL
+          it_except_qinfo TYPE any OPTIONAL
           i_consistency_check TYPE any OPTIONAL
         CHANGING
           it_fieldcatalog      TYPE ANY TABLE OPTIONAL
