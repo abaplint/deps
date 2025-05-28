@@ -374,12 +374,20 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         es_variant TYPE disvariant
         e_save     TYPE char1.
 
+    METHODS set_3d_border
+      IMPORTING
+        border TYPE i.
+
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
 
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+  METHOD set_3d_border.
+    RETURN.
+  ENDMETHOD.
+
   METHOD get_variant.
     RETURN.
   ENDMETHOD.
