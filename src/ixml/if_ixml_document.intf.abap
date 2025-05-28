@@ -133,5 +133,9 @@ INTERFACE if_ixml_document PUBLIC.
       RETURNING
         VALUE(filter) TYPE REF TO if_ixml_node_filter.
 
-  METHODS create_filter_name IMPORTING foo TYPE any.
+  METHODS create_filter_name
+    IMPORTING
+      name TYPE string
+    RETURNING
+      VALUE(rval) TYPE REF TO if_ixml_node_filter.
 ENDINTERFACE.
