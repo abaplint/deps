@@ -105,7 +105,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_evt_enter      TYPE i VALUE 5,
       mc_style_button   TYPE i VALUE 6,
       mc_style_f4       TYPE i VALUE 7,
-      mc_style4_link_no TYPE i VALUE 8.
+      mc_style_no_delete_row       TYPE i VALUE 8,
+      mc_style4_link_no TYPE i VALUE 0.
 
     CONSTANTS:
       mc_mb_variant      TYPE string VALUE 'a',
@@ -193,6 +194,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_fc_expmdb TYPE string VALUE '1',
       mc_fc_f4 TYPE string VALUE '1',
       mc_fc_variant_admin TYPE string VALUE '1',
+      mc_fc_excl_all TYPE string VALUE '1',
+      mc_fg_sort TYPE string VALUE '1',
+      mc_fc_call_xml_export TYPE string VALUE '1',
+      mc_fc_find_more TYPE string VALUE '1',
       mc_fc_loc_delete_row TYPE string VALUE 'x'.
 
     CLASS-METHODS offline RETURNING VALUE(off) TYPE i.
