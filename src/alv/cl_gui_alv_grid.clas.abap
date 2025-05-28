@@ -364,12 +364,21 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         is_col_info TYPE any
         is_row_no   TYPE any.
 
+    METHODS set_selected_columns
+      IMPORTING
+        it_col_table TYPE any
+        is_keep_other_selections TYPE any OPTIONAL.
+
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
 
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+  METHOD set_selected_columns.
+    RETURN.
+  ENDMETHOD.
+
   METHOD set_scroll_info_via_id.
     RETURN.
   ENDMETHOD.
