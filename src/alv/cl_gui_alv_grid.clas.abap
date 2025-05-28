@@ -106,6 +106,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_style_button   TYPE i VALUE 6,
       mc_style_f4       TYPE i VALUE 7,
       mc_style_no_delete_row       TYPE i VALUE 8,
+      mc_style_f4_no       TYPE i VALUE 9,
       mc_style4_link_no TYPE i VALUE 0.
 
     CONSTANTS:
