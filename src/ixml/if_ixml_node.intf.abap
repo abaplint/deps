@@ -72,4 +72,17 @@ INTERFACE if_ixml_node PUBLIC.
   METHODS num_children
     RETURNING
       VALUE(rval) TYPE i.
+
+  METHODS create_filter_name
+    IMPORTING
+      name        TYPE string
+      namespace   TYPE string DEFAULT ''
+    RETURNING
+      VALUE(rval) TYPE REF TO if_ixml_node_filter.
+
+  METHODS create_filter_parent
+    IMPORTING
+      filter_parent TYPE REF TO if_ixml_node_filter
+    RETURNING
+      VALUE(rval)   TYPE REF TO if_ixml_node_filter.
 ENDINTERFACE.

@@ -1,6 +1,9 @@
 INTERFACE if_ixml_document PUBLIC.
   INTERFACES if_ixml_node.
 
+  ALIASES create_filter_parent
+    FOR if_ixml_node~create_filter_parent.
+
   METHODS:
     set_declaration
       IMPORTING

@@ -1,6 +1,9 @@
 INTERFACE if_ixml_element PUBLIC.
   INTERFACES if_ixml_node.
 
+  ALIASES create_filter_name
+    FOR if_ixml_node~create_filter_name.
+
   METHODS:
     remove_attribute_ns
       IMPORTING name TYPE string,
