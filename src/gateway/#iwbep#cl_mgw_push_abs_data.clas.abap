@@ -21,6 +21,29 @@ CLASS /iwbep/cl_mgw_push_abs_data DEFINITION PUBLIC ABSTRACT CREATE PUBLIC.
 ENDCLASS.
 
 CLASS /iwbep/cl_mgw_push_abs_data IMPLEMENTATION.
+  METHOD /iwbep/if_mgw_conv_srv_runtime~get_dp_facade.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD /iwbep/if_mgw_appl_srv_runtime~create_stream.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD /iwbep/if_mgw_appl_srv_runtime~update_entity.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD /iwbep/if_mgw_appl_srv_runtime~get_entity.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD /iwbep/if_mgw_appl_srv_runtime~delete_entity.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD /iwbep/if_mgw_appl_srv_runtime~create_entity.
+    RETURN.
+  ENDMETHOD.
 
   METHOD copy_data_to_ref.
     RETURN.

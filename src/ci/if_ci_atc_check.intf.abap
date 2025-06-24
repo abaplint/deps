@@ -8,8 +8,8 @@ INTERFACE if_ci_atc_check PUBLIC.
 
   METHODS run
     IMPORTING
-      object        TYPE any
-      data_provider TYPE REF TO any
+      object          TYPE any
+      data_provider   TYPE REF TO any
     RETURNING
       VALUE(findings) TYPE string.
 

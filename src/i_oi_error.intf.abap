@@ -6,12 +6,12 @@ INTERFACE i_oi_error PUBLIC.
       type TYPE c.
   METHODS get_message
     EXPORTING
-      message_id TYPE sy-msgid
+      message_id     TYPE sy-msgid
       message_number TYPE sy-msgno
-      param1 TYPE sy-msgv1
-      param2 TYPE sy-msgv2
-      param3 TYPE sy-msgv3
-      param4 TYPE sy-msgv4.
+      param1         TYPE sy-msgv1
+      param2         TYPE sy-msgv2
+      param3         TYPE sy-msgv3
+      param4         TYPE sy-msgv4.
 
   DATA:
     error_code TYPE string,

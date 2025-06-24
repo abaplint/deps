@@ -3,7 +3,7 @@ INTERFACE if_constraint PUBLIC.
   METHODS
     is_valid
       IMPORTING
-        data_object TYPE data
+        data_object   TYPE data
       RETURNING
         VALUE(result) TYPE abap_bool.
 

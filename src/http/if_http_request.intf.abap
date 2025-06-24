@@ -48,8 +48,8 @@ INTERFACE if_http_request PUBLIC.
     set_authorization
       IMPORTING
         auth_type TYPE i OPTIONAL
-        username TYPE string
-        password TYPE string,
+        username  TYPE string
+        password  TYPE string,
     get_form_data
       IMPORTING
         name TYPE string

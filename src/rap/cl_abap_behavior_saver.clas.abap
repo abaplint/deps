@@ -26,9 +26,9 @@ CLASS cl_abap_behavior_saver DEFINITION PUBLIC INHERITING FROM cl_abap_behv CREA
     METHODS cleanup_finalize.
     METHODS save_modified
       IMPORTING
-        create TYPE data
-        update TYPE data
-        delete TYPE data
+        create   TYPE data
+        update   TYPE data
+        delete   TYPE data
       CHANGING
         reported TYPE data OPTIONAL
         failed   TYPE data OPTIONAL.

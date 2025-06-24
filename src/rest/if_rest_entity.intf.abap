@@ -6,7 +6,7 @@ INTERFACE if_rest_entity PUBLIC.
   METHODS get_header_field IMPORTING iv_name TYPE string RETURNING VALUE(val) TYPE string.
   METHODS set_header_field
     IMPORTING
-      iv_name TYPE string
+      iv_name  TYPE string
       iv_value TYPE string.
   METHODS get_binary_data RETURNING VALUE(data) TYPE xstring.
   METHODS get_header_fields RETURNING VALUE(data) TYPE voided.

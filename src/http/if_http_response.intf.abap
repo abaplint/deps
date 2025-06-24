@@ -30,15 +30,15 @@ INTERFACE if_http_response PUBLIC.
         reason TYPE string,
     redirect
       IMPORTING
-        url TYPE string
-        permanently TYPE i OPTIONAL
+        url                TYPE string
+        permanently        TYPE i OPTIONAL
         protocol_dependent TYPE i OPTIONAL,
     get_raw_message
       RETURNING VALUE(val) TYPE xstring,
     delete_cookie_at_client
       IMPORTING
-        name TYPE string
-        path TYPE string OPTIONAL
+        name   TYPE string
+        path   TYPE string OPTIONAL
         domain TYPE string OPTIONAL,
     get_status
       EXPORTING

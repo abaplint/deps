@@ -9,21 +9,21 @@ CLASS cl_apl_ecatt_object DEFINITION PUBLIC.
       close_object
         IMPORTING
           im_suppress_events TYPE abap_bool OPTIONAL
-          im_object_usage TYPE REF TO object OPTIONAL.
+          im_object_usage    TYPE REF TO object OPTIONAL.
     CLASS-METHODS:
       get_tadir_entry
         IMPORTING
           im_obj_name TYPE string
           im_obj_type TYPE string
         EXPORTING
-          ex_tadir TYPE i,
+          ex_tadir    TYPE i,
       show_object
         IMPORTING
           im_obj_type TYPE string
           im_name     TYPE string
           im_version  TYPE string
         EXPORTING
-          re_object TYPE REF TO cl_apl_ecatt_object,
+          re_object   TYPE REF TO cl_apl_ecatt_object,
       delete_object
         IMPORTING
           im_obj_type            TYPE string
@@ -36,11 +36,11 @@ CLASS cl_apl_ecatt_object DEFINITION PUBLIC.
           im_version            TYPE string
           im_obj_type           TYPE string
           im_exists_any_version TYPE abap_bool
-        RETURNING VALUE(val) TYPE abap_bool,
+        RETURNING VALUE(val)    TYPE abap_bool,
       get_version_info_object
         IMPORTING
-          im_name TYPE string
-          im_obj_type TYPE string
+          im_name         TYPE string
+          im_obj_type     TYPE string
         EXPORTING
           ex_version_info TYPE STANDARD TABLE.
 

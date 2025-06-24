@@ -56,7 +56,7 @@ CLASS cl_gui_resources DEFINITION PUBLIC
 
     CLASS-METHODS get_background_color
       IMPORTING
-      !id TYPE i
+      !id    TYPE i
       !state TYPE i
       EXPORTING
       !color TYPE i
@@ -64,7 +64,7 @@ CLASS cl_gui_resources DEFINITION PUBLIC
       get_std_resource_error.
     CLASS-METHODS get_foreground_color
       IMPORTING
-      !id TYPE i
+      !id    TYPE i
       !state TYPE i
       EXPORTING
       !color TYPE i
@@ -84,14 +84,14 @@ CLASS cl_gui_resources DEFINITION PUBLIC
       IMPORTING
       !with_flush TYPE c OPTIONAL
       EXPORTING
-      !fontsize TYPE i
-      !fontname TYPE char80
+      !fontsize   TYPE i
+      !fontname   TYPE char80
       EXCEPTIONS
       error_get_obj
       cntl_error.
     CLASS-METHODS get_list_color
       IMPORTING
-      !id TYPE i
+      !id    TYPE i
       !state TYPE i DEFAULT 0
       EXPORTING
       !color TYPE i
@@ -106,23 +106,23 @@ CLASS cl_gui_resources DEFINITION PUBLIC
       EXPORTING
       !col_background_level1 TYPE i
       !col_background_level2 TYPE i
-      !col_textarea TYPE i
+      !col_textarea          TYPE i
       EXCEPTIONS
       get_std_resource_error.
     CLASS-METHODS get_color
       IMPORTING
-      !id TYPE i
-      !state TYPE i
+      !id          TYPE i
+      !state       TYPE i
       !isbackcolor TYPE c
-      !with_flush TYPE c OPTIONAL
+      !with_flush  TYPE c OPTIONAL
       EXPORTING
-      !color TYPE i
+      !color       TYPE i
       EXCEPTIONS
       error_get_obj
       cntl_error.
     CLASS-METHODS get_colors
       IMPORTING
-      !with_flush TYPE c OPTIONAL
+      !with_flush         TYPE c OPTIONAL
       CHANGING
       !table_of_bg_colors TYPE cntl_col_value_tab OPTIONAL
       !table_of_fg_colors TYPE cntl_col_value_tab OPTIONAL

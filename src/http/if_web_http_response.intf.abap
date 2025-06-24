@@ -11,8 +11,8 @@ INTERFACE if_web_http_response PUBLIC.
 
   METHODS get_binary
     IMPORTING
-      i_offset TYPE i DEFAULT 0
-      i_length TYPE i DEFAULT -1
+      i_offset       TYPE i DEFAULT 0
+      i_length       TYPE i DEFAULT -1
     RETURNING
       VALUE(r_value) TYPE xstring
     RAISING
@@ -26,7 +26,7 @@ INTERFACE if_web_http_response PUBLIC.
 
   METHODS get_header_field
     IMPORTING
-      i_name TYPE string
+      i_name         TYPE string
     RETURNING
       VALUE(r_value) TYPE string
     RAISING

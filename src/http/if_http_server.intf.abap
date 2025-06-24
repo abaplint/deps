@@ -45,8 +45,8 @@ INTERFACE if_http_server PUBLIC.
   METHODS logoff
     IMPORTING
       delete_mysapsso2_cookie TYPE abap_bool OPTIONAL
-      propagate_logoff TYPE abap_bool OPTIONAL
-      redirect_url TYPE string OPTIONAL.
+      propagate_logoff        TYPE abap_bool OPTIONAL
+      redirect_url            TYPE string OPTIONAL.
 
   METHODS set_session_stateful
     IMPORTING
@@ -67,7 +67,7 @@ INTERFACE if_http_server PUBLIC.
       internal_error.
   CLASS-METHODS escape_html
     IMPORTING
-      unescaped TYPE string
+      unescaped      TYPE string
     RETURNING
       VALUE(escaped) TYPE string.
   METHODS validate_xsrf_token
@@ -82,13 +82,13 @@ INTERFACE if_http_server PUBLIC.
       called_by_public_service.
   CLASS-METHODS unescape_url
     IMPORTING
-      escaped TYPE string
+      escaped          TYPE string
     RETURNING
       VALUE(unescaped) TYPE string.
 
   CLASS-METHODS escape_url
     IMPORTING
-      unescaped TYPE string
+      unescaped      TYPE string
     RETURNING
       VALUE(escaped) TYPE string.
 
@@ -96,13 +96,13 @@ INTERFACE if_http_server PUBLIC.
     IMPORTING
       extension_class TYPE string OPTIONAL
     EXPORTING
-      urls TYPE tihttpurls2.
+      urls            TYPE tihttpurls2.
 
   CLASS-METHODS get_extension_url
     IMPORTING
       extension_class TYPE string
     EXPORTING
-      urls TYPE tihttpurls.
+      urls            TYPE tihttpurls.
 
   METHODS get_last_error
     RETURNING
@@ -110,18 +110,18 @@ INTERFACE if_http_server PUBLIC.
 
   CLASS-METHODS get_location
     IMPORTING
-      protocol TYPE csequence OPTIONAL
-      application TYPE csequence OPTIONAL
-      for_domain TYPE csequence OPTIONAL
-      server TYPE REF TO if_http_server OPTIONAL
+      protocol            TYPE csequence OPTIONAL
+      application         TYPE csequence OPTIONAL
+      for_domain          TYPE csequence OPTIONAL
+      server              TYPE REF TO if_http_server OPTIONAL
       use_ticket_protocol TYPE abap_bool DEFAULT abap_true
     EXPORTING
-      host TYPE string
-      port TYPE string
-      out_protocol TYPE string
-      vh_switch TYPE abap_bool
+      host                TYPE string
+      port                TYPE string
+      out_protocol        TYPE string
+      vh_switch           TYPE abap_bool
     RETURNING
-      VALUE(url_part) TYPE string.
+      VALUE(url_part)     TYPE string.
 
   CLASS-METHODS get_location_exception
     IMPORTING
@@ -131,12 +131,12 @@ INTERFACE if_http_server PUBLIC.
       server              TYPE REF TO if_http_server OPTIONAL
       use_ticket_protocol TYPE abap_bool DEFAULT abap_true
     EXPORTING
-      host                      TYPE string
-      port                      TYPE string
-      out_protocol              TYPE string
-      vh_switch                 TYPE abap_bool
+      host                TYPE string
+      port                TYPE string
+      out_protocol        TYPE string
+      vh_switch           TYPE abap_bool
     RETURNING
-      VALUE(url_part)            TYPE string.
+      VALUE(url_part)     TYPE string.
 
   METHODS get_xsrf_token
     EXPORTING

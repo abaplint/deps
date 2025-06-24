@@ -1,7 +1,7 @@
 INTERFACE if_web_http_request PUBLIC.
   METHODS get_header_field
     IMPORTING
-      i_name TYPE string
+      i_name         TYPE string
     RETURNING
       VALUE(r_value) TYPE string
     RAISING
@@ -12,9 +12,9 @@ INTERFACE if_web_http_request PUBLIC.
 
   METHODS set_binary
     IMPORTING
-      i_data   TYPE xstring
-      i_offset TYPE i DEFAULT 0
-      i_length TYPE i DEFAULT -1
+      i_data         TYPE xstring
+      i_offset       TYPE i DEFAULT 0
+      i_length       TYPE i DEFAULT -1
     RETURNING
       VALUE(r_value) TYPE REF TO if_web_http_request
     RAISING
@@ -37,9 +37,9 @@ INTERFACE if_web_http_request PUBLIC.
 
   METHODS set_text
     IMPORTING
-      i_text   TYPE string
-      i_offset TYPE i DEFAULT 0
-      i_length TYPE i DEFAULT -1
+      i_text         TYPE string
+      i_offset       TYPE i DEFAULT 0
+      i_length       TYPE i DEFAULT -1
     RETURNING
       VALUE(r_value) TYPE REF TO if_web_http_request
     RAISING

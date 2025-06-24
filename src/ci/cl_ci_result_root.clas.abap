@@ -12,7 +12,7 @@ CLASS cl_ci_result_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
 
     METHODS set_info ABSTRACT
       IMPORTING
-        p_info TYPE string
+        p_info          TYPE string
       RETURNING
         VALUE(p_result) TYPE string.
 

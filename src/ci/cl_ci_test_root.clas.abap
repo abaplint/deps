@@ -4,11 +4,11 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
     INTERFACES if_ci_test.
 
     TYPES: BEGIN OF ty_message,
-             test TYPE string,
-             code TYPE string,
-             kind TYPE string,
-             text TYPE string,
-             pcom TYPE string,
+             test     TYPE string,
+             code     TYPE string,
+             kind     TYPE string,
+             text     TYPE string,
+             pcom     TYPE string,
              pcom_alt TYPE string,
           END OF ty_message.
 
@@ -85,7 +85,7 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       get_result_node
         ABSTRACT
         IMPORTING
-          p_kind TYPE c
+          p_kind          TYPE c
         RETURNING
           VALUE(p_result) TYPE REF TO cl_ci_result_root.
 
@@ -146,12 +146,12 @@ CLASS cl_ci_test_root DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       consolidate_for_display
         ABSTRACT
         IMPORTING
-          p_sort_by_user TYPE string
+          p_sort_by_user    TYPE string
           p_sort_by_package TYPE string
-          p_sort_by_object TYPE string
+          p_sort_by_object  TYPE string
         CHANGING
-          p_results TYPE ty_results_tt
-          p_results_hd TYPE ANY TABLE.
+          p_results         TYPE ty_results_tt
+          p_results_hd      TYPE ANY TABLE.
 
   PROTECTED SECTION.
     METHODS: add_obj_type IMPORTING objtype TYPE string.
