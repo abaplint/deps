@@ -21,6 +21,10 @@ CLASS /iwbep/cl_mgw_push_abs_data DEFINITION PUBLIC ABSTRACT CREATE PUBLIC.
 ENDCLASS.
 
 CLASS /iwbep/cl_mgw_push_abs_data IMPLEMENTATION.
+  METHOD /iwbep/if_mgw_conv_srv_runtime~get_logger.
+    RETURN.
+  ENDMETHOD.
+
   METHOD /iwbep/if_mgw_conv_srv_runtime~get_dp_facade.
     RETURN.
   ENDMETHOD.

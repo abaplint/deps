@@ -40,20 +40,20 @@ INTERFACE /iwbep/if_mgw_appl_srv_runtime PUBLIC.
 
   METHODS get_entityset
     IMPORTING
-      !iv_entity_name           TYPE string OPTIONAL
-      !iv_entity_set_name       TYPE string OPTIONAL
-      !iv_source_name           TYPE string OPTIONAL
-      !it_filter_select_options TYPE string OPTIONAL
-      !it_order                 TYPE string OPTIONAL
-      !is_paging                TYPE string OPTIONAL
-      !it_navigation_path       TYPE string OPTIONAL
-      !it_key_tab               TYPE string OPTIONAL
-      !iv_filter_string         TYPE string OPTIONAL
-      !iv_search_string         TYPE string OPTIONAL
-      !io_tech_request_context  TYPE REF TO /iwbep/if_mgw_req_entityset OPTIONAL
+      iv_entity_name           TYPE string OPTIONAL
+      iv_entity_set_name       TYPE string OPTIONAL
+      iv_source_name           TYPE string OPTIONAL
+      it_filter_select_options TYPE string OPTIONAL
+      it_order                 TYPE string OPTIONAL
+      is_paging                TYPE string OPTIONAL
+      it_navigation_path       TYPE string OPTIONAL
+      it_key_tab               TYPE string OPTIONAL
+      iv_filter_string         TYPE string OPTIONAL
+      iv_search_string         TYPE string OPTIONAL
+      io_tech_request_context  TYPE REF TO /iwbep/if_mgw_req_entityset OPTIONAL
     EXPORTING
-      !er_entityset             TYPE REF TO data
-      !es_response_context      TYPE string.
+      er_entityset             TYPE REF TO data
+      es_response_context      TYPE string.
 
   METHODS create_entity
     IMPORTING
