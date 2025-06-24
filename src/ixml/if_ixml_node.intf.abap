@@ -49,7 +49,7 @@ INTERFACE if_ixml_node PUBLIC.
         VALUE(val) TYPE string,
     query_interface
       IMPORTING
-        foo TYPE i
+        foo        TYPE i
       RETURNING
         VALUE(val) TYPE REF TO if_ixml_element,
     remove_child
@@ -65,7 +65,7 @@ INTERFACE if_ixml_node PUBLIC.
         name TYPE string,
     set_value
       IMPORTING
-        value TYPE string
+        value       TYPE string
       RETURNING
         VALUE(rval) TYPE i.
 

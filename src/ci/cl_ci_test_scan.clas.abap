@@ -2,39 +2,39 @@ CLASS cl_ci_test_scan DEFINITION PUBLIC CREATE PUBLIC INHERITING FROM cl_ci_test
 
   PUBLIC SECTION.
     METHODS get_token_abs
-      IMPORTING p_n TYPE i
+      IMPORTING p_n             TYPE i
       RETURNING VALUE(p_result) TYPE string.
     METHODS get_include
       IMPORTING
-        p_ref_scan TYPE REF TO cl_ci_scan OPTIONAL
-        p_level    TYPE i OPTIONAL
+        p_ref_scan              TYPE REF TO cl_ci_scan OPTIONAL
+        p_level                 TYPE i OPTIONAL
       RETURNING VALUE(p_result) TYPE string.
     METHODS get_line_abs
-      IMPORTING VALUE(p_n) TYPE i
+      IMPORTING VALUE(p_n)      TYPE i
       RETURNING VALUE(p_result) TYPE i.
     METHODS get_column_abs
-      IMPORTING VALUE(p_n) TYPE i
+      IMPORTING VALUE(p_n)      TYPE i
       RETURNING VALUE(p_result) TYPE i.
     METHODS get_token_rel
-      IMPORTING p_n TYPE i
+      IMPORTING p_n             TYPE i
       RETURNING VALUE(p_result) TYPE string.
     METHODS keyword
       RETURNING VALUE(p_result) TYPE string.
     METHODS get_column_rel
-      IMPORTING p_n TYPE i
+      IMPORTING p_n             TYPE i
       RETURNING VALUE(p_result) TYPE i.
     METHODS get_line_column_abs
       IMPORTING VALUE(p_n) TYPE i
       EXPORTING
-        p_line TYPE i
-        p_column TYPE i.
+        p_line             TYPE i
+        p_column           TYPE i.
     METHODS get_line_column_rel
       IMPORTING VALUE(p_n) TYPE i
       EXPORTING
-        p_line TYPE i
-        p_column TYPE i.
+        p_line             TYPE i
+        p_column           TYPE i.
     METHODS get_line_rel
-      IMPORTING p_n TYPE i
+      IMPORTING p_n             TYPE i
       RETURNING VALUE(p_result) TYPE i.
     METHODS get RETURNING VALUE(p_result) TYPE sychar01.
 

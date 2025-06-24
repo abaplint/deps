@@ -14,9 +14,9 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
     METHODS:
       download ABSTRACT
         IMPORTING
-          im_object_type TYPE string
-          im_object_name TYPE string
-          im_load_help TYPE string
+          im_object_type    TYPE string
+          im_object_name    TYPE string
+          im_load_help      TYPE string
           im_object_version TYPE string
         RAISING
           cx_ecatt_apl,
@@ -40,12 +40,12 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       get_general_params_data
         IMPORTING
           im_params TYPE any
-          im_ptyp TYPE string OPTIONAL,
+          im_ptyp   TYPE string OPTIONAL,
       raise_download_exception
         IMPORTING
-          previous TYPE REF TO cx_root
-          textid LIKE cx_root=>textid
-          free_text TYPE string OPTIONAL
+          previous      TYPE REF TO cx_root
+          textid        LIKE cx_root=>textid
+          free_text     TYPE string OPTIONAL
           called_method TYPE string OPTIONAL,
       set_general_params_data_to_dom,
       set_deep_stru_to_dom

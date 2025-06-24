@@ -3,7 +3,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
   PUBLIC SECTION.
     TYPES: BEGIN OF ty_row,
         rowtype TYPE c LENGTH 23,
-        index TYPE n LENGTH 10,
+        index   TYPE n LENGTH 10,
       END OF ty_row.
 
     TYPES: BEGIN OF ty_column,
@@ -273,8 +273,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
             VALUE(i_gridtitle) TYPE any,
       set_selected_rows
         IMPORTING
-          it_index_rows TYPE any OPTIONAL
-          it_row_no     TYPE any OPTIONAL
+          it_index_rows            TYPE any OPTIONAL
+          it_row_no                TYPE any OPTIONAL
           is_keep_other_selections TYPE any OPTIONAL,
       refresh_table_display
         IMPORTING
@@ -285,7 +285,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           i_ready_for_input TYPE any OPTIONAL,
       check_changed_data
         EXPORTING
-          e_valid TYPE any
+          e_valid   TYPE any
         CHANGING
           c_refresh TYPE any OPTIONAL,
       register_delayed_event
@@ -299,16 +299,16 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           et_filtered_entries TYPE lvc_t_fidx,
       get_subtotals
         EXPORTING
-          ep_collect00 TYPE REF TO data
-          ep_collect01 TYPE REF TO data
-          ep_collect02 TYPE REF TO data
-          ep_collect03 TYPE REF TO data
-          ep_collect04 TYPE REF TO data
-          ep_collect05 TYPE REF TO data
-          ep_collect06 TYPE REF TO data
-          ep_collect07 TYPE REF TO data
-          ep_collect08 TYPE REF TO data
-          ep_collect09 TYPE REF TO data
+          ep_collect00   TYPE REF TO data
+          ep_collect01   TYPE REF TO data
+          ep_collect02   TYPE REF TO data
+          ep_collect03   TYPE REF TO data
+          ep_collect04   TYPE REF TO data
+          ep_collect05   TYPE REF TO data
+          ep_collect06   TYPE REF TO data
+          ep_collect07   TYPE REF TO data
+          ep_collect08   TYPE REF TO data
+          ep_collect09   TYPE REF TO data
           et_grouplevels TYPE lvc_t_grpl,
       set_table_for_first_display
         IMPORTING
@@ -321,10 +321,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           it_toolbar_excluding TYPE any OPTIONAL
           it_hyperlink         TYPE any OPTIONAL
           i_default            TYPE abap_bool DEFAULT abap_true
-          is_print TYPE any OPTIONAL
-          it_special_groups TYPE any OPTIONAL
-          it_except_qinfo TYPE any OPTIONAL
-          i_consistency_check TYPE any OPTIONAL
+          is_print             TYPE any OPTIONAL
+          it_special_groups    TYPE any OPTIONAL
+          it_except_qinfo      TYPE any OPTIONAL
+          i_consistency_check  TYPE any OPTIONAL
         CHANGING
           it_fieldcatalog      TYPE ANY TABLE OPTIONAL
           it_sort              TYPE ANY TABLE OPTIONAL
@@ -380,7 +380,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
     METHODS set_selected_columns
       IMPORTING
-        it_col_table TYPE any
+        it_col_table             TYPE any
         is_keep_other_selections TYPE any OPTIONAL.
 
     METHODS get_variant
@@ -398,7 +398,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
     METHODS get_scroll_info_via_id
       EXPORTING
-        es_row_no TYPE lvc_s_roid
+        es_row_no   TYPE lvc_s_roid
         es_row_info TYPE lvc_s_row
         es_col_info TYPE lvc_s_col.
 

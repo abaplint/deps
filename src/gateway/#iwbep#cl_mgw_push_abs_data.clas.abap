@@ -22,6 +22,10 @@ ENDCLASS.
 
 CLASS /iwbep/cl_mgw_push_abs_data IMPLEMENTATION.
 
+  METHOD /iwbep/if_mgw_appl_srv_runtime~create_entity.
+    RETURN.
+  ENDMETHOD.
+
   METHOD copy_data_to_ref.
     RETURN.
   ENDMETHOD.

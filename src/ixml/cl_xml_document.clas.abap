@@ -2,21 +2,21 @@ CLASS cl_xml_document DEFINITION PUBLIC.
   PUBLIC SECTION.
     METHODS render_2_string
       IMPORTING
-        pretty_print TYPE xflag DEFAULT 'X'
+        pretty_print   TYPE xflag DEFAULT 'X'
       EXPORTING
         VALUE(retcode) TYPE sysubrc
-        stream TYPE string
-        size TYPE sytabix.
+        stream         TYPE string
+        size           TYPE sytabix.
     METHODS create_with_data
       IMPORTING
-        name TYPE string DEFAULT 'DATA'
-        dataobject TYPE any
+        name           TYPE string DEFAULT 'DATA'
+        dataobject     TYPE any
       RETURNING
         VALUE(retcode) TYPE sysubrc.
 
     METHODS parse_string
       IMPORTING
-        stream TYPE string
+        stream         TYPE string
       RETURNING
         VALUE(retcode) TYPE i.
 
@@ -26,8 +26,8 @@ CLASS cl_xml_document DEFINITION PUBLIC.
     METHODS display IMPORTING with_bdn TYPE c DEFAULT space.
     METHODS find_node
       IMPORTING
-        name TYPE string
-        root TYPE REF TO if_ixml_node OPTIONAL
+        name        TYPE string
+        root        TYPE REF TO if_ixml_node OPTIONAL
       RETURNING
         VALUE(node) TYPE REF TO if_ixml_node.
     METHODS get_data
@@ -45,19 +45,19 @@ CLASS cl_xml_document DEFINITION PUBLIC.
         retcode    TYPE sysubrc.
     METHODS set_data
       IMPORTING
-        name        TYPE string DEFAULT 'DATA'
-        alias       TYPE string OPTIONAL
-        dataobject  TYPE any
-        parent_node TYPE REF TO if_ixml_node OPTIONAL
-        control     TYPE dcxmlsercl OPTIONAL
+        name           TYPE string DEFAULT 'DATA'
+        alias          TYPE string OPTIONAL
+        dataobject     TYPE any
+        parent_node    TYPE REF TO if_ixml_node OPTIONAL
+        control        TYPE dcxmlsercl OPTIONAL
       RETURNING
         VALUE(retcode) TYPE sysubrc.
     METHODS create_simple_element
       IMPORTING
-        name      TYPE string
-        namespace TYPE string OPTIONAL
-        value     TYPE string OPTIONAL
-        parent    TYPE REF TO if_ixml_node OPTIONAL
+        name            TYPE string
+        namespace       TYPE string OPTIONAL
+        value           TYPE string OPTIONAL
+        parent          TYPE REF TO if_ixml_node OPTIONAL
       RETURNING
         VALUE(new_node) TYPE REF TO if_ixml_node.
     METHODS set_encoding
@@ -67,9 +67,9 @@ CLASS cl_xml_document DEFINITION PUBLIC.
       IMPORTING
         pretty_print TYPE abap_bool DEFAULT abap_true
       EXPORTING
-        retcode TYPE sysubrc
-        stream  TYPE xstring
-        size    TYPE sytabix.
+        retcode      TYPE sysubrc
+        stream       TYPE xstring
+        size         TYPE sytabix.
 
     DATA m_document TYPE REF TO if_ixml_document.
     CONSTANTS c_ok TYPE sysubrc VALUE 0.

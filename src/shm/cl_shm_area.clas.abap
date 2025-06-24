@@ -44,109 +44,109 @@ CLASS cl_shm_area DEFINITION ABSTRACT PUBLIC.
 
     METHODS _attach_read71
       IMPORTING
-        sneak_mode TYPE abap_bool DEFAULT abap_false
-        area_name TYPE shm_area_name
+        sneak_mode   TYPE abap_bool DEFAULT abap_false
+        area_name    TYPE shm_area_name
         life_context TYPE shm_life_context
       EXPORTING
-        root TYPE REF TO object.
+        root         TYPE REF TO object.
 
     METHODS _attach_write70
       IMPORTING
         area_name TYPE shm_area_name
-        mode TYPE shm_attach_mode
+        mode      TYPE shm_attach_mode
       EXPORTING
-        root TYPE REF TO object
+        root      TYPE REF TO object
       CHANGING
         wait_time TYPE i OPTIONAL.
 
     CLASS-METHODS _free_area71
       IMPORTING
-        area_name TYPE shm_area_name
-        client TYPE shm_client
-        client_supplied TYPE abap_bool DEFAULT abap_false
-        transactional TYPE abap_bool DEFAULT abap_false
-        client_dependent TYPE abap_bool DEFAULT abap_false
+        area_name         TYPE shm_area_name
+        client            TYPE shm_client
+        client_supplied   TYPE abap_bool DEFAULT abap_false
+        transactional     TYPE abap_bool DEFAULT abap_false
+        client_dependent  TYPE abap_bool DEFAULT abap_false
         terminate_changer TYPE abap_bool
-        affect_server TYPE shm_affect_server
-        life_context TYPE shm_life_context DEFAULT life_context_appserver
+        affect_server     TYPE shm_affect_server
+        life_context      TYPE shm_life_context DEFAULT life_context_appserver
       RETURNING
-        VALUE(rc) TYPE shm_rc
+        VALUE(rc)         TYPE shm_rc
       RAISING
         cx_shm_parameter_error.
 
     CLASS-METHODS _detach_area71
       IMPORTING
-        area_name TYPE shm_area_name
-        client TYPE shm_client
-        client_supplied TYPE abap_bool
+        area_name        TYPE shm_area_name
+        client           TYPE shm_client
+        client_supplied  TYPE abap_bool
         client_dependent TYPE abap_bool DEFAULT abap_false
-        life_context TYPE shm_life_context
+        life_context     TYPE shm_life_context
       RETURNING
-        VALUE(rc) TYPE shm_rc.
+        VALUE(rc)        TYPE shm_rc.
 
     METHODS _attach_update70
       IMPORTING
         area_name TYPE shm_area_name
-        mode TYPE shm_attach_mode
+        mode      TYPE shm_attach_mode
       EXPORTING
-        root TYPE REF TO object
+        root      TYPE REF TO object
       CHANGING
         wait_time TYPE i OPTIONAL.
 
     CLASS-METHODS _free_instance71
       IMPORTING
-        area_name TYPE shm_area_name
-        inst_name TYPE shm_inst_name
-        client TYPE shm_client
-        client_supplied TYPE abap_bool DEFAULT abap_false
-        transactional TYPE abap_bool DEFAULT abap_false
-        client_dependent TYPE abap_bool DEFAULT abap_false
+        area_name         TYPE shm_area_name
+        inst_name         TYPE shm_inst_name
+        client            TYPE shm_client
+        client_supplied   TYPE abap_bool DEFAULT abap_false
+        transactional     TYPE abap_bool DEFAULT abap_false
+        client_dependent  TYPE abap_bool DEFAULT abap_false
         terminate_changer TYPE abap_bool
-        affect_server TYPE shm_affect_server
-        life_context TYPE shm_life_context DEFAULT life_context_appserver
+        affect_server     TYPE shm_affect_server
+        life_context      TYPE shm_life_context DEFAULT life_context_appserver
       RETURNING
-        VALUE(rc) TYPE shm_rc
+        VALUE(rc)         TYPE shm_rc
       RAISING
         cx_shm_parameter_error.
 
     CLASS-METHODS _get_instance_infos71
       IMPORTING
-        area_name TYPE shm_area_name
-        client TYPE shm_client
-        client_supplied TYPE abap_bool DEFAULT abap_false
+        area_name        TYPE shm_area_name
+        client           TYPE shm_client
+        client_supplied  TYPE abap_bool DEFAULT abap_false
         client_dependent TYPE abap_bool DEFAULT abap_false
-        life_context TYPE shm_life_context
+        life_context     TYPE shm_life_context
       RETURNING
-        VALUE(infos) TYPE shm_inst_infos.
+        VALUE(infos)     TYPE shm_inst_infos.
 
     CLASS-METHODS _invalidate_area71
       IMPORTING
-        area_name TYPE shm_area_name
-        client TYPE shm_client
-        client_supplied TYPE abap_bool DEFAULT abap_false
-        transactional TYPE abap_bool DEFAULT abap_false
-        client_dependent TYPE abap_bool DEFAULT abap_false
+        area_name         TYPE shm_area_name
+        client            TYPE shm_client
+        client_supplied   TYPE abap_bool DEFAULT abap_false
+        transactional     TYPE abap_bool DEFAULT abap_false
+        client_dependent  TYPE abap_bool DEFAULT abap_false
         terminate_changer TYPE abap_bool
-        affect_server TYPE shm_affect_server
-        life_context TYPE shm_life_context DEFAULT life_context_appserver
+        affect_server     TYPE shm_affect_server
+        life_context      TYPE shm_life_context DEFAULT life_context_appserver
       RETURNING
-        VALUE(rc) TYPE shm_rc
+        VALUE(rc)         TYPE shm_rc
       RAISING
         cx_shm_parameter_error.
 
     CLASS-METHODS _invalidate_instance71
       IMPORTING
-        area_name TYPE shm_area_name
-        inst_name TYPE shm_inst_name
-        client TYPE shm_client
-        client_supplied TYPE abap_bool DEFAULT abap_false
-        transactional TYPE abap_bool DEFAULT abap_false
-        client_dependent TYPE abap_bool DEFAULT abap_false
+        area_name         TYPE shm_area_name
+        inst_name         TYPE shm_inst_name
+        client            TYPE shm_client
+        client_supplied   TYPE abap_bool DEFAULT abap_false
+        transactional     TYPE abap_bool DEFAULT abap_false
+        client_dependent  TYPE abap_bool DEFAULT abap_false
         terminate_changer TYPE abap_bool
-        affect_server TYPE shm_affect_server
-        life_context TYPE shm_life_context DEFAULT life_context_appserver
+        affect_server     TYPE shm_affect_server
+        life_context      TYPE shm_life_context DEFAULT life_context_appserver
       RETURNING
-        VALUE(rc) TYPE shm_rc
+        VALUE(rc)         TYPE shm_rc
       RAISING
         cx_shm_parameter_error.
 
