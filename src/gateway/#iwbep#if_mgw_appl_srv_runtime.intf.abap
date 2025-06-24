@@ -117,7 +117,7 @@ INTERFACE /iwbep/if_mgw_appl_srv_runtime PUBLIC.
       iv_entity_name          TYPE string OPTIONAL
       iv_entity_set_name      TYPE string OPTIONAL
       iv_source_name          TYPE string OPTIONAL
-      is_media_resource       TYPE ty_s_media_resource
+      is_media_resource       TYPE any
       it_key_tab              TYPE /iwbep/t_mgw_name_value_pair OPTIONAL
       it_navigation_path      TYPE /iwbep/t_mgw_navigation_path OPTIONAL
       iv_slug                 TYPE string
