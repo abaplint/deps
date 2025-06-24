@@ -20,4 +20,8 @@ INTERFACE /iwbep/if_mgw_conv_srv_runtime PUBLIC.
     RAISING
       /iwbep/cx_mgw_tech_exception.
 
+  METHODS get_logger
+    RETURNING
+      VALUE(ro_logger) TYPE REF TO /iwbep/cl_cos_logger.
+
 ENDINTERFACE.
