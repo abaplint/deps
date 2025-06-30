@@ -544,3 +544,4 @@ CONSTANTS icon_toggle_display TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_patient_smartcard TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_businav_process TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_new_task TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_ps_relationship TYPE c LENGTH 4 VALUE ''.
