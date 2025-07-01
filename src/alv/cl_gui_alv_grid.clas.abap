@@ -233,6 +233,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       IMPORTING
         VALUE(i_ucomm) TYPE sy-ucomm.
 
+    METHODS get_frontend_print
+      EXPORTING
+        es_print TYPE lvc_s_prnt.
+
     METHODS set_function_code
       CHANGING
         c_ucomm TYPE sy-ucomm.
@@ -412,6 +416,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+  METHOD get_frontend_print.
+    RETURN.
+  ENDMETHOD.
+
   METHOD set_user_command.
     RETURN.
   ENDMETHOD.
