@@ -229,6 +229,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         et_index_rows TYPE any
         et_row_no     TYPE ty_row_no_tt.
 
+    METHODS set_user_command
+      IMPORTING
+        VALUE(i_ucomm) TYPE sy-ucomm.
+
     METHODS set_function_code
       CHANGING
         c_ucomm TYPE sy-ucomm.
@@ -408,6 +412,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+  METHOD set_user_command.
+    RETURN.
+  ENDMETHOD.
+
   METHOD get_scroll_info_via_id.
     RETURN.
   ENDMETHOD.
