@@ -1,5 +1,11 @@
 CLASS cl_xml_document DEFINITION PUBLIC.
   PUBLIC SECTION.
+    METHODS constructor
+      IMPORTING
+        description TYPE any OPTIONAL
+        object_type TYPE any OPTIONAL
+        object_name TYPE any OPTIONAL.
+
     METHODS render_2_string
       IMPORTING
         pretty_print   TYPE xflag DEFAULT 'X'
@@ -77,6 +83,10 @@ CLASS cl_xml_document DEFINITION PUBLIC.
 ENDCLASS.
 
 CLASS cl_xml_document IMPLEMENTATION.
+  METHOD constructor.
+    RETURN.
+  ENDMETHOD.
+
   METHOD create_with_data.
     RETURN.
   ENDMETHOD.
