@@ -7,6 +7,7 @@ INTERFACE if_http_request PUBLIC.
     co_request_method_get TYPE string VALUE 'GET',
     co_request_method_post TYPE string VALUE 'POST'.
 
+  ALIASES suppress_content_type FOR if_http_entity~suppress_content_type.
   ALIASES add_multipart FOR if_http_entity~add_multipart.
   ALIASES delete_cookie FOR if_http_entity~delete_cookie.
   ALIASES delete_cookie_secure FOR if_http_entity~delete_cookie_secure.
