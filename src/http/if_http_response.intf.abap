@@ -20,6 +20,7 @@ INTERFACE if_http_response PUBLIC.
   ALIASES set_cookie FOR if_http_entity~set_cookie.
   ALIASES set_data FOR if_http_entity~set_data.
   ALIASES set_header_field FOR if_http_entity~set_header_field.
+  ALIASES set_header_fields FOR if_http_entity~set_header_fields.
   ALIASES to_xstring FOR if_http_entity~to_xstring.
   ALIASES get_last_error FOR if_http_entity~get_last_error.
 
