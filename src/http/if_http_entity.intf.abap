@@ -4,6 +4,7 @@ INTERFACE if_http_entity PUBLIC.
   CONSTANTS co_request_method_post TYPE string VALUE 'POST'.
   CONSTANTS co_protocol_version_1_0 TYPE i VALUE 1000.
   CONSTANTS co_protocol_version_1_1 TYPE i VALUE 1001.
+  CONSTANTS co_compress_based_on_mime_type TYPE i VALUE 2.
 
   METHODS set_cdata
     IMPORTING
@@ -27,7 +28,11 @@ INTERFACE if_http_entity PUBLIC.
     get_form_fields
       CHANGING
         fields TYPE tihttpnvp,
-    set_compression,
+    set_compression
+      IMPORTING
+        disable_extended_checks TYPE abap_bool DEFAULT abap_false
+        options                 TYPE i DEFAULT co_compress_based_on_mime_type
+        PREFERRED PARAMETER options,
     add_multipart
       IMPORTING suppress_content_length TYPE string OPTIONAL
       RETURNING VALUE(entity)           TYPE REF TO if_http_entity.
