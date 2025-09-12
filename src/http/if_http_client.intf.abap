@@ -7,6 +7,7 @@ INTERFACE if_http_client PUBLIC.
 
   DATA:
     propertytype_logon_popup TYPE i,
+    propertytype_send_sap_passport TYPE i,
     propertytype_accept_cookie TYPE i,
     request TYPE REF TO if_http_request,
     response TYPE REF TO if_http_response.
