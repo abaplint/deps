@@ -1,7 +1,10 @@
 INTERFACE if_web_http_response PUBLIC.
-  METHODS:
-    set_text,
-    set_status.
+  METHODS set_text.
+
+  METHODS set_status
+    IMPORTING
+      i_code   TYPE any
+      i_status TYPE any.
 
   METHODS get_status
     RETURNING
@@ -37,4 +40,5 @@ INTERFACE if_web_http_response PUBLIC.
       VALUE(r_value) TYPE name_value_pairs
     RAISING
       cx_web_message_error.
+
 ENDINTERFACE.
