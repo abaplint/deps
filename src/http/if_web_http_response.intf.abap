@@ -1,5 +1,6 @@
 INTERFACE if_web_http_response PUBLIC.
 
+
   METHODS set_text.
 
   METHODS set_status
