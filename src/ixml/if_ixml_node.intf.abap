@@ -8,6 +8,12 @@ INTERFACE if_ixml_node PUBLIC.
     append_child
       IMPORTING
         new_child TYPE REF TO if_ixml_node,
+    insert_child
+      IMPORTING
+        !new_child  TYPE REF TO if_ixml_node
+        !ref_child  TYPE REF TO if_ixml_node
+      RETURNING
+        VALUE(rval) TYPE i,
     clone
       RETURNING
         VALUE(rval) TYPE REF TO if_ixml_node,
