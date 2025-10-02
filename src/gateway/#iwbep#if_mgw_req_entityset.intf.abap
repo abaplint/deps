@@ -8,6 +8,10 @@ INTERFACE /iwbep/if_mgw_req_entityset PUBLIC.
     RETURNING
       VALUE(rv_entity_set) TYPE /iwbep/mgw_tech_name.
 
+  METHODS get_entity_type_name
+      RETURNING
+        VALUE(rv_entity_type) TYPE /iwbep/mgw_tech_name.
+
   METHODS get_osql_where_clause
     RETURNING
       VALUE(rv_osql_where_clause) TYPE string
