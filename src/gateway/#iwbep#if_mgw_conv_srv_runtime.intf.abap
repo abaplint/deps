@@ -6,7 +6,7 @@ INTERFACE /iwbep/if_mgw_conv_srv_runtime PUBLIC.
 
   METHODS set_header
     IMPORTING
-      value TYPE any.
+       is_header TYPE ihttpnvp.
 
   METHODS copy_data_to_ref
     IMPORTING

@@ -9,6 +9,7 @@ CLASS /iwbep/cl_mgw_push_abs_model DEFINITION PUBLIC CREATE PUBLIC.
       RAISING
         /iwbep/cx_mgw_med_exception.
 
+    DATA model TYPE REF TO /iwbep/if_mgw_odata_model.
   PROTECTED SECTION.
   PRIVATE SECTION.
 
