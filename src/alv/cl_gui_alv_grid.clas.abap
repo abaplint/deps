@@ -20,39 +20,39 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       VALUE(e_ucomm) TYPE sy-ucomm.
 
     EVENTS toolbar EXPORTING
-      VALUE(e_object) TYPE REF TO cl_alv_event_toolbar_set
+      VALUE(e_object)      TYPE REF TO cl_alv_event_toolbar_set
       VALUE(e_interactive) TYPE string.
 
     EVENTS onf4 EXPORTING
-      VALUE(e_fieldvalue) TYPE lvc_value OPTIONAL
-      VALUE(e_fieldname) TYPE lvc_fname OPTIONAL
-      VALUE(es_row_no) TYPE lvc_s_roid OPTIONAL
+      VALUE(e_fieldvalue)  TYPE lvc_value OPTIONAL
+      VALUE(e_fieldname)   TYPE lvc_fname OPTIONAL
+      VALUE(es_row_no)     TYPE lvc_s_roid OPTIONAL
       VALUE(er_event_data) TYPE REF TO cl_alv_event_data OPTIONAL
-      VALUE(et_bad_cells) TYPE lvc_t_modi OPTIONAL
-      VALUE(e_display) TYPE char01 OPTIONAL.
+      VALUE(et_bad_cells)  TYPE lvc_t_modi OPTIONAL
+      VALUE(e_display)     TYPE char01 OPTIONAL.
 
     EVENTS user_command EXPORTING
       VALUE(e_ucomm) TYPE sy-ucomm.
 
     EVENTS double_click EXPORTING
-      VALUE(e_row) TYPE ty_row
+      VALUE(e_row)     TYPE ty_row
       VALUE(es_row_no) TYPE ty_row_no
-      VALUE(e_column) TYPE ty_column.
+      VALUE(e_column)  TYPE ty_column.
 
     EVENTS hotspot_click EXPORTING
-      VALUE(e_row_id) TYPE ty_row
+      VALUE(e_row_id)    TYPE ty_row
       VALUE(e_column_id) TYPE ty_column
-      VALUE(es_row_no) TYPE ty_row_no.
+      VALUE(es_row_no)   TYPE ty_row_no.
 
     EVENTS data_changed EXPORTING
       VALUE(er_data_changed) TYPE REF TO cl_alv_changed_data_protocol
-      VALUE(e_onf4) TYPE char01 OPTIONAL
-      VALUE(e_onf4_before) TYPE char01 OPTIONAL
-      VALUE(e_onf4_after) TYPE char01 OPTIONAL
-      VALUE(e_ucomm) TYPE string.
+      VALUE(e_onf4)          TYPE char01 OPTIONAL
+      VALUE(e_onf4_before)   TYPE char01 OPTIONAL
+      VALUE(e_onf4_after)    TYPE char01 OPTIONAL
+      VALUE(e_ucomm)         TYPE string.
 
     EVENTS data_changed_finished EXPORTING
-      VALUE(e_modified) TYPE char01 OPTIONAL
+      VALUE(e_modified)    TYPE char01 OPTIONAL
       VALUE(et_good_cells) TYPE lvc_t_modi OPTIONAL.
 
     EVENTS top_of_page EXPORTING
@@ -64,7 +64,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
     EVENTS menu_button EXPORTING
       VALUE(e_object) TYPE REF TO cl_ctmenu OPTIONAL
-      VALUE(e_ucomm) TYPE sy-ucomm OPTIONAL.
+      VALUE(e_ucomm)  TYPE sy-ucomm OPTIONAL.
 
     EVENTS button_click EXPORTING
       VALUE(es_col_id) TYPE lvc_s_col OPTIONAL
@@ -72,29 +72,29 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
     EVENTS after_user_command
       EXPORTING
-        VALUE(e_ucomm) TYPE sy-ucomm OPTIONAL
-        VALUE(e_saved) TYPE char01 OPTIONAL
+        VALUE(e_ucomm)         TYPE sy-ucomm OPTIONAL
+        VALUE(e_saved)         TYPE char01 OPTIONAL
         VALUE(e_not_processed) TYPE char01 OPTIONAL.
 
     EVENTS ondrag
       EXPORTING
-        VALUE(e_row) TYPE lvc_s_row OPTIONAL
-        VALUE(e_column) TYPE lvc_s_col OPTIONAL
-        VALUE(es_row_no) TYPE lvc_s_roid OPTIONAL
+        VALUE(e_row)         TYPE lvc_s_row OPTIONAL
+        VALUE(e_column)      TYPE lvc_s_col OPTIONAL
+        VALUE(es_row_no)     TYPE lvc_s_roid OPTIONAL
         VALUE(e_dragdropobj) TYPE REF TO cl_dragdropobject OPTIONAL.
 
     EVENTS ondrop
       EXPORTING
-        VALUE(e_row) TYPE lvc_s_row OPTIONAL
-        VALUE(e_column) TYPE lvc_s_col OPTIONAL
-        VALUE(es_row_no) TYPE lvc_s_roid OPTIONAL
+        VALUE(e_row)         TYPE lvc_s_row OPTIONAL
+        VALUE(e_column)      TYPE lvc_s_col OPTIONAL
+        VALUE(es_row_no)     TYPE lvc_s_roid OPTIONAL
         VALUE(e_dragdropobj) TYPE REF TO cl_dragdropobject OPTIONAL.
 
     EVENTS ondropcomplete
       EXPORTING
-        VALUE(e_row) TYPE lvc_s_row OPTIONAL
-        VALUE(e_column) TYPE lvc_s_col OPTIONAL
-        VALUE(es_row_no) TYPE lvc_s_roid OPTIONAL
+        VALUE(e_row)         TYPE lvc_s_row OPTIONAL
+        VALUE(e_column)      TYPE lvc_s_col OPTIONAL
+        VALUE(es_row_no)     TYPE lvc_s_roid OPTIONAL
         VALUE(e_dragdropobj) TYPE REF TO cl_dragdropobject OPTIONAL.
 
     CONSTANTS:
