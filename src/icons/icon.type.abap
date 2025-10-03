@@ -1,5 +1,13 @@
 TYPE-POOL icon.
 
+CONSTANTS icon_biw_info_source_ina TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_enhanced_bo TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_foreign_trade TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_manikin_unknown_gender TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_next_step TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_view_expand_horizontal TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_view_expand_vertical TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_workflow_external_event TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_abap TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_abap_local TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_abc TYPE c LENGTH 4 VALUE ''.
