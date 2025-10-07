@@ -185,7 +185,7 @@
     "inline_data_old_versions": true,
     "keyword_case": {
       "style": "upper",
-      "ignoreExceptions": true,
+      "ignoreExceptions": false,
       "ignoreLowerClassImplmentationStatement": true,
       "ignoreGlobalClassBoundaries": false,
       "ignoreGlobalClassDefinition": false,

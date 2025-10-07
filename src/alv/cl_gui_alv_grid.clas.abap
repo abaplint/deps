@@ -97,6 +97,12 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         VALUE(es_row_no)     TYPE lvc_s_roid OPTIONAL
         VALUE(e_dragdropobj) TYPE REF TO cl_dragdropobject OPTIONAL.
 
+    EVENTS subtotal_text
+      EXPORTING
+        VALUE(es_subtottxt_info) TYPE lvc_s_stxt OPTIONAL
+        VALUE(ep_subtot_line)    TYPE REF TO data OPTIONAL
+        VALUE(e_event_data)      TYPE REF TO cl_alv_event_data OPTIONAL.
+
     CONSTANTS:
       mc_style_disabled      TYPE x LENGTH 4 VALUE '00000000',
       mc_style_enabled       TYPE x LENGTH 4 VALUE '00000000',
@@ -334,6 +340,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           is_layout            TYPE any OPTIONAL
           it_toolbar_excluding TYPE any OPTIONAL
           it_hyperlink         TYPE any OPTIONAL
+          ir_salv_adapter      TYPE any OPTIONAL
+          it_alv_graphics      TYPE any OPTIONAL
           i_default            TYPE abap_bool DEFAULT abap_true
           is_print             TYPE any OPTIONAL
           it_special_groups    TYPE any OPTIONAL
@@ -383,7 +391,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
     METHODS list_processing_events
       IMPORTING
-        i_dyndoc_id  TYPE any
+        i_dyndoc_id  TYPE any OPTIONAL
         i_event_name TYPE any.
 
     METHODS set_scroll_info_via_id
