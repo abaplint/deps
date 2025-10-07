@@ -391,7 +391,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
     METHODS list_processing_events
       IMPORTING
-        i_dyndoc_id  TYPE any
+        i_dyndoc_id  TYPE any OPTIONAL
         i_event_name TYPE any.
 
     METHODS set_scroll_info_via_id
