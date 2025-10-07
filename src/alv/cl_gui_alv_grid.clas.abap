@@ -109,10 +109,10 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       mc_style4_link_no      TYPE x LENGTH 4 VALUE '00000000'.
 
     CONSTANTS:
-      mc_evt_delayed_change_select TYPE string VALUE '1',
-      mc_evt_delayed_move_curr_cell TYPE string VALUE '1',
-      mc_evt_enter           TYPE string VALUE '1',
-      mc_evt_modified        TYPE string VALUE '1'.
+      mc_evt_delayed_change_select  TYPE i VALUE 1,
+      mc_evt_delayed_move_curr_cell TYPE i VALUE 2,
+      mc_evt_enter                  TYPE i VALUE 3,
+      mc_evt_modified               TYPE i VALUE 4.
 
     CONSTANTS:
       mc_fc_auf TYPE string VALUE '1',
@@ -222,7 +222,9 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
     METHODS:
       register_edit_event
-        IMPORTING i_event_id TYPE i,
+        IMPORTING i_event_id TYPE i.
+
+    METHODS:
       set_toolbar_interactive,
       is_ready_for_input RETURNING VALUE(state) TYPE i,
       is_alive RETURNING VALUE(state) TYPE i.
