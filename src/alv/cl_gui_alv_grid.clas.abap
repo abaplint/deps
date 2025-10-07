@@ -340,6 +340,8 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           is_layout            TYPE any OPTIONAL
           it_toolbar_excluding TYPE any OPTIONAL
           it_hyperlink         TYPE any OPTIONAL
+          ir_salv_adapter      TYPE any OPTIONAL
+          it_alv_graphics      TYPE any OPTIONAL
           i_default            TYPE abap_bool DEFAULT abap_true
           is_print             TYPE any OPTIONAL
           it_special_groups    TYPE any OPTIONAL
