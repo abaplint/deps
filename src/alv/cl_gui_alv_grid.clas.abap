@@ -97,6 +97,12 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         VALUE(es_row_no)     TYPE lvc_s_roid OPTIONAL
         VALUE(e_dragdropobj) TYPE REF TO cl_dragdropobject OPTIONAL.
 
+    EVENTS subtotal_text
+      EXPORTING
+        VALUE(es_subtottxt_info) TYPE lvc_s_stxt OPTIONAL
+        VALUE(ep_subtot_line)    TYPE REF TO data OPTIONAL
+        VALUE(e_event_data)      TYPE REF TO cl_alv_event_data OPTIONAL.
+
     CONSTANTS:
       mc_style_disabled      TYPE x LENGTH 4 VALUE '00000000',
       mc_style_enabled       TYPE x LENGTH 4 VALUE '00000000',
