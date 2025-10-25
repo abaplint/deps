@@ -4,6 +4,9 @@ INTERFACE if_ixml_element PUBLIC.
   ALIASES create_filter_name
     FOR if_ixml_node~create_filter_name.
 
+  ALIASES get_namespace_uri
+    FOR if_ixml_node~get_namespace_uri.
+
   METHODS:
     remove_attribute_ns
       IMPORTING name TYPE string,
