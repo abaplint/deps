@@ -6,7 +6,7 @@ CLASS cx_sy_file_open DEFINITION PUBLIC INHERITING FROM cx_sy_file_access_error 
         !previous LIKE previous OPTIONAL
         VALUE(filename) TYPE string OPTIONAL
         !errorcode TYPE i OPTIONAL
-        !errortext TYPE string OPTIONAL .
+        !errortext TYPE string OPTIONAL.
 ENDCLASS.
 
 CLASS cx_sy_file_open IMPLEMENTATION.
