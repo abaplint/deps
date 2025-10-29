@@ -1,5 +1,5 @@
 CLASS cx_sy_file_open DEFINITION PUBLIC INHERITING FROM cx_sy_file_access_error FINAL.
-  public section.
+  PUBLIC SECTION.
 
     methods CONSTRUCTOR
       importing
