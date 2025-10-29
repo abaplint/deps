@@ -1,4 +1,4 @@
-CLASS cx_sy_file_open DEFINITION PUBLIC INHERITING FROM cx_sy_file_access_error FINAL.
+CLASS cx_sy_file_open DEFINITION PUBLIC INHERITING FROM cx_dynamic_check FINAL.
   PUBLIC SECTION.
     METHODS constructor
       IMPORTING
@@ -11,5 +11,6 @@ ENDCLASS.
 
 CLASS cx_sy_file_open IMPLEMENTATION.
   METHOD constructor.
+    RETURN.
   ENDMETHOD.
 ENDCLASS.

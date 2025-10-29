@@ -28,11 +28,14 @@ ENDCLASS.
 
 CLASS cl_abap_get_call_stack IMPLEMENTATION.
   METHOD get_call_stack.
+    RETURN.
   ENDMETHOD.
 
   METHOD format_call_stack.
+    RETURN.
   ENDMETHOD.
 
   METHOD format_call_stack_with_struct.
+    RETURN.
   ENDMETHOD.
 ENDCLASS.
