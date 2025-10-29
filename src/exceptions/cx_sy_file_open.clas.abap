@@ -1,4 +1,4 @@
-class CX_SY_FILE_OPEN definition public inheriting from CX_SY_FILE_ACCESS_ERROR final.
+CLASS cx_sy_file_open DEFINITION PUBLIC INHERITING FROM cx_sy_file_access_error FINAL.
   public section.
 
     methods CONSTRUCTOR
