@@ -1,18 +1,15 @@
-class CX_SY_FILE_OPEN definition public inheriting from CX_SY_FILE_ACCESS_ERROR final.
-  public section.
-
-    methods CONSTRUCTOR
-      importing
-        !TEXTID like TEXTID optional
-        !PREVIOUS like PREVIOUS optional
-        value(FILENAME) type STRING optional
-        !ERRORCODE type I optional
-        !ERRORTEXT type STRING optional .
+CLASS cx_sy_file_open DEFINITION PUBLIC INHERITING FROM cx_sy_file_access_error FINAL.
+  PUBLIC SECTION.
+    METHODS constructor
+      IMPORTING textid          LIKE textid   OPTIONAL
+                !previous       LIKE previous OPTIONAL
+                VALUE(filename) TYPE string   OPTIONAL
+                errorcode       TYPE i        OPTIONAL
+                errortext       TYPE string   OPTIONAL.
 ENDCLASS.
 
-CLASS CX_SY_FILE_OPEN IMPLEMENTATION.
 
-method CONSTRUCTOR.
-endmethod.
-
+CLASS cx_sy_file_open IMPLEMENTATION.
+  METHOD constructor.
+  ENDMETHOD.
 ENDCLASS.

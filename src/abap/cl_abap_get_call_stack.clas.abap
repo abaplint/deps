@@ -1,44 +1,38 @@
-class CL_ABAP_GET_CALL_STACK definition public final.
-  public section.
-    types call_stack_internal TYPE STANDARD TABLE OF call_stack_entry WITH DEFAULT KEY .
-    types:
-      begin of FORMATTED_ENTRY,
-            stack_depth type tpda_stack_level,
-            kind type tpda_event_type,
-            progname type tpda_program,
-            includename type tpda_include,
-            line type tpda_sc_line,
-            event type tpda_event,
-      END OF FORMATTED_ENTRY .
-    types FORMATTED_ENTRY_STACK type STANDARD TABLE OF formatted_entry WITH DEFAULT KEY .
+CLASS cl_abap_get_call_stack DEFINITION PUBLIC FINAL.
+  PUBLIC SECTION.
+    TYPES call_stack_internal TYPE STANDARD TABLE OF call_stack_entry WITH DEFAULT KEY.
+    TYPES:
+      BEGIN OF formatted_entry,
+        stack_depth TYPE tpda_stack_level,
+        kind        TYPE tpda_event_type,
+        progname    TYPE tpda_program,
+        includename TYPE tpda_include,
+        line        TYPE tpda_sc_line,
+        event       TYPE tpda_event,
+      END OF formatted_entry.
+    TYPES formatted_entry_stack TYPE STANDARD TABLE OF formatted_entry WITH DEFAULT KEY.
 
-  class-methods GET_CALL_STACK
-    returning
-      value(STACK) type CALL_STACK_INTERNAL .
+    CLASS-METHODS get_call_stack
+      RETURNING VALUE(stack) TYPE call_stack_internal.
 
-  class-methods FORMAT_CALL_STACK
-    importing
-      !STACK type CALL_STACK_INTERNAL
-    returning
-      value(FORMATTED_STACK) type FORMATTED_STACK .
+    CLASS-METHODS format_call_stack
+      IMPORTING !stack                 TYPE call_stack_internal
+      RETURNING VALUE(formatted_stack) TYPE formatted_stack.
 
-  class-methods FORMAT_CALL_STACK_WITH_STRUCT
-    importing
-      !STACK type CALL_STACK_INTERNAL
-    returning
-      value(FORMATTED_STACK) type FORMATTED_ENTRY_STACK .
+    CLASS-METHODS format_call_stack_with_struct
+      IMPORTING !stack                 TYPE call_stack_internal
+      RETURNING VALUE(formatted_stack) TYPE formatted_entry_stack.
 
 ENDCLASS.
 
-CLASS CL_ABAP_GET_CALL_STACK IMPLEMENTATION.
 
-  method GET_CALL_STACK.
-  endmethod.
+CLASS cl_abap_get_call_stack IMPLEMENTATION.
+  METHOD get_call_stack.
+  ENDMETHOD.
 
-  method FORMAT_CALL_STACK.
-  endmethod.
+  METHOD format_call_stack.
+  ENDMETHOD.
 
-  method FORMAT_CALL_STACK_WITH_STRUCT.
-  endmethod.
-
+  METHOD format_call_stack_with_struct.
+  ENDMETHOD.
 ENDCLASS.
