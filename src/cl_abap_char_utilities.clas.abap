@@ -16,8 +16,16 @@ CLASS cl_abap_char_utilities DEFINITION PUBLIC.
       form_feed              TYPE c LENGTH 1 VALUE 'A',
       newline                TYPE c LENGTH 1 VALUE 'A'.
 
+    CLASS-METHODS get_simple_spaces_for_cur_cp
+      RETURNING
+        VALUE(s_str) TYPE string.
+
 ENDCLASS.
 
 CLASS cl_abap_char_utilities IMPLEMENTATION.
+
+  METHOD get_simple_spaces_for_cur_cp.
+    RETURN.
+  ENDMETHOD.
 
 ENDCLASS.
