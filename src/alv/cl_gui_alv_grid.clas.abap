@@ -305,7 +305,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           i_ready_for_input TYPE any OPTIONAL,
       check_changed_data
         EXPORTING
-          e_valid   TYPE any
+          e_valid   TYPE char01
         CHANGING
           c_refresh TYPE any OPTIONAL,
       register_delayed_event
