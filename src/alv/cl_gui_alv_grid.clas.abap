@@ -424,12 +424,29 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
         es_row_info TYPE lvc_s_row
         es_col_info TYPE lvc_s_col.
 
+    METHODS get_selected_cells_id
+      EXPORTING
+        et_cells TYPE lvc_t_ceno.
+
+    METHODS set_selected_cells_id
+      IMPORTING
+        VALUE(it_cells) TYPE lvc_t_ceno.
+
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
 
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+
+  METHOD get_selected_cells_id.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD set_selected_cells_id.
+    RETURN.
+  ENDMETHOD.
+
   METHOD get_frontend_print.
     RETURN.
   ENDMETHOD.
