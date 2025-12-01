@@ -1,8 +1,8 @@
 INTERFACE /iwbep/if_mgw_appl_srv_runtime PUBLIC.
 
   TYPES ty_s_mgw_response_entity_cntxt TYPE /iwbep/if_mgw_appl_types=>ty_s_mgw_response_entity_cntxt.
-  TYPES ty_s_media_resource TYPE /iwbep/if_mgw_appl_types=>ty_s_media_resource.
-  TYPES ty_s_mgw_response_context TYPE /iwbep/if_mgw_appl_types=>ty_s_mgw_response_context.
+  TYPES ty_s_media_resource            TYPE /iwbep/if_mgw_appl_types=>ty_s_media_resource.
+  TYPES ty_s_mgw_response_context      TYPE /iwbep/if_mgw_appl_types=>ty_s_mgw_response_context.
 
   METHODS get_is_conditional_implemented
     IMPORTING
@@ -64,7 +64,7 @@ INTERFACE /iwbep/if_mgw_appl_srv_runtime PUBLIC.
       io_tech_request_context  TYPE REF TO /iwbep/if_mgw_req_entityset OPTIONAL
     EXPORTING
       er_entityset             TYPE REF TO data
-      es_response_context      TYPE string.
+      es_response_context      TYPE ty_s_mgw_response_context.
 
   METHODS get_expanded_entity
     IMPORTING
