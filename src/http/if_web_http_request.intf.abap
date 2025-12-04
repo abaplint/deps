@@ -8,7 +8,6 @@ INTERFACE if_web_http_request PUBLIC.
       cx_web_message_error.
 
   METHODS get_method RETURNING VALUE(method) TYPE string.
-  
   METHODS get_form_field
     IMPORTING
       i_name         TYPE string
