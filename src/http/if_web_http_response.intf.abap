@@ -2,7 +2,7 @@ INTERFACE if_web_http_response PUBLIC.
 
   METHODS delete_header_field
     IMPORTING
-      i_name  TYPE string.
+      i_name TYPE string.
 
   METHODS delete_cookie_at_client
     IMPORTING
