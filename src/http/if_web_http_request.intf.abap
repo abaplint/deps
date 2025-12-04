@@ -11,7 +11,7 @@ INTERFACE if_web_http_request PUBLIC.
   
   METHODS get_form_field
     IMPORTING
-      i_name TYPE string
+      i_name         TYPE string
     RETURNING
       VALUE(r_value) TYPE string
     RAISING
@@ -25,7 +25,7 @@ INTERFACE if_web_http_request PUBLIC.
 
   METHODS get_multipart
     IMPORTING
-      index TYPE i
+      index          TYPE i
     RETURNING
       VALUE(r_value) TYPE REF TO if_web_http_request
     RAISING
