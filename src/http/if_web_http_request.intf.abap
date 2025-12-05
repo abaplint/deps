@@ -8,7 +8,27 @@ INTERFACE if_web_http_request PUBLIC.
       cx_web_message_error.
 
   METHODS get_method RETURNING VALUE(method) TYPE string.
-  METHODS get_form_field.
+  METHODS get_form_field
+    IMPORTING
+      i_name         TYPE string
+    RETURNING
+      VALUE(r_value) TYPE string
+    RAISING
+      cx_web_message_error.
+
+  METHODS get_form_fields
+    RETURNING
+      VALUE(r_value) TYPE name_value_pairs
+    RAISING
+      cx_web_message_error.
+
+  METHODS get_multipart
+    IMPORTING
+      index          TYPE i
+    RETURNING
+      VALUE(r_value) TYPE REF TO if_web_http_request
+    RAISING
+      cx_web_message_error.
 
   METHODS set_binary
     IMPORTING
@@ -76,4 +96,11 @@ INTERFACE if_web_http_request PUBLIC.
       VALUE(r_value) TYPE string
     RAISING
       cx_web_message_error.
+
+  METHODS num_multiparts
+    RETURNING
+      VALUE(num) TYPE i
+    RAISING
+      cx_web_message_error.
+
 ENDINTERFACE.
