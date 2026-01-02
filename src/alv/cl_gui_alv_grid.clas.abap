@@ -274,7 +274,7 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
           functions TYPE any,
       set_focus
         IMPORTING
-          control TYPE REF TO cl_gui_control,
+          control TYPE any,
       set_drop_down_table
         IMPORTING
           it_drop_down       TYPE any OPTIONAL
