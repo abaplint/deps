@@ -1,6 +1,7 @@
 TYPE-POOL icon.
 
 CONSTANTS icon_biw_info_source_ina TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_shared_position TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_sap_server TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_material TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_enhanced_bo TYPE c LENGTH 4 VALUE ''.
