@@ -7,6 +7,7 @@ CLASS cl_os_ca_common DEFINITION PUBLIC.
   PROTECTED SECTION.
     CONSTANTS dmode_direct TYPE os_dmode VALUE oscon_dmode_direct.
     CONSTANTS id_status_complete TYPE typ_id_status VALUE 3.
+    CONSTANTS id_status_none TYPE typ_id_status VALUE 0.
 
     DATA current_object_iref TYPE typ_object_iref.
     DATA current_object_info TYPE typ_object_info.
@@ -74,9 +75,15 @@ CLASS cl_os_ca_common DEFINITION PUBLIC.
       RAISING
         cx_os_object_not_found.
 
+    METHODS save_special_object_info.
+
 ENDCLASS.
 
 CLASS cl_os_ca_common IMPLEMENTATION.
+
+  METHOD save_special_object_info.
+    RETURN.
+  ENDMETHOD.
 
   METHOD pm_load.
     RETURN.
