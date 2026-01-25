@@ -5,9 +5,19 @@ CLASS cl_os_ca_common DEFINITION PUBLIC.
     INTERFACES if_os_factory.
 
   PROTECTED SECTION.
+    CONSTANTS dmode_direct TYPE os_dmode VALUE oscon_dmode_direct.
+    CONSTANTS id_status_complete TYPE typ_id_status VALUE 3.
+
     DATA current_object_iref TYPE typ_object_iref.
     DATA current_object_info TYPE typ_object_info.
     DATA current_object_index TYPE typ_index.
+    DATA internal_transaction_stack TYPE typ_index_tab.
+    DATA internal_current_transaction TYPE typ_index.
+    DATA object_info TYPE typ_object_info_tab.
+    DATA persistency_manager TYPE REF TO if_os_persistency_manager.
+    DATA class_info TYPE typ_class_info.
+    DATA internal_undo_info TYPE typ_internal_undo_info_stack.
+    DATA internal_next_undo_info TYPE typ_index VALUE 1.
 
     METHODS register_class_agent
       IMPORTING
@@ -31,9 +41,91 @@ CLASS cl_os_ca_common DEFINITION PUBLIC.
 
     METHODS os_pm_created_persistent.
 
+    METHODS os_pm_created_transient.
+
+    METHODS delete_special_object_info.
+
+    METHODS os_internal_undo.
+
+    METHODS os_pm_loaded_persistent.
+
+    METHODS load_special_object_info.
+
+    METHODS map_invalidate
+      IMPORTING
+        i_object_iref_tab TYPE typ_object_tab.
+
+    METHODS os_pm_delete_persistent.
+
+    METHODS os_get_internal_oid_by_ref
+      IMPORTING
+        i_object      TYPE typ_object_iref
+      RETURNING
+        VALUE(result) TYPE typ_internal_oid.
+
+    METHODS os_create_new_entry_for_repr
+      IMPORTING
+        i_object       TYPE typ_object_iref
+        i_internal_oid TYPE typ_internal_oid.
+
+    METHODS os_pm_deleted_persistent.
+
+    METHODS pm_load
+      RAISING
+        cx_os_object_not_found.
+
 ENDCLASS.
 
 CLASS cl_os_ca_common IMPLEMENTATION.
+
+  METHOD pm_load.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD os_get_internal_oid_by_ref.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD os_create_new_entry_for_repr.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD os_pm_deleted_persistent.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD load_special_object_info.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD map_invalidate.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD os_pm_delete_persistent.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD os_pm_created_transient.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD delete_special_object_info.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD os_internal_undo.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD os_pm_loaded_persistent.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD if_os_factory~create_persistent_by_key.
+    RETURN.
+  ENDMETHOD.
+
   METHOD if_os_ca_persistency~get_persistent_by_key.
     RETURN.
   ENDMETHOD.
