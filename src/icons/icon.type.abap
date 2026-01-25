@@ -1,17 +1,5 @@
 TYPE-POOL icon.
 
-CONSTANTS icon_biw_info_source_ina TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_shared_position TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_sap_server TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_material TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_enhanced_bo TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_org_unit TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_foreign_trade TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_manikin_unknown_gender TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_next_step TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_view_expand_horizontal TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_view_expand_vertical TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_workflow_external_event TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_abap TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_abap_local TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_abc TYPE c LENGTH 4 VALUE ''.
@@ -35,6 +23,7 @@ CONSTANTS icon_apple_numbers TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_arrow_left TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_arrow_right TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_attachment TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_availability_check TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_availability_display TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_background_job TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ben_current_benefits TYPE c LENGTH 4 VALUE ''.
@@ -42,6 +31,7 @@ CONSTANTS icon_ben_termination TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_binary_document TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_biw_formula TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_biw_info_cube TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_biw_info_source_ina TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_biw_monitor TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_biw_report TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_biw_scheduler TYPE c LENGTH 4 VALUE ''.
@@ -58,6 +48,7 @@ CONSTANTS icon_breakpoint_disable TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_businav_datamodel TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_businav_entity TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_businav_objects TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_businav_process TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_businav_value_chain TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_business_area TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_bw_apd_db TYPE c LENGTH 4 VALUE ''.
@@ -95,6 +86,7 @@ CONSTANTS icon_complete TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_composite_activitygroup TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_configuration TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_connect TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_connection_object TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_content_object TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_context_class TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_context_menu TYPE c LENGTH 4 VALUE ''.
@@ -151,6 +143,7 @@ CONSTANTS icon_eff TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_element TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_eml TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_employee TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_enhanced_bo TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_enter_more TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_envelope_closed TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_equal TYPE c LENGTH 4 VALUE ''.
@@ -177,6 +170,7 @@ CONSTANTS icon_flight TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_folder TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_foreign_key TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_foreign_trace TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_foreign_trade TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_generate TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_gif TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_gis_pan TYPE c LENGTH 4 VALUE ''.
@@ -206,6 +200,7 @@ CONSTANTS icon_idoc TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_import TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_import_all_requests TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_import_transport_request TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_include_in_selection TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_include_objects TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_incoming_object TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_incoming_task TYPE c LENGTH 4 VALUE ''.
@@ -252,10 +247,12 @@ CONSTANTS icon_locked TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_loio_class TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_lwp TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_mail TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_manikin_unknown_gender TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_mapped_relation TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_mass_change TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_mass_change_done TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_master_data_act TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_material TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_mc_contentindicator TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_message TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_message_critical TYPE c LENGTH 4 VALUE ''.
@@ -280,9 +277,11 @@ CONSTANTS icon_move TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_msg TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_negative TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_net_graphic TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_new_task TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_next_node TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_next_object TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_next_page TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_next_step TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_next_value TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_no_status TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_not_equal TYPE c LENGTH 4 VALUE ''.
@@ -306,6 +305,7 @@ CONSTANTS icon_open TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_open_folder TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_operation TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_order TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_org_unit TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_otf_document TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_other_object TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_outgoing_object TYPE c LENGTH 4 VALUE ''.
@@ -320,6 +320,7 @@ CONSTANTS icon_page_right TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_parameter TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_parameter_result TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_partner TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_patient_smartcard TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_pattern_exclude_green TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_pattern_exclude_red TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_pattern_include_green TYPE c LENGTH 4 VALUE ''.
@@ -353,6 +354,7 @@ CONSTANTS icon_project TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_proshare TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_protocol TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ps_network_activity TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_ps_relationship TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_ps_wbs_element TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_public_files TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_qualify TYPE c LENGTH 4 VALUE ''.
@@ -379,9 +381,11 @@ CONSTANTS icon_rename TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_replace TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_report_template TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_resubmission TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_retail_store TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_role TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_rtf TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_sap TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_sap_server TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_save_as_template TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_scrap TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_search TYPE c LENGTH 4 VALUE ''.
@@ -396,6 +400,7 @@ CONSTANTS icon_set_copy_in_b TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_set_state TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_set_sum TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_settings TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_shared_position TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_short_message TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_show_events TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_show_external_jobs TYPE c LENGTH 4 VALUE ''.
@@ -464,6 +469,7 @@ CONSTANTS icon_text_field TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_text_ina TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_tif TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_time TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_toggle_display TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_toggle_display_change TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_tools TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_total_left TYPE c LENGTH 4 VALUE ''.
@@ -487,10 +493,13 @@ CONSTANTS icon_unspecified_three TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_unspecified_two TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_url TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_usergroup TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_val_quantity_structure TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_value_help TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_variable TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_variants TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_video TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_view_expand_horizontal TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_view_expand_vertical TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_view_form TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_view_list TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_view_maximize TYPE c LENGTH 4 VALUE ''.
@@ -533,6 +542,7 @@ CONSTANTS icon_wf_workitem_ol TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_wizard TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_workflow TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_workflow_activity TYPE c LENGTH 4 VALUE ''.
+CONSTANTS icon_workflow_external_event TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_workflow_fork TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_workflow_process TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_working_plan TYPE c LENGTH 4 VALUE ''.
@@ -548,12 +558,3 @@ CONSTANTS icon_xlv TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_xml_doc TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_xxl TYPE c LENGTH 4 VALUE ''.
 CONSTANTS icon_yellow_light TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_include_in_selection TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_val_quantity_structure TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_connection_object TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_availability_check TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_toggle_display TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_patient_smartcard TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_businav_process TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_new_task TYPE c LENGTH 4 VALUE ''.
-CONSTANTS icon_ps_relationship TYPE c LENGTH 4 VALUE ''.
