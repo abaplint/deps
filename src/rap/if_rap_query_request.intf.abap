@@ -14,21 +14,21 @@ INTERFACE if_rap_query_request PUBLIC.
            element_name TYPE string,
            descending   TYPE abap_bool,
          END OF ty_sort_element.
-  TYPES tt_sort_elements TYPE STANDARD TABLE OF ty_sort_element WITH EMPTY KEY.
+  TYPES tt_sort_elements TYPE STANDARD TABLE OF ty_sort_element WITH DEFAULT KEY.
   METHODS get_sort_elements RETURNING VALUE(rt_sort_elements) TYPE tt_sort_elements.
 
   TYPES: BEGIN OF ty_parameter,
            parameter_name TYPE string,
            value          TYPE string,
          END OF ty_parameter.
-  TYPES tt_parameters TYPE STANDARD TABLE OF ty_parameter WITH EMPTY KEY.
+  TYPES tt_parameters TYPE STANDARD TABLE OF ty_parameter WITH DEFAULT KEY.
   METHODS get_parameters RETURNING VALUE(rt_parameters) TYPE tt_parameters.
 
   METHODS get_aggregation RETURNING VALUE(ro_aggregation) TYPE REF TO if_rap_query_aggregation.
 
   METHODS get_search_expression RETURNING VALUE(rv_search_expression) TYPE string.
 
-  TYPES tt_requested_elements TYPE STANDARD TABLE OF string WITH EMPTY KEY.
+  TYPES tt_requested_elements TYPE STANDARD TABLE OF string WITH DEFAULT KEY.
   METHODS get_requested_elements RETURNING VALUE(rt_requested_elements) TYPE tt_requested_elements.
 
 ENDINTERFACE.
