@@ -1,5 +1,6 @@
 CLASS cl_gui_alv_grid DEFINITION PUBLIC.
 
+
   PUBLIC SECTION.
     TYPES: BEGIN OF ty_row,
         rowtype TYPE c LENGTH 23,
