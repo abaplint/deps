@@ -438,12 +438,21 @@ CLASS cl_gui_alv_grid DEFINITION PUBLIC.
       IMPORTING
         VALUE(it_cells) TYPE lvc_t_ceno.
 
+    METHODS set_delta_cells
+      IMPORTING
+        VALUE(it_delta_cells)  TYPE lvc_t_modi
+        VALUE(i_modified)      TYPE char01 OPTIONAL
+        VALUE(i_frontend_only) TYPE char01 OPTIONAL.
+
   PROTECTED SECTION.
     DATA mt_outtab TYPE REF TO data.
 
 ENDCLASS.
 
 CLASS cl_gui_alv_grid IMPLEMENTATION.
+  METHOD set_delta_cells.
+    RETURN.
+  ENDMETHOD.
 
   METHOD get_selected_cells_id.
     RETURN.
