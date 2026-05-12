@@ -19,8 +19,7 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           im_load_help      TYPE string
           im_object_version TYPE string
         RAISING
-          cx_ecatt_apl,
-      download_data ABSTRACT.
+          cx_ecatt_apl.
   PROTECTED SECTION.
     DATA: template_over_all TYPE REF TO if_ixml_document,
           typ TYPE string,
@@ -34,7 +33,7 @@ CLASS cl_apl_ecatt_download DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
           load_help TYPE string,
           ecatt_script TYPE REF TO cl_apl_ecatt_script,
           ecatt_extprog TYPE REF TO cl_apl_ecatt_extprog.
-
+    METHODS download_data ABSTRACT.
     METHODS:
       set_attributes_to_template,
       get_general_params_data
