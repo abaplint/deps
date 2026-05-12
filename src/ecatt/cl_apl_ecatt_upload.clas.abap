@@ -11,10 +11,7 @@ CLASS cl_apl_ecatt_upload DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       END OF ty_object.
     METHODS:
       upload ABSTRACT
-        CHANGING ch_object TYPE ty_object,
-      upload_data_from_stream ABSTRACT
-        IMPORTING name TYPE string
-        RAISING cx_ecatt_apl.
+        CHANGING ch_object TYPE ty_object.
   PROTECTED SECTION.
     DATA: template_over_all TYPE REF TO if_ixml_document,
           exception_to_raise TYPE REF TO cx_root,
@@ -28,6 +25,10 @@ CLASS cl_apl_ecatt_upload DEFINITION PUBLIC CREATE PUBLIC ABSTRACT.
       get_variants_from_dom
         IMPORTING
           params TYPE any.
+
+    METHODS upload_data_from_stream ABSTRACT
+        IMPORTING name TYPE string
+        RAISING cx_ecatt_apl.
   PRIVATE SECTION.
 
 ENDCLASS.
