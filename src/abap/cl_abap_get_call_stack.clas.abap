@@ -16,11 +16,11 @@ CLASS cl_abap_get_call_stack DEFINITION PUBLIC FINAL.
       RETURNING VALUE(stack) TYPE call_stack_internal.
 
     CLASS-METHODS format_call_stack
-      IMPORTING !stack                 TYPE call_stack_internal
+      IMPORTING stack                  TYPE call_stack_internal
       RETURNING VALUE(formatted_stack) TYPE formatted_stack.
 
     CLASS-METHODS format_call_stack_with_struct
-      IMPORTING !stack                 TYPE call_stack_internal
+      IMPORTING stack                  TYPE call_stack_internal
       RETURNING VALUE(formatted_stack) TYPE formatted_entry_stack.
 
 ENDCLASS.
