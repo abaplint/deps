@@ -6,7 +6,7 @@ INTERFACE if_amc_message_producer_text
 
   METHODS send
     IMPORTING
-      !i_message TYPE string
+      i_message TYPE string
     RAISING
       cx_amc_error.
 

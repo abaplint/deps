@@ -37,6 +37,7 @@
     "static_call_via_instance": true,
     "superfluous_value": true,
     "unnecessary_chaining": false,
+    "no_exclamation_escape": true,
     "unsecure_fae": true,
     "unused_ddic": true,
     "unnecessary_pragma": true,

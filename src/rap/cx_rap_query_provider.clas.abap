@@ -6,8 +6,8 @@ CLASS cx_rap_query_provider DEFINITION
 
   PUBLIC SECTION.
 
-    METHODS constructor IMPORTING !textid   LIKE if_t100_message=>t100key OPTIONAL
-                                  !previous LIKE previous OPTIONAL.
+    METHODS constructor IMPORTING textid   LIKE if_t100_message=>t100key OPTIONAL
+                                  previous LIKE previous OPTIONAL.
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
