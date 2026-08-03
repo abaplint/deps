@@ -47,7 +47,7 @@ INTERFACE /iwbep/if_mgw_appl_srv_runtime PUBLIC.
       io_expand               TYPE string
       io_tech_request_context TYPE string
     EXPORTING
-      er_deep_entitity        TYPE string.
+      er_deep_entity          TYPE string.
 
   METHODS get_entityset
     IMPORTING
