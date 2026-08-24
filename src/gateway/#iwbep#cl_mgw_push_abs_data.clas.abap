@@ -110,4 +110,24 @@ CLASS /iwbep/cl_mgw_push_abs_data IMPLEMENTATION.
     RETURN.
   ENDMETHOD.
 
+  METHOD /iwbep/if_mgw_conv_srv_runtime~check_if_is_not_modified.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD /iwbep/if_mgw_conv_srv_runtime~move_corresponding.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD /iwbep/if_mgw_conv_srv_runtime~set_etag.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD /iwbep/if_mgw_conv_srv_runtime~soft_state_session_start.
+    RETURN.
+  ENDMETHOD.
+
+  METHOD /iwbep/if_mgw_conv_srv_runtime~soft_state_session_end.
+    RETURN.
+  ENDMETHOD.
+
 ENDCLASS.

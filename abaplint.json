@@ -6,7 +6,10 @@
     "skipGeneratedFunctionGroups": false
   },
   "syntax": {
-    "version": "v702",
+    "version":{
+      "release": "v702",
+      "language": "Normal"
+    },
     "errorNamespace": "ASDF"
   },
   "rules": {
@@ -23,6 +26,8 @@
     "cds_legacy_view": true,
     "cds_parser_error": true,
     "classic_exceptions_overlap": true,
+    "aff_and_xml": true,
+    "cds_check_syntax": true,
     "constant_classes": true,
     "cyclic_oo": false,
     "local_testclass_consistency": true,
