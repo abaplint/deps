@@ -5,7 +5,7 @@ CLASS cl_os_ca_common DEFINITION PUBLIC.
     INTERFACES if_os_factory.
 
   PROTECTED SECTION.
-    CONSTANTS dmode_direct TYPE os_dmode VALUE oscon_dmode_direct.
+    CONSTANTS dmode_direct TYPE os_dmode VALUE 0.
     CONSTANTS id_status_complete TYPE typ_id_status VALUE 3.
     CONSTANTS id_status_none TYPE typ_id_status VALUE 0.
 
