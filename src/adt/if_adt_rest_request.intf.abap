@@ -1,4 +1,5 @@
 INTERFACE if_adt_rest_request PUBLIC.
+
   METHODS:
     get_uri_attribute
       IMPORTING
