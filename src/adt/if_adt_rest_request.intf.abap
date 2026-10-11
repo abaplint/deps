@@ -1,4 +1,5 @@
 INTERFACE if_adt_rest_request PUBLIC.
+
   METHODS:
     get_uri_attribute
       IMPORTING
@@ -11,7 +12,7 @@ INTERFACE if_adt_rest_request PUBLIC.
     get_uri_query_parameter
       IMPORTING
         name      TYPE string
-        default   TYPE string OPTIONAL
+        !default  TYPE string OPTIONAL
         mandatory TYPE abap_bool OPTIONAL
       EXPORTING
         value     TYPE string,
