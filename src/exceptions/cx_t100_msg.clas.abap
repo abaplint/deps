@@ -15,7 +15,7 @@ ENDCLASS.
 CLASS cx_t100_msg IMPLEMENTATION.
 
   METHOD constructor.
-    RETURN.
+    super->constructor( ).
   ENDMETHOD.
 
 ENDCLASS.
