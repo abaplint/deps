@@ -18,6 +18,6 @@ CLASS cx_rap_query_provider IMPLEMENTATION.
 
 
   METHOD constructor ##ADT_SUPPRESS_GENERATION.
-    RETURN.
+    super->constructor( ).
   ENDMETHOD.
 ENDCLASS.
