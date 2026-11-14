@@ -11,6 +11,6 @@ ENDCLASS.
 
 CLASS cx_sy_file_open IMPLEMENTATION.
   METHOD constructor.
-    RETURN.
+    super->constructor( ).
   ENDMETHOD.
 ENDCLASS.

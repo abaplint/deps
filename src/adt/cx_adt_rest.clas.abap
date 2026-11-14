@@ -39,7 +39,7 @@ ENDCLASS.
 CLASS cx_adt_rest IMPLEMENTATION.
 
   METHOD constructor.
-    RETURN.
+    super->constructor( ).
   ENDMETHOD.
 
   METHOD get_longtext_from_exception.

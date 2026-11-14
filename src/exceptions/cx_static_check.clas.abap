@@ -13,7 +13,7 @@ ENDCLASS.
 CLASS cx_static_check IMPLEMENTATION.
 
   METHOD constructor.
-    RETURN.
+    super->constructor( ).
   ENDMETHOD.
 
 ENDCLASS.
