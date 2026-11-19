@@ -1,0 +1,7 @@
+CLASS cl_abap_complexdescr DEFINITION PUBLIC ABSTRACT CREATE PUBLIC
+  INHERITING FROM cl_abap_datadescr.
+
+ENDCLASS.
+
+CLASS cl_abap_complexdescr IMPLEMENTATION.
+ENDCLASS.

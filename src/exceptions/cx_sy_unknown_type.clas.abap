@@ -1,0 +1,7 @@
+CLASS cx_sy_unknown_type DEFINITION PUBLIC INHERITING FROM cx_dynamic_check.
+  PUBLIC SECTION.
+ENDCLASS.
+
+CLASS cx_sy_unknown_type IMPLEMENTATION.
+
+ENDCLASS.
